@@ -35,26 +35,28 @@ export async function render() {
 }
 
 async function loadDashboardData(page) {
-  try {
-    const [services, version, logs] = await Promise.all([
-      api.getServicesStatus(),
-      api.getVersionInfo(),
-      api.readLogTail('gateway', 20),
-    ])
+  const [servicesRes, versionRes, logsRes] = await Promise.allSettled([
+    api.getServicesStatus(),
+    api.getVersionInfo(),
+    api.readLogTail('gateway', 20),
+  ])
 
-    renderStatCards(page, services, version)
-    renderLogs(page, logs)
-    bindActions(page)
-  } catch (e) {
-    toast('加载仪表盘数据失败: ' + e, 'error')
-  }
+  const services = servicesRes.status === 'fulfilled' ? servicesRes.value : []
+  const version = versionRes.status === 'fulfilled' ? versionRes.value : {}
+  const logs = logsRes.status === 'fulfilled' ? logsRes.value : ''
+
+  if (servicesRes.status === 'rejected') toast('服务状态加载失败', 'error')
+  if (versionRes.status === 'rejected') toast('版本信息加载失败', 'error')
+  if (logsRes.status === 'rejected') toast('日志加载失败', 'error')
+
+  renderStatCards(page, services, version)
+  renderLogs(page, logs)
+  bindActions(page)
 }
 
 function renderStatCards(page, services, version) {
   const cardsEl = page.querySelector('#stat-cards')
-  const gw = services.find(s => s.label.includes('gateway'))
-  const guardian = services.find(s => s.label.includes('guardian.watch'))
-  const watchdog = services.find(s => s.label.includes('watchdog'))
+  const gw = services.find(s => s.label === 'ai.openclaw.gateway')
   const runningCount = services.filter(s => s.running).length
 
   cardsEl.innerHTML = `
@@ -64,30 +66,21 @@ function renderStatCards(page, services, version) {
         <span class="status-dot ${gw?.running ? 'running' : 'stopped'}"></span>
       </div>
       <div class="stat-card-value">${gw?.running ? '运行中' : '已停止'}</div>
-      <div class="stat-card-meta">${gw?.pid ? 'PID: ' + gw.pid : ''}</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-card-header">
-        <span class="stat-card-label">Guardian</span>
-        <span class="status-dot ${guardian?.running ? 'running' : 'stopped'}"></span>
-      </div>
-      <div class="stat-card-value">${guardian?.running ? '运行中' : '已停止'}</div>
-      <div class="stat-card-meta">健康监控</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-card-header">
-        <span class="stat-card-label">Watchdog</span>
-        <span class="status-dot ${watchdog?.running ? 'running' : 'stopped'}"></span>
-      </div>
-      <div class="stat-card-value">${watchdog?.running ? '运行中' : '已停止'}</div>
-      <div class="stat-card-meta">看门狗</div>
+      <div class="stat-card-meta">${gw?.pid ? 'PID: ' + gw.pid : '未启动'}</div>
     </div>
     <div class="stat-card">
       <div class="stat-card-header">
         <span class="stat-card-label">版本</span>
       </div>
       <div class="stat-card-value">${version.current || '未知'}</div>
-      <div class="stat-card-meta">服务 ${runningCount}/${services.length} 运行中</div>
+      <div class="stat-card-meta">${version.update_available ? '有新版本: ' + version.latest : '已是最新'}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-header">
+        <span class="stat-card-label">服务</span>
+      </div>
+      <div class="stat-card-value">${runningCount}/${services.length}</div>
+      <div class="stat-card-meta">运行中</div>
     </div>
   `
 }

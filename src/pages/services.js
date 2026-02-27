@@ -4,8 +4,17 @@
  */
 import { api } from '../lib/tauri-api.js'
 import { toast } from '../components/toast.js'
+import { showConfirm } from '../components/modal.js'
 
-let _delegated = false
+// HTML 转义，防止 XSS
+function escapeHtml(str) {
+  if (!str) return ''
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
 
 export async function render() {
   const page = document.createElement('div')
@@ -47,6 +56,7 @@ async function loadVersion(page) {
   try {
     const info = await api.getVersionInfo()
     const ver = info.current || '未知'
+    const hasUpdate = info.update_available
     bar.innerHTML = `
       <div class="stat-cards" style="margin-bottom:var(--space-lg)">
         <div class="stat-card">
@@ -54,7 +64,8 @@ async function loadVersion(page) {
             <span class="stat-card-label">当前版本</span>
           </div>
           <div class="stat-card-value">${ver}</div>
-          <div class="stat-card-meta">${info.update_available ? '有新版本可用' : '已是最新版本'}</div>
+          <div class="stat-card-meta">${hasUpdate ? '新版本: ' + info.latest : '已是最新版本'}</div>
+          ${hasUpdate ? '<button class="btn btn-primary btn-sm" data-action="upgrade" style="margin-top:var(--space-sm)">升级到最新版</button>' : ''}
         </div>
       </div>
     `
@@ -71,33 +82,52 @@ async function loadServices(page) {
     const services = await api.getServicesStatus()
     renderServices(container, services)
   } catch (e) {
-    container.innerHTML = `<div style="color:var(--error)">加载服务列表失败: ${e}</div>`
+    container.innerHTML = `<div style="color:var(--error)">加载服务列表失败: ${escapeHtml(String(e))}</div>`
   }
 }
 
 function renderServices(container, services) {
-  if (!services || !services.length) {
-    container.innerHTML = '<div style="color:var(--text-tertiary)">暂无服务</div>'
-    return
-  }
-  container.innerHTML = services.map(s => `
-    <div class="service-card" data-label="${s.label}">
+  const gw = services.find(s => s.label === 'ai.openclaw.gateway')
+
+  // Gateway 专属卡片（带安装/卸载）
+  let html = ''
+  if (gw) {
+    html += `
+    <div class="service-card" data-label="${gw.label}">
       <div class="service-info">
-        <span class="status-dot ${s.running ? 'running' : 'stopped'}"></span>
+        <span class="status-dot ${gw.running ? 'running' : 'stopped'}"></span>
         <div>
-          <div class="service-name">${s.label}</div>
-          <div class="service-desc">${s.description || ''}${s.pid ? ' (PID: ' + s.pid + ')' : ''}</div>
+          <div class="service-name">${gw.label}</div>
+          <div class="service-desc">${gw.description || ''}${gw.pid ? ' (PID: ' + gw.pid + ')' : ''}</div>
         </div>
       </div>
       <div class="service-actions">
-        ${s.running
-          ? `<button class="btn btn-secondary btn-sm" data-action="restart" data-label="${s.label}">重启</button>
-             <button class="btn btn-danger btn-sm" data-action="stop" data-label="${s.label}">停止</button>`
-          : `<button class="btn btn-primary btn-sm" data-action="start" data-label="${s.label}">启动</button>`
+        ${gw.running
+          ? `<button class="btn btn-secondary btn-sm" data-action="restart" data-label="${gw.label}">重启</button>
+             <button class="btn btn-danger btn-sm" data-action="stop" data-label="${gw.label}">停止</button>
+             <button class="btn btn-danger btn-sm" data-action="uninstall-gateway">卸载</button>`
+          : `<button class="btn btn-primary btn-sm" data-action="start" data-label="${gw.label}">启动</button>
+             <button class="btn btn-danger btn-sm" data-action="uninstall-gateway">卸载</button>`
         }
       </div>
-    </div>
-  `).join('')
+    </div>`
+  } else {
+    html += `
+    <div class="service-card">
+      <div class="service-info">
+        <span class="status-dot stopped"></span>
+        <div>
+          <div class="service-name">ai.openclaw.gateway</div>
+          <div class="service-desc">Gateway 服务未安装</div>
+        </div>
+      </div>
+      <div class="service-actions">
+        <button class="btn btn-primary btn-sm" data-action="install-gateway">安装</button>
+      </div>
+    </div>`
+  }
+
+  container.innerHTML = html
 }
 
 // ===== 备份管理 =====
@@ -139,9 +169,6 @@ function renderBackups(container, backups) {
 // ===== 事件绑定（事件委托） =====
 
 function bindEvents(page) {
-  if (_delegated) return
-  _delegated = true
-
   page.addEventListener('click', async (e) => {
     const btn = e.target.closest('[data-action]')
     if (!btn) return
@@ -163,6 +190,15 @@ function bindEvents(page) {
           break
         case 'delete-backup':
           await handleDeleteBackup(btn.dataset.name, page)
+          break
+        case 'upgrade':
+          await handleUpgrade(btn, page)
+          break
+        case 'install-gateway':
+          await handleInstallGateway(btn, page)
+          break
+        case 'uninstall-gateway':
+          await handleUninstallGateway(btn, page)
           break
       }
     } catch (e) {
@@ -193,15 +229,46 @@ async function handleCreateBackup(page) {
 }
 
 async function handleRestoreBackup(name, page) {
-  if (!confirm(`确定要恢复备份 "${name}" 吗？\n当前配置将自动备份后再恢复。`)) return
+  const yes = await showConfirm(`确定要恢复备份 "${name}" 吗？\n当前配置将自动备份后再恢复。`)
+  if (!yes) return
   await api.restoreBackup(name)
   toast('配置已恢复', 'success')
   await loadBackups(page)
 }
 
 async function handleDeleteBackup(name, page) {
-  if (!confirm(`确定要删除备份 "${name}" 吗？此操作不可撤销。`)) return
+  const yes = await showConfirm(`确定要删除备份 "${name}" 吗？此操作不可撤销。`)
+  if (!yes) return
   await api.deleteBackup(name)
   toast('备份已删除', 'success')
   await loadBackups(page)
+}
+
+// ===== 升级操作 =====
+
+async function handleUpgrade(btn, page) {
+  const yes = await showConfirm('确定要升级 OpenClaw 到最新版本吗？\n升级过程中 Gateway 会短暂中断。')
+  if (!yes) return
+  btn.textContent = '升级中...'
+  const msg = await api.upgradeOpenclaw()
+  toast(msg, 'success')
+  await loadVersion(page)
+}
+
+// ===== Gateway 安装/卸载 =====
+
+async function handleInstallGateway(btn, page) {
+  btn.textContent = '安装中...'
+  await api.installGateway()
+  toast('Gateway 服务已安装', 'success')
+  await loadServices(page)
+}
+
+async function handleUninstallGateway(btn, page) {
+  const yes = await showConfirm('确定要卸载 Gateway 服务吗？\n这会停止服务并移除 LaunchAgent。')
+  if (!yes) return
+  btn.textContent = '卸载中...'
+  await api.uninstallGateway()
+  toast('Gateway 服务已卸载', 'success')
+  await loadServices(page)
 }

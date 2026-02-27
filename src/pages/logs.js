@@ -5,10 +5,10 @@ import { api } from '../lib/tauri-api.js'
 import { toast } from '../components/toast.js'
 
 const LOG_TABS = [
-  { key: 'gateway', label: 'Gateway' },
-  { key: 'gateway-err', label: 'Gateway Err' },
-  { key: 'guardian', label: 'Guardian' },
-  { key: 'guardian-backup', label: 'Backup' },
+  { key: 'gateway', label: 'Gateway 日志' },
+  { key: 'gateway-err', label: 'Gateway 错误' },
+  { key: 'guardian', label: '守护进程' },
+  { key: 'guardian-backup', label: '备份日志' },
   { key: 'config-audit', label: '审计日志' },
 ]
 

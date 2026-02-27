@@ -55,21 +55,24 @@ function renderConfig(page, state) {
         <div class="form-group">
           <label class="form-label">端口</label>
           <input class="form-input" id="gw-port" type="number" value="${gw.port || 18789}" min="1024" max="65535">
+          <div class="form-hint">Gateway 监听的本地端口号，范围 1024-65535。修改后需重载服务生效。</div>
         </div>
         <div class="form-group">
           <label class="form-label">绑定模式</label>
           <select class="form-input" id="gw-bind">
-            <option value="loopback" ${gw.bind === 'loopback' ? 'selected' : ''}>Loopback (仅本机)</option>
-            <option value="all" ${gw.bind === 'all' ? 'selected' : ''}>All (所有接口)</option>
+            <option value="loopback" ${gw.bind === 'loopback' ? 'selected' : ''}>仅本机 (Loopback)</option>
+            <option value="all" ${gw.bind === 'all' ? 'selected' : ''}>所有接口 (All)</option>
           </select>
+          <div class="form-hint">仅本机：只允许本机访问（127.0.0.1）。所有接口：允许局域网内其他设备通过 IP 访问。</div>
         </div>
       </div>
       <div class="form-group">
         <label class="form-label">运行模式</label>
         <select class="form-input" id="gw-mode">
-          <option value="local" ${gw.mode === 'local' ? 'selected' : ''}>Local</option>
-          <option value="remote" ${gw.mode === 'remote' ? 'selected' : ''}>Remote</option>
+          <option value="local" ${gw.mode === 'local' ? 'selected' : ''}>本地模式</option>
+          <option value="remote" ${gw.mode === 'remote' ? 'selected' : ''}>远程模式</option>
         </select>
+        <div class="form-hint">本地模式：Gateway 直接调用本机模型服务。远程模式：Gateway 转发请求到远程 API 端点。</div>
       </div>
     </div>
 
@@ -81,6 +84,7 @@ function renderConfig(page, state) {
           <input class="form-input" id="gw-token" type="password" value="${gw.authToken || ''}" placeholder="留空则无认证" style="flex:1">
           <button class="btn btn-sm btn-secondary" id="btn-toggle-token">显示</button>
         </div>
+        <div class="form-hint">访问 Gateway 时需要携带的认证令牌。留空表示不启用认证，任何人都可以直接调用。建议在开放网络环境下设置。</div>
       </div>
     </div>
 
@@ -89,6 +93,7 @@ function renderConfig(page, state) {
       <div class="form-group">
         <label class="form-label">Tailscale 地址</label>
         <input class="form-input" id="gw-tailscale" value="${gw.tailscale?.address || ''}" placeholder="如 100.x.x.x:18789">
+        <div class="form-hint">通过 Tailscale 组网暴露 Gateway 的地址。填写后，远程设备可通过此地址访问。留空表示不使用 Tailscale。</div>
       </div>
     </div>
   `
@@ -117,7 +122,7 @@ async function saveConfig(page, state) {
   state.config.gateway = {
     ...state.config.gateway,
     port, bind, mode, authToken,
-    tailscale: tailscaleAddr ? { address: tailscaleAddr } : (state.config.gateway?.tailscale || undefined),
+    tailscale: tailscaleAddr.trim() ? { address: tailscaleAddr.trim() } : undefined,
   }
 
   try {

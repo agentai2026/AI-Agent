@@ -6,9 +6,9 @@ import { toast } from '../components/toast.js'
 import { showModal } from '../components/modal.js'
 
 const CATEGORIES = [
-  { key: 'memory', label: '工作记忆' },
-  { key: 'archive', label: '记忆归档' },
-  { key: 'core', label: '核心文件' },
+  { key: 'memory', label: '工作记忆', desc: '当前活跃的工作上下文、决策记录和进度追踪' },
+  { key: 'archive', label: '记忆归档', desc: '已归档的历史记忆文件，按时间周期整理' },
+  { key: 'core', label: '核心文件', desc: 'Agent 核心配置文件，如 AGENTS.md、CLAUDE.md 等' },
 ]
 
 export async function render() {
@@ -23,6 +23,7 @@ export async function render() {
     <div class="tab-bar">
       ${CATEGORIES.map((c, i) => `<div class="tab${i === 0 ? ' active' : ''}" data-tab="${c.key}">${c.label}</div>`).join('')}
     </div>
+    <div class="form-hint" id="category-desc" style="margin-bottom:var(--space-md)">${CATEGORIES[0].desc}</div>
     <div class="memory-layout">
       <div class="memory-sidebar">
         <div style="padding:0 var(--space-sm) var(--space-sm);display:flex;gap:4px">
@@ -57,6 +58,8 @@ export async function render() {
       tab.classList.add('active')
       state.category = tab.dataset.tab
       state.currentPath = null
+      const cat = CATEGORIES.find(c => c.key === state.category)
+      page.querySelector('#category-desc').textContent = cat?.desc || ''
       resetEditor(page)
       loadFiles(page, state)
     }
@@ -72,11 +75,11 @@ export async function render() {
   page.querySelector('#btn-new-file').onclick = () => {
     showModal({
       title: '新建记忆文件',
-      fields: [{ name: 'filename', label: '文件名', placeholder: '如 notes.md' }],
+      fields: [{ name: 'filename', label: '文件名', placeholder: '如 notes.md', hint: '建议使用 .md 格式，文件将保存到当前分类目录下' }],
       onConfirm: async ({ filename }) => {
         if (!filename) return
         try {
-          await api.writeMemoryFile(filename, `# ${filename}\n\n`)
+          await api.writeMemoryFile(filename, `# ${filename}\n\n`, state.category)
           toast(`已创建 ${filename}`, 'success')
           loadFiles(page, state)
         } catch (e) {
@@ -90,7 +93,9 @@ export async function render() {
   page.querySelector('#btn-del-file').onclick = async () => {
     if (!state.currentPath) return
     const name = state.currentPath.split('/').pop()
-    if (!confirm(`确定删除 ${name}？`)) return
+    const { showConfirm } = await import('../components/modal.js')
+    const yes = await showConfirm(`确定删除 ${name}？`)
+    if (!yes) return
     try {
       await api.deleteMemoryFile(state.currentPath)
       toast(`已删除 ${name}`, 'success')
@@ -270,7 +275,16 @@ async function exportZip(state) {
   try {
     const zipPath = await api.exportMemoryZip(state.category)
     const label = CATEGORIES.find(c => c.key === state.category)?.label || state.category
-    toast(`已导出: ${label} → ${zipPath}`, 'success')
+    // 尝试用 Tauri shell open 打开文件所在目录
+    try {
+      const { open } = await import('@tauri-apps/plugin-shell')
+      const dir = zipPath.substring(0, zipPath.lastIndexOf('/')) || zipPath
+      await open(dir)
+      toast(`已导出: ${label} → ${zipPath}`, 'success')
+    } catch {
+      // fallback：仅显示路径
+      toast(`已导出: ${label} → ${zipPath}`, 'success')
+    }
   } catch (e) {
     toast('打包下载失败: ' + e, 'error')
   }

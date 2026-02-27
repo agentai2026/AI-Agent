@@ -59,6 +59,27 @@ fn cftunnel_bin() -> String {
     "cftunnel".to_string()
 }
 
+/// 通过 launchctl 检测 cftunnel 服务实际运行状态
+fn check_cftunnel_launchctl() -> Option<(Option<u64>, bool)> {
+    let output = Command::new("launchctl")
+        .args(["list"])
+        .output()
+        .ok()?;
+    let text = String::from_utf8_lossy(&output.stdout);
+    for line in text.lines() {
+        if line.contains("com.cftunnel") {
+            let parts: Vec<&str> = line.split_whitespace().collect();
+            if parts.len() >= 3 {
+                let pid = parts[0].parse::<u64>().ok();
+                // 第一列是 PID（数字表示在运行，- 表示未运行）
+                let running = pid.is_some();
+                return Some((pid, running));
+            }
+        }
+    }
+    None
+}
+
 #[tauri::command]
 pub fn get_cftunnel_status() -> Result<Value, String> {
     let bin = cftunnel_bin();
@@ -87,6 +108,19 @@ pub fn get_cftunnel_status() -> Result<Value, String> {
         }
     }
 
+    // 补充检测：如果 cftunnel status 报已停止，但 launchctl 显示进程在跑，以实际为准
+    let reported_running = result.get("running").and_then(|v| v.as_bool()).unwrap_or(false);
+    if !reported_running {
+        if let Some((pid, running)) = check_cftunnel_launchctl() {
+            if running {
+                result.insert("running".into(), Value::Bool(true));
+                if let Some(p) = pid {
+                    result.insert("pid".into(), Value::Number(p.into()));
+                }
+            }
+        }
+    }
+
     // 获取路由列表
     if let Ok(out) = Command::new(&bin).arg("list").output() {
         let text = String::from_utf8_lossy(&out.stdout);
@@ -100,12 +134,14 @@ pub fn get_cftunnel_status() -> Result<Value, String> {
 #[tauri::command]
 pub fn cftunnel_action(action: String) -> Result<(), String> {
     let bin = cftunnel_bin();
-    match action.as_str() {
-        "up" | "down" => {}
+    let args = match action.as_str() {
+        "up" => vec!["up"],
+        "down" => vec!["down"],
+        "restart" => vec!["restart"],
         _ => return Err(format!("不支持的操作: {action}")),
-    }
+    };
     let output = Command::new(&bin)
-        .arg(&action)
+        .args(&args)
         .output()
         .map_err(|e| format!("执行 cftunnel {action} 失败: {e}"))?;
 

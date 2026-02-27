@@ -3,14 +3,13 @@
  * 开发阶段用 mock 数据，Tauri 环境用 invoke
  */
 
-const isTauri = !!window.__TAURI__
+const isTauri = !!window.__TAURI_INTERNALS__
 
 async function invoke(cmd, args = {}) {
   if (isTauri) {
     const { invoke: tauriInvoke } = await import('@tauri-apps/api/core')
     return tauriInvoke(cmd, args)
   }
-  // 开发模式 mock
   return mockInvoke(cmd, args)
 }
 
@@ -19,12 +18,6 @@ function mockInvoke(cmd, args) {
   const mocks = {
     get_services_status: () => [
       { label: 'ai.openclaw.gateway', pid: null, running: false, description: 'OpenClaw Gateway' },
-      { label: 'com.cftunnel.cloudflared', pid: 35218, running: true, description: 'cftunnel 隧道服务' },
-      { label: 'com.openclaw.guardian.watch', pid: 55290, running: true, description: '健康监控 (60s)' },
-      { label: 'com.openclaw.guardian.backup', pid: null, running: false, description: '配置备份 (3600s)' },
-      { label: 'com.openclaw.watchdog', pid: null, running: false, description: '看门狗 (120s)' },
-      { label: 'com.openclaw.webhook-router', pid: 38983, running: true, description: 'Webhook 路由' },
-      { label: 'com.openclaw.webhook-tunnel', pid: null, running: false, description: 'Webhook SSH 隧道' },
     ],
     get_version_info: () => ({
       current: '2026.2.23',
@@ -38,7 +31,7 @@ function mockInvoke(cmd, args) {
         providers: {
           'newapi-claude': {
             baseUrl: 'http://192.168.1.14:30080/v1',
-            apiType: 'openai',
+            api: 'openai-completions',
             models: [
               { id: 'claude-opus-4-6' },
               { id: 'claude-sonnet-4-5' },
@@ -103,7 +96,11 @@ function mockInvoke(cmd, args) {
     stop_service: () => true,
     restart_service: () => true,
     reload_gateway: () => 'Gateway 已重载',
-    test_model: ({ base_url, model_id }) => `模型 ${model_id} 连通正常 (mock)`,
+    upgrade_openclaw: () => '升级成功，当前版本: 2026.2.26-zh.3 (mock)',
+    install_gateway: () => 'Gateway 服务已安装 (mock)',
+    uninstall_gateway: () => 'Gateway 服务已卸载 (mock)',
+    test_model: ({ modelId }) => `模型 ${modelId} 连通正常 (mock)`,
+    list_remote_models: () => ['gpt-4o', 'gpt-4o-mini', 'gpt-4-turbo', 'gpt-3.5-turbo', 'o3-mini', 'dall-e-3', 'text-embedding-3-small'],
     write_env_file: () => true,
     list_backups: () => [
       { name: 'openclaw-20260226-143000.json', size: 8542, created_at: 1740577800 },
@@ -144,7 +141,11 @@ export const api = {
   readMcpConfig: () => invoke('read_mcp_config'),
   writeMcpConfig: (config) => invoke('write_mcp_config', { config }),
   reloadGateway: () => invoke('reload_gateway'),
-  testModel: (baseUrl, apiKey, modelId) => invoke('test_model', { base_url: baseUrl, api_key: apiKey, model_id: modelId }),
+  upgradeOpenclaw: () => invoke('upgrade_openclaw'),
+  installGateway: () => invoke('install_gateway'),
+  uninstallGateway: () => invoke('uninstall_gateway'),
+  testModel: (baseUrl, apiKey, modelId) => invoke('test_model', { baseUrl, apiKey, modelId }),
+  listRemoteModels: (baseUrl, apiKey) => invoke('list_remote_models', { baseUrl, apiKey }),
 
   // 日志
   readLogTail: (logName, lines = 100) => invoke('read_log_tail', { logName, lines }),
@@ -153,7 +154,7 @@ export const api = {
   // 记忆文件
   listMemoryFiles: (category) => invoke('list_memory_files', { category }),
   readMemoryFile: (path) => invoke('read_memory_file', { path }),
-  writeMemoryFile: (path, content) => invoke('write_memory_file', { path, content }),
+  writeMemoryFile: (path, content, category) => invoke('write_memory_file', { path, content, category: category || 'memory' }),
   deleteMemoryFile: (path) => invoke('delete_memory_file', { path }),
   exportMemoryZip: (category) => invoke('export_memory_zip', { category }),
 

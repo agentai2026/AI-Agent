@@ -3,18 +3,13 @@ use std::fs;
 use std::io::Write;
 use std::path::PathBuf;
 
-fn openclaw_dir() -> PathBuf {
-    dirs::home_dir()
-        .unwrap_or_default()
-        .join(".openclaw")
-}
-
-fn memory_dir(category: &str) -> PathBuf {
+fn memory_dir(category: &str) -> std::path::PathBuf {
+    let base = super::openclaw_dir();
     match category {
-        "memory" => openclaw_dir().join("workspace").join("memory"),
-        "archive" => openclaw_dir().join("workspace-memory"),
-        "core" => openclaw_dir().join("workspace"),
-        _ => openclaw_dir().join("workspace").join("memory"),
+        "memory" => base.join("workspace").join("memory"),
+        "archive" => base.join("workspace-memory"),
+        "core" => base.join("workspace"),
+        _ => base.join("workspace").join("memory"),
     }
 }
 
@@ -62,8 +57,8 @@ fn collect_files(
 
 #[tauri::command]
 pub fn read_memory_file(path: String) -> Result<String, String> {
-    // 安全检查：路径不能包含 ..
-    if path.contains("..") {
+    // 安全检查：路径不能包含 ..、绝对路径、空字节
+    if path.contains("..") || path.starts_with('/') || path.contains('\0') {
         return Err("非法路径".to_string());
     }
 
@@ -85,36 +80,32 @@ pub fn read_memory_file(path: String) -> Result<String, String> {
 }
 
 #[tauri::command]
-pub fn write_memory_file(path: String, content: String) -> Result<(), String> {
-    if path.contains("..") {
+pub fn write_memory_file(path: String, content: String, category: Option<String>) -> Result<(), String> {
+    // 安全检查：路径不能包含 ..、绝对路径、空字节
+    if path.contains("..") || path.starts_with('/') || path.contains('\0') {
         return Err("非法路径".to_string());
     }
 
-    let candidates = [
-        memory_dir("memory").join(&path),
-        memory_dir("archive").join(&path),
-        memory_dir("core").join(&path),
-    ];
+    let cat = category.unwrap_or_else(|| "memory".to_string());
+    let base = match cat.as_str() {
+        "memory" => super::openclaw_dir().join("workspace").join("memory"),
+        "archive" => super::openclaw_dir().join("workspace-memory"),
+        "core" => super::openclaw_dir().join("workspace"),
+        _ => return Err(format!("未知分类: {cat}")),
+    };
 
-    for candidate in &candidates {
-        if candidate.exists() {
-            return fs::write(candidate, &content)
-                .map_err(|e| format!("写入失败: {e}"));
-        }
+    let full_path = base.join(&path);
+    // 确保父目录存在
+    if let Some(parent) = full_path.parent() {
+        fs::create_dir_all(parent).map_err(|e| format!("创建目录失败: {e}"))?;
     }
-
-    // 默认写入 memory 目录
-    let target = memory_dir("memory").join(&path);
-    if let Some(parent) = target.parent() {
-        let _ = fs::create_dir_all(parent);
-    }
-    fs::write(&target, &content)
-        .map_err(|e| format!("写入失败: {e}"))
+    fs::write(&full_path, &content).map_err(|e| format!("写入失败: {e}"))
 }
 
 #[tauri::command]
 pub fn delete_memory_file(path: String) -> Result<(), String> {
-    if path.contains("..") {
+    // 安全检查：路径不能包含 ..、绝对路径、空字节
+    if path.contains("..") || path.starts_with('/') || path.contains('\0') {
         return Err("非法路径".to_string());
     }
 

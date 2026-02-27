@@ -31,6 +31,3 @@ const content = document.getElementById('content')
 
 renderSidebar(sidebar)
 initRouter(content)
-
-// 路由变化时刷新侧边栏高亮
-window.addEventListener('hashchange', () => renderSidebar(sidebar))

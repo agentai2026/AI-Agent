@@ -5,7 +5,15 @@
 import { api } from '../lib/tauri-api.js'
 import { toast } from '../components/toast.js'
 
-let _delegated = false
+// HTML 转义，防止 XSS
+function escapeHtml(str) {
+  if (!str) return ''
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
 
 export async function render() {
   const page = document.createElement('div')
@@ -18,10 +26,12 @@ export async function render() {
     </div>
     <div id="cftunnel-card" class="config-section">
       <div class="config-section-title">cftunnel 内网穿透</div>
+      <div class="form-hint" style="margin-bottom:var(--space-md)">通过 Cloudflare Tunnel 将本地服务暴露到公网，无需公网 IP 和端口映射。</div>
       <div id="cftunnel-content">加载中...</div>
     </div>
     <div id="clawapp-card" class="config-section">
       <div class="config-section-title">ClawApp 移动客户端</div>
+      <div class="form-hint" style="margin-bottom:var(--space-md)">基于 LobeChat 的 AI 对话客户端，通过 Gateway 连接模型服务。支持本地和外网访问。</div>
       <div id="clawapp-content">加载中...</div>
     </div>
   `
@@ -150,9 +160,6 @@ function renderClawapp(el, s) {
 // ===== 事件绑定 =====
 
 function bindEvents(page) {
-  if (_delegated) return
-  _delegated = true
-
   page.addEventListener('click', async (e) => {
     const btn = e.target.closest('[data-action]')
     if (!btn) return
@@ -206,7 +213,7 @@ async function handleCftunnelLogs(page) {
           <span style="font-weight:600;font-size:var(--font-size-sm)">最近日志</span>
           <button class="btn btn-secondary btn-sm" data-action="cftunnel-logs">收起</button>
         </div>
-        <pre class="log-viewer">${logs || '暂无日志'}</pre>
+        <pre class="log-viewer">${escapeHtml(logs) || '暂无日志'}</pre>
       </div>
     `
   } catch (e) {

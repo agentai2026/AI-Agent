@@ -21,6 +21,10 @@ pub fn run() {
             config::delete_backup,
             config::reload_gateway,
             config::test_model,
+            config::list_remote_models,
+            config::upgrade_openclaw,
+            config::install_gateway,
+            config::uninstall_gateway,
             // 服务
             service::get_services_status,
             service::start_service,
