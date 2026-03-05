@@ -5,6 +5,13 @@
 格式遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.4.4] - 2026-03-06
+
+### 新增 (Features)
+
+- **Agent 工具权限配置** — Gateway 配置页新增「工具权限」区域，可选完整权限（full）/ 受限模式（limited）/ 禁用工具（none），以及会话可见性设置
+- **工具权限自愈** — 安装/升级后自动设置 `tools.profile: "full"` + `tools.sessions.visibility: "all"`，老用户打开面板也会自动补全，避免 OpenClaw 2026.3.2 新版默认关闭工具导致不好用
+
 ## [0.4.3] - 2026-03-06
 
 ### 修复 (Bug Fixes)

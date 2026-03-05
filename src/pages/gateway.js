@@ -181,6 +181,57 @@ function renderConfig(page, state) {
       </div>
     </div>
 
+    <div class="config-section">
+      <div class="config-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+        Agent 工具权限
+      </div>
+      <div class="form-group" style="margin-bottom:var(--space-md)">
+        <label class="form-label">工具调用权限</label>
+        <div class="gw-option-cards">
+          <label class="gw-option-card ${(gw.tools?.profile || 'full') === 'full' ? 'selected' : ''}" data-tools-profile="full">
+            <input type="radio" name="gw-tools-profile" value="full" ${(gw.tools?.profile || 'full') === 'full' ? 'checked' : ''} hidden>
+            <div class="gw-option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="gw-option-text">
+              <div class="gw-option-title">完整权限</div>
+              <div class="gw-option-desc">Agent 可使用所有工具（推荐）</div>
+            </div>
+          </label>
+          <label class="gw-option-card ${gw.tools?.profile === 'limited' ? 'selected' : ''}" data-tools-profile="limited">
+            <input type="radio" name="gw-tools-profile" value="limited" ${gw.tools?.profile === 'limited' ? 'checked' : ''} hidden>
+            <div class="gw-option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+            </div>
+            <div class="gw-option-text">
+              <div class="gw-option-title">受限模式</div>
+              <div class="gw-option-desc">仅允许安全工具，禁用文件/命令操作</div>
+            </div>
+          </label>
+          <label class="gw-option-card ${gw.tools?.profile === 'none' ? 'selected' : ''}" data-tools-profile="none">
+            <input type="radio" name="gw-tools-profile" value="none" ${gw.tools?.profile === 'none' ? 'checked' : ''} hidden>
+            <div class="gw-option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            </div>
+            <div class="gw-option-text">
+              <div class="gw-option-title">禁用工具</div>
+              <div class="gw-option-desc">Agent 只能对话，不能调用任何工具</div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">会话可见性</label>
+        <select class="form-input" id="gw-sessions-visibility" style="width:auto;min-width:180px">
+          <option value="all" ${(gw.tools?.sessions?.visibility || 'all') === 'all' ? 'selected' : ''}>所有会话可见</option>
+          <option value="own" ${gw.tools?.sessions?.visibility === 'own' ? 'selected' : ''}>仅自己的会话</option>
+          <option value="none" ${gw.tools?.sessions?.visibility === 'none' ? 'selected' : ''}>不可见</option>
+        </select>
+        <div class="form-hint">控制 Agent 是否能查看其他会话的上下文</div>
+      </div>
+    </div>
+
     <div class="gw-advanced-toggle" id="gw-advanced-toggle">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="6 9 12 15 18 9"/></svg>
       高级选项
@@ -268,6 +319,15 @@ async function saveConfig(page, state) {
   const auth = authMode === 'password'
     ? { mode: 'password', password: authPassword }
     : authToken ? { mode: 'token', token: authToken } : {}
+
+  const toolsProfile = page.querySelector('input[name="gw-tools-profile"]:checked')?.value || 'full'
+  const sessionsVisibility = page.querySelector('#gw-sessions-visibility')?.value || 'all'
+
+  state.config.tools = {
+    ...(state.config.tools || {}),
+    profile: toolsProfile,
+    sessions: { ...(state.config.tools?.sessions || {}), visibility: sessionsVisibility },
+  }
 
   state.config.gateway = {
     ...state.config.gateway,

@@ -287,16 +287,28 @@ function bindEvents(page, nodeOk) {
         modal.appendLog('⚠️ Gateway 安装失败: ' + e)
       }
 
-      // 确保 openclaw.json 有 mode: "local"，否则 Gateway 启动不了
+      // 确保 openclaw.json 有关键默认值，否则 Gateway 启动不了或功能受限
       try {
         const config = await api.readOpenclawConfig()
-        if (config && !config.mode) {
-          config.mode = 'local'
-          await api.writeOpenclawConfig(config)
-          modal.appendLog('✅ 已设置 Gateway 运行模式为 local')
+        if (config) {
+          let patched = false
+          if (!config.mode) {
+            config.mode = 'local'
+            patched = true
+            modal.appendLog('✅ 已设置 Gateway 运行模式为 local')
+          }
+          if (!config.tools || config.tools.profile !== 'full') {
+            config.tools = { profile: 'full', sessions: { visibility: 'all' }, ...(config.tools || {}) }
+            config.tools.profile = 'full'
+            if (!config.tools.sessions) config.tools.sessions = {}
+            config.tools.sessions.visibility = 'all'
+            patched = true
+            modal.appendLog('✅ 已开启 Agent 工具全部权限')
+          }
+          if (patched) await api.writeOpenclawConfig(config)
         }
       } catch (e) {
-        modal.appendLog('⚠️ 配置 mode 失败: ' + e)
+        modal.appendLog('⚠️ 自动配置失败: ' + e)
       }
 
       toast('OpenClaw 安装成功', 'success')

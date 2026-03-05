@@ -76,10 +76,18 @@ async function loadDashboardData(page) {
   if (servicesRes.status === 'rejected') toast('服务状态加载失败', 'error')
   if (versionRes.status === 'rejected') toast('版本信息加载失败', 'error')
 
-  // 自愈：如果 openclaw.json 没有 mode 字段，自动设为 local，否则 Gateway 启动不了
-  if (config && !config.mode) {
-    config.mode = 'local'
-    api.writeOpenclawConfig(config).catch(() => {})
+  // 自愈：补全关键默认值
+  if (config) {
+    let patched = false
+    if (!config.mode) { config.mode = 'local'; patched = true }
+    if (!config.tools || config.tools.profile !== 'full') {
+      config.tools = { profile: 'full', sessions: { visibility: 'all' }, ...(config.tools || {}) }
+      config.tools.profile = 'full'
+      if (!config.tools.sessions) config.tools.sessions = {}
+      config.tools.sessions.visibility = 'all'
+      patched = true
+    }
+    if (patched) api.writeOpenclawConfig(config).catch(() => {})
   }
 
   renderStatCards(page, services, version, [], config, null)
