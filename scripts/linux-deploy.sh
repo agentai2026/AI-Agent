@@ -145,13 +145,14 @@ install_clawpanel() {
     cd "$INSTALL_DIR"
     npx vite build
     echo "✅ ClawPanel 安装完成: $INSTALL_DIR"
+    echo "✅ 启动命令: npm run serve"
 }
 
 # 创建 systemd 服务
 setup_systemd() {
     if ! command -v systemctl &> /dev/null; then
         echo "⚠️  systemd 不可用，请手动启动："
-        echo "   cd $INSTALL_DIR && npx vite --port $PANEL_PORT --host 0.0.0.0"
+        echo "   cd $INSTALL_DIR && npm run serve -- --port $PANEL_PORT"
         return 0
     fi
 
@@ -168,7 +169,7 @@ After=network.target
 Type=simple
 User=$(whoami)
 WorkingDirectory=$INSTALL_DIR
-ExecStart=$(which npx) vite preview --port $PANEL_PORT --host 0.0.0.0
+ExecStart=$(which node) scripts/serve.js --port $PANEL_PORT
 Restart=on-failure
 RestartSec=5
 Environment=NODE_ENV=production
@@ -189,7 +190,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=$INSTALL_DIR
-ExecStart=$(which npx) vite preview --port $PANEL_PORT --host 0.0.0.0
+ExecStart=$(which node) scripts/serve.js --port $PANEL_PORT
 Restart=on-failure
 RestartSec=5
 Environment=NODE_ENV=production

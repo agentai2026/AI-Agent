@@ -50,15 +50,20 @@ ClawPanel 是 [OpenClaw](https://github.com/1186258278/OpenClawChineseTranslatio
 
 > 不确定芯片类型？点击左上角  → 关于本机，查看「芯片」一栏。
 
-安装方式：打开 `.dmg` 文件，将 ClawPanel 拖入「应用程序」文件夹。
+安装方式：打开 `.dmg` 文件，**先将 ClawPanel 拖入「应用程序」文件夹**，再双击打开。
 
-> **⚠️ 首次打开提示"无法验证开发者"？** 由于应用未签名，macOS 会拦截。请在终端执行以下命令解除限制：
+> **⚠️ 首次打开提示"已损坏"或"无法验证开发者"？** 由于应用未签名，macOS 会拦截。请在终端执行以下命令解除限制：
 >
 > ```bash
 > sudo xattr -rd com.apple.quarantine /Applications/ClawPanel.app
 > ```
 >
 > 或者前往「系统设置 → 隐私与安全性」，找到 ClawPanel 点击「仍要打开」。
+>
+> 提示 `No such file`？说明没有拖入应用程序文件夹。请先拖入，或改用：
+> ```bash
+> sudo xattr -rd com.apple.quarantine ~/Downloads/ClawPanel.app
+> ```
 
 ### Windows
 
@@ -96,7 +101,7 @@ docker run -d --name clawpanel --restart unless-stopped \
   sh -c "apt-get update && apt-get install -y git && \
     npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com && \
     git clone https://github.com/qingchencloud/clawpanel.git /app && \
-    cd /app && npm install && npx vite --port 1420 --host 0.0.0.0"
+    cd /app && npm install && npm run build && npm run serve"
 ```
 
 📖 详细教程见 [Docker 部署指南](docs/docker-deploy.md)（含 Compose、自定义镜像、Nginx 反向代理等）

@@ -61,7 +61,13 @@ async function loadRoute() {
     `
     _contentEl.appendChild(spinnerEl)
 
-    mod = await loader()
+    try {
+      mod = await withTimeout(loader(), 15000, '模块加载超时')
+    } catch (e) {
+      console.error('[router] 模块加载失败:', hash, e)
+      if (thisLoad === _loadId) showLoadError(_contentEl, hash, e)
+      return
+    }
     _moduleCache[hash] = mod
   } else {
     _contentEl.innerHTML = ''
@@ -70,7 +76,17 @@ async function loadRoute() {
   // 如果加载期间路由又变了，丢弃本次结果
   if (thisLoad !== _loadId) return
 
-  const page = mod.render ? await mod.render() : mod.default ? await mod.default() : mod
+  let page
+  try {
+    const renderFn = mod.render || mod.default
+    page = renderFn ? await withTimeout(renderFn(), 15000, '页面渲染超时') : mod
+  } catch (e) {
+    console.error('[router] 页面渲染失败:', hash, e)
+    // 渲染失败时清除缓存，下次重试时重新加载模块
+    delete _moduleCache[hash]
+    if (thisLoad === _loadId) showLoadError(_contentEl, hash, e)
+    return
+  }
   if (thisLoad !== _loadId) return
 
   // 插入页面内容
@@ -88,6 +104,31 @@ async function loadRoute() {
   document.querySelectorAll('.nav-item').forEach(item => {
     item.classList.toggle('active', item.dataset.route === hash)
   })
+}
+
+function withTimeout(promise, ms, msg) {
+  return Promise.race([
+    promise,
+    new Promise((_, reject) => setTimeout(() => reject(new Error(msg)), ms))
+  ])
+}
+
+function showLoadError(container, hash, error) {
+  const name = hash.replace('/', '') || 'unknown'
+  container.innerHTML = `
+    <div class="page-loader">
+      <div style="color:var(--error,#ef4444);margin-bottom:12px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+      </div>
+      <div class="page-loader-text" style="color:var(--text-primary)">页面加载失败</div>
+      <div style="color:var(--text-tertiary);font-size:12px;margin:8px 0 16px;max-width:400px;word-break:break-all">${escHtml(String(error?.message || error))}</div>
+      <button onclick="location.hash='${hash}';location.reload()" style="padding:6px 20px;border-radius:6px;border:1px solid var(--border);background:var(--bg-secondary);color:var(--text-primary);cursor:pointer;font-size:13px">重新加载</button>
+    </div>
+  `
+}
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')
 }
 
 export function getCurrentRoute() {

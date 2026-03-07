@@ -495,16 +495,55 @@ fn npm_package_name(source: &str) -> &'static str {
     }
 }
 
-/// 执行 npm 全局升级 openclaw（流式推送日志）
+/// 获取指定源的所有可用版本列表（从 npm registry 查询）
 #[tauri::command]
-pub async fn upgrade_openclaw(app: tauri::AppHandle, source: String) -> Result<String, String> {
+pub async fn list_openclaw_versions(source: String) -> Result<Vec<String>, String> {
+    let client = reqwest::Client::builder()
+        .timeout(std::time::Duration::from_secs(10))
+        .build()
+        .map_err(|e| format!("HTTP 初始化失败: {e}"))?;
+    let pkg = npm_package_name(&source)
+        .replace('/', "%2F");
+    let registry = get_configured_registry();
+    let url = format!("{registry}/{pkg}");
+    let resp = client
+        .get(&url)
+        .header("Accept", "application/json")
+        .send()
+        .await
+        .map_err(|e| format!("查询版本失败: {e}"))?;
+    let json: Value = resp
+        .json()
+        .await
+        .map_err(|e| format!("解析响应失败: {e}"))?;
+    let versions = json
+        .get("versions")
+        .and_then(|v| v.as_object())
+        .map(|obj| {
+            let mut vers: Vec<String> = obj.keys().cloned().collect();
+            // 按版本号排序（新版本在前）
+            vers.sort_by(|a, b| {
+                let pa: Vec<u32> = a.split(|c: char| !c.is_ascii_digit()).filter_map(|s| s.parse().ok()).collect();
+                let pb: Vec<u32> = b.split(|c: char| !c.is_ascii_digit()).filter_map(|s| s.parse().ok()).collect();
+                pb.cmp(&pa)
+            });
+            vers
+        })
+        .unwrap_or_default();
+    Ok(versions)
+}
+
+/// 执行 npm 全局安装/升级/降级 openclaw（流式推送日志）
+#[tauri::command]
+pub async fn upgrade_openclaw(app: tauri::AppHandle, source: String, version: Option<String>) -> Result<String, String> {
     use std::io::{BufRead, BufReader};
     use std::process::Stdio;
     use tauri::Emitter;
 
     let current_source = detect_installed_source();
     let pkg_name = npm_package_name(&source);
-    let pkg = format!("{}@latest", pkg_name);
+    let ver = version.as_deref().unwrap_or("latest");
+    let pkg = format!("{}@{}", pkg_name, ver);
 
     // 切换源时需要卸载旧包，但为避免安装失败导致 CLI 丢失，
     // 先安装新包，成功后再卸载旧包
@@ -652,9 +691,126 @@ pub async fn upgrade_openclaw(app: tauri::AppHandle, source: String) -> Result<S
     }
 
     let new_ver = get_local_version().await.unwrap_or_else(|| "未知".into());
-    let msg = format!("✅ 升级成功，当前版本: {new_ver}");
+    let action = if ver == "latest" { "升级" } else { "安装" };
+    let msg = format!("✅ {action}成功，当前版本: {new_ver}");
     let _ = app.emit("upgrade-log", &msg);
     Ok(msg)
+}
+
+/// 卸载 OpenClaw（npm uninstall + 可选清理配置）
+#[tauri::command]
+pub async fn uninstall_openclaw(
+    app: tauri::AppHandle,
+    clean_config: bool,
+) -> Result<String, String> {
+    use std::io::{BufRead, BufReader};
+    use std::process::Stdio;
+    use tauri::Emitter;
+
+    let source = detect_installed_source();
+    let pkg = npm_package_name(&source);
+
+    // 1. 先停止 Gateway
+    let _ = app.emit("upgrade-log", "正在停止 Gateway...");
+    #[cfg(target_os = "macos")]
+    {
+        let uid = get_uid().unwrap_or(501);
+        let _ = Command::new("launchctl")
+            .args(["bootout", &format!("gui/{uid}/ai.openclaw.gateway")])
+            .output();
+    }
+    #[cfg(not(target_os = "macos"))]
+    {
+        let _ = openclaw_command().args(["gateway", "stop"]).output();
+    }
+
+    // 2. 卸载 Gateway 服务
+    let _ = app.emit("upgrade-log", "正在卸载 Gateway 服务...");
+    #[cfg(not(target_os = "macos"))]
+    {
+        let _ = openclaw_command()
+            .args(["gateway", "uninstall"])
+            .output();
+    }
+
+    // 3. npm uninstall
+    let _ = app.emit("upgrade-log", format!("$ npm uninstall -g {pkg}"));
+    let _ = app.emit("upgrade-progress", 20);
+
+    let mut child = npm_command()
+        .args(["uninstall", "-g", pkg])
+        .stdout(Stdio::piped())
+        .stderr(Stdio::piped())
+        .spawn()
+        .map_err(|e| format!("执行卸载命令失败: {e}"))?;
+
+    let stderr = child.stderr.take();
+    let stdout = child.stdout.take();
+
+    let app2 = app.clone();
+    let handle = std::thread::spawn(move || {
+        if let Some(pipe) = stderr {
+            for line in BufReader::new(pipe).lines().map_while(Result::ok) {
+                let _ = app2.emit("upgrade-log", &line);
+            }
+        }
+    });
+
+    if let Some(pipe) = stdout {
+        for line in BufReader::new(pipe).lines().map_while(Result::ok) {
+            let _ = app.emit("upgrade-log", &line);
+        }
+    }
+
+    let _ = handle.join();
+    let _ = app.emit("upgrade-progress", 60);
+
+    let status = child.wait().map_err(|e| format!("等待进程失败: {e}"))?;
+    if !status.success() {
+        let code = status
+            .code()
+            .map(|c| c.to_string())
+            .unwrap_or("unknown".into());
+        return Err(format!("卸载失败，exit code: {code}"));
+    }
+
+    // 4. 两个包都尝试卸载（确保干净）
+    let other_pkg = if source == "official" {
+        "@qingchencloud/openclaw-zh"
+    } else {
+        "openclaw"
+    };
+    let _ = app.emit("upgrade-log", format!("清理 {other_pkg}..."));
+    let _ = npm_command()
+        .args(["uninstall", "-g", other_pkg])
+        .output();
+    let _ = app.emit("upgrade-progress", 80);
+
+    // 5. 可选：清理配置目录
+    if clean_config {
+        let config_dir = super::openclaw_dir();
+        if config_dir.exists() {
+            let _ = app.emit(
+                "upgrade-log",
+                format!("清理配置目录: {}", config_dir.display()),
+            );
+            if let Err(e) = std::fs::remove_dir_all(&config_dir) {
+                let _ = app.emit(
+                    "upgrade-log",
+                    format!("⚠️ 清理配置目录失败: {e}（可能有文件被占用）"),
+                );
+            }
+        }
+    }
+
+    let _ = app.emit("upgrade-progress", 100);
+    let msg = if clean_config {
+        "✅ OpenClaw 已完全卸载（包括配置文件）"
+    } else {
+        "✅ OpenClaw 已卸载（配置文件保留在 ~/.openclaw/）"
+    };
+    let _ = app.emit("upgrade-log", msg);
+    Ok(msg.into())
 }
 
 /// 自动初始化配置文件（CLI 已装但 openclaw.json 不存在时）

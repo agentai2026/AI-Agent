@@ -26,6 +26,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "tauri": "tauri",
+    "serve": "node scripts/serve.js",
     "version:sync": "node scripts/sync-version.js",
     "version:set": "node scripts/sync-version.js"
   },

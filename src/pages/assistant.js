@@ -134,6 +134,14 @@ ${personality}
 - openclaw gateway install — 安装 Gateway 为系统服务
 - openclaw gateway uninstall — 卸载 Gateway 系统服务
 
+### Skills 管理
+- openclaw skills list — 列出所有 Skills 及其状态
+- openclaw skills info <name> — 查看某个 Skill 详情
+- openclaw skills check — 检查所有 Skills 的依赖是否满足
+- Skill 依赖安装: 根据 install spec 执行 brew/npm/go/uv 安装缺少的命令行工具
+- ClawHub (clawhub.com): 社区 Skill 市场，可搜索和安装新 Skill
+- Skills 目录: 捆绑 Skills 在 openclaw 安装包内，自定义 Skills 放在 ~/.openclaw/skills/<name>/
+
 ### 聊天与调试
 - openclaw chat — 进入交互式聊天
 - openclaw chat -m "消息" — 发送单条消息
@@ -362,6 +370,89 @@ const TOOL_DEFS = {
       },
     },
   ],
+  skills: [
+    {
+      type: 'function',
+      function: {
+        name: 'skills_list',
+        description: '列出所有 OpenClaw Skills 及其状态（可用/缺依赖/已禁用）。返回每个 Skill 的名称、描述、来源、依赖状态、缺少的依赖项、可用的安装选项等信息。',
+        parameters: { type: 'object', properties: {}, required: [] },
+      },
+    },
+    {
+      type: 'function',
+      function: {
+        name: 'skills_info',
+        description: '查看指定 Skill 的详细信息，包括描述、来源、依赖要求、缺少的依赖、安装选项等。',
+        parameters: {
+          type: 'object',
+          properties: {
+            name: { type: 'string', description: 'Skill 名称，如 github、weather、coding-agent' },
+          },
+          required: ['name'],
+        },
+      },
+    },
+    {
+      type: 'function',
+      function: {
+        name: 'skills_check',
+        description: '检查所有 Skills 的依赖状态，返回哪些可用、哪些缺少依赖、哪些已禁用的汇总信息。',
+        parameters: { type: 'object', properties: {}, required: [] },
+      },
+    },
+    {
+      type: 'function',
+      function: {
+        name: 'skills_install_dep',
+        description: '安装 Skill 缺少的依赖。根据 Skill 的 install spec 执行对应的包管理器命令（brew/npm/go/uv）。安装完成后会自动生效。',
+        parameters: {
+          type: 'object',
+          properties: {
+            kind: { type: 'string', enum: ['brew', 'node', 'go', 'uv'], description: '安装类型' },
+            spec: {
+              type: 'object',
+              description: '安装参数。brew 需要 formula，node 需要 package，go 需要 module，uv 需要 package。',
+              properties: {
+                formula: { type: 'string', description: 'Homebrew formula 名称' },
+                package: { type: 'string', description: 'npm 或 uv 包名' },
+                module: { type: 'string', description: 'Go module 路径' },
+              },
+            },
+          },
+          required: ['kind', 'spec'],
+        },
+      },
+    },
+    {
+      type: 'function',
+      function: {
+        name: 'skills_clawhub_search',
+        description: '在 ClawHub 社区市场中搜索 Skills。返回匹配的 Skill 列表（slug 和描述）。',
+        parameters: {
+          type: 'object',
+          properties: {
+            query: { type: 'string', description: '搜索关键词' },
+          },
+          required: ['query'],
+        },
+      },
+    },
+    {
+      type: 'function',
+      function: {
+        name: 'skills_clawhub_install',
+        description: '从 ClawHub 社区市场安装一个 Skill 到本地 ~/.openclaw/skills/ 目录。',
+        parameters: {
+          type: 'object',
+          properties: {
+            slug: { type: 'string', description: 'ClawHub 上的 Skill slug（名称标识）' },
+          },
+          required: ['slug'],
+        },
+      },
+    },
+  ],
   fileOps: [
     {
       type: 'function',
@@ -411,7 +502,7 @@ const TOOL_DEFS = {
 
 // 危险工具（需要用户确认）
 const INTERACTIVE_TOOLS = new Set(['ask_user']) // 交互式工具，不走 confirmToolCall
-const DANGEROUS_TOOLS = new Set(['run_command', 'write_file'])
+const DANGEROUS_TOOLS = new Set(['run_command', 'write_file', 'skills_install_dep', 'skills_clawhub_install'])
 
 // 安全围栏：极端危险命令模式（任何模式都必须确认，包括无限模式）
 const CRITICAL_PATTERNS = [
@@ -596,6 +687,27 @@ const BUILTIN_SKILLS = [
    - 创建 PR 的链接
 7. 如果用户不熟悉 Git，给出每一步的详细命令`,
   },
+  {
+    id: 'skills-manager',
+    icon: icon('box', 16),
+    name: 'Skills 管理',
+    desc: '查看、检查依赖、安装 Skills',
+    tools: ['skills'],
+    prompt: `请帮我管理 OpenClaw 的 Skills。
+
+具体操作：
+1. 调用 skills_list 获取所有 Skills 及其状态
+2. 汇总展示：多少个可用、多少个缺依赖、多少个已禁用
+3. 对于缺依赖的 Skills，列出每个缺少的依赖和对应的安装方法
+4. 询问用户是否要安装某些缺少的依赖（用 ask_user 列出选项）
+5. 如果用户选择安装，调用 skills_install_dep 执行安装
+6. 安装完成后再次调用 skills_list 确认状态变化
+
+注意：
+- 安装依赖可能需要特定的包管理器（brew 仅限 macOS，Windows 用 npm/go 等）
+- 先调用 get_system_info 判断操作系统，过滤出适合当前平台的安装选项
+- 如果用户想从 ClawHub 搜索安装新 Skill，使用 skills_clawhub_search 和 skills_clawhub_install`,
+  },
 ]
 
 function currentMode() {
@@ -622,6 +734,13 @@ function getEnabledTools() {
     } else {
       tools.push(...TOOL_DEFS.fileOps)
     }
+  }
+
+  // Skills 管理工具：始终启用（规划模式下排除安装操作）
+  if (mode.readOnly) {
+    tools.push(...TOOL_DEFS.skills.filter(td => !['skills_install_dep', 'skills_clawhub_install'].includes(td.function.name)))
+  } else {
+    tools.push(...TOOL_DEFS.skills)
   }
 
   return tools
@@ -1724,6 +1843,40 @@ async function executeTool(name, args) {
       return await api.assistantWebSearch(args.query, args.max_results)
     case 'fetch_url':
       return await api.assistantFetchUrl(args.url)
+    case 'skills_list': {
+      const data = await api.skillsList()
+      const skills = data?.skills || []
+      const eligible = skills.filter(s => s.eligible && !s.disabled)
+      const missing = skills.filter(s => !s.eligible && !s.disabled)
+      const disabled = skills.filter(s => s.disabled)
+      let summary = `共 ${skills.length} 个 Skills: ${eligible.length} 可用, ${missing.length} 缺依赖, ${disabled.length} 已禁用\n\n`
+      if (eligible.length) summary += `## 可用 (${eligible.length})\n` + eligible.map(s => `- ${s.emoji || '📦'} **${s.name}**: ${s.description || ''}${s.bundled ? ' [捆绑]' : ''}`).join('\n') + '\n\n'
+      if (missing.length) summary += `## 缺依赖 (${missing.length})\n` + missing.map(s => {
+        const m = s.missing || {}
+        const deps = [...(m.bins||[]), ...(m.env||[]).map(e=>'$'+e), ...(m.config||[])].join(', ')
+        const installs = (s.install||[]).map(i => i.label).join(' / ')
+        return `- ${s.emoji || '📦'} **${s.name}**: 缺少 ${deps}${installs ? ' → 可通过: ' + installs : ''}`
+      }).join('\n') + '\n\n'
+      if (disabled.length) summary += `## 已禁用 (${disabled.length})\n` + disabled.map(s => `- ${s.emoji || '📦'} **${s.name}**: ${s.description || ''}`).join('\n') + '\n'
+      return summary
+    }
+    case 'skills_info':
+      return JSON.stringify(await api.skillsInfo(args.name), null, 2)
+    case 'skills_check':
+      return JSON.stringify(await api.skillsCheck(), null, 2)
+    case 'skills_install_dep': {
+      const result = await api.skillsInstallDep(args.kind, args.spec)
+      return result?.success ? `安装成功\n${result.output || ''}` : '安装失败'
+    }
+    case 'skills_clawhub_search': {
+      const items = await api.skillsClawHubSearch(args.query)
+      if (!items?.length) return '未找到匹配的 Skill'
+      return items.map(i => `- **${i.slug}**: ${i.description || '无描述'}`).join('\n')
+    }
+    case 'skills_clawhub_install': {
+      const result = await api.skillsClawHubInstall(args.slug)
+      return result?.success ? `Skill "${args.slug}" 安装成功\n${result.output || ''}` : '安装失败'
+    }
     default:
       return `未知工具: ${name}`
   }
@@ -2104,8 +2257,8 @@ function renderToolBlocks(toolHistory) {
     // ask_user 工具不显示在工具块中（它有自己的交互卡片）
     if (tc.name === 'ask_user') return ''
 
-    const tcIcon = { run_command: icon('terminal', 14), write_file: icon('edit', 14), read_file: icon('file', 14), list_directory: icon('folder', 14), get_system_info: icon('monitor', 14), list_processes: icon('list', 14), check_port: icon('plug', 14) }[tc.name] || icon('wrench', 14)
-    const label = { run_command: '执行命令', read_file: '读取文件', write_file: '写入文件', list_directory: '列出目录', get_system_info: '系统信息', list_processes: '进程列表', check_port: '端口检测' }[tc.name] || tc.name
+    const tcIcon = { run_command: icon('terminal', 14), write_file: icon('edit', 14), read_file: icon('file', 14), list_directory: icon('folder', 14), get_system_info: icon('monitor', 14), list_processes: icon('list', 14), check_port: icon('plug', 14), skills_list: icon('box', 14), skills_info: icon('box', 14), skills_check: icon('box', 14), skills_install_dep: icon('download', 14), skills_clawhub_search: icon('search', 14), skills_clawhub_install: icon('download', 14) }[tc.name] || icon('wrench', 14)
+    const label = { run_command: '执行命令', read_file: '读取文件', write_file: '写入文件', list_directory: '列出目录', get_system_info: '系统信息', list_processes: '进程列表', check_port: '端口检测', skills_list: 'Skills 列表', skills_info: 'Skill 详情', skills_check: 'Skills 检查', skills_install_dep: '安装依赖', skills_clawhub_search: '搜索 ClawHub', skills_clawhub_install: '安装 Skill' }[tc.name] || tc.name
     const argsStr = tc.name === 'run_command' ? escHtml(tc.args.command || '')
       : tc.name === 'read_file' ? escHtml(tc.args.path || '')
       : tc.name === 'write_file' ? escHtml(tc.args.path || '')
@@ -2113,11 +2266,16 @@ function renderToolBlocks(toolHistory) {
       : tc.name === 'get_system_info' ? ''
       : tc.name === 'list_processes' ? escHtml(tc.args.filter || '全部')
       : tc.name === 'check_port' ? escHtml(String(tc.args.port || ''))
+      : tc.name === 'skills_info' ? escHtml(tc.args.name || '')
+      : tc.name === 'skills_install_dep' ? escHtml(`${tc.args.kind}: ${tc.args.spec?.formula || tc.args.spec?.package || tc.args.spec?.module || ''}`)
+      : tc.name === 'skills_clawhub_search' ? escHtml(tc.args.query || '')
+      : tc.name === 'skills_clawhub_install' ? escHtml(tc.args.slug || '')
+      : ['skills_list', 'skills_check'].includes(tc.name) ? ''
       : escHtml(JSON.stringify(tc.args))
 
     if (tc.pending) {
       return `<div class="ast-tool-block pending">
-        <div class="ast-tool-summary">${icon} <strong>${label}</strong> <code>${argsStr}</code> <span class="ast-tool-status"><span class="ast-typing">执行中...</span></span></div>
+        <div class="ast-tool-summary">${tcIcon} <strong>${label}</strong> <code>${argsStr}</code> <span class="ast-tool-status"><span class="ast-typing">执行中...</span></span></div>
       </div>`
     }
 
@@ -2125,7 +2283,7 @@ function renderToolBlocks(toolHistory) {
     const statusLabel = tc.approved === false ? '已拒绝' : '已执行'
     const resultPreview = (tc.result || '').length > 500 ? tc.result.slice(0, 500) + '...' : (tc.result || '')
     return `<details class="ast-tool-block ${statusClass}">
-      <summary class="ast-tool-summary">${icon} <strong>${label}</strong> <code>${argsStr}</code> <span class="ast-tool-status">${statusLabel}</span></summary>
+      <summary class="ast-tool-summary">${tcIcon} <strong>${label}</strong> <code>${argsStr}</code> <span class="ast-tool-status">${statusLabel}</span></summary>
       <pre class="ast-tool-result">${escHtml(resultPreview)}</pre>
     </details>`
   }).join('')

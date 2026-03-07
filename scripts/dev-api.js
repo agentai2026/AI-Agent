@@ -840,16 +840,50 @@ const handlers = {
     return execSync('openclaw gateway install 2>&1', { windowsHide: true }).toString() || 'Gateway 服务已安装'
   },
 
-  upgrade_openclaw({ source = 'chinese' } = {}) {
+  async list_openclaw_versions({ source = 'chinese' } = {}) {
+    const pkg = source === 'official' ? 'openclaw' : '@qingchencloud/openclaw-zh'
+    const encodedPkg = pkg.replace('/', '%2F')
+    const registry = 'https://registry.npmmirror.com'
+    try {
+      const resp = await fetch(`${registry}/${encodedPkg}`, { headers: { 'Accept': 'application/json' }, signal: AbortSignal.timeout(10000) })
+      const data = await resp.json()
+      const versions = Object.keys(data.versions || {})
+      versions.sort((a, b) => {
+        const pa = a.split(/[^0-9]/).filter(Boolean).map(Number)
+        const pb = b.split(/[^0-9]/).filter(Boolean).map(Number)
+        for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+          if ((pb[i] || 0) !== (pa[i] || 0)) return (pb[i] || 0) - (pa[i] || 0)
+        }
+        return 0
+      })
+      return versions
+    } catch (e) {
+      throw new Error('查询版本失败: ' + e.message)
+    }
+  },
+
+  upgrade_openclaw({ source = 'chinese', version } = {}) {
     const OPENCLAW_DIR = path.join(homedir(), '.openclaw')
     const pkg = source === 'official' ? 'openclaw' : '@qingchencloud/openclaw-zh'
+    const ver = version || 'latest'
     const npmBin = isWindows ? 'npm.cmd' : 'npm'
     try {
-      const out = execSync(`${npmBin} install ${pkg}@latest --prefix "${OPENCLAW_DIR}" 2>&1`, { timeout: 120000, windowsHide: true }).toString()
-      return `升级完成 (${source})\n${out.slice(-200)}`
+      const out = execSync(`${npmBin} install ${pkg}@${ver} --prefix "${OPENCLAW_DIR}" 2>&1`, { timeout: 120000, windowsHide: true }).toString()
+      const action = ver === 'latest' ? '升级' : '安装'
+      return `${action}完成 (${pkg}@${ver})\n${out.slice(-200)}`
     } catch (e) {
-      throw new Error('升级失败: ' + (e.stderr?.toString() || e.message).slice(-300))
+      throw new Error('安装失败: ' + (e.stderr?.toString() || e.message).slice(-300))
     }
+  },
+
+  uninstall_openclaw({ cleanConfig = false } = {}) {
+    const npmBin = isWindows ? 'npm.cmd' : 'npm'
+    try { execSync(`${npmBin} uninstall -g openclaw 2>&1`, { timeout: 60000, windowsHide: true }) } catch {}
+    try { execSync(`${npmBin} uninstall -g @qingchencloud/openclaw-zh 2>&1`, { timeout: 60000, windowsHide: true }) } catch {}
+    if (cleanConfig && fs.existsSync(OPENCLAW_DIR)) {
+      try { fs.rmSync(OPENCLAW_DIR, { recursive: true, force: true }) } catch {}
+    }
+    return cleanConfig ? 'OpenClaw 已完全卸载（包括配置文件）' : 'OpenClaw 已卸载（配置文件保留）'
   },
 
   uninstall_gateway() {
@@ -903,86 +937,85 @@ const handlers = {
     return true
   },
 
-  clawhub_trending() {
-    const fallback = [
-      { slug: 'agent-browser', displayName: 'Agent Browser', summary: '浏览器自动化 CLI，支持点击、输入、抓取和截图。', author: 'TheSethRose', downloadsText: '73.9k', url: 'https://clawhub.ai/TheSethRose/agent-browser', source: 'clawhub' },
-      { slug: 'github', displayName: 'Github', summary: '通过 gh CLI 与 GitHub issues、PR、CI 交互。', author: 'steipete', downloadsText: '72.5k', url: 'https://clawhub.ai/steipete/github', source: 'clawhub' },
-      { slug: 'weather', displayName: 'Weather', summary: '获取当前天气和预报，无需 API Key。', author: 'steipete', downloadsText: '61.9k', url: 'https://clawhub.ai/steipete/weather', source: 'clawhub' },
-      { slug: 'find-skills', displayName: 'Find Skills', summary: '帮助用户发现并安装合适的 skills。', author: 'JimLiuxinghai', downloadsText: '99.3k', url: 'https://clawhub.ai/JimLiuxinghai/find-skills', source: 'clawhub' },
-      { slug: 'summarize', displayName: 'Summarize', summary: '总结网页、PDF、图片、音频等内容。', author: 'steipete', downloadsText: '82.7k', url: 'https://clawhub.ai/steipete/summarize', source: 'clawhub' },
-      { slug: 'brave-search', displayName: 'Brave Search', summary: '轻量网页搜索和内容提取。', author: 'steipete', downloadsText: '29.4k', url: 'https://clawhub.ai/steipete/brave-search', source: 'clawhub' },
-    ]
+  // Skills 管理（模拟 openclaw skills CLI JSON 输出）
+  skills_list() {
+    // 尝试真实 CLI
     try {
-      const out = execSync('npx -y clawhub explore --sort downloads --limit 12 --json', { encoding: 'utf8', timeout: 30000 })
-      const data = JSON.parse(out)
-      const items = Array.isArray(data) ? data : (Array.isArray(data?.items) ? data.items : [])
-      const normalized = items
-        .map(item => ({
-          slug: String(item?.slug || '').trim(),
-          displayName: String(item?.displayName || item?.name || item?.slug || '').trim(),
-          summary: String(item?.summary || item?.description || '').trim(),
-          author: String(item?.author?.handle || item?.author || '').trim(),
-          downloadsText: String(item?.stats?.downloadsText || item?.downloadsText || item?.downloads || '').trim(),
-          url: String(item?.url || item?.canonicalUrl || '').trim(),
-          source: 'clawhub'
-        }))
-        .filter(item => item.slug)
-      return normalized.length ? normalized : fallback
+      const out = execSync('npx -y openclaw skills list --json --verbose', { encoding: 'utf8', timeout: 30000 })
+      return JSON.parse(out)
     } catch {
-      return fallback
+      // CLI 不可用时返回 mock 数据
+      return {
+        skills: [
+          { name: 'github', description: 'GitHub operations via gh CLI: issues, PRs, CI runs, code review.', source: 'openclaw-bundled', bundled: true, emoji: '🐙', eligible: true, disabled: false, blockedByAllowlist: false, requirements: { bins: ['gh'], anyBins: [], env: [], config: [], os: [] }, missing: { bins: [], anyBins: [], env: [], config: [], os: [] }, install: [{ id: 'brew', kind: 'brew', label: 'Install GitHub CLI (brew)', bins: ['gh'] }] },
+          { name: 'weather', description: 'Get current weather and forecasts via wttr.in. No API key needed.', source: 'openclaw-bundled', bundled: true, emoji: '🌤️', eligible: true, disabled: false, blockedByAllowlist: false, requirements: { bins: ['curl'], anyBins: [], env: [], config: [], os: [] }, missing: { bins: [], anyBins: [], env: [], config: [], os: [] }, install: [] },
+          { name: 'summarize', description: 'Summarize web pages, PDFs, images, audio and more.', source: 'openclaw-bundled', bundled: true, emoji: '📝', eligible: false, disabled: false, blockedByAllowlist: false, requirements: { bins: [], anyBins: [], env: [], config: [], os: [] }, missing: { bins: [], anyBins: [], env: [], config: [], os: [] }, install: [] },
+          { name: 'slack', description: 'Send and read Slack messages via CLI.', source: 'openclaw-bundled', bundled: true, emoji: '💬', eligible: false, disabled: false, blockedByAllowlist: false, requirements: { bins: ['slack-cli'], anyBins: [], env: [], config: [], os: [] }, missing: { bins: ['slack-cli'], anyBins: [], env: [], config: [], os: [] }, install: [{ id: 'brew', kind: 'brew', label: 'Install Slack CLI (brew)', bins: ['slack-cli'] }] },
+          { name: 'notion', description: 'Create and search Notion pages using the API.', source: 'openclaw-bundled', bundled: true, emoji: '📓', eligible: false, disabled: true, blockedByAllowlist: false, requirements: { bins: [], anyBins: [], env: ['NOTION_API_KEY'], config: [], os: [] }, missing: { bins: [], anyBins: [], env: ['NOTION_API_KEY'], config: [], os: [] }, install: [] },
+        ],
+        source: 'mock',
+        cliAvailable: false,
+      }
     }
   },
-
-  clawhub_search({ query }) {
+  skills_info({ name }) {
+    try {
+      const out = execSync(`npx -y openclaw skills info ${JSON.stringify(name)} --json`, { encoding: 'utf8', timeout: 30000 })
+      return JSON.parse(out)
+    } catch (e) {
+      throw new Error('查看详情失败: ' + (e.message || e))
+    }
+  },
+  skills_check() {
+    try {
+      const out = execSync('npx -y openclaw skills check --json', { encoding: 'utf8', timeout: 30000 })
+      return JSON.parse(out)
+    } catch {
+      return { summary: { total: 0, eligible: 0, disabled: 0, blocked: 0, missingRequirements: 0 }, eligible: [], disabled: [], blocked: [], missingRequirements: [] }
+    }
+  },
+  skills_install_dep({ kind, spec }) {
+    const cmds = {
+      brew: `brew install ${spec?.formula || ''}`,
+      node: `npm install -g ${spec?.package || ''}`,
+      go: `go install ${spec?.module || ''}`,
+      uv: `uv tool install ${spec?.package || ''}`,
+    }
+    const cmd = cmds[kind]
+    if (!cmd) throw new Error(`不支持的安装类型: ${kind}`)
+    try {
+      const out = execSync(cmd, { encoding: 'utf8', timeout: 120000 })
+      return { success: true, output: out.trim() }
+    } catch (e) {
+      throw new Error(`安装失败: ${e.message || e}`)
+    }
+  },
+  skills_clawhub_search({ query }) {
     const q = String(query || '').trim()
     if (!q) return []
-    const out = execSync(`npx -y clawhub search ${JSON.stringify(q)} --limit 12`, { encoding: 'utf8', timeout: 30000 })
-    return out.split('\n')
-      .map(line => line.trim())
-      .filter(line => line && !line.startsWith('-'))
-      .map(line => {
-        const parts = line.split(/\s{2,}/).filter(Boolean)
-        return {
-          slug: parts[0] || '',
-          displayName: parts[1] || parts[0] || '',
-          summary: '',
-          source: 'clawhub'
-        }
-      })
-  },
-
-  clawhub_list_installed() {
-    const skillsDir = path.join(OPENCLAW_DIR, 'skills')
-    if (!fs.existsSync(skillsDir)) fs.mkdirSync(skillsDir, { recursive: true })
     try {
-      const out = execSync('npx -y clawhub list', { cwd: homedir(), encoding: 'utf8', timeout: 30000 })
-      const fromCli = out.split('\n')
+      const out = execSync(`npx -y clawhub search ${JSON.stringify(q)}`, { encoding: 'utf8', timeout: 30000 })
+      return out.split('\n')
         .map(line => line.trim())
-        .filter(line => line && line !== 'No installed skills.')
-        .map(line => ({ slug: line.split(/\s+/)[0], installed: true }))
-      if (fromCli.length) return fromCli
-    } catch {}
-
-    // 兜底：直接扫描 ~/.openclaw/skills 目录，避免 CLI 输出格式变化导致空列表
-    try {
-      return fs.readdirSync(skillsDir, { withFileTypes: true })
-        .filter(entry => entry.isDirectory() || entry.isSymbolicLink())
-        .map(entry => ({ slug: entry.name, installed: true }))
-    } catch {
-      return []
+        .filter(line => line && !line.startsWith('-') && !line.startsWith('Search'))
+        .map(line => {
+          const parts = line.split(/\s{2,}/).filter(Boolean)
+          return { slug: parts[0] || '', description: parts.slice(1).join(' ').trim(), source: 'clawhub' }
+        })
+        .filter(item => item.slug)
+    } catch (e) {
+      throw new Error('搜索失败: ' + (e.message || e))
     }
   },
-
-  clawhub_inspect({ slug }) {
-    const out = execSync(`npx -y clawhub inspect ${JSON.stringify(slug)} --json`, { encoding: 'utf8', timeout: 30000 })
-    return JSON.parse(out)
-  },
-
-  clawhub_install({ slug }) {
+  skills_clawhub_install({ slug }) {
     const skillsDir = path.join(OPENCLAW_DIR, 'skills')
     if (!fs.existsSync(skillsDir)) fs.mkdirSync(skillsDir, { recursive: true })
-    const out = execSync(`npx -y clawhub install ${JSON.stringify(slug)} --workdir .openclaw --dir skills`, { cwd: homedir(), encoding: 'utf8', timeout: 120000 })
-    return { success: true, slug, output: out.trim() }
+    try {
+      const out = execSync(`npx -y clawhub install ${JSON.stringify(slug)}`, { cwd: homedir(), encoding: 'utf8', timeout: 120000 })
+      return { success: true, slug, output: out.trim() }
+    } catch (e) {
+      throw new Error('安装失败: ' + (e.message || e))
+    }
   },
 
   // 扩展工具
@@ -1568,6 +1601,14 @@ const handlers = {
   },
 
   check_panel_update() { return { latest: null, url: 'https://github.com/qingchencloud/clawpanel/releases' } },
+
+  // 前端热更新
+  check_frontend_update() {
+    return { currentVersion: '0.6.0', latestVersion: '0.6.0', hasUpdate: false, compatible: true, updateReady: false, manifest: { version: '0.6.0', minAppVersion: '0.6.0' } }
+  },
+  download_frontend_update() { return { success: true, files: 12, path: path.join(OPENCLAW_DIR, 'clawpanel', 'web-update') } },
+  rollback_frontend_update() { return { success: true } },
+  get_update_status() { return { currentVersion: '0.6.0', updateReady: false, updateVersion: '', updateDir: path.join(OPENCLAW_DIR, 'clawpanel', 'web-update') } },
   write_env_file({ path: p, config }) {
     const expanded = p.startsWith('~/') ? path.join(homedir(), p.slice(2)) : p
     if (!expanded.startsWith(OPENCLAW_DIR)) throw new Error('只允许写入 ~/.openclaw/ 下的文件')
@@ -1790,6 +1831,9 @@ async function _apiMiddleware(req, res, next) {
     res.end(JSON.stringify({ error: e.message || String(e) }))
   }
 }
+
+// 导出供 serve.js 独立部署使用
+export { _initApi, _apiMiddleware }
 
 export function devApiPlugin() {
   let _inited = false

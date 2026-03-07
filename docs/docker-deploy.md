@@ -54,8 +54,8 @@ docker run -d \
     npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com && \
     openclaw init 2>/dev/null || true && \
     git clone https://github.com/qingchencloud/clawpanel.git /app && \
-    cd /app && npm install && \
-    npx vite --port 1420 --host 0.0.0.0"
+    cd /app && npm install && npm run build && \
+    npm run serve"
 ```
 
 访问 `http://服务器IP:1420` 即可使用。
@@ -120,7 +120,9 @@ RUN git clone https://github.com/qingchencloud/clawpanel.git . && \
 
 EXPOSE 1420
 
-CMD ["npx", "vite", "--port", "1420", "--host", "0.0.0.0"]
+RUN npm run build
+
+CMD ["npm", "run", "serve"]
 ```
 
 启动：
@@ -151,7 +153,9 @@ RUN git clone https://github.com/qingchencloud/clawpanel.git . && \
 
 EXPOSE 1420
 
-CMD ["npx", "vite", "--port", "1420", "--host", "0.0.0.0"]
+RUN npm run build
+
+CMD ["npm", "run", "serve"]
 ```
 
 构建并运行：

@@ -10,6 +10,8 @@ pub mod logs;
 pub mod memory;
 pub mod pairing;
 pub mod service;
+pub mod skills;
+pub mod update;
 
 /// 获取 OpenClaw 配置目录 (~/.openclaw/)
 pub fn openclaw_dir() -> PathBuf {

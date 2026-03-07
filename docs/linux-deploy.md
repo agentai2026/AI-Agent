@@ -128,20 +128,27 @@ cd clawpanel
 npm install
 ```
 
-### 4. 启动 ClawPanel Web
+### 4. 构建并启动 ClawPanel Web
 
 ```bash
-npx vite --port 1420 --host 0.0.0.0
+npm run build    # 构建生产版前端
+npm run serve    # 启动 Web 服务器 (默认 0.0.0.0:1420)
+```
+
+自定义端口：
+
+```bash
+npm run serve -- --port 8080
 ```
 
 看到以下输出即为成功：
 
 ```
-  VITE v6.x.x  ready in xxx ms
-
-  ➜  Local:   http://localhost:1420/
-  ➜  Network: http://xxx.xxx.xxx.xxx:1420/
-  [dev-api] 开发 API 已启动，配置目录: /root/.openclaw
+  ┌─────────────────────────────────────────┐
+  │   🦀 ClawPanel Web Server (Headless)    │
+  │   http://localhost:1420/                │
+  └─────────────────────────────────────────┘
+  [api] API 已启动，配置目录: /root/.openclaw
 ```
 
 打开浏览器访问 `http://服务器IP:1420` 即可使用 ClawPanel。
@@ -164,7 +171,7 @@ docker run -d \
   sh -c "apt-get update && apt-get install -y git && \
     npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com && \
     git clone https://github.com/qingchencloud/clawpanel.git /app && \
-    cd /app && npm install && npx vite --port 1420 --host 0.0.0.0"
+    cd /app && npm install && npm run build && npm run serve"
 ```
 
 ---
@@ -204,7 +211,7 @@ After=network.target
 Type=simple
 User=root
 WorkingDirectory=/opt/clawpanel
-ExecStart=/usr/bin/npx vite --port 1420 --host 0.0.0.0
+ExecStart=/usr/bin/node scripts/serve.js
 Restart=on-failure
 RestartSec=5
 Environment=NODE_ENV=production
@@ -236,7 +243,8 @@ sudo journalctl -u clawpanel -f    # 查看日志
 npm install -g pm2
 
 cd /opt/clawpanel
-pm2 start "npx vite --port 1420 --host 0.0.0.0" --name clawpanel
+npm run build
+pm2 start "npm run serve" --name clawpanel
 pm2 save
 pm2 startup    # 开机自启
 ```
@@ -324,7 +332,7 @@ npm install -g @qingchencloud/openclaw-zh@latest --registry https://registry.npm
 lsof -i :1420
 
 # 使用其他端口
-npx vite --port 3000 --host 0.0.0.0
+npm run serve -- --port 3000
 ```
 
 systemd 服务也需要改 ExecStart 中的端口。
@@ -365,7 +373,7 @@ openclaw gateway start &
 
 # 启动 ClawPanel Web
 cd /opt/clawpanel
-npx vite --port 1420 --host 0.0.0.0
+npm run serve
 ```
 
 或者用 systemd 分别创建两个服务。也可以在 ClawPanel 面板中直接点击「启动」按钮管理 Gateway。

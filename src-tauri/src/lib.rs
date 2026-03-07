@@ -3,11 +3,57 @@ mod models;
 mod tray;
 mod utils;
 
-use commands::{agent, assistant, config, device, extensions, logs, memory, pairing, service};
+use commands::{
+    agent, assistant, config, device, extensions, logs, memory, pairing, service, skills, update,
+};
 
 pub fn run() {
+    let hot_update_dir = commands::openclaw_dir()
+        .join("clawpanel")
+        .join("web-update");
+
     tauri::Builder::default()
         .plugin(tauri_plugin_shell::init())
+        .register_uri_scheme_protocol("tauri", move |ctx, request| {
+            let uri_path = request.uri().path();
+            let path = if uri_path == "/" || uri_path.is_empty() {
+                "index.html"
+            } else {
+                uri_path.strip_prefix('/').unwrap_or(uri_path)
+            };
+
+            // 1. 优先检查热更新目录
+            let update_file = hot_update_dir.join(path);
+            if update_file.is_file() {
+                if let Ok(data) = std::fs::read(&update_file) {
+                    return tauri::http::Response::builder()
+                        .header(
+                            tauri::http::header::CONTENT_TYPE,
+                            update::mime_from_path(path),
+                        )
+                        .body(data)
+                        .unwrap();
+                }
+            }
+
+            // 2. 回退到内嵌资源
+            if let Some(asset) = ctx.app_handle().asset_resolver().get(path.to_string()) {
+                let builder = tauri::http::Response::builder()
+                    .header(tauri::http::header::CONTENT_TYPE, &asset.mime_type);
+                // Tauri 内嵌资源可能带 CSP header
+                let builder = if let Some(csp) = asset.csp_header {
+                    builder.header("Content-Security-Policy", csp)
+                } else {
+                    builder
+                };
+                builder.body(asset.bytes).unwrap()
+            } else {
+                tauri::http::Response::builder()
+                    .status(tauri::http::StatusCode::NOT_FOUND)
+                    .body(b"Not Found".to_vec())
+                    .unwrap()
+            }
+        })
         .setup(|app| {
             tray::setup_tray(app.handle())?;
             Ok(())
@@ -34,7 +80,9 @@ pub fn run() {
             config::restart_gateway,
             config::test_model,
             config::list_remote_models,
+            config::list_openclaw_versions,
             config::upgrade_openclaw,
+            config::uninstall_openclaw,
             config::install_gateway,
             config::uninstall_gateway,
             config::patch_model_vision,
@@ -91,6 +139,18 @@ pub fn run() {
             assistant::assistant_save_image,
             assistant::assistant_load_image,
             assistant::assistant_delete_image,
+            // Skills 管理（openclaw skills CLI）
+            skills::skills_list,
+            skills::skills_info,
+            skills::skills_check,
+            skills::skills_install_dep,
+            skills::skills_clawhub_search,
+            skills::skills_clawhub_install,
+            // 前端热更新
+            update::check_frontend_update,
+            update::download_frontend_update,
+            update::rollback_frontend_update,
+            update::get_update_status,
         ])
         .run(tauri::generate_context!())
         .expect("启动 ClawPanel 失败");

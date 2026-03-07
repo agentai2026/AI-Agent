@@ -991,6 +991,13 @@
               <span class="dl-format">.dmg</span>
             </a>
           </div>
+          <div style="margin-top:16px;padding:12px;border-radius:10px;background:rgba(234,179,8,0.08);border:1px solid rgba(234,179,8,0.15);text-align:left">
+            <p style="font-size:12px;color:var(--text-s);margin-bottom:6px"><strong style="color:#eab308">⚠️ 首次打开提示"已损坏"或"无法验证"？</strong></p>
+            <p style="font-size:12px;color:var(--text-s);margin-bottom:8px">① 先将 ClawPanel <strong>拖入「应用程序」文件夹</strong>，然后打开终端执行：</p>
+            <code style="display:block;font-size:11px;padding:8px 10px;border-radius:6px;background:rgba(0,0,0,0.15);color:var(--accent);word-break:break-all;cursor:pointer" onclick="navigator.clipboard.writeText('sudo xattr -rd com.apple.quarantine /Applications/ClawPanel.app');this.textContent='✅ 已复制！';setTimeout(()=>this.textContent='sudo xattr -rd com.apple.quarantine /Applications/ClawPanel.app',1500)">sudo xattr -rd com.apple.quarantine /Applications/ClawPanel.app</code>
+            <p style="font-size:11px;color:var(--text-t);margin-top:6px">② 或前往 <strong>系统设置 → 隐私与安全性</strong>，找到 ClawPanel 点击「仍要打开」</p>
+            <p style="font-size:11px;color:var(--text-t);margin-top:4px">提示 No such file？说明没拖入应用程序，改用：<code style="font-size:10px;color:var(--accent);cursor:pointer" onclick="navigator.clipboard.writeText('sudo xattr -rd com.apple.quarantine ~/Downloads/ClawPanel.app');this.textContent='✅ 已复制';setTimeout(()=>this.textContent='sudo xattr -rd com.apple.quarantine ~/Downloads/ClawPanel.app',1500)">sudo xattr -rd com.apple.quarantine ~/Downloads/ClawPanel.app</code></p>
+          </div>
         </div>
         <div class="reveal download-card">
           <span class="download-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="m6 8 4 4-4 4"/><path d="M12 16h4"/></svg></span>

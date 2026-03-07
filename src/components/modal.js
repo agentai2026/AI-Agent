@@ -141,12 +141,12 @@ export function showModal({ title, fields, onConfirm }) {
  * 升级进度弹窗 — 带进度条和实时日志
  * @returns {{ appendLog, setProgress, setDone, setError, destroy }}
  */
-export function showUpgradeModal() {
+export function showUpgradeModal(title) {
   const overlay = document.createElement('div')
   overlay.className = 'modal-overlay'
   overlay.innerHTML = `
     <div class="modal" style="max-width:520px">
-      <div class="modal-title">升级 OpenClaw</div>
+      <div class="modal-title">${title || '升级 OpenClaw'}</div>
       <div class="upgrade-progress-wrap">
         <div class="upgrade-progress-bar"><div class="upgrade-progress-fill" style="width:0%"></div></div>
         <div class="upgrade-progress-text">准备中...</div>
@@ -165,9 +165,10 @@ export function showUpgradeModal() {
   const closeBtn = overlay.querySelector('[data-action="close"]')
   const _logLines = []
 
-  closeBtn.onclick = () => overlay.remove()
+  let _onClose = null
+  closeBtn.onclick = () => { overlay.remove(); _onClose?.() }
   overlay.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !closeBtn.disabled) overlay.remove()
+    if (e.key === 'Escape' && !closeBtn.disabled) { overlay.remove(); _onClose?.() }
   })
 
   return {
@@ -206,6 +207,7 @@ export function showUpgradeModal() {
       closeBtn.disabled = false
       closeBtn.focus()
     },
-    destroy() { overlay.remove() },
+    onClose(fn) { _onClose = fn },
+    destroy() { overlay.remove(); _onClose?.() },
   }
 }

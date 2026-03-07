@@ -277,7 +277,9 @@ export const api = {
   writeMcpConfig: (config) => { invalidate('read_mcp_config'); return invoke('write_mcp_config', { config }) },
   reloadGateway: () => invoke('reload_gateway'),
   restartGateway: () => invoke('restart_gateway'),
-  upgradeOpenclaw: (source = 'chinese') => invoke('upgrade_openclaw', { source }),
+  listOpenclawVersions: (source = 'chinese') => invoke('list_openclaw_versions', { source }),
+  upgradeOpenclaw: (source = 'chinese', version = null) => invoke('upgrade_openclaw', { source, version }),
+  uninstallOpenclaw: (cleanConfig = false) => invoke('uninstall_openclaw', { cleanConfig }),
   installGateway: () => invoke('install_gateway'),
   uninstallGateway: () => invoke('uninstall_gateway'),
   getNpmRegistry: () => cachedInvoke('get_npm_registry', {}, 30000),
@@ -351,6 +353,20 @@ export const api = {
   assistantCheckPort: (port) => invoke('assistant_check_port', { port }),
   assistantWebSearch: (query, maxResults) => invoke('assistant_web_search', { query, max_results: maxResults || 5 }),
   assistantFetchUrl: (url) => invoke('assistant_fetch_url', { url }),
+
+  // Skills 管理（openclaw skills CLI）
+  skillsList: () => invoke('skills_list'),
+  skillsInfo: (name) => invoke('skills_info', { name }),
+  skillsCheck: () => invoke('skills_check'),
+  skillsInstallDep: (kind, spec) => invoke('skills_install_dep', { kind, spec }),
+  skillsClawHubSearch: (query) => invoke('skills_clawhub_search', { query }),
+  skillsClawHubInstall: (slug) => invoke('skills_clawhub_install', { slug }),
+
+  // 前端热更新
+  checkFrontendUpdate: () => invoke('check_frontend_update'),
+  downloadFrontendUpdate: (url, expectedHash) => invoke('download_frontend_update', { url, expectedHash: expectedHash || '' }),
+  rollbackFrontendUpdate: () => invoke('rollback_frontend_update'),
+  getUpdateStatus: () => invoke('get_update_status'),
 
   // 数据目录 & 图片存储
   ensureDataDir: () => invoke('assistant_ensure_data_dir'),
