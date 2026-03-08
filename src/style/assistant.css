@@ -1680,3 +1680,61 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/* === 移动端响应式 === */
+@media (max-width: 768px) {
+  .ast-header {
+    flex-wrap: wrap;
+    padding: var(--space-sm) var(--space-sm);
+    gap: 6px;
+  }
+  .ast-header-left {
+    gap: 6px;
+  }
+  .ast-toggle-sidebar {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  .ast-header-actions button,
+  .ast-header-actions a {
+    min-width: 34px;
+    min-height: 34px;
+    padding: 6px;
+  }
+  .ast-mode-tabs {
+    gap: 2px;
+  }
+  .ast-mode-tab {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  .ast-skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+    padding: 0 var(--space-sm);
+  }
+  .ast-sidebar.open {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 850;
+    height: 100vh;
+    width: 240px;
+    min-width: 240px;
+    box-shadow: 4px 0 24px rgba(0,0,0,.15);
+  }
+  .ast-input-area {
+    padding: var(--space-sm);
+    gap: var(--space-xs);
+  }
+}
+@media (max-width: 480px) {
+  .ast-skill-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,6 +3,7 @@
  */
 import { api } from '../lib/tauri-api.js'
 import { toast } from '../components/toast.js'
+import { tryShowEngagement } from '../components/engagement.js'
 
 // 兼容新版 SecretRef：token 可能是 string 或 { $env: "VAR" } / { $ref: "x/y" }
 function _tokenDisplayStr(token) {
@@ -363,6 +364,7 @@ async function saveConfig(page, state) {
     try {
       await api.reloadGateway()
       toast('Gateway 已重载，新配置已生效', 'success')
+      setTimeout(tryShowEngagement, 3000)
     } catch (e) {
       toast('配置已保存，但重载失败: ' + e, 'warning')
     }

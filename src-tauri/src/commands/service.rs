@@ -412,7 +412,7 @@ mod platform {
             if !check_service_status(0, "").0 {
                 // 关闭残留终端窗口
                 let _ = TokioCommand::new("cmd")
-                    .args(["/c", "taskkill", "/fi", &format!("WINDOWTITLE eq {}", GATEWAY_WINDOW_TITLE)])
+                    .args(["/c", "taskkill", "/f", "/t", "/fi", &format!("WINDOWTITLE eq {}", GATEWAY_WINDOW_TITLE)])
                     .creation_flags(CREATE_NO_WINDOW)
                     .output()
                     .await;
@@ -420,33 +420,69 @@ mod platform {
             }
         }
 
-        // 按窗口标题强杀（新版可见终端）
+        // 优雅停止失败，按端口查找进程并强杀（最可靠）
+        let port = read_gateway_port();
+        let _ = kill_by_port(port).await;
+
+        // 等端口释放
+        for _ in 0..5 {
+            tokio::time::sleep(std::time::Duration::from_millis(300)).await;
+            if !check_service_status(0, "").0 {
+                break;
+            }
+        }
+
+        // 关闭残留终端窗口（仅做清理，不影响进程停止）
         let _ = TokioCommand::new("cmd")
-            .args(["/c", "taskkill", "/f", "/fi", &format!("WINDOWTITLE eq {}", GATEWAY_WINDOW_TITLE)])
+            .args(["/c", "taskkill", "/f", "/t", "/fi", &format!("WINDOWTITLE eq {}", GATEWAY_WINDOW_TITLE)])
             .creation_flags(CREATE_NO_WINDOW)
             .output()
             .await;
-
-        // 兜底：按端口查杀（兼容旧版隐藏进程）
-        if check_service_status(0, "").0 {
-            let port = read_gateway_port();
-            let _ = kill_by_port(port).await;
-        }
 
         Ok(())
     }
 
-    /// 通过 netstat 查找占用端口的 PID 并强制杀掉
+    /// 通过 netstat 查找占用端口的 PID 并强制杀掉（在 Rust 侧解析，避免 cmd for/f 引号问题）
     async fn kill_by_port(port: u16) -> Result<(), String> {
         const CREATE_NO_WINDOW: u32 = 0x08000000;
-        let netstat_cmd = format!(
-            "for /f \"tokens=5\" %a in ('netstat -ano ^| findstr LISTENING ^| findstr :{port}') do taskkill /f /pid %a"
-        );
-        let _ = TokioCommand::new("cmd")
-            .args(["/c", &netstat_cmd])
+        let output = TokioCommand::new("cmd")
+            .args(["/c", "netstat", "-ano"])
             .creation_flags(CREATE_NO_WINDOW)
             .output()
-            .await;
+            .await
+            .map_err(|e| format!("netstat 失败: {e}"))?;
+
+        let stdout = String::from_utf8_lossy(&output.stdout);
+        let port_pattern = format!(":{port}");
+        let mut pids = std::collections::HashSet::new();
+
+        for line in stdout.lines() {
+            let trimmed = line.trim();
+            if !trimmed.contains("LISTENING") || !trimmed.contains(&port_pattern) {
+                continue;
+            }
+            // 确认是本地地址端口精确匹配（避免 :1878 匹配 :18789）
+            let parts: Vec<&str> = trimmed.split_whitespace().collect();
+            if parts.len() >= 5 {
+                if let Some(addr) = parts.get(1) {
+                    if addr.ends_with(&port_pattern) {
+                        if let Ok(pid) = parts[4].parse::<u32>() {
+                            if pid > 0 {
+                                pids.insert(pid);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        for pid in pids {
+            let _ = TokioCommand::new("cmd")
+                .args(["/c", "taskkill", "/f", "/t", "/pid", &pid.to_string()])
+                .creation_flags(CREATE_NO_WINDOW)
+                .output()
+                .await;
+        }
         Ok(())
     }
 

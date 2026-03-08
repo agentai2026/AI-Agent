@@ -1330,6 +1330,7 @@ function loadConfig() {
   if (!_config.tools) _config.tools = { terminal: false, fileOps: false, webSearch: false }
   if (!_config.mode) _config.mode = DEFAULT_MODE
   if (!_config.apiType) _config.apiType = 'openai'
+  if (_config.autoRounds === undefined) _config.autoRounds = 8
   if (!Array.isArray(_config.knowledgeFiles)) _config.knowledgeFiles = []
   return _config
 }
@@ -2038,22 +2039,28 @@ async function callAIWithTools(messages, onStatus, onToolProgress) {
   let currentMessages = [{ role: 'system', content: buildSystemPrompt() }, ...messages]
   const toolHistory = []
 
-  const MAX_AUTO_ROUNDS = 8
+  const autoRounds = _config.autoRounds ?? 8  // 0 = 无限制
+  let nextPauseAt = autoRounds   // 下一次暂停的轮次阈值
   for (let round = 0; ; round++) {
     // 检查是否已被用户中止
     if (!_isStreaming || _abortController?.signal?.aborted) {
       throw new DOMException('Aborted', 'AbortError')
     }
-    if (round >= MAX_AUTO_ROUNDS) {
+    if (autoRounds > 0 && round >= nextPauseAt) {
       const answer = await showAskUserCard({
         question: `AI 已连续调用工具 ${round} 轮，可能陷入循环。你希望怎么做？`,
         type: 'single',
-        options: ['继续执行', '让 AI 换个思路', '停止并总结'],
+        options: [`继续执行 ${autoRounds} 轮`, '不再中断，一直执行', '让 AI 换个思路', '停止并总结'],
       })
       if (answer.includes('停止')) {
         return { content: '用户要求停止工具调用，以下是目前的执行情况摘要。', toolHistory }
       } else if (answer.includes('换个思路')) {
         currentMessages.push({ role: 'user', content: '请换一种方法来解决这个问题，不要重复之前失败的操作。' })
+        nextPauseAt = round + autoRounds
+      } else if (answer.includes('不再中断')) {
+        nextPauseAt = Infinity
+      } else {
+        nextPauseAt = round + autoRounds
       }
     }
 
@@ -2598,6 +2605,19 @@ function showSettings() {
             <input type="checkbox" id="ast-tool-websearch" ${c.tools?.webSearch !== false ? 'checked' : ''}>
             <span class="ast-switch-track"></span>
           </label>
+          <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--border-color)">
+            <div class="form-group" style="margin-bottom:4px">
+              <label class="form-label">工具连续执行轮次 <span style="color:var(--text-tertiary);font-size:11px">— 超过该轮次后暂停并询问</span></label>
+              <select class="form-input" id="ast-auto-rounds" style="width:100%">
+                <option value="0" ${(c.autoRounds ?? 8) === 0 ? 'selected' : ''}>∞ 无限制（一直执行，不中断）</option>
+                <option value="8" ${(c.autoRounds ?? 8) === 8 ? 'selected' : ''}>8 轮（默认）</option>
+                <option value="15" ${(c.autoRounds ?? 8) === 15 ? 'selected' : ''}>15 轮</option>
+                <option value="30" ${(c.autoRounds ?? 8) === 30 ? 'selected' : ''}>30 轮</option>
+                <option value="50" ${(c.autoRounds ?? 8) === 50 ? 'selected' : ''}>50 轮</option>
+              </select>
+            </div>
+            <div class="form-hint">设为「无限制」时 AI 将不会中断执行，适合复杂任务。随时可点停止按钮手动中止。</div>
+          </div>
           <div class="form-hint" style="margin-top:10px">进程列表、端口检测、系统信息工具始终可用（非聊天模式下）。</div>
         </div>
         <div class="ast-tab-panel" data-panel="persona">
@@ -3322,6 +3342,7 @@ function showSettings() {
     _config.tools.terminal = overlay.querySelector('#ast-tool-terminal').checked
     _config.tools.fileOps = overlay.querySelector('#ast-tool-fileops').checked
     _config.tools.webSearch = overlay.querySelector('#ast-tool-websearch').checked
+    _config.autoRounds = parseInt(overlay.querySelector('#ast-auto-rounds').value, 10) || 0
     // 灵魂来源
     const soulRadio = overlay.querySelector('input[name="ast-soul-source"]:checked')
     if (soulRadio?.value === 'openclaw') {

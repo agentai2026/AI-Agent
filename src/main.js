@@ -2,13 +2,14 @@
  * ClawPanel 入口
  */
 import { registerRoute, initRouter, navigate, setDefaultRoute } from './router.js'
-import { renderSidebar } from './components/sidebar.js'
+import { renderSidebar, openMobileSidebar } from './components/sidebar.js'
 import { initTheme } from './lib/theme.js'
 import { detectOpenclawStatus, isOpenclawReady, isGatewayRunning, onGatewayChange, startGatewayPoll, onGuardianGiveUp, resetAutoRestart, loadActiveInstance, getActiveInstance, onInstanceChange } from './lib/app-state.js'
 import { wsClient } from './lib/ws-client.js'
 import { api } from './lib/tauri-api.js'
 import { version as APP_VERSION } from '../package.json'
 import { statusIcon } from './lib/icons.js'
+import { tryShowEngagement } from './components/engagement.js'
 
 // 样式
 import './style/variables.css'
@@ -231,6 +232,20 @@ async function boot() {
   renderSidebar(sidebar)
   initRouter(content)
 
+  // 移动端顶栏（汉堡菜单 + 标题）
+  const mainCol = document.getElementById('main-col')
+  const topbar = document.createElement('div')
+  topbar.className = 'mobile-topbar'
+  topbar.id = 'mobile-topbar'
+  topbar.innerHTML = `
+    <button class="mobile-hamburger" id="btn-mobile-menu">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <span class="mobile-topbar-title">ClawPanel</span>
+  `
+  topbar.querySelector('.mobile-hamburger').addEventListener('click', openMobileSidebar)
+  mainCol.prepend(topbar)
+
   // 隐藏启动加载屏
   const splash = document.getElementById('splash')
   if (splash) {
@@ -284,6 +299,8 @@ async function boot() {
       onGatewayChange((running) => {
         if (running) {
           autoConnectWebSocket()
+          // 正向时机：Gateway 启动成功，延迟弹社区引导
+          setTimeout(tryShowEngagement, 5000)
         } else {
           wsClient.disconnect()
         }
@@ -310,7 +327,8 @@ async function autoConnectWebSocket() {
     console.log(`[main] 自动连接 WebSocket (实例: ${inst.name})...`)
     const config = await api.readOpenclawConfig()
     const port = config?.gateway?.port || 18789
-    const token = config?.gateway?.auth?.token || ''
+    const rawToken = config?.gateway?.auth?.token
+    const token = (typeof rawToken === 'string') ? rawToken : ''
 
     // 启动前先确保设备已配对 + allowedOrigins 已写入，无需用户手动操作
     let needReload = false
@@ -372,8 +390,9 @@ function setupGatewayBanner() {
   if (!banner) return
 
   function update(running) {
-    if (running) {
+    if (running || sessionStorage.getItem('gw-banner-dismissed')) {
       banner.classList.add('gw-banner-hidden')
+      return
     } else {
       banner.classList.remove('gw-banner-hidden')
       banner.innerHTML = `
@@ -381,8 +400,13 @@ function setupGatewayBanner() {
           <span class="gw-banner-icon">${statusIcon('warn', 16)}</span>
           <span>Gateway 未启动，部分功能不可用</span>
           <button class="btn btn-sm btn-primary" id="btn-gw-start">启动 Gateway</button>
+          <button class="gw-banner-close" id="btn-gw-dismiss" title="关闭提示">&times;</button>
         </div>
       `
+      banner.querySelector('#btn-gw-dismiss')?.addEventListener('click', () => {
+        banner.classList.add('gw-banner-hidden')
+        sessionStorage.setItem('gw-banner-dismissed', '1')
+      })
       banner.querySelector('#btn-gw-start')?.addEventListener('click', async (e) => {
         const btn = e.target
         btn.disabled = true

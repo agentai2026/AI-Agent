@@ -41,9 +41,9 @@ const NAV_ITEMS_FULL = [
     ]
   },
   {
-    section: 'Docker',
+    section: '龙虾军团',
     items: [
-      { route: '/docker', label: 'Docker 集群', icon: 'docker' },
+      { route: '/docker', label: '🦞 龙虾军团', icon: 'docker' },
     ]
   },
   {
@@ -125,6 +125,7 @@ export function renderSidebar(el) {
         <img src="/images/logo.png" alt="ClawPanel">
       </div>
       <span class="sidebar-title">ClawPanel</span>
+      <button class="sidebar-close-btn" id="btn-sidebar-close" title="关闭菜单">&times;</button>
     </div>
     ${showSwitcher ? `<div class="instance-switcher" id="instance-switcher">
       <button class="instance-current" id="btn-instance-toggle">
@@ -186,6 +187,12 @@ export function renderSidebar(el) {
       const navItem = e.target.closest('.nav-item[data-route]')
       if (navItem) {
         navigate(navItem.dataset.route)
+        _closeMobileSidebar()
+        return
+      }
+      // 移动端关闭按钮
+      if (e.target.closest('#btn-sidebar-close')) {
+        _closeMobileSidebar()
         return
       }
       // 主题切换
@@ -234,6 +241,29 @@ export function renderSidebar(el) {
 }
 
 function _escSidebar(s) { return String(s || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') }
+
+// === 移动端侧边栏 ===
+function _closeMobileSidebar() {
+  const sidebar = document.getElementById('sidebar')
+  const overlay = document.getElementById('sidebar-overlay')
+  if (sidebar) sidebar.classList.remove('sidebar-open')
+  if (overlay) overlay.classList.remove('visible')
+}
+
+export function openMobileSidebar() {
+  const sidebar = document.getElementById('sidebar')
+  if (!sidebar) return
+  sidebar.classList.add('sidebar-open')
+  let overlay = document.getElementById('sidebar-overlay')
+  if (!overlay) {
+    overlay = document.createElement('div')
+    overlay.id = 'sidebar-overlay'
+    overlay.className = 'sidebar-overlay'
+    overlay.addEventListener('click', _closeMobileSidebar)
+    document.getElementById('app').appendChild(overlay)
+  }
+  requestAnimationFrame(() => overlay.classList.add('visible'))
+}
 
 function _closeInstanceDropdown() {
   const dd = document.getElementById('instance-dropdown')

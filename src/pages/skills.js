@@ -209,6 +209,7 @@ async function handleInfo(page, name) {
   const detail = page.querySelector('#skill-detail-area')
   if (!detail) return
   detail.innerHTML = '<div class="form-hint" style="margin-top:var(--space-md)">正在加载详情...</div>'
+  detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
   try {
     const skill = await api.skillsInfo(name)
     const s = skill || {}

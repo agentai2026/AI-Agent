@@ -839,3 +839,39 @@
   cursor: default;
   object-fit: contain;
 }
+
+/* === 移动端响应式 === */
+@media (max-width: 768px) {
+  .chat-sidebar.open {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 850;
+    height: 100vh;
+    width: 220px;
+    min-width: 220px;
+    box-shadow: 4px 0 24px rgba(0,0,0,.15);
+  }
+  .chat-input-area {
+    padding: var(--space-sm);
+    gap: var(--space-xs);
+  }
+  .chat-header {
+    padding: var(--space-sm) var(--space-sm);
+    gap: 6px;
+  }
+  .chat-toggle-sidebar {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  .chat-header-actions button {
+    min-width: 34px;
+    min-height: 34px;
+    padding: 6px;
+  }
+}
