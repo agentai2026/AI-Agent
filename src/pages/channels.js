@@ -1428,13 +1428,26 @@ async function openConfigDialog(pid, page, state, accountId) {
             if (!logBox) return
             const msg = e.payload?.message || ''
             const isQrLine = /[\u2580\u2584\u2588]/.test(msg)
-            if (isQrLine && actionId === 'login') {
+            if (isQrLine && (actionId === 'login' || actionId === 'install')) {
               _qrBuf.push(msg)
               clearTimeout(_qrTimer)
               _qrTimer = setTimeout(_flushQr, 500)
             } else if (!isQrLine) {
               if (_qrBuf.length && !_qrDone) _flushQr()
-              if (msg.trim()) {
+              // 检测微信扫码 URL 并渲染为可扫描的二维码
+              const weixinUrlMatch = msg.match(/(https:\/\/liteapp\.weixin\.qq\.com\/q\/[^\s]+)/)
+              if (weixinUrlMatch && !_qrDone) {
+                _qrDone = true
+                const qrUrl = weixinUrlMatch[1]
+                const wrap = document.createElement('div')
+                wrap.style.cssText = 'text-align:center;margin:12px 0;padding:16px;background:#fff;border-radius:var(--radius-md);border:1px solid var(--border-primary)'
+                wrap.innerHTML = `
+                  <div style="font-size:var(--font-size-sm);font-weight:600;color:#000;margin-bottom:8px">${t('channels.weixinScanQr')}</div>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(qrUrl)}" alt="WeChat QR" style="width:200px;height:200px;image-rendering:pixelated;border-radius:4px;margin:0 auto;display:block" loading="eager">
+                  <div style="margin-top:8px"><a href="${escapeAttr(qrUrl)}" target="_blank" rel="noopener" style="color:var(--accent);font-size:var(--font-size-xs);word-break:break-all">${t('channels.weixinOpenInBrowser') || '或点击此链接在浏览器中打开'}</a></div>
+                `
+                logBox.appendChild(wrap)
+              } else if (msg.trim()) {
                 const div = document.createElement('div')
                 div.textContent = msg
                 logBox.appendChild(div)
