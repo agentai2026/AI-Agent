@@ -1815,10 +1815,11 @@ const handlers = {
     return { valid: true, warnings: ['该平台暂不支持在线校验'] }
   },
 
-  install_qqbot_plugin() {
+  install_qqbot_plugin({ version } = {}) {
     const bin = findOpenclawBin() || 'openclaw'
+    const spec = version ? `@tencent-connect/openclaw-qqbot@${version}` : '@tencent-connect/openclaw-qqbot@latest'
     try {
-      execSync(`${bin} plugins install @tencent-connect/openclaw-qqbot@latest`, { timeout: 600000, cwd: homedir() })
+      execSync(`${bin} plugins install ${spec}`, { timeout: 600000, cwd: homedir() })
       return '安装成功'
     } catch (e) {
       throw new Error('QQBot 插件安装失败: ' + (e.message || e))
@@ -1851,11 +1852,12 @@ const handlers = {
     }
   },
 
-  install_channel_plugin({ packageName, pluginId }) {
+  install_channel_plugin({ packageName, pluginId, version }) {
     if (!packageName || !pluginId) throw new Error('packageName 和 pluginId 不能为空')
     const bin = findOpenclawBin() || 'openclaw'
+    const spec = version ? `${packageName.trim()}@${version}` : packageName.trim()
     try {
-      execSync(`${bin} plugins install ${packageName.trim()}`, { timeout: 120000, cwd: homedir() })
+      execSync(`${bin} plugins install ${spec}`, { timeout: 120000, cwd: homedir() })
       return '安装成功'
     } catch (e) {
       throw new Error(`插件 ${pluginId} 安装失败: ` + (e.message || e))

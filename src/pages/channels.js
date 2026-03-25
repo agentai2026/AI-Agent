@@ -1441,7 +1441,15 @@ async function openConfigDialog(pid, page, state, accountId) {
             if (progressText) progressText.textContent = `${pct}%`
           })
 
-          const output = await api.runChannelAction(pid, actionId)
+          // 自动 pin 插件版本到用户的 OpenClaw 版本（仅 install 动作）
+          let actionVersion = null
+          if (actionId === 'install') {
+            try {
+              const vInfo = await api.getVersionInfo()
+              if (vInfo?.current) actionVersion = vInfo.current.split('-')[0]
+            } catch {}
+          }
+          const output = await api.runChannelAction(pid, actionId, actionVersion)
           _flushQr() // 命令结束后刷新残留 QR 缓冲
           if (progressBar) progressBar.style.width = '100%'
           if (progressText) progressText.textContent = '100%'
@@ -1772,7 +1780,15 @@ async function openConfigDialog(pid, page, state, accountId) {
           }
         })
 
-        const output = await api.runChannelAction(pid, actionId)
+        // 自动 pin 插件版本（仅 install 动作）
+        let actionVer2 = null
+        if (actionId === 'install') {
+          try {
+            const vInfo = await api.getVersionInfo()
+            if (vInfo?.current) actionVer2 = vInfo.current.split('-')[0]
+          } catch {}
+        }
+        const output = await api.runChannelAction(pid, actionId, actionVer2)
         toast(t('channels.actionDone'), 'success')
         if (logBox && output && !String(output).includes(logBox.textContent)) {
           logBox.textContent += (logBox.textContent ? '\n' : '') + String(output)
@@ -1930,11 +1946,17 @@ async function openConfigDialog(pid, page, state, accountId) {
           } catch {}
 
           try {
+            // 自动 pin 插件版本到用户的 OpenClaw 版本，避免 minHostVersion 不兼容
+            let pluginVersion = null
+            try {
+              const vInfo = await api.getVersionInfo()
+              if (vInfo?.current) pluginVersion = vInfo.current.split('-')[0]
+            } catch {}
             // QQ 必须用专用安装命令：官方包目录为 openclaw-qqbot，与 install_channel_plugin(…, "qqbot") 的备份路径不一致
             if (pid === 'qqbot') {
-              await api.installQqbotPlugin()
+              await api.installQqbotPlugin(pluginVersion)
             } else {
-              await api.installChannelPlugin(pluginPackage, pluginId)
+              await api.installChannelPlugin(pluginPackage, pluginId, pluginVersion)
             }
           } catch (e) {
             toast(t('channels.pluginInstallFailed') + ': ' + e, 'error')

@@ -1104,6 +1104,7 @@ pub async fn run_channel_action(
     app: tauri::AppHandle,
     platform: String,
     action: String,
+    version: Option<String>,
 ) -> Result<String, String> {
     use std::io::{BufRead, BufReader};
     use std::process::Stdio;
@@ -1118,10 +1119,17 @@ pub async fn run_channel_action(
 
     // weixin install 走 npx 而非 openclaw CLI
     if platform == "weixin" && action == "install" {
-        let _ = app.emit("channel-action-log", json!({
-            "platform": &platform, "action": &action, "kind": "info",
-            "message": "开始安装微信插件: npx -y @tencent-weixin/openclaw-weixin-cli@latest install",
-        }));
+        let weixin_spec = match &version {
+            Some(v) if !v.is_empty() => format!("@tencent-weixin/openclaw-weixin-cli@{}", v),
+            _ => "@tencent-weixin/openclaw-weixin-cli@latest".to_string(),
+        };
+        let _ = app.emit(
+            "channel-action-log",
+            json!({
+                "platform": &platform, "action": &action, "kind": "info",
+                "message": format!("开始安装微信插件: npx -y {} install", weixin_spec),
+            }),
+        );
         let _ = app.emit(
             "channel-action-progress",
             json!({ "platform": &platform, "action": &action, "progress": 5 }),
@@ -1133,24 +1141,14 @@ pub async fn run_channel_action(
             use std::os::windows::process::CommandExt;
             const CREATE_NO_WINDOW: u32 = 0x08000000;
             let mut c = std::process::Command::new("cmd");
-            c.args([
-                "/c",
-                "npx",
-                "-y",
-                "@tencent-weixin/openclaw-weixin-cli@latest",
-                "install",
-            ]);
+            c.args(["/c", "npx", "-y", &weixin_spec, "install"]);
             c.creation_flags(CREATE_NO_WINDOW);
             c
         };
         #[cfg(not(target_os = "windows"))]
         let mut cmd = {
             let mut c = std::process::Command::new("npx");
-            c.args([
-                "-y",
-                "@tencent-weixin/openclaw-weixin-cli@latest",
-                "install",
-            ]);
+            c.args(["-y", &weixin_spec, "install"]);
             c
         };
         cmd.env("PATH", &path_env);
@@ -1522,7 +1520,7 @@ pub async fn diagnose_channel(
 pub async fn repair_qqbot_channel_setup(app: tauri::AppHandle) -> Result<Value, String> {
     let (installed, _loc) = qqbot_extension_installed();
     if !installed {
-        install_qqbot_plugin(app.clone()).await?;
+        install_qqbot_plugin(app.clone(), None).await?;
         return Ok(json!({
             "ok": true,
             "action": "installed",
@@ -2475,6 +2473,7 @@ pub async fn install_channel_plugin(
     app: tauri::AppHandle,
     package_name: String,
     plugin_id: String,
+    version: Option<String>,
 ) -> Result<String, String> {
     use std::io::{BufRead, BufReader};
     use std::process::Stdio;
@@ -2485,6 +2484,11 @@ pub async fn install_channel_plugin(
     if package_name.is_empty() || plugin_id.is_empty() {
         return Err("package_name 和 plugin_id 不能为空".into());
     }
+    // 拼接版本号：package@version（兼容用户 OpenClaw 版本的插件）
+    let install_spec = match &version {
+        Some(v) if !v.is_empty() => format!("{}@{}", package_name, v),
+        _ => package_name.to_string(),
+    };
     let plugin_dir = generic_plugin_dir(plugin_id);
     let plugin_backup = generic_plugin_backup_dir(plugin_id);
     let config_path = super::openclaw_dir().join("openclaw.json");
@@ -2518,8 +2522,9 @@ pub async fn install_channel_plugin(
         fs::copy(&config_path, &config_backup).map_err(|e| format!("备份配置失败: {e}"))?;
     }
 
+    let _ = app.emit("plugin-log", format!("安装规格: {}", install_spec));
     let spawn_result = crate::utils::openclaw_command()
-        .args(["plugins", "install", package_name])
+        .args(["plugins", "install", &install_spec])
         .stdout(Stdio::piped())
         .stderr(Stdio::piped())
         .spawn();
@@ -2637,10 +2642,18 @@ pub async fn install_channel_plugin(
 }
 
 #[tauri::command]
-pub async fn install_qqbot_plugin(app: tauri::AppHandle) -> Result<String, String> {
+pub async fn install_qqbot_plugin(
+    app: tauri::AppHandle,
+    version: Option<String>,
+) -> Result<String, String> {
     use std::io::{BufRead, BufReader};
     use std::process::Stdio;
     use tauri::Emitter;
+
+    let install_spec = match &version {
+        Some(v) if !v.is_empty() => format!("{}@{}", TENCENT_OPENCLAW_QQBOT_PACKAGE, v),
+        _ => TENCENT_OPENCLAW_QQBOT_PACKAGE.to_string(),
+    };
 
     let plugin_dir = generic_plugin_dir(OPENCLAW_QQBOT_EXTENSION_FOLDER);
     let plugin_backup = generic_plugin_backup_dir(OPENCLAW_QQBOT_EXTENSION_FOLDER);
@@ -2678,8 +2691,9 @@ pub async fn install_qqbot_plugin(app: tauri::AppHandle) -> Result<String, Strin
         fs::copy(&config_path, &config_backup).map_err(|e| format!("备份配置失败: {e}"))?;
     }
 
+    let _ = app.emit("plugin-log", format!("安装规格: {}", install_spec));
     let spawn_result = crate::utils::openclaw_command()
-        .args(["plugins", "install", TENCENT_OPENCLAW_QQBOT_PACKAGE])
+        .args(["plugins", "install", &install_spec])
         .stdout(Stdio::piped())
         .stderr(Stdio::piped())
         .spawn();

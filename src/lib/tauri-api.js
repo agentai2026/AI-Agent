@@ -225,9 +225,9 @@ export const api = {
   },
   listConfiguredPlatforms: () => cachedInvoke('list_configured_platforms', {}, 5000),
   getChannelPluginStatus: (pluginId) => invoke('get_channel_plugin_status', { pluginId }),
-  installQqbotPlugin: () => invoke('install_qqbot_plugin'),
-  installChannelPlugin: (packageName, pluginId) => invoke('install_channel_plugin', { packageName, pluginId }),
-  runChannelAction: (platform, action) => invoke('run_channel_action', { platform, action }),
+  installQqbotPlugin: (version = null) => invoke('install_qqbot_plugin', { version }),
+  installChannelPlugin: (packageName, pluginId, version = null) => invoke('install_channel_plugin', { packageName, pluginId, version }),
+  runChannelAction: (platform, action, version = null) => invoke('run_channel_action', { platform, action, version }),
   checkWeixinPluginStatus: () => invoke('check_weixin_plugin_status'),
 
   // Agent 渠道绑定管理
