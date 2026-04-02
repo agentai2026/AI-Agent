@@ -27,7 +27,7 @@ export function showConfirm(message) {
     overlay.innerHTML = `
       <div class="modal" style="max-width:400px">
         <div class="modal-title">${t('common.confirmAction')}</div>
-        <div style="font-size:var(--font-size-sm);color:var(--text-secondary);white-space:pre-wrap;line-height:1.6">${escapeAttr(message)}</div>
+        <div class="modal-body" style="font-size:var(--font-size-sm);color:var(--text-secondary);white-space:pre-wrap;line-height:1.6">${escapeAttr(message)}</div>
         <div class="modal-actions">
           <button class="btn btn-secondary btn-sm" data-action="cancel">${t('common.cancel')}</button>
           <button class="btn btn-danger btn-sm" data-action="confirm">${t('common.confirm')}</button>
