@@ -6289,7 +6289,27 @@ const handlers = {
     return true
   },
 
-  check_panel_update() { return { latest: null, url: 'https://github.com/qingchencloud/clawpanel/releases' } },
+  async check_panel_update() {
+    const sources = [
+      { api: 'https://api.github.com/repos/qingchencloud/clawpanel/releases/latest', releases: 'https://github.com/qingchencloud/clawpanel/releases', name: 'github' },
+      { api: 'https://gitee.com/api/v5/repos/QtCodeCreators/clawpanel/releases/latest', releases: 'https://gitee.com/QtCodeCreators/clawpanel/releases', name: 'gitee' },
+    ]
+    let lastErr = ''
+    for (const src of sources) {
+      try {
+        const resp = await globalThis.fetch(src.api, {
+          signal: AbortSignal.timeout(8000),
+          headers: { 'User-Agent': 'ClawPanel' },
+        })
+        if (!resp.ok) { lastErr = `${src.name}: HTTP ${resp.status}`; continue }
+        const json = await resp.json()
+        const tag = (json.tag_name || '').replace(/^v/, '').trim()
+        if (!tag) { lastErr = `${src.name}: 未找到版本号`; continue }
+        return { latest: tag, url: json.html_url || src.releases, source: src.name, downloadUrl: 'https://claw.qt.cool' }
+      } catch (e) { lastErr = `${src.name}: ${e.message}`; continue }
+    }
+    return { latest: null, url: 'https://github.com/qingchencloud/clawpanel/releases', error: lastErr }
+  },
 
   write_env_file({ path: p, config }) {
     const expanded = p.startsWith('~/') ? path.join(homedir(), p.slice(2)) : p
@@ -6340,7 +6360,6 @@ const handlers = {
   },
 
   async check_hermes() {
-    const enhanced = hermesEnhancedPath()
     const home = hermesHome()
     const result = {}
     // 1. 检测 hermes CLI
