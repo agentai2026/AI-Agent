@@ -139,6 +139,8 @@ export default {
   addSelected: _('添加选中', 'Add Selected', '新增選中'),
   selectAtLeast: _('请至少选择一个模型', 'Please select at least one model', '請至少選擇一個模型'),
   fetchFailed: _('获取模型列表失败: {error}', 'Failed to fetch model list: {error}', '取得模型列表失敗: {error}', 'モデルリスト取得失敗', '모델 목록 가져오기 실패'),
+  fetchNotSupportedTitle: _('该服务商不支持自动获取', 'Auto-fetch not supported', '該服務商不支援自動取得', 'モデルリスト自動取得非対応', '자동 가져오기 미지원'),
+  fetchNotSupported: _('该服务商的接口不支持自动获取模型列表。\n\n请点击「模型」按钮手动填写模型 ID。\n模型 ID 通常可在服务商的官网文档中找到。', 'This provider does not support auto-fetching model list.\n\nPlease click "Model" to manually enter the model ID.\nModel IDs can usually be found in the provider\'s documentation.', '該服務商的介面不支援自動取得模型列表。\n\n請点擊「模型」按鈕手動填写模型 ID。\n模型 ID 通常可在服務商的官網文件中找到。'),
   configNotReady: _('配置未加载完成，请稍候', 'Config not loaded yet, please wait', '設定未載入完成，請稍候'),
   fetchRemoteFailed: _('无法获取模型列表，请检查网络或稍后重试', 'Cannot fetch model list. Check network or try later.', '無法取得模型列表，請檢查網路或稍后重試'),
   configLoadFailed: _('加载配置失败', 'Failed to load config', '載入設定失敗'),

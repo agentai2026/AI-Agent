@@ -331,6 +331,7 @@ export default {
   fetchBtn: _('获取列表', 'Fetch List', '取得列表', 'リスト取得', '목록 가져오기'),
   noModelsFound: _('未找到可用模型', 'No available models found', '', '利用可能なモデルが見つかりません', '사용 가능한 모델 없음'),
   modelsFound: _('找到 {count} 个模型', 'Found {count} models', '找到 {count} 個模型', '{count} モデルが見つかりました', '{count}개 모델 발견'),
+  fetchNotSupported: _('该服务商不支持自动获取模型列表，请在下方「模型」输入框手动填写模型 ID', 'This provider does not support auto-fetching models. Please manually enter the model ID below.', '該服務商不支援自動取得模型列表，請在下方「模型」輸入框手動填写模型 ID'),
   personaSource: _('人设来源', 'Persona Source', '人設來源', 'ペルソナソース', '페르소나 소스'),
   personaDefault: _('默认', 'Default', '預設', 'デフォルト', '기본'),
   personaOpenClaw: _('OpenClaw Agent', 'OpenClaw Agent'),

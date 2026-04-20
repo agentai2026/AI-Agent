@@ -3976,49 +3976,10 @@ function showSettings() {
     btn.textContent = t('assistant.fetching')
     resultEl.innerHTML = '<span style="color:var(--text-tertiary)">' + t('assistant.fetchingModels') + '</span>'
     try {
-      const base = cleanBaseUrl(baseUrl, selApiType)
-      const hdrs = authHeaders(selApiType, apiKey)
-      let models = []
-
-      if (selApiType === 'anthropic-messages') {
-        // Anthropic: GET /v1/models
-        const resp = await fetch(base + '/models', { headers: hdrs, signal: AbortSignal.timeout(10000) })
-        if (!resp.ok) {
-          const text = await resp.text().catch(() => '')
-          let msg = 'HTTP ' + resp.status
-          try { msg = JSON.parse(text).error?.message || msg } catch {}
-          resultEl.innerHTML = '<span style="color:var(--error)">✗ ' + escHtml(msg) + '</span>'
-          return
-        }
-        const data = await resp.json()
-        models = (data.data || []).map(m => m.id).filter(Boolean).sort()
-      } else if (selApiType === 'google-gemini') {
-        // Gemini: GET /models?key=xxx
-        const resp = await fetch(base + '/models?key=' + apiKey, { signal: AbortSignal.timeout(10000) })
-        if (!resp.ok) {
-          const text = await resp.text().catch(() => '')
-          let msg = 'HTTP ' + resp.status
-          try { msg = JSON.parse(text).error?.message || msg } catch {}
-          resultEl.innerHTML = '<span style="color:var(--error)">✗ ' + escHtml(msg) + '</span>'
-          return
-        }
-        const data = await resp.json()
-        models = (data.models || []).map(m => m.name?.replace('models/', '') || m.name).filter(Boolean).sort()
-      } else {
-        // OpenAI: GET /v1/models
-        const resp = await fetch(base + '/models', { headers: hdrs, signal: AbortSignal.timeout(10000) })
-        if (!resp.ok) {
-          const text = await resp.text().catch(() => '')
-          let msg = 'HTTP ' + resp.status
-          try { msg = JSON.parse(text).error?.message || msg } catch {}
-          resultEl.innerHTML = '<span style="color:var(--error)">✗ ' + escHtml(msg) + '</span>'
-          return
-        }
-        const data = await resp.json()
-        models = (data.data || []).map(m => m.id).filter(Boolean).sort()
-      }
-
-      if (models.length === 0) {
+      // 走 Rust 后端（桌面 & Web 模式统一），绕过 WebView CORS 限制
+      // 部分 provider 不返回 CORS 头，直接前端 fetch 会报 Failed to fetch
+      const models = await api.listRemoteModels(baseUrl, apiKey, selApiType)
+      if (!models || models.length === 0) {
         resultEl.innerHTML = '<span style="color:var(--warning)">' + t('assistant.noModelsFound') + '</span>'
         return
       }
@@ -4028,7 +3989,13 @@ function showSettings() {
       ).join('')
       dropdown.style.display = 'block'
     } catch (err) {
-      resultEl.innerHTML = '<span style="color:var(--error)">✗ ' + escHtml(err.message) + '</span>'
+      const errStr = String(err?.message || err)
+      // 服务商不支持 /models 接口 → 友好提示引导手动填写
+      if (errStr.includes('[NOT_SUPPORTED]') || errStr.includes('不支持自动获取')) {
+        resultEl.innerHTML = '<span style="color:var(--warning);line-height:1.5">⚠ ' + escHtml(t('assistant.fetchNotSupported')) + '</span>'
+      } else {
+        resultEl.innerHTML = '<span style="color:var(--error)">✗ ' + escHtml(errStr) + '</span>'
+      }
     } finally {
       btn.disabled = false
       btn.textContent = t('assistant.fetchBtn')

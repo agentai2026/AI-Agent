@@ -1378,7 +1378,20 @@ async function fetchRemoteModels(btn, page, state, providerKey) {
   } catch (e) {
     btn.disabled = false
     btn.textContent = t('models.fetchList')
-    toast(t('models.fetchFailed', { error: e }), 'error')
+    const errStr = String(e?.message || e)
+    // 服务商不支持 /models 接口 → 友好弹窗引导手动添加
+    if (errStr.includes('[NOT_SUPPORTED]') || errStr.includes('不支持自动获取')) {
+      const msg = errStr.replace('[NOT_SUPPORTED] ', '').replace('获取模型列表失败: ', '')
+      showConfirm(t('models.fetchNotSupported', { error: msg }), {
+        title: t('models.fetchNotSupportedTitle'),
+        confirmText: t('models.addModel').replace('+ ', ''),
+        cancelText: t('common.close'),
+      }).then(yes => {
+        if (yes) addModel(btn.closest('.page') || document.querySelector('.page'), { config: state.config, save: state.save }, providerKey)
+      })
+    } else {
+      toast(t('models.fetchFailed', { error: errStr }), 'error')
+    }
   }
 }
 

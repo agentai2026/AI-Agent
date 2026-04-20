@@ -5119,6 +5119,11 @@ const handlers = {
       }
       clearTimeout(timeout)
       if (!resp.ok) {
+        // 404/405/501 = 服务商不支持 /models 接口，给用户友好提示
+        const code = resp.status
+        if (code === 404 || code === 405 || code === 501) {
+          throw new Error('[NOT_SUPPORTED] 该服务商不支持自动获取模型列表，请手动输入模型 ID')
+        }
         const text = await resp.text().catch(() => '')
         let msg = `HTTP ${resp.status}`
         try {
