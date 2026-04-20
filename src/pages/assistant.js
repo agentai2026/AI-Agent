@@ -2936,7 +2936,7 @@ function renderMessages() {
 
 function _linkify(str) { return str.replace(/(https?:\/\/[^\s,，。；）)'"]+)/g, '<a href="$1" target="_blank" style="color:var(--primary)">$1</a>') }
 
-function buildTestResult({ success, elapsed, usedApi, reqUrl, reqBody, respStatus, respBody, reply, error }) {
+function buildTestResult({ success, elapsed, usedApi, reqUrl, reqBody, respStatus, respHeaders, respBody, respRawHex, respByteCount, reply, error }) {
   let html = ''
   // 尝试解析 API 返回的错误信息
   let apiErrMsg = ''
@@ -2958,6 +2958,17 @@ function buildTestResult({ success, elapsed, usedApi, reqUrl, reqBody, respStatu
   if (apiErrMsg) {
     html += `<div style="margin-top:6px;padding:8px 10px;background:var(--bg-tertiary);border-left:3px solid var(--warning);border-radius:4px;font-size:12px;color:var(--text-secondary);line-height:1.6;word-break:break-all">${_linkify(escHtml(apiErrMsg))}</div>`
   }
+  // 解码失败时，显眼展示关键诊断信息：Content-Encoding 和字节数
+  if (error && respHeaders) {
+    const contentEncoding = respHeaders['content-encoding'] || respHeaders['Content-Encoding'] || '(未声明)'
+    const contentType = respHeaders['content-type'] || respHeaders['Content-Type'] || '(未知)'
+    html += `<div style="margin-top:6px;padding:8px 10px;background:var(--bg-tertiary);border-left:3px solid var(--error);border-radius:4px;font-size:11px;color:var(--text-secondary);line-height:1.7;font-family:var(--font-mono)">` +
+      `<div style="color:var(--text-primary);font-weight:600;margin-bottom:4px;font-family:var(--font-sans)">🔍 诊断信息</div>` +
+      `Content-Encoding: <strong style="color:var(--warning)">${escHtml(contentEncoding)}</strong><br>` +
+      `Content-Type: ${escHtml(contentType)}<br>` +
+      (respByteCount ? `响应字节数: ${respByteCount}` : '') +
+      `</div>`
+  }
   // 模型回复（完整展示，不截断；长回复给最大高度 + scroll）
   if (reply) {
     html += `<div style="margin-top:6px;padding:8px 10px;background:var(--bg-tertiary);border-left:3px solid var(--success);border-radius:4px;font-size:13px;color:var(--text-primary);line-height:1.6;white-space:pre-wrap;word-break:break-word;max-height:180px;overflow:auto">` +
@@ -2977,7 +2988,21 @@ function buildTestResult({ success, elapsed, usedApi, reqUrl, reqBody, respStatu
   html += `<strong>POST</strong> ${escHtml(reqUrl)}\n\n`
   html += `<strong>Request Body:</strong>\n${escHtml(JSON.stringify(reqBody, null, 2))}\n\n`
   html += `<strong>Response Status:</strong> ${respStatus}\n\n`
-  html += `<strong>Response Body:</strong>\n`
+  // Response Headers（完整列出，每行一个）
+  if (respHeaders && typeof respHeaders === 'object') {
+    html += `<strong>Response Headers:</strong>\n`
+    const entries = Object.entries(respHeaders)
+    if (entries.length === 0) {
+      html += `<span style="color:var(--text-tertiary);font-style:italic">(无)</span>\n\n`
+    } else {
+      html += entries.map(([k, v]) => `  ${escHtml(k)}: ${escHtml(String(v))}`).join('\n') + '\n\n'
+    }
+  }
+  html += `<strong>Response Body:</strong>`
+  if (respByteCount !== undefined && respByteCount !== null) {
+    html += ` <span style="color:var(--text-tertiary);font-weight:normal">(${respByteCount} bytes)</span>`
+  }
+  html += `\n`
   // 美化 JSON（空串单独提示，避免误导为"empty"字面量）
   if (!respBody) {
     html += `<span style="color:var(--text-tertiary);font-style:italic">${escHtml(t('assistant.testRespBodyEmptyDetail'))}</span>`
@@ -2987,6 +3012,10 @@ function buildTestResult({ success, elapsed, usedApi, reqUrl, reqBody, respStatu
     } catch {
       html += escHtml(respBody.slice(0, 4000))
     }
+  }
+  // Raw Bytes (hex)：UTF-8 解码失败时最关键的诊断信息
+  if (respRawHex) {
+    html += `\n\n<strong>Raw Bytes (前 200 字节 hex):</strong>\n<span style="color:var(--text-tertiary);font-size:10px">${escHtml(respRawHex)}</span>`
   }
   html += `</div></details>`
   return html
@@ -3906,7 +3935,10 @@ function showSettings() {
         reqUrl: r.reqUrl || baseUrl,
         reqBody: r.reqBody || {},
         respStatus: r.status ?? 0,
+        respHeaders: r.respHeaders || null,
         respBody: r.respBody || '',
+        respRawHex: r.respRawHex || '',
+        respByteCount: r.respByteCount || 0,
         reply: r.reply || '',
         error: r.error || null,
       })
@@ -3919,7 +3951,10 @@ function showSettings() {
         reqUrl: baseUrl,
         reqBody: {},
         respStatus: 0,
+        respHeaders: null,
         respBody: '',
+        respRawHex: '',
+        respByteCount: 0,
         error: err?.message || String(err),
       })
     }

@@ -5246,11 +5246,132 @@ pub async fn test_model(
     Ok(reply)
 }
 
+/// 从 SSE 流文本中累积 OpenAI 风格的 delta.content / delta.reasoning_content
+/// 格式示例：
+///   data: {"choices":[{"delta":{"content":"你好"}}]}
+///   data: {"choices":[{"delta":{"content":"，"}}]}
+///   data: [DONE]
+fn extract_sse_reply(text: &str) -> String {
+    let mut content = String::new();
+    let mut reasoning = String::new();
+    let mut saw_data_line = false;
+    for line in text.lines() {
+        let data = if let Some(rest) = line.strip_prefix("data: ") {
+            rest
+        } else if let Some(rest) = line.strip_prefix("data:") {
+            rest
+        } else {
+            continue;
+        };
+        saw_data_line = true;
+        let data = data.trim();
+        if data.is_empty() || data == "[DONE]" {
+            continue;
+        }
+        if let Ok(v) = serde_json::from_str::<serde_json::Value>(data) {
+            // OpenAI / 兼容后端：choices[0].delta.content
+            let delta = v
+                .get("choices")
+                .and_then(|c| c.get(0))
+                .and_then(|c| c.get("delta"));
+            if let Some(d) = delta {
+                if let Some(c) = d.get("content").and_then(|c| c.as_str()) {
+                    content.push_str(c);
+                }
+                if let Some(rc) = d.get("reasoning_content").and_then(|c| c.as_str()) {
+                    reasoning.push_str(rc);
+                }
+            }
+            // Anthropic streaming: {"type":"content_block_delta","delta":{"type":"text_delta","text":"..."}}
+            if v.get("type").and_then(|t| t.as_str()) == Some("content_block_delta") {
+                if let Some(c) = v
+                    .get("delta")
+                    .and_then(|d| d.get("text"))
+                    .and_then(|t| t.as_str())
+                {
+                    content.push_str(c);
+                }
+            }
+        }
+    }
+    if !saw_data_line {
+        return String::new();
+    }
+    if !content.is_empty() {
+        content
+    } else if !reasoning.is_empty() {
+        format!("[reasoning] {reasoning}")
+    } else {
+        String::new()
+    }
+}
+
+/// 从单个 JSON 响应中提取 reply（兼容 OpenAI / Anthropic / Gemini / DashScope 非流式）
+fn extract_single_json_reply(text: &str) -> String {
+    serde_json::from_str::<serde_json::Value>(text)
+        .ok()
+        .and_then(|v| {
+            if let Some(arr) = v.get("content").and_then(|c| c.as_array()) {
+                let text = arr
+                    .iter()
+                    .filter(|b| b.get("type").and_then(|t| t.as_str()) == Some("text"))
+                    .filter_map(|b| b.get("text").and_then(|t| t.as_str()))
+                    .collect::<Vec<_>>()
+                    .join("");
+                if !text.is_empty() {
+                    return Some(text);
+                }
+            }
+            if let Some(t) = v
+                .get("candidates")
+                .and_then(|c| c.get(0))
+                .and_then(|c| c.get("content"))
+                .and_then(|c| c.get("parts"))
+                .and_then(|p| p.get(0))
+                .and_then(|p| p.get("text"))
+                .and_then(|t| t.as_str())
+                .filter(|s| !s.is_empty())
+            {
+                return Some(t.to_string());
+            }
+            if let Some(msg) = v
+                .get("choices")
+                .and_then(|c| c.get(0))
+                .and_then(|c| c.get("message"))
+            {
+                let content = msg.get("content").and_then(|c| c.as_str()).unwrap_or("");
+                if !content.is_empty() {
+                    return Some(content.to_string());
+                }
+                if let Some(rc) = msg
+                    .get("reasoning_content")
+                    .and_then(|c| c.as_str())
+                    .filter(|s| !s.is_empty())
+                {
+                    return Some(format!("[reasoning] {rc}"));
+                }
+            }
+            if let Some(t) = v
+                .get("output")
+                .and_then(|o| o.get("text"))
+                .and_then(|t| t.as_str())
+                .filter(|s| !s.is_empty())
+            {
+                return Some(t.to_string());
+            }
+            None
+        })
+        .unwrap_or_default()
+}
+
 /// 测试模型（详细版 #Compat-1）：返回完整 req/resp 信息，供前端 debug 面板展示
+///
 /// 相比 test_model：
 /// - 不会因 400/422/429 等吞掉错误返回"连接正常"，一律如实回传 status + body
 /// - 返回结构化 JSON：success/status/req_url/req_body/resp_body/reply/error/elapsed_ms/used_api
 /// - 前端拿到后可以直接渲染 debug 面板，无需在 webview 里走外部 fetch（规避 status 0）
+/// - OpenAI 兼容路径使用 stream:true（绕开某些 new-api 后端的 non-streaming bug，
+///   并与真实对话行为一致）
 #[tauri::command]
 pub async fn test_model_verbose(
     base_url: String,
@@ -5307,20 +5428,25 @@ pub async fn test_model_verbose(
         }
         _ => {
             let url = format!("{}/chat/completions", base);
+            // 关键：测试请求用 stream: true 而非 stream: false
+            // 理由：部分兼容网关的 non-streaming 分支对某些模型会返回 200 + 空 body，
+            // 而 streaming 分支是真实对话路径，所有 provider 都稳定支持。
+            // 测试走 stream: true + SSE 累积，行为与真实对话一致。
             let body = json!({
                 "model": model_id,
                 "messages": [{"role": "user", "content": "你好，请用一句话回复"}],
                 "max_tokens": 200,
-                "stream": false
+                "stream": true
             });
             let mut req = client
                 .post(&url)
                 .header("Accept-Encoding", "identity")
+                .header("Accept", "text/event-stream")
                 .json(&body);
             if !api_key.is_empty() {
                 req = req.header("Authorization", format!("Bearer {api_key}"));
             }
-            ("Chat Completions", url, body, req)
+            ("Chat Completions (SSE)", url, body, req)
         }
     };
 
@@ -5353,79 +5479,104 @@ pub async fn test_model_verbose(
 
     let status = resp.status();
     let status_code = status.as_u16();
-    // 读取响应体：若失败（如 gzip/brotli 解码异常、非法 UTF-8）直接返回错误，不静默吞成空串
-    let text = match resp.text().await {
-        Ok(t) => t,
+
+    // 先抓取响应头（text() 会消耗 resp）—— 这是关键诊断信息：
+    // Content-Encoding 告诉我们是否压缩、是 br/gzip/zstd 还是啥
+    // Content-Type 告诉我们是否是 JSON / text
+    // Content-Length 告诉我们服务器声明的响应体大小
+    let resp_headers = {
+        let mut map = serde_json::Map::new();
+        for (k, v) in resp.headers().iter() {
+            map.insert(
+                k.to_string(),
+                serde_json::Value::String(v.to_str().unwrap_or("<non-utf8>").to_string()),
+            );
+        }
+        serde_json::Value::Object(map)
+    };
+
+    // 读取响应体：改用 bytes() 拿原始字节（reqwest 会按 Content-Encoding 自动解压），
+    // 然后自己做 UTF-8 decode。这样：
+    // 1. 失败时能给出更精确的错误分类（网络错误 vs 解压错误 vs UTF-8 错误）
+    // 2. UTF-8 失败时能 fallback 到 hex dump + lossy string，方便诊断
+    let bytes = match resp.bytes().await {
+        Ok(b) => b,
         Err(e) => {
+            let mut err_chain = format!("{e}");
+            let mut src: Option<&dyn std::error::Error> = std::error::Error::source(&e);
+            while let Some(s) = src {
+                err_chain.push_str(&format!(" → {s}"));
+                src = std::error::Error::source(s);
+            }
             return Ok(json!({
                 "success": false,
                 "status": status_code,
                 "reqUrl": req_url,
                 "reqBody": req_body_json,
+                "respHeaders": resp_headers,
                 "respBody": "",
+                "respRawHex": "",
+                "respByteCount": 0,
                 "reply": "",
-                "error": format!("读取响应体失败: {e} (可能是压缩编码未支持或非 UTF-8 响应)"),
+                "error": format!("读取响应字节失败: {err_chain}"),
+                "elapsedMs": elapsed_ms,
+                "usedApi": used_api,
+            }));
+        }
+    };
+    let byte_count = bytes.len();
+
+    // 前 200 字节的 hex dump（无论成功失败都附上，方便调试）
+    let hex_preview = bytes
+        .iter()
+        .take(200)
+        .map(|b| format!("{b:02x}"))
+        .collect::<Vec<_>>()
+        .join(" ");
+
+    // 尝试严格 UTF-8 decode；失败时 fallback 到 lossy 并在 error 里带上诊断
+    let text = match std::str::from_utf8(&bytes) {
+        Ok(s) => s.to_string(),
+        Err(e) => {
+            let lossy = String::from_utf8_lossy(&bytes).into_owned();
+            let ascii_preview: String = bytes
+                .iter()
+                .take(80)
+                .map(|&b| {
+                    if (0x20..=0x7e).contains(&b) {
+                        b as char
+                    } else {
+                        '.'
+                    }
+                })
+                .collect();
+            return Ok(json!({
+                "success": false,
+                "status": status_code,
+                "reqUrl": req_url,
+                "reqBody": req_body_json,
+                "respHeaders": resp_headers,
+                "respBody": lossy,
+                "respRawHex": hex_preview,
+                "respByteCount": byte_count,
+                "reply": "",
+                "error": format!("响应体 UTF-8 解码失败: {e} | 字节数={byte_count} | 前 80 字节 ASCII='{ascii_preview}'"),
                 "elapsedMs": elapsed_ms,
                 "usedApi": used_api,
             }));
         }
     };
 
-    // 提取 reply 文本（兼容 OpenAI / Anthropic / Gemini / DashScope）
-    let reply = serde_json::from_str::<serde_json::Value>(&text)
-        .ok()
-        .and_then(|v| {
-            if let Some(arr) = v.get("content").and_then(|c| c.as_array()) {
-                let text = arr
-                    .iter()
-                    .filter(|b| b.get("type").and_then(|t| t.as_str()) == Some("text"))
-                    .filter_map(|b| b.get("text").and_then(|t| t.as_str()))
-                    .collect::<Vec<_>>()
-                    .join("");
-                if !text.is_empty() {
-                    return Some(text);
-                }
-            }
-            if let Some(t) = v
-                .get("candidates")
-                .and_then(|c| c.get(0))
-                .and_then(|c| c.get("content"))
-                .and_then(|c| c.get("parts"))
-                .and_then(|p| p.get(0))
-                .and_then(|p| p.get("text"))
-                .and_then(|t| t.as_str())
-                .filter(|s| !s.is_empty())
-            {
-                return Some(t.to_string());
-            }
-            if let Some(msg) = v
-                .get("choices")
-                .and_then(|c| c.get(0))
-                .and_then(|c| c.get("message"))
-            {
-                let content = msg.get("content").and_then(|c| c.as_str()).unwrap_or("");
-                if !content.is_empty() {
-                    return Some(content.to_string());
-                }
-                if let Some(rc) = msg
-                    .get("reasoning_content")
-                    .and_then(|c| c.as_str())
-                    .filter(|s| !s.is_empty())
-                {
-                    return Some(format!("[reasoning] {rc}"));
-                }
-            }
-            if let Some(t) = v
-                .get("output")
-                .and_then(|o| o.get("text"))
-                .and_then(|t| t.as_str())
-                .filter(|s| !s.is_empty())
-            {
-                return Some(t.to_string());
-            }
-            None
-        })
-        .unwrap_or_default();
+    // 提取 reply 文本：同时兼容 SSE 流（stream:true）和单次 JSON（stream:false）
+    // 优先尝试 SSE 解析（OpenAI 兼容路径现在用 stream:true），失败再回退到单 JSON
+    let reply = {
+        let sse_reply = extract_sse_reply(&text);
+        if !sse_reply.is_empty() {
+            sse_reply
+        } else {
+            extract_single_json_reply(&text)
+        }
+    };
 
     let success = status.is_success() && !reply.is_empty();
     let error = if !status.is_success() {
@@ -5441,7 +5592,10 @@ pub async fn test_model_verbose(
         "status": status_code,
         "reqUrl": req_url,
         "reqBody": req_body_json,
+        "respHeaders": resp_headers,
         "respBody": text,
+        "respRawHex": hex_preview,
+        "respByteCount": byte_count,
         "reply": reply,
         "error": error,
         "elapsedMs": elapsed_ms,

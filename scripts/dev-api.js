@@ -3025,9 +3025,49 @@ const ALWAYS_LOCAL = new Set([
 function _normalizeBaseUrl(raw) {
   let base = (raw || '').replace(/\/+$/, '')
   base = base.replace(/\/(api\/chat|api\/generate|api\/tags|api|chat\/completions|completions|responses|messages|models)\/?$/, '')
+  base = base.replace(/\/(api\/chat|api\/generate|api\/tags|api|chat\/completions|completions|responses|messages|models)\/?$/, '')
   base = base.replace(/\/+$/, '')
   if (/:11434$/i.test(base)) return `${base}/v1`
   return base
+}
+
+// 从 SSE 流文本中累积 OpenAI 风格的 delta.content / delta.reasoning_content
+// 同时兼容 Anthropic streaming (content_block_delta)
+// 格式示例：
+//   data: {"choices":[{"delta":{"content":"你好"}}]}
+//   data: {"choices":[{"delta":{"content":"，"}}]}
+//   data: [DONE]
+function _extractSseReply(text) {
+  if (!text) return ''
+  let content = ''
+  let reasoning = ''
+  let sawDataLine = false
+  for (const line of text.split('\n')) {
+    let data
+    if (line.startsWith('data: ')) data = line.slice(6)
+    else if (line.startsWith('data:')) data = line.slice(5)
+    else continue
+    sawDataLine = true
+    data = data.trim()
+    if (!data || data === '[DONE]') continue
+    try {
+      const v = JSON.parse(data)
+      // OpenAI / 兼容后端：choices[0].delta.content
+      const delta = v?.choices?.[0]?.delta
+      if (delta) {
+        if (typeof delta.content === 'string') content += delta.content
+        if (typeof delta.reasoning_content === 'string') reasoning += delta.reasoning_content
+      }
+      // Anthropic streaming: {"type":"content_block_delta","delta":{"type":"text_delta","text":"..."}}
+      if (v?.type === 'content_block_delta' && typeof v?.delta?.text === 'string') {
+        content += v.delta.text
+      }
+    } catch {}
+  }
+  if (!sawDataLine) return ''
+  if (content) return content
+  if (reasoning) return `[reasoning] ${reasoning}`
+  return ''
 }
 
 // === 后端内存缓存（ARM 设备性能优化）===
@@ -4976,11 +5016,13 @@ const handlers = {
       reqBody = { contents: [{ role: 'user', parts: [{ text: '你好，请用一句话回复' }] }] }
       headers = { 'Content-Type': 'application/json', 'Accept-Encoding': 'identity' }
     } else {
-      usedApi = 'Chat Completions'
+      // OpenAI 兼容路径用 stream:true：部分兼容网关的 non-streaming 分支对某些模型
+      // 会返回 200 + 空 body，而 streaming 分支所有 provider 都稳定支持，与真实对话一致
+      usedApi = 'Chat Completions (SSE)'
       reqUrl = `${base}/chat/completions`
       realUrl = reqUrl
-      reqBody = { model: modelId, messages: [{ role: 'user', content: '你好，请用一句话回复' }], max_tokens: 200, stream: false }
-      headers = { 'Content-Type': 'application/json', 'Accept-Encoding': 'identity' }
+      reqBody = { model: modelId, messages: [{ role: 'user', content: '你好，请用一句话回复' }], max_tokens: 200, stream: true }
+      headers = { 'Content-Type': 'application/json', 'Accept-Encoding': 'identity', 'Accept': 'text/event-stream' }
       if (apiKey) headers['Authorization'] = `Bearer ${apiKey}`
     }
 
@@ -4991,32 +5033,58 @@ const handlers = {
       clearTimeout(timer)
       const elapsedMs = Date.now() - t0
       const error = e.name === 'AbortError' ? '请求超时 (30s)' : (e.message || String(e))
-      return { success: false, status: 0, reqUrl, reqBody, respBody: '', reply: '', error, elapsedMs, usedApi }
+      return { success: false, status: 0, reqUrl, reqBody, respHeaders: null, respBody: '', respRawHex: '', respByteCount: 0, reply: '', error, elapsedMs, usedApi }
     }
     clearTimeout(timer)
     const elapsedMs = Date.now() - t0
     const status = resp.status
-    const respBody = await resp.text().catch(() => '')
-
-    let reply = ''
+    // 抓取响应头
+    const respHeaders = {}
+    for (const [k, v] of resp.headers.entries()) respHeaders[k] = v
+    // 先拿字节，再自己 UTF-8 decode，失败时给 hex dump
+    let respBody = ''
+    let respRawHex = ''
+    let respByteCount = 0
+    let decodeErr = null
     try {
-      const v = JSON.parse(respBody)
-      if (Array.isArray(v.content)) {
-        reply = v.content.filter(b => b.type === 'text').map(b => b.text).join('')
+      const buf = new Uint8Array(await resp.arrayBuffer())
+      respByteCount = buf.length
+      respRawHex = Array.from(buf.slice(0, 200)).map(b => b.toString(16).padStart(2, '0')).join(' ')
+      try {
+        respBody = new TextDecoder('utf-8', { fatal: true }).decode(buf)
+      } catch (e) {
+        // UTF-8 严格解码失败，给 lossy 版本
+        respBody = new TextDecoder('utf-8').decode(buf)
+        decodeErr = `响应体 UTF-8 解码失败: ${e.message} | 字节数=${respByteCount}`
       }
-      if (!reply && v.candidates?.[0]?.content?.parts) {
-        reply = v.candidates[0].content.parts.map(p => p.text).filter(Boolean).join('')
-      }
-      if (!reply && v.choices?.[0]?.message) {
-        const msg = v.choices[0].message
-        reply = msg.content || (msg.reasoning_content ? `[reasoning] ${msg.reasoning_content}` : '')
-      }
-      if (!reply && v.output?.text) reply = v.output.text
-    } catch {}
+    } catch (e) {
+      decodeErr = `读取响应字节失败: ${e.message}`
+    }
 
-    const success = resp.ok && !!reply
+    // 先尝试 SSE 累积（OpenAI stream:true / Anthropic streaming），再回退到单 JSON
+    let reply = _extractSseReply(respBody)
+    if (!reply) {
+      try {
+        const v = JSON.parse(respBody)
+        if (Array.isArray(v.content)) {
+          reply = v.content.filter(b => b.type === 'text').map(b => b.text).join('')
+        }
+        if (!reply && v.candidates?.[0]?.content?.parts) {
+          reply = v.candidates[0].content.parts.map(p => p.text).filter(Boolean).join('')
+        }
+        if (!reply && v.choices?.[0]?.message) {
+          const msg = v.choices[0].message
+          reply = msg.content || (msg.reasoning_content ? `[reasoning] ${msg.reasoning_content}` : '')
+        }
+        if (!reply && v.output?.text) reply = v.output.text
+      } catch {}
+    }
+
+    const success = resp.ok && !!reply && !decodeErr
     let error = null
-    if (!resp.ok) {
+    if (decodeErr) {
+      error = decodeErr
+    } else if (!resp.ok) {
       try {
         const v = JSON.parse(respBody)
         error = v.error?.message || v.message || `HTTP ${status}`
@@ -5024,7 +5092,7 @@ const handlers = {
     } else if (!reply) {
       error = 'API 已响应但未解析出内容'
     }
-    return { success, status, reqUrl, reqBody, respBody, reply, error, elapsedMs, usedApi }
+    return { success, status, reqUrl, reqBody, respHeaders, respBody, respRawHex, respByteCount, reply, error, elapsedMs, usedApi }
   },
 
   async list_remote_models({ baseUrl, apiKey, apiType = 'openai-completions' }) {
