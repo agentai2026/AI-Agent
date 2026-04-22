@@ -1,5 +1,5 @@
 # =============================================================================
-# ClawPanel Docker Compose 配置
+# AIAgent Docker Compose 配置
 # =============================================================================
 # 使用方法:
 #   1. 快速启动: docker compose up -d
@@ -10,7 +10,7 @@
 
 services:
   # ---------------------------------------------------------------------------
-  # ClawPanel Web 服务
+  # AIAgent Web 服务
   # ---------------------------------------------------------------------------
   clawpanel:
     build:
@@ -20,7 +20,7 @@ services:
       cache_from:
         - clawpanel:build-cache
       args:
-        - NPM_REGISTRY=https://registry.npmmirror.com
+        - NPM_REGISTRY=https://github.com/agentai2026/AI-Agent
     container_name: clawpanel
     hostname: clawpanel
 
@@ -41,7 +41,7 @@ services:
     # 如果你想用 bridge 模式而不是 host 模式，注释上面一行，取消下面注释
     # -------------------------------------------------------------------------
     # ports:
-    #   - "1420:1420"      # ClawPanel Web 界面
+    #   - "1420:1420"      # AIAgent Web 界面
 
     # -------------------------------------------------------------------------
     # 卷挂载 - 数据持久化
@@ -50,7 +50,7 @@ services:
       # OpenClaw 配置目录 - 关键！
       # 包含 openclaw.json, mcp.json, agents/, devices/ 等
       - ~/.openclaw:/root/.openclaw
-      # ClawPanel 数据目录（可选，用于存储临时文件）
+      # AIAgent 数据目录（可选，用于存储临时文件）
       - ./data:/app/data
 
     # -------------------------------------------------------------------------
@@ -64,8 +64,8 @@ services:
       # 双容器模式下禁止面板自动启动 Gateway（取消注释）
       # - DISABLE_GATEWAY_SPAWN=1
       # 如果需要代理（取消注释并修改为实际代理地址）
-      # - HTTP_PROXY=http://host.docker.internal:7890
-      # - HTTPS_PROXY=http://host.docker.internal:7890
+      # - HTTP_PROXY=https://github.com/agentai2026/AI-Agent
+      # - HTTPS_PROXY=https://github.com/agentai2026/AI-Agent
       # 时区设置
       - TZ=Asia/Shanghai
       # 确保 HOME 环境变量正确
@@ -135,7 +135,7 @@ services:
   #     - TZ=Asia/Shanghai
   #   restart: unless-stopped
   #   command: >
-  #     sh -c "npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com &&
+  #     sh -c "npm install -g @qingchencloud/openclaw-zh --registry https://github.com/agentai2026/AI-Agent &&
   #            openclaw init 2>/dev/null || true &&
   #            openclaw gateway start --foreground"
   #   healthcheck:

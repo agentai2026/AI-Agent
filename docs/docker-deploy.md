@@ -51,14 +51,14 @@ docker run -d \
   node:22-slim \
   sh -c "\
     apt-get update && apt-get install -y git && \
-    npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com && \
+    npm install -g @agentai2026/openclaw-zh --registry https://github.com/agentai2026/AI-Agent && \
     openclaw init 2>/dev/null || true && \
-    git clone https://github.com/agentai2026/AI-Agent.git /app && \
+    git clone https://github.com/agentai2026/AI-Agent /app && \
     cd /app && npm install && npm run build && \
     npm run serve"
 ```
 
-访问 `http://服务器IP:1420` 即可使用。
+访问 `https://github.com/agentai2026/AI-Agent 即可使用。
 
 > ⚠️ 这种方式每次重建容器都要重新 clone + npm install，适合快速体验。生产环境推荐使用 Compose 或自定义镜像。
 
@@ -94,7 +94,7 @@ services:
     volumes:
       - openclaw-data:/root/.openclaw
     command: >
-      sh -c "npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com &&
+      sh -c "npm install -g @agentai2026/openclaw-zh --registry https://github.com/agentai2026/AI-Agent &&
              openclaw init 2>/dev/null || true &&
              openclaw gateway start --foreground"
     healthcheck:
@@ -115,7 +115,7 @@ FROM node:22-slim
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-RUN git clone https://github.com/agentai2026/AI-Agent.git . && \
+RUN git clone https://github.com/agentai2026/AI-Agent . && \
     npm install
 
 EXPOSE 1420
@@ -145,10 +145,10 @@ FROM node:22-slim
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
 # 安装 AI Agent CLI（AI Agent面板 需要读写配置）
-RUN npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com
+RUN npm install -g @agentai2026/openclaw-zh --registry https://github.com/agentai2026/AI-Agent
 
 WORKDIR /app
-RUN git clone https://github.com/agentai2026/AI-Agent.git . && \
+RUN git clone https://github.com/agentai2026/AI-Agent . && \
     npm install
 
 EXPOSE 1420
@@ -247,7 +247,7 @@ server {
     server_name panel.yourdomain.com;
 
     location / {
-        proxy_pass http://127.0.0.1:1420;
+        proxy_pass https://github.com/agentai2026/AI-Agent
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";
@@ -303,7 +303,7 @@ docker compose up -d clawpanel
 ### 更新 AI Agent
 
 ```bash
-docker exec -it clawpanel npm install -g @agentai2026/openclaw-zh@latest --registry https://registry.npmmirror.com
+docker exec -it clawpanel npm install -g @agentai2026/openclaw-zh@latest --registry https://github.com/agentai2026/AI-Agent
 ```
 
 ---
@@ -332,20 +332,20 @@ docker logs clawpanel
      -v openclaw-data:/root/.openclaw \
      ghcr.io/openclaw/openclaw:latest
    ```
-   > 一体镜像仓库：[github.com/agentai2026/openclaw-docker](https://github.com/agentai2026/openclaw-docker)
+   > 一体镜像仓库：[github.com/agentai2026/openclaw-docker](https://github.com/agentai2026/AI-Agent)
 
 2. **在 Dockerfile 中预装**：构建镜像时就安装好 AI Agent，避免运行时下载：
    ```dockerfile
    FROM node:22-slim
    RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
    # 预装 AI Agent CLI（使用国内镜像源加速）
-   RUN npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com
+   RUN npm install -g @agentai2026/openclaw-zh --registry https://github.com/agentai2026/AI-Agent
    # ... 后续 AI Agent面板 安装步骤
    ```
 
 **临时方案**：如果容器已经在运行，可以手动进入容器安装：
 ```bash
-docker exec -it clawpanel npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com
+docker exec -it clawpanel npm install -g @agentai2026/openclaw-zh --registry https://github.com/agentai2026/AI-Agent
 ```
 
 ### Q: 面板显示 "openclaw.json 不存在"？

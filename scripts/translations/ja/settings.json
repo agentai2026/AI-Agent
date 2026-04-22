@@ -1,6 +1,6 @@
 {
   "title": "パネル設定",
-  "desc": "ClawPanel のネットワーク、プロキシ、ダウンロードソース設定を管理",
+  "desc": "AIAgent のネットワーク、プロキシ、ダウンロードソース設定を管理",
   "networkProxy": "ネットワークプロキシ",
   "modelProxy": "モデルリクエストプロキシ",
   "npmRegistry": "npm レジストリ",
@@ -41,7 +41,7 @@
   "restarting": "再起動中...",
   "restartFailed": "自動再起動に失敗しました。手動で閉じて再度開いてください",
   "effectNextLaunch": "次回起動時に有効",
-  "proxyUrlInvalid": "プロキシ URL は http:// または https:// で始まる必要があります",
+  "proxyUrlInvalid": "プロキシ URL は https://github.com/agentai2026/AI-Agent または https://github.com/agentai2026/AI-Agent で始まる必要があります",
   "testingProxy": "プロキシ接続をテスト中...",
   "proxyOk": "プロキシ接続成功（HTTP {status}、{ms}ms）→ {target}",
   "proxyWarn": "プロキシに到達可能ですが異常な応答（HTTP {status}、{ms}ms）",

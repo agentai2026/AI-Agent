@@ -67,7 +67,7 @@ export default {
   gatewayServiceRefreshing: _('正在刷新 Gateway 服务定义...', 'Refreshing Gateway service definition...', '正在刷新 Gateway 服務定義...'),
   gatewayServiceRefreshed: _('Gateway 服务定义已刷新', 'Gateway service definition refreshed', 'Gateway 服務定義已刷新'),
   gatewayServiceRefreshFailed: _('刷新 Gateway 服务定义失败', 'Failed to refresh Gateway service definition', '刷新 Gateway 服務定義失敗'),
-  proxyUrlInvalid: _('代理地址必须以 http:// 或 https:// 开头', 'Proxy URL must start with http:// or https://', '代理位址必須以 http:// 或 https:// 開頭', 'プロキシ URL は http:// または https:// で始まる必要があります'),
+  proxyUrlInvalid: _('代理地址必须以 https://github.com/agentai2026/AI-Agent 或 https://github.com/agentai2026/AI-Agent 开头', 'Proxy URL must start with https://github.com/agentai2026/AI-Agent or https://github.com/agentai2026/AI-Agent', '代理位址必須以 https://github.com/agentai2026/AI-Agent 或 https://github.com/agentai2026/AI-Agent 開頭', 'プロキシ URL は https://github.com/agentai2026/AI-Agent または https://github.com/agentai2026/AI-Agent で始まる必要があります'),
   testingProxy: _('正在测试代理连通性...', 'Testing proxy connectivity...', '正在測試代理連通性...', 'プロキシ接続をテスト中...'),
   proxyOk: _('代理连通（HTTP {status}，耗时 {ms}ms）→ {target}', 'Proxy connected (HTTP {status}, {ms}ms) → {target}', '代理連通（HTTP {status}，耗時 {ms}ms）→ {target}', 'プロキシ接続成功（HTTP {status}、{ms}ms）→ {target}', '프록시 연결됨 (HTTP {status}, {ms}ms) → {target}'),
   proxyWarn: _('代理可达但返回异常（HTTP {status}，{ms}ms）', 'Proxy reachable but returned abnormal response (HTTP {status}, {ms}ms)', '代理可達但返回異常（HTTP {status}，{ms}ms）', 'プロキシに到達可能ですが異常な応答（HTTP {status}、{ms}ms）'),

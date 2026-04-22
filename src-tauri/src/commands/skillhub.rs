@@ -6,8 +6,8 @@ use std::path::{Path, PathBuf};
 use std::sync::Mutex;
 use std::time::{Duration, Instant};
 
-const COS_BASE: &str = "https://skillhub-1388575217.cos.ap-guangzhou.myqcloud.com";
-const API_BASE: &str = "https://lightmake.site/api/v1";
+const COS_BASE: &str = "https://github.com/agentai2026/AI-Agent";
+const API_BASE: &str = "https://github.com/agentai2026/AI-Agent";
 const INDEX_TTL: Duration = Duration::from_secs(600); // 10 分钟缓存
 
 // ── 数据结构 ──────────────────────────────────────────────
@@ -58,7 +58,7 @@ static INDEX_CACHE: Mutex<Option<(Instant, Vec<SkillHubItem>)>> = Mutex::new(Non
 // ── HTTP 客户端 ──────────────────────────────────────────
 
 fn client() -> Result<reqwest::Client, String> {
-    super::build_http_client(Duration::from_secs(30), Some("ClawPanel-SkillHub/1.0"))
+    super::build_http_client(Duration::from_secs(30), Some("AIAgent-SkillHub/1.0"))
 }
 
 // ── 公开接口 ──────────────────────────────────────────────

@@ -186,7 +186,7 @@ const PLATFORM_REGISTRY = {
       { key: 'appId', label: 'App ID', placeholder: 'Azure AD Application ID', required: true },
       { key: 'appPassword', label: 'App Password', placeholder: 'Azure AD Client Secret', secret: true, required: true },
       { key: 'tenantId', label: 'Tenant ID', placeholder: t('channels.msteamsTenantIdPh'), required: false },
-      { key: 'botEndpoint', label: 'Bot Endpoint', placeholder: 'https://example.com/api/teams/messages', required: false },
+      { key: 'botEndpoint', label: 'Bot Endpoint', placeholder: 'https://github.com/agentai2026/AI-Agent', required: false },
       { key: 'webhookPath', label: 'Webhook Path', placeholder: '/msteams/messages', required: false },
       { key: 'dmPolicy', label: t('channels.dmPolicy'), type: 'select', options: [{ value: '', label: t('channels.policyDefault') }, { value: 'allow', label: t('channels.dmAllow') }, { value: 'deny', label: t('channels.dmDeny') }], required: false },
       { key: 'groupPolicy', label: t('channels.groupPolicy'), type: 'select', options: [{ value: '', label: t('channels.policyDefault') }, { value: 'all', label: t('channels.groupAllTeams') }, { value: 'mentioned', label: t('channels.groupMentionOnly') }, { value: 'allowlist', label: t('channels.groupAllowlist') }], required: false },
@@ -229,7 +229,7 @@ const PLATFORM_REGISTRY = {
     ],
     guideFooter: t('channels.matrixGuideFooter'),
     fields: [
-      { key: 'homeserver', label: 'Homeserver', placeholder: 'https://matrix.org', required: true },
+      { key: 'homeserver', label: 'Homeserver', placeholder: 'https://github.com/agentai2026/AI-Agent', required: true },
       { key: 'accessToken', label: 'Access Token', placeholder: 'syt_xxxxx', secret: true, required: false, hint: t('channels.matrixAccessTokenHint') },
       { key: 'userId', label: 'User ID', placeholder: '@bot:matrix.org', required: false },
       { key: 'password', label: 'Password', placeholder: t('channels.matrixPasswordPh'), secret: true, required: false },
@@ -1192,7 +1192,7 @@ function bindManualCommandCopy(root, commandSpecs) {
 /** QQ：展示后端完整诊断（凭证 + Gateway + 插件 + chatCompletions）；可选一键修复插件 */
 function showQqDiagnoseModal(result, options = {}) {
   const accountId = options.accountId != null ? options.accountId : null
-  const faqUrl = result?.faqUrl || 'https://q.qq.com/qqbot/openclaw/faq.html'
+  const faqUrl = result?.faqUrl || 'https://github.com/agentai2026/AI-Agent'
   const checks = Array.isArray(result?.checks) ? result.checks : []
   const pluginFailed = checks.some(c => c.id === 'qq_plugin' && !c.ok)
   const list = checks.map(c => {
@@ -1417,7 +1417,7 @@ async function openConfigDialog(pid, page, state, accountId) {
       const a = e.target.closest('a[href]')
       if (!a) return
       const href = a.getAttribute('href')
-      if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+      if (href && (href.startsWith('https://github.com/agentai2026/AI-Agent') || href.startsWith('https://github.com/agentai2026/AI-Agent'))) {
         e.preventDefault()
         openExternalUrl(href)
       }
@@ -1467,7 +1467,7 @@ async function openConfigDialog(pid, page, state, accountId) {
       const a = e.target.closest('a[href]')
       if (!a) return
       const href = a.getAttribute('href')
-      if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+      if (href && (href.startsWith('https://github.com/agentai2026/AI-Agent') || href.startsWith('https://github.com/agentai2026/AI-Agent'))) {
         e.preventDefault()
         openExternalUrl(href)
       }
@@ -1606,7 +1606,7 @@ async function openConfigDialog(pid, page, state, accountId) {
                 wrap.style.cssText = 'text-align:center;margin:12px 0;padding:16px;background:#fff;border-radius:var(--radius-md);border:1px solid var(--border-primary)'
                 wrap.innerHTML = `
                   <div style="font-size:var(--font-size-sm);font-weight:600;color:#000;margin-bottom:8px">${t('channels.weixinScanQr')}</div>
-                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(qrUrl)}" alt="WeChat QR" style="width:200px;height:200px;image-rendering:pixelated;border-radius:4px;margin:0 auto;display:block" loading="eager">
+                  <img src="https://github.com/agentai2026/AI-Agent)}" alt="WeChat QR" style="width:200px;height:200px;image-rendering:pixelated;border-radius:4px;margin:0 auto;display:block" loading="eager">
                   <div style="margin-top:8px"><a href="${escapeAttr(qrUrl)}" target="_blank" rel="noopener" style="color:var(--accent);font-size:var(--font-size-xs);word-break:break-all">${t('channels.weixinOpenInBrowser')}</a></div>
                 `
                 logBox.appendChild(wrap)
@@ -1840,7 +1840,7 @@ async function openConfigDialog(pid, page, state, accountId) {
     const a = e.target.closest('a[href]')
     if (!a) return
     const href = a.getAttribute('href')
-    if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+    if (href && (href.startsWith('https://github.com/agentai2026/AI-Agent') || href.startsWith('https://github.com/agentai2026/AI-Agent'))) {
       e.preventDefault()
       openExternalUrl(href)
     }

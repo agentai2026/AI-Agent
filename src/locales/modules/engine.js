@@ -36,7 +36,7 @@ export default {
   installModeLocal: _('本地', 'Local', '本地'),
   installModeCustom: _('自定义', 'Custom', '自訂'),
   installCustomDesc: _('连接到已有的 Hermes Agent Gateway 实例，适用于已在其他机器或手动安装的场景。', 'Connect to an existing Hermes Agent Gateway instance, for setups on other machines or manual installations.', '連接到已有的 Hermes Agent Gateway 實例，適用於已在其他機器或手動安裝的場景。'),
-  installCustomHint: _('输入已运行的 Hermes Agent Gateway 地址，例如 http://192.168.1.100:8642', 'Enter the URL of a running Hermes Agent Gateway, e.g. http://192.168.1.100:8642', '輸入已運行的 Hermes Agent Gateway 地址，例如 http://192.168.1.100:8642'),
+  installCustomHint: _('输入已运行的 Hermes Agent Gateway 地址，例如 https://github.com/agentai2026/AI-Agent', 'Enter the URL of a running Hermes Agent Gateway, e.g. https://github.com/agentai2026/AI-Agent', '輸入已運行的 Hermes Agent Gateway 地址，例如 https://github.com/agentai2026/AI-Agent'),
   installCustomConnect: _('测试连接', 'Test Connection', '測試連接'),
   installCustomTesting: _('连接中...', 'Connecting...', '連接中...'),
   installCustomEmpty: _('请输入 Gateway URL', 'Please enter Gateway URL', '請輸入 Gateway URL'),

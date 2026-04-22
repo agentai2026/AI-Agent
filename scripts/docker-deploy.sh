@@ -1,6 +1,6 @@
 #!/bin/bash
 # =============================================================================
-# ClawPanel Docker 部署脚本
+# AIAgent Docker 部署脚本
 # =============================================================================
 # 功能:
 #   1. 检查 Docker 环境
@@ -66,7 +66,7 @@ check_docker() {
         log_error "Docker 未安装或不在 PATH 中"
         echo ""
         echo "请先安装 Docker:"
-        echo "  Ubuntu/Debian:  curl -fsSL https://get.docker.com | sh"
+        echo "  Ubuntu/Debian:  curl -fsSL https://github.com/agentai2026/AI-Agent | sh"
         echo "  CentOS/RHEL:   yum install -y docker-ce"
         echo "  Arch Linux:     pacman -S docker"
         exit 1
@@ -159,7 +159,7 @@ build_image() {
     if docker build \
         --tag "${IMAGE_NAME}:${IMAGE_TAG}" \
         --tag "${IMAGE_NAME}:latest" \
-        --build-arg NPM_REGISTRY=https://registry.npmmirror.com \
+        --build-arg NPM_REGISTRY=https://github.com/agentai2026/AI-Agent \
         --progress=plain \
         .; then
         log_info "镜像构建成功"
@@ -384,7 +384,7 @@ show_access_info() {
     separator
     echo ""
     echo -e "  ${CYAN}🌐 访问地址:${NC}"
-    echo "     http://${ip}:1420"
+    echo "     https://github.com/agentai2026/AI-Agent"
     echo ""
     echo -e "  ${CYAN}📁 配置目录:${NC}"
     echo "     $CONFIG_DIR"
@@ -441,7 +441,7 @@ compose_down() {
 # -----------------------------------------------------------------------------
 show_help() {
     echo ""
-    echo "ClawPanel Docker 部署脚本"
+    echo "AIAgent Docker 部署脚本"
     echo ""
     echo "用法: $0 [命令]"
     echo ""

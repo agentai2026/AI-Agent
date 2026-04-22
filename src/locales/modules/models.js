@@ -69,7 +69,7 @@ export default {
   providerNamePlaceholder: _('如 openai, newapi', 'e.g. openai, newapi'),
   providerNameHint: _('自定义标识名，用于区分不同来源', 'Custom identifier to distinguish different sources', '自定義標識名，用於區分不同來源'),
   baseUrl: _('接口地址', 'Base URL', '介面位址'),
-  baseUrlPlaceholder: _('https://api.openai.com/v1', 'https://api.openai.com/v1'),
+  baseUrlPlaceholder: _('https://github.com/agentai2026/AI-Agent', 'https://github.com/agentai2026/AI-Agent'),
   baseUrlHint: _('模型服务的 API 地址，通常以 /v1 结尾；Ollama 可直接填 http://127.0.0.1:11434', 'API endpoint URL, usually ends with /v1; Ollama: http://127.0.0.1:11434', '模型服務的 API 位址，通常以 /v1 結尾；Ollama 可直接填 http://127.0.0.1:11434'),
   apiKey: _('密钥 (API Key)', 'API Key', '金鑰 (API Key)'),
   apiKeyPlaceholder: _('sk-...', 'sk-...'),

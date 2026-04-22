@@ -1,5 +1,5 @@
 #!/bin/bash
-# ClawPanel 编译脚本
+# AIAgent 编译脚本
 # 用法: ./scripts/build.sh [check|debug|release]
 #   check   - 仅检查 Rust 编译（最快，不生成产物）
 #   debug   - 编译 debug 版本（默认）

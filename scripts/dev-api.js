@@ -1,5 +1,5 @@
 /**
- * ClawPanel 开发模式 API 插件
+ * AIAgent 开发模式 API 插件
  * 在 Vite 开发服务器上提供真实 API 端点，替代 mock 数据
  * 使浏览器模式能真正管理 OpenClaw 实例
  */
@@ -1472,7 +1472,7 @@ function getUid() {
 
 function stripUiFields(config) {
   if (!config || typeof config !== 'object' || Array.isArray(config)) return config
-  // 清理根层级 ClawPanel 内部字段（version info 等），避免污染 openclaw.json
+  // 清理根层级 AIAgent 内部字段（version info 等），避免污染 openclaw.json
   // Issue #89: 这些字段被写入 openclaw.json 后导致 Gateway 无法启动（Unknown config keys）
   const uiRootKeys = [
     'current', 'latest', 'recommended', 'update_available',
@@ -1908,7 +1908,7 @@ function patchGatewayOrigins() {
   const config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8'))
   const origins = requiredControlUiOrigins()
   const existing = config?.gateway?.controlUi?.allowedOrigins || []
-  // 合并：保留用户已有的 origins，只追加 ClawPanel 需要的
+  // 合并：保留用户已有的 origins，只追加 AIAgent 需要的
   const merged = [...new Set([...existing, ...origins])]
   // 幂等：已包含所有需要的 origin 时跳过写入
   if (origins.every(o => existing.includes(o))) return false
@@ -2362,7 +2362,7 @@ function winStartGateway() {
 
   // 写入启动标记到日志
   const timestamp = new Date().toISOString()
-  fs.appendFileSync(logPath, `\n[${timestamp}] [ClawPanel] Starting Gateway on Windows...\n`)
+  fs.appendFileSync(logPath, `\n[${timestamp}] [AIAgent] Starting Gateway on Windows...\n`)
 
   // 用 cmd.exe /c 启动，不用 shell: true（避免额外 cmd.exe 进程链导致终端闪烁）
   const child = spawnOpenclaw(['gateway'], {
@@ -2662,7 +2662,7 @@ function linuxStartGateway() {
   const err = fs.openSync(errPath, 'a')
 
   const timestamp = new Date().toISOString()
-  fs.appendFileSync(logPath, `\n[${timestamp}] [ClawPanel] Starting Gateway on Linux...\n`)
+  fs.appendFileSync(logPath, `\n[${timestamp}] [AIAgent] Starting Gateway on Linux...\n`)
 
   const child = spawnOpenclaw(['gateway'], {
     detached: true,
@@ -4375,7 +4375,7 @@ const handlers = {
 
       // 每个兵种独立的 AGENTS.md（操作指令）
       const ROLE_AGENTS = {
-        general: '# 操作指令\n\n你是龙虾军团的步兵，接受统帅通过 ClawPanel 下达的任务指令。\n\n## 规则\n- 收到任务后立即执行，完成后简要汇报结果\n- 如果任务不清楚，先确认再行动\n- 保持回复简洁，重点突出\n- 你有独立的记忆空间，会自动记录重要信息',
+        general: '# 操作指令\n\n你是龙虾军团的步兵，接受统帅通过 AIAgent 下达的任务指令。\n\n## 规则\n- 收到任务后立即执行，完成后简要汇报结果\n- 如果任务不清楚，先确认再行动\n- 保持回复简洁，重点突出\n- 你有独立的记忆空间，会自动记录重要信息',
         coder: '# 操作指令\n\n你是龙虾军团的突击兵，专精编程作战。\n\n## 规则\n- 收到编程任务后，先分析需求再写代码\n- 代码必须可运行，包含必要的注释\n- 主动进行错误处理和边界检查\n- 如果涉及多个文件，说明修改顺序\n- 完成后给出测试建议\n\n## 专长\n- 全栈开发、API 设计、数据库优化\n- Bug 定位与修复、代码重构\n- 性能优化、安全审计',
         translator: '# 操作指令\n\n你是龙虾军团的翻译官，专精多语言互译。\n\n## 规则\n- 翻译要信达雅，保持原文风格\n- 专业术语保留原文标注\n- 长文分段翻译，保持上下文一致\n- 文学作品注重意境传达\n- 技术文档注重准确性\n\n## 专长\n- 中英日韩法德西等主流语言\n- 技术文档、文学作品、商务邮件',
         writer: '# 操作指令\n\n你是龙虾军团的文书官，专精写作任务。\n\n## 规则\n- 根据场景调整语气和风格\n- 注重结构清晰、逻辑连贯\n- 创意写作要有个性和亮点\n- 技术文档要准确严谨\n- 营销文案要抓住痛点\n\n## 专长\n- 博客文章、技术文档、营销文案\n- 故事创作、剧本、诗歌\n- SEO 优化、社交媒体内容',
@@ -4402,7 +4402,7 @@ const handlers = {
       console.warn(`[init-worker] 兵种配置注入失败: ${e.message}`)
     }
 
-    // 4.5 注入 ClawPanel Agent（容器内专属控制代理）
+    // 4.5 注入 AIAgent Agent（容器内专属控制代理）
     try {
       await injectAgentToContainer(containerId, node.endpoint, cExec)
       results.files.push('clawpanel-agent.cjs')
@@ -5740,7 +5740,7 @@ const handlers = {
     // ── npm install（兜底或用户明确选择） ──
 
     if (!version && recommended) {
-      logs.push(`ClawPanel ${PANEL_VERSION} 默认绑定 OpenClaw 稳定版: ${recommended}`)
+      logs.push(`AIAgent ${PANEL_VERSION} 默认绑定 OpenClaw 稳定版: ${recommended}`)
     }
     const gitConfigured = configureGitHttpsRules()
     const gitEnv = buildGitInstallEnv()
@@ -5951,7 +5951,7 @@ const handlers = {
         role: 'operator', scopes: SCOPES, caps: [],
         auth: { token: gatewayToken || '' },
         device: { id: deviceId, publicKey, signedAt, nonce: nonce || '', signature: sigB64 },
-        locale: 'zh-CN', userAgent: 'ClawPanel/1.0.0 (web)',
+        locale: 'zh-CN', userAgent: 'AIAgent/1.0.0 (web)',
       },
     }
   },
@@ -6443,7 +6443,7 @@ const handlers = {
 
   async check_panel_update() {
     const sources = [
-      { api: 'https://api.github.com/repos/qingchencloud/clawpanel/releases/latest', releases: 'https://github.com/qingchencloud/clawpanel/releases', name: 'github' },
+      { api: 'https://api.github.com/repos/qingchencloud/clawpanel/releases/latest', releases: 'https://github.com/agentai2026/AI-Agent/releases', name: 'github' },
       { api: 'https://gitee.com/api/v5/repos/QtCodeCreators/clawpanel/releases/latest', releases: 'https://gitee.com/QtCodeCreators/clawpanel/releases', name: 'gitee' },
     ]
     let lastErr = ''
@@ -6451,7 +6451,7 @@ const handlers = {
       try {
         const resp = await globalThis.fetch(src.api, {
           signal: AbortSignal.timeout(8000),
-          headers: { 'User-Agent': 'ClawPanel' },
+          headers: { 'User-Agent': 'AIAgent' },
         })
         if (!resp.ok) { lastErr = `${src.name}: HTTP ${resp.status}`; continue }
         const json = await resp.json()
@@ -6460,7 +6460,7 @@ const handlers = {
         return { latest: tag, url: json.html_url || src.releases, source: src.name, downloadUrl: 'https://claw.qt.cool' }
       } catch (e) { lastErr = `${src.name}: ${e.message}`; continue }
     }
-    return { latest: null, url: 'https://github.com/qingchencloud/clawpanel/releases', error: lastErr }
+    return { latest: null, url: 'https://github.com/agentai2026/AI-Agent/releases', error: lastErr }
   },
 
   write_env_file({ path: p, config }) {
@@ -6620,7 +6620,7 @@ const handlers = {
       const existing = fs.readFileSync(configPath, 'utf8')
       configContent = _mergeHermesConfigYaml(existing, modelStr, baseUrlLine)
     } else {
-      configContent = `# Hermes Agent configuration (managed by ClawPanel)\nmodel:\n  default: ${modelStr}\n${baseUrlLine}platform_toolsets:\n  api_server:\n    - hermes-api-server\nterminal:\n  backend: local\nplatforms:\n  api_server:\n    enabled: true\n`
+      configContent = `# Hermes Agent configuration (managed by AIAgent)\nmodel:\n  default: ${modelStr}\n${baseUrlLine}platform_toolsets:\n  api_server:\n    - hermes-api-server\nterminal:\n  backend: local\nplatforms:\n  api_server:\n    enabled: true\n`
     }
     fs.writeFileSync(configPath, configContent)
     // .env
@@ -6697,14 +6697,14 @@ const handlers = {
 
   async hermes_health_check() {
     const url = `${hermesGatewayUrl()}/health`
-    const resp = await globalThis.fetch(url, { signal: AbortSignal.timeout(5000), headers: { 'User-Agent': 'ClawPanel-Web' } })
+    const resp = await globalThis.fetch(url, { signal: AbortSignal.timeout(5000), headers: { 'User-Agent': 'AIAgent-Web' } })
     if (!resp.ok) throw new Error(`Gateway 返回 HTTP ${resp.status}`)
     return await resp.json()
   },
 
   async hermes_api_proxy({ method, path: reqPath, body, headers: customHeaders } = {}) {
     const url = `${hermesGatewayUrl()}${reqPath}`
-    const opts = { method: method || 'GET', headers: { 'User-Agent': 'ClawPanel-Web' } }
+    const opts = { method: method || 'GET', headers: { 'User-Agent': 'AIAgent-Web' } }
     const timeout = (reqPath.includes('/chat/completions') || reqPath.includes('/responses')) ? 120000 : 30000
     opts.signal = AbortSignal.timeout(timeout)
     // Auto-inject API_SERVER_KEY from .env if available
@@ -6741,7 +6741,7 @@ const handlers = {
     if (sessionId) payload.session_id = sessionId
     if (conversationHistory) payload.conversation_history = conversationHistory
     if (instructions) payload.instructions = instructions
-    const headers = { 'Content-Type': 'application/json', 'User-Agent': 'ClawPanel-Web' }
+    const headers = { 'Content-Type': 'application/json', 'User-Agent': 'AIAgent-Web' }
     if (apiKey) headers['Authorization'] = `Bearer ${apiKey}`
     const resp = await globalThis.fetch(`${gwUrl}/v1/runs`, {
       method: 'POST', headers, body: JSON.stringify(payload), signal: AbortSignal.timeout(10000),
@@ -6796,7 +6796,7 @@ const handlers = {
     for (const suffix of ['/chat/completions', '/completions', '/responses', '/messages', '/models']) {
       if (base.endsWith(suffix)) base = base.slice(0, -suffix.length)
     }
-    const headers = { 'User-Agent': 'ClawPanel-Web' }
+    const headers = { 'User-Agent': 'AIAgent-Web' }
     let url
     if (api.includes('anthropic')) {
       if (!base.endsWith('/v1')) base += '/v1'

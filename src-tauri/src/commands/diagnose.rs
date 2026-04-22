@@ -196,7 +196,7 @@ fn check_allowed_origins() -> DiagnoseStep {
                     Some(arr) if !arr.is_empty() => {
                         let list: Vec<&str> = arr.iter().filter_map(|v| v.as_str()).collect();
                         let has_tauri = list.iter().any(|o| {
-                            o.contains("tauri://") || o.contains("https://tauri.localhost")
+                            o.contains("tauri://") || o.contains("https://github.com/agentai2026/AI-Agent")
                         });
                         if has_tauri {
                             finish_step(
@@ -233,7 +233,7 @@ fn check_allowed_origins() -> DiagnoseStep {
 /// HTTP /health 探测（尝试性，上游可能未暴露）
 async fn check_http_health(port: u16) -> DiagnoseStep {
     let t = step_timer();
-    let url = format!("http://127.0.0.1:{port}/health");
+    let url = format!("https://github.com/agentai2026/AI-Agent");
     let client = reqwest::Client::builder()
         .timeout(Duration::from_secs(5))
         .build();

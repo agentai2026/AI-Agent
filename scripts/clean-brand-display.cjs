@@ -29,7 +29,7 @@ function processFile(rel) {
     [/晴辰雲/g, '專案'],
     [/晴辰助手/g, 'AI 助手'],
     [/qingchencloud/gi, 'agentai2026'],
-    [/ClawPanel/g, 'AI Agent面板'],
+    [/AIAgent/g, 'AI Agent面板'],
     [/OpenClaw/g, 'AI Agent'],
   ]
   for (const [re, rep] of seq) {

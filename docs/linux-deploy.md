@@ -59,7 +59,7 @@
 ## 方式一：一键部署
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/scripts/linux-deploy.sh | bash
+curl -fsSL https://github.com/agentai2026/AI-Agent | bash
 ```
 
 脚本自动完成：
@@ -69,7 +69,7 @@ curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/scripts/l
 4. 创建 systemd 服务、开机自启
 5. 启动 AI Agent面板 Web，输出访问地址
 
-部署完成后访问 `http://服务器IP:1420`。
+部署完成后访问 `https://github.com/agentai2026/AI-Agent
 
 ---
 
@@ -80,14 +80,14 @@ curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/scripts/l
 **Ubuntu / Debian：**
 
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+curl -fsSL https://github.com/agentai2026/AI-Agent | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
 **CentOS / RHEL / Fedora：**
 
 ```bash
-curl -fsSL https://rpm.nodesource.com/setup_22.x | sudo bash -
+curl -fsSL https://github.com/agentai2026/AI-Agent | sudo bash -
 sudo yum install -y nodejs
 ```
 
@@ -109,7 +109,7 @@ npm -v    # 10.x.x
 AI Agent面板 是 AI Agent 的管理工具，需要先安装 AI Agent：
 
 ```bash
-npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com
+npm install -g @agentai2026/openclaw-zh --registry https://github.com/agentai2026/AI-Agent
 ```
 
 初始化配置（首次）：
@@ -122,7 +122,7 @@ openclaw init
 
 ```bash
 cd /opt
-sudo git clone https://github.com/agentai2026/AI-Agent.git
+sudo git clone https://github.com/agentai2026/AI-Agent
 sudo chown -R $(whoami) clawpanel
 cd clawpanel
 npm install
@@ -151,7 +151,7 @@ npm run serve -- --port 8080
   [api] API 已启动，配置目录: /root/.openclaw
 ```
 
-打开浏览器访问 `http://服务器IP:1420` 即可使用 AI Agent面板。
+打开浏览器访问 `https://github.com/agentai2026/AI-Agent 即可使用 AI Agent面板。
 
 ---
 
@@ -169,8 +169,8 @@ docker run -d \
   -v clawpanel-data:/root/.openclaw \
   node:22-slim \
   sh -c "apt-get update && apt-get install -y git && \
-    npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com && \
-    git clone https://github.com/agentai2026/AI-Agent.git /app && \
+    npm install -g @agentai2026/openclaw-zh --registry https://github.com/agentai2026/AI-Agent && \
+    git clone https://github.com/agentai2026/AI-Agent /app && \
     cd /app && npm install && npm run build && npm run serve"
 ```
 
@@ -181,7 +181,7 @@ docker run -d \
 部署完成后，用浏览器打开：
 
 ```
-http://服务器IP:1420
+https://github.com/agentai2026/AI-Agent
 ```
 
 AI Agent面板 会自动检测本机的 AI Agent 安装，你可以：
@@ -268,7 +268,7 @@ server {
     server_name panel.yourdomain.com;
 
     location / {
-        proxy_pass http://127.0.0.1:1420;
+        proxy_pass https://github.com/agentai2026/AI-Agent
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";
@@ -318,13 +318,13 @@ cd /opt/clawpanel        # root 部署路径
 # 或 ~/.local/share/clawpanel  # 普通用户路径
 
 git pull origin main
-npm install --registry https://registry.npmmirror.com
+npm install --registry https://github.com/agentai2026/AI-Agent
 sudo systemctl restart clawpanel  # 或 pm2 restart clawpanel
 ```
 
 > 国内拉不到 GitHub？用 Gitee 镜像：
 > ```bash
-> git remote set-url origin https://gitee.com/QtCodeCreators/clawpanel.git
+> git remote set-url origin https://github.com/agentai2026/AI-Agent
 > git pull origin main
 > ```
 
@@ -340,13 +340,13 @@ sudo systemctl restart clawpanel  # 或 pm2 restart clawpanel
 
 ```bash
 # 汉化优化版（示例：AI Agent面板 0.9.0 推荐版）
-sudo npm install -g @agentai2026/openclaw-zh@2026.3.7-zh.2 --registry https://registry.npmmirror.com
+sudo npm install -g @agentai2026/openclaw-zh@2026.3.7-zh.2 --registry https://github.com/agentai2026/AI-Agent
 
 # 官方原版（示例：AI Agent面板 0.9.0 推荐版）
-sudo npm install -g openclaw@2026.3.11 --registry https://registry.npmjs.org
+sudo npm install -g openclaw@2026.3.11 --registry https://github.com/agentai2026/AI-Agent
 
 # 国内镜像失败时，再切 npm 官方源重试
-sudo npm install -g @agentai2026/openclaw-zh@2026.3.7-zh.2 --registry https://registry.npmjs.org
+sudo npm install -g @agentai2026/openclaw-zh@2026.3.7-zh.2 --registry https://github.com/agentai2026/AI-Agent
 ```
 
 > **维护说明**：如果你是 AI Agent面板 维护者，后续只需要更新仓库根目录的 `openclaw-version-policy.json`，即可统一调整不同面板版本对应的推荐 AI Agent 版本。程序版本号、热更新清单、桌面图标的维护方式见 `docs/version-maintenance.md`。
@@ -380,7 +380,7 @@ systemd 服务也需要改 ExecStart 中的端口。
 需要先安装 AI Agent 并初始化：
 
 ```bash
-npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com
+npm install -g @agentai2026/openclaw-zh --registry https://github.com/agentai2026/AI-Agent
 openclaw init
 ```
 

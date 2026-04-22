@@ -68,7 +68,7 @@ function renderCftunnel(el, s) {
       <div style="color:var(--text-tertiary);margin-bottom:var(--space-md)">${t('ext.cftunnelNotInstalled')}</div>
       <div style="display:flex;gap:var(--space-sm);align-items:center">
         <button class="btn btn-primary btn-sm" data-action="install-cftunnel">${t('ext.installBtn')}</button>
-        <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/cftunnel" target="_blank" rel="noopener">${t('ext.viewDocs')}</a>
+        <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('ext.viewDocs')}</a>
       </div>
       <div id="install-progress-area"></div>
     `
@@ -125,7 +125,7 @@ function renderRoutes(routes) {
               <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
               <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
             </svg>
-            <a href="https://${escapeHtml(r.domain)}" target="_blank" rel="noopener">${escapeHtml(r.domain)}</a>
+            <a href="https://github.com/agentai2026/AI-Agent)}" target="_blank" rel="noopener">${escapeHtml(r.domain)}</a>
           </div>
           <div class="tunnel-route-service">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--text-tertiary)">
@@ -161,7 +161,7 @@ function renderClawapp(el, s) {
       <div style="color:var(--text-tertiary);margin-bottom:var(--space-md)">${t('ext.clawappNotInstalled')}</div>
       <div style="display:flex;gap:var(--space-sm);align-items:center">
         <button class="btn btn-primary btn-sm" data-action="install-clawapp">${t('ext.installBtn')}</button>
-        <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/clawapp" target="_blank" rel="noopener">${t('ext.viewDocs')}</a>
+        <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('ext.viewDocs')}</a>
       </div>
       <div id="install-clawapp-progress-area"></div>
     `
@@ -187,7 +187,7 @@ function renderClawapp(el, s) {
     </div>
     <div style="display:flex;gap:var(--space-sm)">
       <a class="btn btn-primary btn-sm" href="${s.url || 'http://localhost:3210'}" target="_blank" rel="noopener">${t('ext.openClawapp')}</a>
-      <a class="btn btn-secondary btn-sm" href="https://chat.qrj.ai" target="_blank" rel="noopener">${t('ext.openPublicUrl')}</a>
+      <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('ext.openPublicUrl')}</a>
       <button class="btn btn-secondary btn-sm" data-action="clawapp-refresh">${t('ext.refresh')}</button>
     </div>
   `

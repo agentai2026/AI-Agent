@@ -29,27 +29,27 @@ impl Drop for GuardianPause {
 }
 
 /// 预设 npm 源列表
-const DEFAULT_REGISTRY: &str = "https://registry.npmmirror.com";
+const DEFAULT_REGISTRY: &str = "https://github.com/agentai2026/AI-Agent";
 /// (target_https_prefix, from_pattern) pairs for Git HTTPS rewriting.
 /// Each entry maps a non-HTTPS Git URL pattern to the corresponding HTTPS URL.
 const GIT_HTTPS_REWRITES: &[(&str, &str)] = &[
     // github.com
-    ("https://github.com/", "ssh://git@github.com/"),
-    ("https://github.com/", "ssh://git@github.com"),
-    ("https://github.com/", "ssh://git@://github.com/"),
-    ("https://github.com/", "git@github.com:"),
-    ("https://github.com/", "git://github.com/"),
-    ("https://github.com/", "git+ssh://git@github.com/"),
+    ("https://github.com/agentai2026/AI-Agent", "ssh://git@github.com/"),
+    ("https://github.com/agentai2026/AI-Agent", "ssh://git@github.com"),
+    ("https://github.com/agentai2026/AI-Agent", "ssh://git@://github.com/"),
+    ("https://github.com/agentai2026/AI-Agent", "git@github.com:"),
+    ("https://github.com/agentai2026/AI-Agent", "git://github.com/"),
+    ("https://github.com/agentai2026/AI-Agent", "git+ssh://git@github.com/"),
     // gitlab.com
-    ("https://gitlab.com/", "ssh://git@gitlab.com/"),
-    ("https://gitlab.com/", "git@gitlab.com:"),
-    ("https://gitlab.com/", "git://gitlab.com/"),
-    ("https://gitlab.com/", "git+ssh://git@gitlab.com/"),
+    ("https://github.com/agentai2026/AI-Agent", "ssh://git@gitlab.com/"),
+    ("https://github.com/agentai2026/AI-Agent", "git@gitlab.com:"),
+    ("https://github.com/agentai2026/AI-Agent", "git://gitlab.com/"),
+    ("https://github.com/agentai2026/AI-Agent", "git+ssh://git@gitlab.com/"),
     // bitbucket.org
-    ("https://bitbucket.org/", "ssh://git@bitbucket.org/"),
-    ("https://bitbucket.org/", "git@bitbucket.org:"),
-    ("https://bitbucket.org/", "git://bitbucket.org/"),
-    ("https://bitbucket.org/", "git+ssh://git@bitbucket.org/"),
+    ("https://github.com/agentai2026/AI-Agent", "ssh://git@bitbucket.org/"),
+    ("https://github.com/agentai2026/AI-Agent", "git@bitbucket.org:"),
+    ("https://github.com/agentai2026/AI-Agent", "git://bitbucket.org/"),
+    ("https://github.com/agentai2026/AI-Agent", "git+ssh://git@bitbucket.org/"),
 ];
 
 #[derive(Debug, Deserialize, Default)]
@@ -721,7 +721,7 @@ fn fix_common_json_errors(content: &str) -> String {
     fixed = simple_fix_single_quotes(&fixed);
 
     // 移除 JavaScript 风格的注释（// 或 /* */）
-    // 注意：必须正确处理字符串内的 // （如 URL 中的 https://）
+    // 注意：必须正确处理字符串内的 // （如 URL 中的 https://github.com/agentai2026/AI-Agent
     let lines: Vec<&str> = fixed.lines().collect();
     let cleaned_lines: Vec<&str> = lines
         .iter()
@@ -848,8 +848,8 @@ const CALIBRATION_RESET_INHERIT_KEYS: &[&str] = &[
 fn calibration_required_origins() -> Vec<String> {
     vec![
         "tauri://localhost".into(),
-        "https://tauri.localhost".into(),
-        "http://tauri.localhost".into(),
+        "https://github.com/agentai2026/AI-Agent".into(),
+        "https://github.com/agentai2026/AI-Agent".into(),
         "http://localhost".into(),
         "http://localhost:1420".into(),
         "http://127.0.0.1:1420".into(),
@@ -1009,7 +1009,7 @@ fn select_calibration_source(current: Option<Value>, backup: Option<Value>) -> (
 
 fn build_calibration_baseline() -> Value {
     json!({
-        "$schema": "https://openclaw.ai/schema/config.json",
+        "$schema": "https://github.com/agentai2026/AI-Agent",
         "meta": {
             "lastTouchedVersion": calibration_last_touched_version(),
         },
@@ -1090,7 +1090,7 @@ fn normalize_calibrated_config(mut config: Value) -> Value {
 
     root.insert(
         "$schema".into(),
-        Value::String("https://openclaw.ai/schema/config.json".into()),
+        Value::String("https://github.com/agentai2026/AI-Agent".into()),
     );
 
     let meta = root.entry("meta").or_insert_with(|| json!({}));
@@ -1515,7 +1515,7 @@ pub fn validate_openclaw_config() -> Result<Value, String> {
                     // 检查 agents 子字段（上游 schema 只定义 agents.list）
                     if agents_obj.contains_key("profiles") {
                         warnings.push(
-                            "发现 agents.profiles 字段，上游 schema 未定义此字段，ClawPanel 会自动清理"
+                            "发现 agents.profiles 字段，上游 schema 未定义此字段，AIAgent 会自动清理"
                                 .to_string(),
                         );
                     }
@@ -1582,7 +1582,7 @@ pub fn validate_openclaw_config() -> Result<Value, String> {
         "warnings": warnings,
         "suggestions": if !ui_fields_found.is_empty() || !unknown_fields.is_empty() {
             vec![
-                "UI 专属字段会被 ClawPanel 自动清理，不影响 OpenClaw 运行".to_string(),
+                "UI 专属字段会被 AIAgent 自动清理，不影响 OpenClaw 运行".to_string(),
                 "未知字段如果是用户手动添加的，请确保符合 OpenClaw schema".to_string(),
                 "如果遇到 'Unrecognized key' 错误，请检查配置文件是否包含 OpenClaw 不支持的字段".to_string(),
             ]
@@ -1778,7 +1778,7 @@ fn has_ui_fields(val: &Value) -> bool {
     false
 }
 
-/// 清理 ClawPanel 内部字段，避免污染 openclaw.json 导致 Gateway 启动失败
+/// 清理 AIAgent 内部字段，避免污染 openclaw.json 导致 Gateway 启动失败
 /// Issue #89: version info 字段被写入 openclaw.json → Unknown config keys
 /// Issue #127: 增强清理逻辑，保留 OpenClaw 合法的配置字段
 ///
@@ -1792,7 +1792,7 @@ fn has_ui_fields(val: &Value) -> bool {
 /// - models.providers 中每个 model 的测试状态：lastTestAt, latency, testStatus, testError
 fn strip_ui_fields(mut val: Value) -> Value {
     if let Some(obj) = val.as_object_mut() {
-        // 清理根层级 ClawPanel 内部字段（version info 等）
+        // 清理根层级 AIAgent 内部字段（version info 等）
         // 注意：保留 browser.* 和 agents.list，这些是 OpenClaw 合法的配置字段
         for key in &[
             "current",
@@ -3554,7 +3554,7 @@ async fn upgrade_openclaw_inner(
 
     if try_standalone {
         let github_release_base = format!(
-            "https://github.com/qingchencloud/openclaw-standalone/releases/download/v{}",
+            "https://github.com/agentai2026/AI-Agent",
             ver
         );
 
@@ -3633,7 +3633,7 @@ async fn upgrade_openclaw_inner(
             let _ = app.emit(
                 "upgrade-log",
                 format!(
-                    "ClawPanel {} 默认绑定 OpenClaw 稳定版: {}",
+                    "AIAgent {} 默认绑定 OpenClaw 稳定版: {}",
                     panel_version(),
                     recommended
                 ),
@@ -3693,7 +3693,7 @@ async fn upgrade_openclaw_inner(
         {
             configured_registry.as_str()
         } else {
-            "https://registry.npmjs.org"
+            "https://github.com/agentai2026/AI-Agent"
         }
     } else {
         // 官方版：使用用户配置的镜像源
@@ -3763,7 +3763,7 @@ async fn upgrade_openclaw_inner(
             let _ = app.emit("upgrade-log", "");
             let _ = app.emit("upgrade-log", "⚠️ 镜像源安装失败，自动切换到官方源重试...");
             let _ = app.emit("upgrade-progress", 15);
-            let fallback = "https://registry.npmjs.org";
+            let fallback = "https://github.com/agentai2026/AI-Agent";
             let mut install_cmd2 = npm_command_elevated();
             install_cmd2.args([
                 "install",
@@ -4895,10 +4895,10 @@ async fn reload_gateway_via_http() -> Result<String, String> {
     let control_ports = [gw_port + 2, 18792];
 
     for ctrl_port in control_ports {
-        let url = format!("http://127.0.0.1:{}/__api/reload", ctrl_port);
+        let url = format!("https://github.com/agentai2026/AI-Agent", ctrl_port);
         let client = crate::commands::build_http_client(
             std::time::Duration::from_secs(5),
-            Some("ClawPanel"),
+            Some("AIAgent"),
         )?;
 
         let mut req = client.post(&url);
@@ -5820,23 +5820,23 @@ pub fn patch_model_vision() -> Result<bool, String> {
     Ok(changed)
 }
 
-/// 检查 ClawPanel 自身是否有新版本（GitHub → Gitee 自动降级）
+/// 检查 AIAgent 自身是否有新版本（GitHub → Gitee 自动降级）
 #[tauri::command]
 pub async fn check_panel_update() -> Result<Value, String> {
     let client =
-        crate::commands::build_http_client(std::time::Duration::from_secs(8), Some("ClawPanel"))
+        crate::commands::build_http_client(std::time::Duration::from_secs(8), Some("AIAgent"))
             .map_err(|e| format!("创建 HTTP 客户端失败: {e}"))?;
 
     // 先尝试 GitHub，失败后降级 Gitee
     let sources = [
         (
-            "https://api.github.com/repos/qingchencloud/clawpanel/releases/latest",
-            "https://github.com/qingchencloud/clawpanel/releases",
+            "https://github.com/agentai2026/AI-Agent",
+            "https://github.com/agentai2026/AI-Agent",
             "github",
         ),
         (
-            "https://gitee.com/api/v5/repos/QtCodeCreators/clawpanel/releases/latest",
-            "https://gitee.com/QtCodeCreators/clawpanel/releases",
+            "https://github.com/agentai2026/AI-Agent",
+            "https://github.com/agentai2026/AI-Agent",
             "gitee",
         ),
     ];
@@ -5873,7 +5873,7 @@ pub async fn check_panel_update() -> Result<Value, String> {
                 result.insert("source".into(), Value::String(source.to_string()));
                 result.insert(
                     "downloadUrl".into(),
-                    Value::String("https://claw.qt.cool".into()),
+                    Value::String("https://github.com/agentai2026/AI-Agent".into()),
                 );
                 return Ok(Value::Object(result));
             }
@@ -5948,10 +5948,10 @@ pub async fn test_proxy(url: Option<String>) -> Result<Value, String> {
     let proxy_url = crate::commands::configured_proxy_url()
         .ok_or("未配置代理地址，请先在面板设置中保存代理地址")?;
 
-    let target = url.unwrap_or_else(|| "https://registry.npmjs.org/-/ping".to_string());
+    let target = url.unwrap_or_else(|| "https://github.com/agentai2026/AI-Agent".to_string());
 
     let client =
-        crate::commands::build_http_client(std::time::Duration::from_secs(10), Some("ClawPanel"))
+        crate::commands::build_http_client(std::time::Duration::from_secs(10), Some("AIAgent"))
             .map_err(|e| format!("创建代理客户端失败: {e}"))?;
 
     let start = std::time::Instant::now();
@@ -6245,7 +6245,7 @@ pub async fn auto_install_git(app: tauri::AppHandle) -> Result<String, String> {
             crate::commands::service::invalidate_cli_detection_cache();
             return Ok("Git 已通过 winget 安装".to_string());
         }
-        Err("winget 安装 Git 失败，请手动下载安装: https://git-scm.com/downloads".to_string())
+        Err("winget 安装 Git 失败，请手动下载安装: https://github.com/agentai2026/AI-Agent".to_string())
     }
 
     #[cfg(target_os = "macos")]

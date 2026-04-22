@@ -172,7 +172,7 @@ function renderTopology(container, agents, bindings, platforms) {
   const legendH = a2aEdges.length > 0 ? 60 : 20
 
   // Render SVG
-  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${svgW}" height="${svgH + legendH}" viewBox="0 0 ${svgW} ${svgH + legendH}" class="route-map-svg">`
+  let svg = `<svg xmlns="https://github.com/agentai2026/AI-Agent" width="${svgW}" height="${svgH + legendH}" viewBox="0 0 ${svgW} ${svgH + legendH}" class="route-map-svg">`
 
   // Column headers
   svg += `<text x="${PAD_LEFT + NODE_W / 2}" y="30" text-anchor="middle" class="route-map-col-label">${t('routeMap.channels')}</text>`

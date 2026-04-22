@@ -10,12 +10,12 @@ pub fn update_dir() -> PathBuf {
 }
 
 /// 更新清单 URL（GitHub Pages 托管）
-const LATEST_JSON_URL: &str = "https://claw.qt.cool/update/latest.json";
+const LATEST_JSON_URL: &str = "https://github.com/agentai2026/AI-Agent";
 
 /// 检查前端是否有新版本可用
 #[tauri::command]
 pub async fn check_frontend_update() -> Result<Value, String> {
-    let client = super::build_http_client(std::time::Duration::from_secs(10), Some("ClawPanel"))
+    let client = super::build_http_client(std::time::Duration::from_secs(10), Some("AIAgent"))
         .map_err(|e| format!("HTTP 客户端错误: {e}"))?;
 
     let resp = client
@@ -74,7 +74,7 @@ pub async fn download_frontend_update(
     expected_hash: String,
     version: String,
 ) -> Result<Value, String> {
-    let client = super::build_http_client(std::time::Duration::from_secs(120), Some("ClawPanel"))
+    let client = super::build_http_client(std::time::Duration::from_secs(120), Some("AIAgent"))
         .map_err(|e| format!("HTTP 客户端错误: {e}"))?;
 
     let resp = client

@@ -7,7 +7,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - `AI Agent可视化面板系统` → `AI Agent可视化面板系统` (case-insensitive)
 - `AI Agent面板助手` → `AI Agent面板助手` (case-insensitive)
 - `AI Agent面板助手` → `AI Agent面板助手` (case-insensitive)
-- `http://localhost:3456` → `http://localhost:3456` (case-insensitive)
+- `https://github.com/agentai2026/AI-Agent → `https://github.com/agentai2026/AI-Agent (case-insensitive)
 - `github.com/AgentAI2026/AI-Agent` → `github.com/AgentAI2026/AI-Agent` (case-insensitive)
 - `QQ: 255258448` → `QQ: 255258448` (case-insensitive)
 - `AI Agent` → `AI Agent` (case-insensitive)
@@ -95,7 +95,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L349 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             echo "3. 如未安装 AI Agent可视化面板系统，按提示一键安装即可"
 - L360 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             echo "📖 [项目主页](https://github.com/${REPO}) · 💬 [反馈问题](https://github.com/${REPO}/issues) · 📣 [QQ 群](https://qt.cool/c/AI Agent可视化面板系统)"
+  -             echo "📖 [项目主页](https://github.com/agentai2026/AI-Agent) · 💬 [反馈问题](https://github.com/agentai2026/AI-Agent) · 📣 [QQ 群](https://github.com/agentai2026/AI-Agent Agent可视化面板系统)"
 
 ### .windsurf/workflows/release.md
 - total: 4
@@ -103,7 +103,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L26 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - - `docs/index.html` — JSON-LD `softwareVersion`、下载链接文件名（`AI Agent面板_x.y.z_xxx`）、版本徽标（`vx.y.z 最新版`）
 - L97 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - [ ] 官网 https://http://localhost:3456 下载链接指向新版本
+  - - [ ] 官网 https://github.com/agentai2026/AI-Agent 下载链接指向新版本
 - L102 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - Mac 堡垒机上的 AI Agent面板 项目需要手动同步（如有需要）：
 - L104 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -409,7 +409,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L349 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             echo "3. 如未安装 AI Agent可视化面板系统，按提示一键安装即可"
 - L360 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             echo "📖 [项目主页](https://github.com/${REPO}) · 💬 [反馈问题](https://github.com/${REPO}/issues) · 📣 [QQ 群](https://qt.cool/c/AI Agent可视化面板系统)"
+  -             echo "📖 [项目主页](https://github.com/agentai2026/AI-Agent) · 💬 [反馈问题](https://github.com/agentai2026/AI-Agent) · 📣 [QQ 群](https://github.com/agentai2026/AI-Agent Agent可视化面板系统)"
 
 ### AI Agent面板/.windsurf/workflows/release.md
 - total: 4
@@ -417,7 +417,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L26 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - - `docs/index.html` — JSON-LD `softwareVersion`、下载链接文件名（`AI Agent面板_x.y.z_xxx`）、版本徽标（`vx.y.z 最新版`）
 - L97 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - [ ] 官网 https://http://localhost:3456 下载链接指向新版本
+  - - [ ] 官网 https://github.com/agentai2026/AI-Agent 下载链接指向新版本
 - L102 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - Mac 堡垒机上的 AI Agent面板 项目需要手动同步（如有需要）：
 - L104 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -649,21 +649,21 @@ This file is generated. It lists candidate display-text replacements with line n
 - L3 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 感谢你对 AI Agent面板 项目的关注！本文档同时作为**贡献指南**和**项目维护手册**，涵盖开发、构建、发版、部署的完整工作流。
 - L5 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **官网**: [http://localhost:3456](https://http://localhost:3456/)  |  📦 **仓库**: [github.com/AgentAI2026/AI Agent面板](https://github.com/AgentAI2026/AI Agent面板)
+  - > 🌐 **官网**: [https://github.com/agentai2026/AI-Agent)  |  📦 **仓库**: [github.com/AgentAI2026/AI Agent面板](https://github.com/agentai2026/AI-Agent Agent面板)
 - L5 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **官网**: [http://localhost:3456](https://http://localhost:3456/)  |  📦 **仓库**: [github.com/AgentAI2026/AI Agent面板](https://github.com/AgentAI2026/AI Agent面板)
+  - > 🌐 **官网**: [https://github.com/agentai2026/AI-Agent)  |  📦 **仓库**: [github.com/AgentAI2026/AI Agent面板](https://github.com/agentai2026/AI-Agent Agent面板)
 - L5 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **官网**: [http://localhost:3456](https://http://localhost:3456/)  |  📦 **仓库**: [github.com/AgentAI2026/AI Agent面板](https://github.com/AgentAI2026/AI Agent面板)
+  - > 🌐 **官网**: [https://github.com/agentai2026/AI-Agent)  |  📦 **仓库**: [github.com/AgentAI2026/AI Agent面板](https://github.com/agentai2026/AI-Agent Agent面板)
 - L42 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L42 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L43 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板
 - L76 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板/
 - L139 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - │   ├── index.html              #   官网（http://localhost:3456）
+  - │   ├── index.html              #   官网（https://github.com/agentai2026/AI-Agent
 - L160 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板 有两种运行模式，前端代码通过 `isTauri` 标志自动适配：
 - L185 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -699,13 +699,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L437 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 启动 → 读 AI Agent面板.json
 - L455 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 面向 macOS / Windows / Linux 桌面用户，从 [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases) 下载安装包。
+  - 面向 macOS / Windows / Linux 桌面用户，从 [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases) 下载安装包。
 - L455 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - 面向 macOS / Windows / Linux 桌面用户，从 [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases) 下载安装包。
+  - 面向 macOS / Windows / Linux 桌面用户，从 [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases) 下载安装包。
 - L462 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L462 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L531 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - gh pr list --repo AgentAI2026/AI Agent面板 --state all --limit 200 --json author,number,title,state
 - L531 [DOC_TEXT] AgentAI2026 → AgentAI2026
@@ -715,9 +715,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L532 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - gh issue list --repo AgentAI2026/AI Agent面板 --state all --limit 200 --json author,number,title
 - L559 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 如果发现 Bug 或有功能建议，欢迎通过 [GitHub Issues](https://github.com/AgentAI2026/AI Agent面板/issues) 提交。
+  - 如果发现 Bug 或有功能建议，欢迎通过 [GitHub Issues](https://github.com/agentai2026/AI-Agent Agent面板/issues) 提交。
 - L559 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - 如果发现 Bug 或有功能建议，欢迎通过 [GitHub Issues](https://github.com/AgentAI2026/AI Agent面板/issues) 提交。
+  - 如果发现 Bug 或有功能建议，欢迎通过 [GitHub Issues](https://github.com/agentai2026/AI-Agent Agent面板/issues) 提交。
 
 ### AI Agent面板/deploy.sh
 - total: 14
@@ -725,9 +725,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L2 [MANUAL_REVIEW] AI Agent面板 → AI Agent面板
   - # AI Agent面板 Web 版一键部署脚本
 - L4 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - # 用法: curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash
+  - # 用法: curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash
 - L4 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - # 用法: curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash
+  - # 用法: curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash
 - L8 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   - REPO="AgentAI2026/AI Agent面板"
 - L8 [LIKELY_STRING] AgentAI2026 → AgentAI2026
@@ -795,9 +795,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L133 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   #     - ~/.AI Agent可视化面板系统:/root/.AI Agent可视化面板系统
 - L138 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   #     sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com &&
+  -   #     sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent &&
 - L138 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -   #     sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com &&
+  -   #     sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent &&
 - L139 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   #            AI Agent可视化面板系统 init 2>/dev/null || true &&
 - L140 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -817,15 +817,15 @@ This file is generated. It lists candidate display-text replacements with line n
 - L3 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板 支持在 ARM 开发板（如 Orange Pi、Raspberry Pi、RK3588 等）上运行，通过 **Web 模式** 或 **Docker 模式** 部署，无需图形界面。
 - L24 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L24 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L30 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://gitee.com/QtCodeCreators/AI Agent面板/raw/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/raw/main/scripts/linux-deploy.sh | bash
 - L41 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git /opt/AI Agent面板
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git /opt/AI Agent面板
 - L41 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git /opt/AI Agent面板
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git /opt/AI Agent面板
 - L42 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd /opt/AI Agent面板
 - L55 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -941,15 +941,15 @@ This file is generated. It lists candidate display-text replacements with line n
 - L50 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L54 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L54 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L55 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     AI Agent可视化面板系统 init 2>/dev/null || true && \
 - L56 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L56 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L75 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   AI Agent面板:
 - L78 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -963,9 +963,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L95 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       - AI Agent可视化面板系统-data:/root/.AI Agent可视化面板系统
 - L97 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com &&
+  -       sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent &&
 - L97 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -       sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com &&
+  -       sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent &&
 - L98 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -              AI Agent可视化面板系统 init 2>/dev/null || true &&
 - L99 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -975,9 +975,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L110 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 同目录下创建 `Dockerfile.AI Agent面板`：
 - L118 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - RUN git clone https://github.com/AgentAI2026/AI Agent面板.git . && \
+  - RUN git clone https://github.com/agentai2026/AI-Agent Agent面板.git . && \
 - L118 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - RUN git clone https://github.com/AgentAI2026/AI Agent面板.git . && \
+  - RUN git clone https://github.com/agentai2026/AI-Agent Agent面板.git . && \
 - L134 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 这样 AI Agent面板 和 Gateway 共享同一个 `AI Agent可视化面板系统-data` 卷，AI Agent面板 可以直接管理 Gateway。
 - L134 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -989,13 +989,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L147 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - # 安装 AI Agent可视化面板系统 CLI（AI Agent面板 需要读写配置）
 - L148 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L148 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L151 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - RUN git clone https://github.com/AgentAI2026/AI Agent面板.git . && \
+  - RUN git clone https://github.com/agentai2026/AI-Agent Agent面板.git . && \
 - L151 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - RUN git clone https://github.com/AgentAI2026/AI Agent面板.git . && \
+  - RUN git clone https://github.com/agentai2026/AI-Agent Agent面板.git . && \
 - L164 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker build -t AI Agent面板 .
 - L166 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -1063,11 +1063,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - L303 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - ### 更新 AI Agent可视化面板系统
 - L306 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L306 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L306 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L318 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker logs AI Agent面板
 - L323 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -1087,25 +1087,25 @@ This file is generated. It lists candidate display-text replacements with line n
 - L333 [DOC_TEXT] AgentAI2026 → AgentAI2026
   -      ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest
 - L335 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -    > 一体镜像仓库：[github.com/AgentAI2026/AI Agent可视化面板系统-docker](https://github.com/AgentAI2026/AI Agent可视化面板系统-docker)
+  -    > 一体镜像仓库：[github.com/AgentAI2026/AI Agent可视化面板系统-docker](https://github.com/agentai2026/AI-Agent Agent可视化面板系统-docker)
 - L335 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -    > 一体镜像仓库：[github.com/AgentAI2026/AI Agent可视化面板系统-docker](https://github.com/AgentAI2026/AI Agent可视化面板系统-docker)
+  -    > 一体镜像仓库：[github.com/AgentAI2026/AI Agent可视化面板系统-docker](https://github.com/agentai2026/AI-Agent Agent可视化面板系统-docker)
 - L337 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 2. **在 Dockerfile 中预装**：构建镜像时就安装好 AI Agent可视化面板系统，避免运行时下载：
 - L341 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -    # 预装 AI Agent可视化面板系统 CLI（使用国内镜像源加速）
 - L342 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -    RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  -    RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L342 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -    RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  -    RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L343 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -    # ... 后续 AI Agent面板 安装步骤
 - L348 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L348 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L348 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L351 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - ### Q: 面板显示 "AI Agent可视化面板系统.json 不存在"？
 - L353 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -1151,7 +1151,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L9 [DOC_HTML] AgentAI2026 → AgentAI2026
   -   <meta name="author" content="AI Agent AgentAI2026">
 - L11 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -   <link rel="canonical" href="https://http://localhost:3456/">
+  -   <link rel="canonical" href="https://github.com/agentai2026/AI-Agent">
 - L12 [DOC_HTML] AI Agent面板 → AI Agent面板
   -   <meta property="og:title" content="AI Agent面板 - AI Agent可视化面板系统 & Hermes Agent 多引擎 AI 管理面板 | 快速搭建你的 AI 智能体">
 - L12 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -1163,11 +1163,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - L13 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   <meta property="og:description" content="基于 Tauri v2 的跨平台桌面应用，支持 AI Agent可视化面板系统 和 Hermes Agent 双引擎 AI 管理。内置AI Agent面板助手支持工具调用，AI Agent AI 接口一键接入，消息渠道管理与内置 QQ 机器人。开源免费，支持 11 种语言。">
 - L15 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -   <meta property="og:url" content="https://http://localhost:3456/">
+  -   <meta property="og:url" content="https://github.com/agentai2026/AI-Agent">
 - L16 [DOC_HTML] AI Agent面板 → AI Agent面板
   -   <meta property="og:site_name" content="AI Agent面板">
 - L18 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -   <meta property="og:image" content="https://http://localhost:3456/00.png">
+  -   <meta property="og:image" content="https://github.com/agentai2026/AI-Agent">
 - L21 [DOC_HTML] AI Agent面板 → AI Agent面板
   -   <meta property="og:image:alt" content="AI Agent面板 仪表盘">
 - L23 [DOC_HTML] AI Agent面板 → AI Agent面板
@@ -1181,7 +1181,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L24 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   <meta name="twitter:description" content="基于 Tauri v2 的跨平台桌面应用。支持 AI Agent可视化面板系统 & Hermes Agent 双引擎，内置AI Agent面板助手与AI Agent AI 接口，消息渠道管理、QQ 机器人、多模型配置与实时 AI 聊天。开源免费。">
 - L25 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -   <meta name="twitter:image" content="https://http://localhost:3456/00.png">
+  -   <meta name="twitter:image" content="https://github.com/agentai2026/AI-Agent">
 - L31 [DOC_HTML] AI Agent面板 → AI Agent面板
   -     "name": "AI Agent面板",
 - L34 [DOC_HTML] AI Agent → AI Agent
@@ -1191,17 +1191,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L34 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "description": "支持 AI Agent可视化面板系统 和 Hermes Agent 双引擎的多 AI Agent 可视化管理面板，基于 Tauri v2 的跨平台桌面应用。内置AI Agent面板助手支持工具调用，AI Agent AI 接口一键接入。支持仪表盘监控、多模型配置、Hermes Agent 对话、消息渠道管理、内置 QQ 机器人、实时 AI 聊天、记忆管理、Agent 管理、网关配置、内网穿透等功能。支持 11 种语言。",
 - L35 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -     "url": "https://http://localhost:3456/",
+  -     "url": "https://github.com/agentai2026/AI-Agent",
 - L36 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -     "downloadUrl": "https://github.com/AgentAI2026/AI Agent面板/releases/latest",
+  -     "downloadUrl": "https://github.com/agentai2026/AI-Agent Agent面板/releases/latest",
 - L36 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -     "downloadUrl": "https://github.com/AgentAI2026/AI Agent面板/releases/latest",
+  -     "downloadUrl": "https://github.com/agentai2026/AI-Agent Agent面板/releases/latest",
 - L40 [DOC_HTML] AI Agent → AI Agent
   -       "name": "AI Agent AgentAI2026",
 - L40 [DOC_HTML] AgentAI2026 → AgentAI2026
   -       "name": "AI Agent AgentAI2026",
 - L49 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -     "screenshot": "https://http://localhost:3456/00.png",
+  -     "screenshot": "https://github.com/agentai2026/AI-Agent",
 - L50 [DOC_HTML] AI Agent → AI Agent
   -     "keywords": "AI Agent可视化面板系统, Hermes Agent, AI Agent, 多引擎, 管理面板, Tauri, 跨平台, 开源, 免费, LLM, 多模型, AI Agent, AI Agent面板助手, Discord"
 - L50 [DOC_HTML] AI Agent面板助手 → AI Agent面板助手
@@ -1213,37 +1213,37 @@ This file is generated. It lists candidate display-text replacements with line n
 - L572 [DOC_HTML] AI Agent面板 → AI Agent面板
   -       <a href="#" class="nav-logo"><img src="./logo.png" alt="Logo">AI Agent面板</a>
 - L582 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener" class="nav-link">GitHub</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" class="nav-link">GitHub</a>
 - L582 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener" class="nav-link">GitHub</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" class="nav-link">GitHub</a>
 - L609 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener" class="mobile-menu-link">GitHub ↗</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" class="mobile-menu-link">GitHub ↗</a>
 - L609 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener" class="mobile-menu-link">GitHub ↗</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" class="mobile-menu-link">GitHub ↗</a>
 - L624 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       <div class="reveal hero-badge"><span class="pulse"></span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-2px"><rect …
 - L626 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       <p class="reveal hero-subtitle" data-i18n="hero.sub">支持 <strong>AI Agent可视化面板系统</strong> 和 <strong>Hermes Agent</strong> 双引擎，内置智能 AI 助手帮你一键安装、自动诊断配置、排查问题、修复错误。<br>内置 Hermes Agent 对话、消息渠道管理、QQ 机器人，并支持 Telegram、Discord 等外部渠道。</p>
 - L632 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener" class="btn btn-outline btn-magnetic">
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" class="btn btn-outline btn-magnetic">
 - L632 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener" class="btn btn-outline btn-magnetic">
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" class="btn btn-outline btn-magnetic">
 - L638 [DOC_HTML] AI Agent面板 → AI Agent面板
   -         <img src="./01.png" alt="AI Agent面板 AI 助手 — 8 大技能卡片" onclick="openLightbox(this.src)" loading="eager">
 - L669 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/discussions" target="_blank" rel="noopener" class="community-link">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions" target="_blank" rel="noopener" class="community-link">
 - L669 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/discussions" target="_blank" rel="noopener" class="community-link">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions" target="_blank" rel="noopener" class="community-link">
 - L677 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new" target="_blank" rel="noopener" class="community-link">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new" target="_blank" rel="noopener" class="community-link">
 - L677 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new" target="_blank" rel="noopener" class="community-link">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new" target="_blank" rel="noopener" class="community-link">
 - L691 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             <a href="https://qt.cool/c/AI Agent可视化面板系统" target="_blank" rel="noopener" data-i18n="qr.join">扫码加入</a>
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统" target="_blank" rel="noopener" data-i18n="qr.join">扫码加入</a>
 - L696 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             <a href="https://qt.cool/c/AI Agent可视化面板系统Wx" target="_blank" rel="noopener" data-i18n="qr.join">扫码加入</a>
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统Wx" target="_blank" rel="noopener" data-i18n="qr.join">扫码加入</a>
 - L701 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             <a href="https://qt.cool/c/AI Agent可视化面板系统DY" target="_blank" rel="noopener" data-i18n="qr.join">扫码加入</a>
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统DY" target="_blank" rel="noopener" data-i18n="qr.join">扫码加入</a>
 - L747 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         <p class="reveal section-desc" data-i18n="feat.desc">一个面板，管理 AI Agent可视化面板系统 & Hermes Agent 双引擎</p>
 - L752 [DOC_HTML] AI Agent面板 → AI Agent面板
@@ -1273,9 +1273,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L916 [DOC_HTML] AI Agent面板 → AI Agent面板
   -         <img src="./quick-stats.gif" alt="AI Agent面板 数据概览" loading="lazy">
 - L953 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -           <div class="t-cmd">git clone https://github.com/AgentAI2026/AI Agent面板.git</div>
+  -           <div class="t-cmd">git clone https://github.com/agentai2026/AI-Agent Agent面板.git</div>
 - L953 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -           <div class="t-cmd">git clone https://github.com/AgentAI2026/AI Agent面板.git</div>
+  -           <div class="t-cmd">git clone https://github.com/agentai2026/AI-Agent Agent面板.git</div>
 - L954 [DOC_HTML] AI Agent面板 → AI Agent面板
   -           <div class="t-cmd">cd AI Agent面板 &amp;&amp; npm install</div>
 - L975 [DOC_HTML] AI Agent面板 → AI Agent面板
@@ -1287,13 +1287,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L995 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -               <div class="t-comment" data-i18n="dep.linux.c"># 一键部署 AI Agent面板 Web + AI Agent可视化面板系统 + systemd 自启</div>
 - L996 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -               <div class="t-cmd">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash</div>
+  -               <div class="t-cmd">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash</div>
 - L996 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -               <div class="t-cmd">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash</div>
+  -               <div class="t-cmd">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash</div>
 - L1000 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/docs/linux-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/docs/linux-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
 - L1000 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/docs/linux-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/docs/linux-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
 - L1004 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             <span style="color:var(--text-muted);font-size:12px;line-height:32px">Node.js · AI Agent可视化面板系统 · systemd/PM2 · Nginx · Firewall</span>
 - L1024 [DOC_HTML] AI Agent面板 → AI Agent面板
@@ -1305,11 +1305,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1026 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -               <div class="t-cmd" style="padding-left:1em">-v AI Agent面板-data:/root/.AI Agent可视化面板系统 node:22-slim \</div>
 - L1031 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/docs/docker-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/docs/docker-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
 - L1031 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/docs/docker-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/docs/docker-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
 - L1042 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -           <span data-i18n="dep.note">部署完成后，访问 <code style="background:var(--surface);padding:2px 8px;border-radius:4px;font-size:13px">http://服务器IP:1420</code> 即可通过浏览器管理 AI Agent可视化面板系统，功能与桌面版一致。</span>
+  -           <span data-i18n="dep.note">部署完成后，访问 <code style="background:var(--surface);padding:2px 8px;border-radius:4px;font-size:13px">https://github.com/agentai2026/AI-Agent</code> 即可通过浏览器管理 AI Agent可视化面板系统，功能与桌面版一致。</span>
 - L1061 [DOC_HTML] AI Agent面板 → AI Agent面板
   -             <p data-i18n="doc1.d">在 Linux 服务器上部署 AI Agent面板 Web 版，通过浏览器远程管理 AI Agent可视化面板系统</p>
 - L1061 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -1323,27 +1323,27 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1134 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         <p class="reveal section-desc" data-i18n="eco.desc">AI Agent面板 是 AI Agent可视化面板系统 生态的一部分</p>
 - L1137 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <a href="https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation" target="_blank" rel="noopener" class="reveal eco-card">
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation" target="_blank" rel="noopener" class="reveal eco-card">
 - L1138 [DOC_HTML] AI Agent面板 → AI Agent面板
   -           <div><h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-2px"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5…
 - L1138 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -           <div><h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-2px"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5…
 - L1141 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/clawapp" target="_blank" rel="noopener" class="reveal eco-card">
+  -         <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" class="reveal eco-card">
 - L1145 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/cftunnel" target="_blank" rel="noopener" class="reveal eco-card">
+  -         <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" class="reveal eco-card">
 - L1168 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_aarch64.dmg" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_aarch64.dmg" target="_blank" rel="noopener">
 - L1168 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_aarch64.dmg" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_aarch64.dmg" target="_blank" rel="noopener">
 - L1168 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_aarch64.dmg" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_aarch64.dmg" target="_blank" rel="noopener">
 - L1172 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64.dmg" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64.dmg" target="_blank" rel="noopener">
 - L1172 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64.dmg" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64.dmg" target="_blank" rel="noopener">
 - L1172 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64.dmg" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64.dmg" target="_blank" rel="noopener">
 - L1179 [DOC_HTML] AI Agent面板 → AI Agent面板
   -             <p style="font-size:12px;color:var(--text-s);margin-bottom:8px" data-i18n="dl.mac.step1">① 先将 AI Agent面板 <strong>拖入「应用程序」文件夹</strong>，然后打开终端执行：</p>
 - L1180 [DOC_HTML] AI Agent面板 → AI Agent面板
@@ -1353,39 +1353,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1182 [DOC_HTML] AI Agent面板 → AI Agent面板
   -             <p style="font-size:11px;color:var(--text-t);margin-top:4px" data-i18n="dl.mac.step3">提示 No such file？说明没拖入应用程序，改用：<code style="font-size:10px;color:var(--accent);cursor:pointer" onclick="navigator.clipboard.writeText('sudo xattr -rd com.apple.quar…
 - L1190 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup.exe" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup.exe" target="_blank" rel="noopener">
 - L1190 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup.exe" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup.exe" target="_blank" rel="noopener">
 - L1190 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup.exe" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup.exe" target="_blank" rel="noopener">
 - L1194 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup-full.exe" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup-full.exe" target="_blank" rel="noopener">
 - L1194 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup-full.exe" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup-full.exe" target="_blank" rel="noopener">
 - L1194 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup-full.exe" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup-full.exe" target="_blank" rel="noopener">
 - L1198 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64_en-US.msi" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64_en-US.msi" target="_blank" rel="noopener">
 - L1198 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64_en-US.msi" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64_en-US.msi" target="_blank" rel="noopener">
 - L1198 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64_en-US.msi" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64_en-US.msi" target="_blank" rel="noopener">
 - L1209 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.AppImage" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.AppImage" target="_blank" rel="noopener">
 - L1209 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.AppImage" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.AppImage" target="_blank" rel="noopener">
 - L1209 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.AppImage" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.AppImage" target="_blank" rel="noopener">
 - L1213 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.deb" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.deb" target="_blank" rel="noopener">
 - L1213 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.deb" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.deb" target="_blank" rel="noopener">
 - L1213 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.deb" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.deb" target="_blank" rel="noopener">
 - L1221 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <p data-i18n="dl.note1">查看 <a href="https://github.com/AgentAI2026/AI Agent面板/releases" target="_blank" rel="noopener">所有版本</a> · 需要帮助？阅读 <a href="https://github.com/AgentAI2026/AI Agent面板#readme" target="_blank" rel="noopener">安装文档</a></p>
+  -         <p data-i18n="dl.note1">查看 <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases" target="_blank" rel="noopener">所有版本</a> · 需要帮助？阅读 <a href="https://github.com/agentai2026/AI-Agent Agent面板#readme" target="_blank" rel="noopener">安装文档</a></p>
 - L1221 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <p data-i18n="dl.note1">查看 <a href="https://github.com/AgentAI2026/AI Agent面板/releases" target="_blank" rel="noopener">所有版本</a> · 需要帮助？阅读 <a href="https://github.com/AgentAI2026/AI Agent面板#readme" target="_blank" rel="noopener">安装文档</a></p>
+  -         <p data-i18n="dl.note1">查看 <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases" target="_blank" rel="noopener">所有版本</a> · 需要帮助？阅读 <a href="https://github.com/agentai2026/AI-Agent Agent面板#readme" target="_blank" rel="noopener">安装文档</a></p>
 - L1222 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         <p style="margin-top:12px" data-i18n="dl.note2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-2px;opacity:0.7"><ci…
 - L1227 [DOC_HTML] AI Agent → AI Agent
@@ -1401,95 +1401,95 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1253 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -               <div style="font-size:12px;color:rgba(255,255,255,0.5)" data-i18n="ai.c2.d">无缝对接 AI Agent可视化面板系统</div>
 - L1264 [DOC_HTML] AI Agent → AI Agent
-  -             <a href="https://gpt.qt.cool/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:10px 24px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:14px;font-weight:500;text-decoratio…
+  -             <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:10px 24px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:14px;font-weight:500;text-decoratio…
 - L1278 [DOC_HTML] AI Agent面板 → AI Agent面板
   -       <p class="reveal section-desc" data-i18n="sp.desc">感谢以下赞助商对 AI Agent面板 项目的支持</p>
 - L1298 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://star-history.com/#AgentAI2026/AI Agent面板&1186258278/AI Agent可视化面板系统ChineseTranslation&Date" target="_blank" rel="noopener">
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板&1186258278/AI Agent可视化面板系统ChineseTranslation&Date" target="_blank" rel="noopener">
 - L1298 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <a href="https://star-history.com/#AgentAI2026/AI Agent面板&1186258278/AI Agent可视化面板系统ChineseTranslation&Date" target="_blank" rel="noopener">
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板&1186258278/AI Agent可视化面板系统ChineseTranslation&Date" target="_blank" rel="noopener">
 - L1298 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://star-history.com/#AgentAI2026/AI Agent面板&1186258278/AI Agent可视化面板系统ChineseTranslation&Date" target="_blank" rel="noopener">
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板&1186258278/AI Agent可视化面板系统ChineseTranslation&Date" target="_blank" rel="noopener">
 - L1300 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AgentAI2026/AI Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date&theme=dark">
+  -             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/agentai2026/AI-Agent Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date&theme=dark">
 - L1300 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AgentAI2026/AI Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date&theme=dark">
+  -             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/agentai2026/AI-Agent Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date&theme=dark">
 - L1300 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AgentAI2026/AI Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date&theme=dark">
+  -             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/agentai2026/AI-Agent Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date&theme=dark">
 - L1301 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <img src="https://api.star-history.com/svg?repos=AgentAI2026/AI Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date" alt="Star History Chart" style="width:100%;display:block;background:#fff">
+  -             <img src="https://github.com/agentai2026/AI-Agent Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date" alt="Star History Chart" style="width:100%;display:block;background:#fff">
 - L1301 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             <img src="https://api.star-history.com/svg?repos=AgentAI2026/AI Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date" alt="Star History Chart" style="width:100%;display:block;background:#fff">
+  -             <img src="https://github.com/agentai2026/AI-Agent Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date" alt="Star History Chart" style="width:100%;display:block;background:#fff">
 - L1301 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <img src="https://api.star-history.com/svg?repos=AgentAI2026/AI Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date" alt="Star History Chart" style="width:100%;display:block;background:#fff">
+  -             <img src="https://github.com/agentai2026/AI-Agent Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date" alt="Star History Chart" style="width:100%;display:block;background:#fff">
 - L1313 [DOC_HTML] AI Agent面板 → AI Agent面板
   -         <span>AI Agent面板 &copy; 2026</span>
 - L1316 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" class="footer-link">GitHub</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" class="footer-link">GitHub</a>
 - L1316 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" class="footer-link">GitHub</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" class="footer-link">GitHub</a>
 - L1317 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/issues" class="footer-link">Issues</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues" class="footer-link">Issues</a>
 - L1317 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/issues" class="footer-link">Issues</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues" class="footer-link">Issues</a>
 - L1318 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <a href="https://qt.cool/c/AI Agent可视化面板系统" target="_blank" rel="noopener" class="footer-link" data-i18n="ft.qq">QQ 群</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统" target="_blank" rel="noopener" class="footer-link" data-i18n="ft.qq">QQ 群</a>
 - L1321 [DOC_HTML] AI Agent → AI Agent
-  -         <a href="https://qt.cool" target="_blank" rel="noopener" class="footer-link" data-i18n="ft.qc">AI Agent</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" class="footer-link" data-i18n="ft.qc">AI Agent</a>
 - L1325 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.md" class="footer-link">中文</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.md" class="footer-link">中文</a>
 - L1325 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.md" class="footer-link">中文</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.md" class="footer-link">中文</a>
 - L1326 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.en.md" class="footer-link">English</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.en.md" class="footer-link">English</a>
 - L1326 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.en.md" class="footer-link">English</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.en.md" class="footer-link">English</a>
 - L1327 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.ja.md" class="footer-link">日本語</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.ja.md" class="footer-link">日本語</a>
 - L1327 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.ja.md" class="footer-link">日本語</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.ja.md" class="footer-link">日本語</a>
 - L1328 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.ko.md" class="footer-link">한국어</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.ko.md" class="footer-link">한국어</a>
 - L1328 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.ko.md" class="footer-link">한국어</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.ko.md" class="footer-link">한국어</a>
 - L1329 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.zh-TW.md" class="footer-link">繁體中文</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.zh-TW.md" class="footer-link">繁體中文</a>
 - L1329 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.zh-TW.md" class="footer-link">繁體中文</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.zh-TW.md" class="footer-link">繁體中文</a>
 - L1330 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.vi.md" class="footer-link">Tiếng Việt</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.vi.md" class="footer-link">Tiếng Việt</a>
 - L1330 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.vi.md" class="footer-link">Tiếng Việt</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.vi.md" class="footer-link">Tiếng Việt</a>
 - L1331 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.es.md" class="footer-link">Español</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.es.md" class="footer-link">Español</a>
 - L1331 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.es.md" class="footer-link">Español</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.es.md" class="footer-link">Español</a>
 - L1332 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.pt.md" class="footer-link">Português</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.pt.md" class="footer-link">Português</a>
 - L1332 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.pt.md" class="footer-link">Português</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.pt.md" class="footer-link">Português</a>
 - L1333 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.ru.md" class="footer-link">Русский</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.ru.md" class="footer-link">Русский</a>
 - L1333 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.ru.md" class="footer-link">Русский</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.ru.md" class="footer-link">Русский</a>
 - L1334 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.fr.md" class="footer-link">Français</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.fr.md" class="footer-link">Français</a>
 - L1334 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.fr.md" class="footer-link">Français</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.fr.md" class="footer-link">Français</a>
 - L1335 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.de.md" class="footer-link">Deutsch</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.de.md" class="footer-link">Deutsch</a>
 - L1335 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.de.md" class="footer-link">Deutsch</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.de.md" class="footer-link">Deutsch</a>
 - L1371 [DOC_HTML] AI Agent面板 → AI Agent面板
   -         localStorage.setItem('AI Agent面板-theme', toDark ? 'dark' : 'light');
 - L1525 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -     var GITHUB_RAW = 'https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/';
+  -     var GITHUB_RAW = 'https://github.com/agentai2026/AI-Agent Agent面板/main/';
 - L1525 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -     var GITHUB_RAW = 'https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/';
+  -     var GITHUB_RAW = 'https://github.com/agentai2026/AI-Agent Agent面板/main/';
 - L1526 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -     var GITHUB_BLOB = 'https://github.com/AgentAI2026/AI Agent面板/blob/main/';
+  -     var GITHUB_BLOB = 'https://github.com/agentai2026/AI-Agent Agent面板/blob/main/';
 - L1526 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -     var GITHUB_BLOB = 'https://github.com/AgentAI2026/AI Agent面板/blob/main/';
+  -     var GITHUB_BLOB = 'https://github.com/agentai2026/AI-Agent Agent面板/blob/main/';
 - L1649 [DOC_HTML] AI Agent面板 → AI Agent面板
   -     var _lang = localStorage.getItem('AI Agent面板-lang') || (navigator.language && navigator.language.startsWith('en') ? 'en' : 'zh');
 - L1655 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -1517,7 +1517,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1753 [DOC_HTML] AI Agent面板 → AI Agent面板
   -       'dep.docker.c':'# One command to start AI Agent面板 Web',
 - L1755 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       'dep.note':'After deployment, visit <code style="background:var(--surface);padding:2px 8px;border-radius:4px;font-size:13px">http://SERVER_IP:1420</code> to manage AI Agent可视化面板系统 from your browser, with all desktop features.',
+  -       'dep.note':'After deployment, visit <code style="background:var(--surface);padding:2px 8px;border-radius:4px;font-size:13px">https://github.com/agentai2026/AI-Agent</code> to manage AI Agent可视化面板系统 from your browser, with all desktop features.',
 - L1758 [DOC_HTML] AI Agent面板 → AI Agent面板
   -       'doc1.t':'Linux Deploy Guide','doc1.d':'Deploy AI Agent面板 Web on Linux server, manage AI Agent可视化面板系统 remotely via browser',
 - L1758 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -1537,9 +1537,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1779 [DOC_HTML] AI Agent面板 → AI Agent面板
   -       'dl.mac.step3':'Getting "No such file"? Not in Applications — use: <code style="font-size:10px;color:var(--accent);cursor:pointer" onclick="navigator.clipboard.writeText(\'sudo xattr -rd com.apple.quarantine ~/Downloads/AI Agent面板.app\');this.textContent=…
 - L1784 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -       'dl.note1':'View <a href="https://github.com/AgentAI2026/AI Agent面板/releases" target="_blank" rel="noopener">All Releases</a> · Need help? Read the <a href="https://github.com/AgentAI2026/AI Agent面板#readme" target="_blank" rel="noopener">Installation D…
+  -       'dl.note1':'View <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases" target="_blank" rel="noopener">All Releases</a> · Need help? Read the <a href="https://github.com/agentai2026/AI-Agent Agent面板#readme" target="_blank" rel="noopener">Installation D…
 - L1784 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -       'dl.note1':'View <a href="https://github.com/AgentAI2026/AI Agent面板/releases" target="_blank" rel="noopener">All Releases</a> · Need help? Read the <a href="https://github.com/AgentAI2026/AI Agent面板#readme" target="_blank" rel="noopener">Installation D…
+  -       'dl.note1':'View <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases" target="_blank" rel="noopener">All Releases</a> · Need help? Read the <a href="https://github.com/agentai2026/AI-Agent Agent面板#readme" target="_blank" rel="noopener">Installation D…
 - L1785 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       'dl.note2':'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-2px;opacity:0.7"><circle cx="12" cy="12" r="10"/><path d="…
 - L1789 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -1553,7 +1553,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1831 [DOC_HTML] AI Agent面板 → AI Agent面板
   -       localStorage.setItem('AI Agent面板-lang', _lang);
 - L1840 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -       var BASE = 'https://http://localhost:3456/update/latest.json';
+  -       var BASE = 'https://github.com/agentai2026/AI-Agent';
 - L1857 [DOC_HTML] AI Agent面板 → AI Agent面板
   -           // 替换 URL 中的版本号模式 AI Agent面板_X.Y.Z_
 - L1858 [DOC_HTML] AI Agent面板 → AI Agent面板
@@ -1587,9 +1587,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L55 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - | AI Agent可视化面板系统 | 最新 | AI Agent面板 管理的对象 |
 - L62 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L62 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L67 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 2. 安装 AI Agent可视化面板系统 汉化版（如果缺少）
 - L68 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -1603,17 +1603,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L109 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - AI Agent面板 是 AI Agent可视化面板系统 的管理工具，需要先安装 AI Agent可视化面板系统：
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L112 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L118 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - AI Agent可视化面板系统 init
 - L121 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - ### 3. 克隆 AI Agent面板
 - L125 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - sudo git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - sudo git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L125 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - sudo git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - sudo git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L126 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - sudo chown -R $(whoami) AI Agent面板
 - L127 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -1625,7 +1625,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L151 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   [api] API 已启动，配置目录: /root/.AI Agent可视化面板系统
 - L154 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 打开浏览器访问 `http://服务器IP:1420` 即可使用 AI Agent面板。
+  - 打开浏览器访问 `https://github.com/agentai2026/AI-Agent 即可使用 AI Agent面板。
 - L166 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   --name AI Agent面板 \
 - L169 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -1633,13 +1633,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L169 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L172 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L172 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L173 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L173 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L179 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - ## 访问 AI Agent面板
 - L187 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -1689,7 +1689,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L322 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - sudo systemctl restart AI Agent面板  # 或 pm2 restart AI Agent面板
 - L327 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > git remote set-url origin https://gitee.com/QtCodeCreators/AI Agent面板.git
+  - > git remote set-url origin https://github.com/agentai2026/AI-Agent Agent面板.git
 - L331 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - ### 更新 AI Agent可视化面板系统
 - L333 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -1701,17 +1701,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L342 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - # 汉化优化版（示例：AI Agent面板 0.9.0 推荐版）
 - L343 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://registry.npmmirror.com
+  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://github.com/agentai2026/AI-Agent
 - L343 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://registry.npmmirror.com
+  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://github.com/agentai2026/AI-Agent
 - L345 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - # 官方原版（示例：AI Agent面板 0.9.0 推荐版）
 - L346 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - sudo npm install -g AI Agent可视化面板系统@2026.3.11 --registry https://registry.npmjs.org
+  - sudo npm install -g AI Agent可视化面板系统@2026.3.11 --registry https://github.com/agentai2026/AI-Agent
 - L349 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://registry.npmjs.org
+  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://github.com/agentai2026/AI-Agent
 - L349 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://registry.npmjs.org
+  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://github.com/agentai2026/AI-Agent
 - L352 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - > **维护说明**：如果你是 AI Agent面板 维护者，后续只需要更新仓库根目录的 `AI Agent可视化面板系统-version-policy.json`，即可统一调整不同面板版本对应的推荐 AI Agent可视化面板系统 版本。程序版本号、热更新清单、桌面图标的维护方式见 `docs/version-maintenance.md`。
 - L352 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -1727,9 +1727,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L380 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 需要先安装 AI Agent可视化面板系统 并初始化：
 - L383 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L383 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L384 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - AI Agent可视化面板系统 init
 - L389 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -1759,9 +1759,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 2
 - kinds: LIKELY_UI_TEXT=2
 - L5 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -   "url": "https://github.com/AgentAI2026/AI Agent面板/releases/download/v0.13.4/web-0.13.4.zip",
+  -   "url": "https://github.com/agentai2026/AI-Agent Agent面板/releases/download/v0.13.4/web-0.13.4.zip",
 - L5 [LIKELY_UI_TEXT] AgentAI2026 → AgentAI2026
-  -   "url": "https://github.com/AgentAI2026/AI Agent面板/releases/download/v0.13.4/web-0.13.4.zip",
+  -   "url": "https://github.com/agentai2026/AI-Agent Agent面板/releases/download/v0.13.4/web-0.13.4.zip",
 
 ### AI Agent面板/index.html
 - total: 2
@@ -1775,9 +1775,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 2
 - kinds: LIKELY_UI_TEXT=2
 - L3 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "baseUrl": "https://dl.qrj.ai/AI Agent可视化面板系统-standalone",
+  -     "baseUrl": "https://github.com/agentai2026/AI-Agent Agent可视化面板系统-standalone",
 - L7 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "baseUrl": "https://dl.qrj.ai/AI Agent可视化面板系统-zh",
+  -     "baseUrl": "https://github.com/agentai2026/AI-Agent Agent可视化面板系统-zh",
 
 ### AI Agent面板/package-lock.json
 - total: 2
@@ -1799,17 +1799,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L7 [LIKELY_UI_TEXT] AgentAI2026 → AgentAI2026
   -   "author": "AgentAI2026",
 - L9 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -   "homepage": "https://github.com/AgentAI2026/AI Agent面板",
+  -   "homepage": "https://github.com/agentai2026/AI-Agent Agent面板",
 - L9 [LIKELY_UI_TEXT] AgentAI2026 → AgentAI2026
-  -   "homepage": "https://github.com/AgentAI2026/AI Agent面板",
+  -   "homepage": "https://github.com/agentai2026/AI-Agent Agent面板",
 - L12 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "url": "https://github.com/AgentAI2026/AI Agent面板.git"
+  -     "url": "https://github.com/agentai2026/AI-Agent Agent面板.git"
 - L12 [LIKELY_UI_TEXT] AgentAI2026 → AgentAI2026
-  -     "url": "https://github.com/AgentAI2026/AI Agent面板.git"
+  -     "url": "https://github.com/agentai2026/AI-Agent Agent面板.git"
 - L15 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "url": "https://github.com/AgentAI2026/AI Agent面板/issues"
+  -     "url": "https://github.com/agentai2026/AI-Agent Agent面板/issues"
 - L15 [LIKELY_UI_TEXT] AgentAI2026 → AgentAI2026
-  -     "url": "https://github.com/AgentAI2026/AI Agent面板/issues"
+  -     "url": "https://github.com/agentai2026/AI-Agent Agent面板/issues"
 - L18 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "AI Agent可视化面板系统",
 
@@ -1821,41 +1821,41 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   AI Agent可视化面板系统 & Hermes Agent Verwaltungspanel mit integriertem KI-Assistenten — Multi-Engine AI-Framework-Verwaltung
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Showcase">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 ist ein visuelles Verwaltungspanel, das mehrere AI-Agent-Frameworks unterstützt, derzeit mit Dual-Engine-Unterstützung für [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) und [Hermes Agent](https://github.com/nousresearch/hermes-…
+  - AI Agent面板 ist ein visuelles Verwaltungspanel, das mehrere AI-Agent-Frameworks unterstützt, derzeit mit Dual-Engine-Unterstützung für [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) und [Hermes Agent](https://github.com/agentai2026/AI-Agent
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 ist ein visuelles Verwaltungspanel, das mehrere AI-Agent-Frameworks unterstützt, derzeit mit Dual-Engine-Unterstützung für [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) und [Hermes Agent](https://github.com/nousresearch/hermes-…
+  - AI Agent面板 ist ein visuelles Verwaltungspanel, das mehrere AI-Agent-Frameworks unterstützt, derzeit mit Dual-Engine-Unterstützung für [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) und [Hermes Agent](https://github.com/agentai2026/AI-Agent
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L35 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **OpenAI-kompatible API** — Nahtlose Integration mit AI Agent可视化面板系统
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -1863,13 +1863,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Issue melden</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Issue melden</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Issue melden</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Issue melden</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Multi-Engine-Architektur** — Unterstützt AI Agent可视化面板系统 und Hermes Agent Dual-Engine, freies Umschalten, unabhängige Verwaltung
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -1877,13 +1877,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L87 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Interne Testplattform, OpenAI-kompatibel
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Besuchen Sie [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) für die neueste Version:
+  - Besuchen Sie [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) für die neueste Version:
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Besuchen Sie [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) für die neueste Version:
+  - Besuchen Sie [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) für die neueste Version:
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -1891,39 +1891,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Ersteinrichtung** — Beim ersten Start automatische Erkennung von Node.js, Git, AI Agent可视化面板系统. Ein-Klick-Installation bei Bedarf
 - L139 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L139 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L140 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L155 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | KI-Agenten-Framework |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | KI-Agenten-Framework |
 - L156 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Plattformübergreifender mobiler Chat |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Plattformübergreifender mobiler Chat |
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Cloudflare Tunnel Tool |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel Tool |
 - L176 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L177 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L177 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L178 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### AI Agent面板/README.en.md
 - total: 96
@@ -1933,49 +1933,49 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   AI Agent可视化面板系统 & Hermes Agent Management Panel with Built-in AI Assistant — Multi-Engine AI Framework Management
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L23 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/actions/workflows/ci.yml">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/actions/workflows/ci.yml">
 - L23 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/actions/workflows/ci.yml">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/actions/workflows/ci.yml">
 - L24 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/actions/workflow/status/AgentAI2026/AI Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
 - L24 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/actions/workflow/status/AgentAI2026/AI Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Feature Showcase">
 - L34 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 is a visual management panel supporting multiple AI Agent frameworks, currently with [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) and [Hermes Agent](https://github.com/nousresearch/hermes-agent) dual-engine support. It feature…
+  - AI Agent面板 is a visual management panel supporting multiple AI Agent frameworks, currently with [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) and [Hermes Agent](https://github.com/agentai2026/AI-Agent) dual-engine support. It feature…
 - L34 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 is a visual management panel supporting multiple AI Agent frameworks, currently with [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) and [Hermes Agent](https://github.com/nousresearch/hermes-agent) dual-engine support. It feature…
+  - AI Agent面板 is a visual management panel supporting multiple AI Agent frameworks, currently with [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) and [Hermes Agent](https://github.com/agentai2026/AI-Agent) dual-engine support. It feature…
 - L36 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L36 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L36 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L38 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L43 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L47 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **OpenAI-Compatible API** — Seamless integration with AI Agent可视化面板系统, plug and play
 - L55 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -1985,13 +1985,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L58 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L71 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L71 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L73 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Report Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Report Issue</strong></a>
 - L73 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Report Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Report Issue</strong></a>
 - L79 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Multi-Engine Architecture** — Supports both AI Agent可视化面板系统 and Hermes Agent dual engines, freely switchable, independently managed
 - L83 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -1999,9 +1999,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L94 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Internal testing platform, OpenAI-compatible, daily sign-in credits
 - L100 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Go to [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) for the latest version:
+  - Go to [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) for the latest version:
 - L100 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Go to [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) for the latest version:
+  - Go to [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) for the latest version:
 - L106 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - | Apple Silicon (M1/M2/M3/M4) | `AI Agent面板_x.x.x_aarch64.dmg` | Macs from late 2020+ |
 - L107 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2019,9 +2019,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L124 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - | RPM | `AI Agent面板-x.x.x-1.x86_64.rpm` | `sudo rpm -i *.rpm` |
 - L129 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L129 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L137 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L138 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2029,19 +2029,19 @@ This file is generated. It lists candidate display-text replacements with line n
 - L138 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L141 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L141 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L142 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L142 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L150 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Initial Setup** — First launch auto-detects Node.js, Git, AI Agent可视化面板系统. One-click install if missing.
 - L192 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L192 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L193 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L208 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2065,61 +2065,61 @@ This file is generated. It lists candidate display-text replacements with line n
 - L225 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - After restarting AI Agent面板, the built-in frontend resources will be used automatically.
 - L231 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | AI Agent Framework |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | AI Agent Framework |
 - L232 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Cross-platform mobile chat client |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Cross-platform mobile chat client |
 - L233 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Cloudflare Tunnel tool |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel tool |
 - L241 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板 keeps growing because of every contributor in the community. Thank you for helping make the project better.
 - L249 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/liucong2013"><img src="https://github.com/liucong2013.png?size=80" width="60" height="60"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/88">#88</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/88">#88</a></td>
 - L249 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/liucong2013"><img src="https://github.com/liucong2013.png?size=80" width="60" height="60"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/88">#88</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/88">#88</a></td>
 - L250 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/axdlee"><img src="https://github.com/axdlee.png?size=80" width="60" height="60"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/58">#58</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/58">#58</a></td>
 - L250 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/axdlee"><img src="https://github.com/axdlee.png?size=80" width="60" height="60"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/58">#58</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/58">#58</a></td>
 - L251 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/ATGCS"><img src="https://github.com/ATGCS.png?size=80" width="60" height="60"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/107">#107</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/107">#107</a></td>
 - L251 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/ATGCS"><img src="https://github.com/ATGCS.png?size=80" width="60" height="60"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/107">#107</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/107">#107</a></td>
 - L252 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/livisun"><img src="https://github.com/livisun.png?size=80" width="60" height="60"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/106">#106</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/106">#106</a></td>
 - L252 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/livisun"><img src="https://github.com/livisun.png?size=80" width="60" height="60"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/106">#106</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/106">#106</a></td>
 - L253 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/kiss-kedaya"><img src="https://github.com/kiss-kedaya.png?size=80" width="60" height="60"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/101">#101</a> <a href…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/101">#101</a> <a href…
 - L253 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/kiss-kedaya"><img src="https://github.com/kiss-kedaya.png?size=80" width="60" height="60"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/101">#101</a> <a href…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/101">#101</a> <a href…
 - L254 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/wzh4869"><img src="https://github.com/wzh4869.png?size=80" width="60" height="60"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/82">#82</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/82">#82</a></td>
 - L254 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/wzh4869"><img src="https://github.com/wzh4869.png?size=80" width="60" height="60"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/82">#82</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/82">#82</a></td>
 - L255 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/0xsline"><img src="https://github.com/0xsline.png?size=80" width="60" height="60"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/15">#15</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/15">#15</a></td>
 - L255 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/0xsline"><img src="https://github.com/0xsline.png?size=80" width="60" height="60"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/15">#15</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/15">#15</a></td>
 - L256 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/jonntd"><img src="https://github.com/jonntd.png?size=80" width="60" height="60"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/18">#18</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/18">#18</a></td>
 - L256 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/jonntd"><img src="https://github.com/jonntd.png?size=80" width="60" height="60"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/18">#18</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/18">#18</a></td>
 - L334 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > If we missed your contribution, please [open an issue](https://github.com/AgentAI2026/AI Agent面板/issues/new) and we will add it promptly.
+  - > If we missed your contribution, please [open an issue](https://github.com/agentai2026/AI-Agent Agent面板/issues/new) and we will add it promptly.
 - L334 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > If we missed your contribution, please [open an issue](https://github.com/AgentAI2026/AI Agent面板/issues/new) and we will add it promptly.
+  - > If we missed your contribution, please [open an issue](https://github.com/agentai2026/AI-Agent Agent面板/issues/new) and we will add it promptly.
 - L348 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L349 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L349 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L350 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L356 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 (武汉晴辰天下网络科技有限公司) | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 (武汉晴辰天下网络科技有限公司) | [https://github.com/agentai2026/AI-Agent)
 - L356 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 (武汉晴辰天下网络科技有限公司) | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 (武汉晴辰天下网络科技有限公司) | [https://github.com/agentai2026/AI-Agent)
 
 ### AI Agent面板/README.es.md
 - total: 54
@@ -2129,41 +2129,41 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   Panel de gestión AI Agent可视化面板系统 & Hermes Agent con Asistente IA integrado — Gestión multi-motor de frameworks IA
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Showcase">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 es un panel de gestión visual que soporta múltiples frameworks de AI Agent, actualmente con soporte dual para [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) y [Hermes Agent](https://github.com/nousresearch/hermes-agent). Cuenta …
+  - AI Agent面板 es un panel de gestión visual que soporta múltiples frameworks de AI Agent, actualmente con soporte dual para [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) y [Hermes Agent](https://github.com/agentai2026/AI-Agent). Cuenta …
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 es un panel de gestión visual que soporta múltiples frameworks de AI Agent, actualmente con soporte dual para [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) y [Hermes Agent](https://github.com/nousresearch/hermes-agent). Cuenta …
+  - AI Agent面板 es un panel de gestión visual que soporta múltiples frameworks de AI Agent, actualmente con soporte dual para [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) y [Hermes Agent](https://github.com/agentai2026/AI-Agent). Cuenta …
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Sitio web**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Descargar**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Sitio web**: [https://github.com/agentai2026/AI-Agent) | 📦 **Descargar**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Sitio web**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Descargar**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Sitio web**: [https://github.com/agentai2026/AI-Agent) | 📦 **Descargar**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Sitio web**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Descargar**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Sitio web**: [https://github.com/agentai2026/AI-Agent) | 📦 **Descargar**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L35 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **API compatible con OpenAI** — Integración perfecta con AI Agent可视化面板系统
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -2171,13 +2171,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Reportar Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Reportar Issue</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Reportar Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Reportar Issue</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Arquitectura multi-motor** — Soporta AI Agent可视化面板系统 y Hermes Agent dual, conmutación libre, gestión independiente
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -2185,13 +2185,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L87 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Plataforma de pruebas interna, compatible con OpenAI
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Visita [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) para la última versión:
+  - Visita [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) para la última versión:
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Visita [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) para la última versión:
+  - Visita [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) para la última versión:
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2199,39 +2199,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Configuración inicial** — Primera ejecución detecta automáticamente Node.js, Git, AI Agent可视化面板系统. Instalación con un clic si falta
 - L139 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L139 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L140 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L155 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | Framework AI Agent |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | Framework AI Agent |
 - L156 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Cliente móvil multiplataforma |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Cliente móvil multiplataforma |
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Herramienta Cloudflare Tunnel |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Herramienta Cloudflare Tunnel |
 - L176 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L177 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L177 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L178 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### AI Agent面板/README.fr.md
 - total: 54
@@ -2241,41 +2241,41 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   Panneau de gestion AI Agent可视化面板系统 & Hermes Agent avec Assistant IA intégré — Gestion multi-moteur de frameworks IA
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Showcase">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 est un panneau de gestion visuel supportant plusieurs frameworks d'agents IA, actuellement avec un double support pour [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) et [Hermes Agent](https://github.com/nousresearch/hermes-agent…
+  - AI Agent面板 est un panneau de gestion visuel supportant plusieurs frameworks d'agents IA, actuellement avec un double support pour [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) et [Hermes Agent](https://github.com/agentai2026/AI-Agent
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 est un panneau de gestion visuel supportant plusieurs frameworks d'agents IA, actuellement avec un double support pour [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) et [Hermes Agent](https://github.com/nousresearch/hermes-agent…
+  - AI Agent面板 est un panneau de gestion visuel supportant plusieurs frameworks d'agents IA, actuellement avec un double support pour [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) et [Hermes Agent](https://github.com/agentai2026/AI-Agent
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Site web** : [http://localhost:3456](https://http://localhost:3456/) | 📦 **Télécharger** : [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Site web** : [https://github.com/agentai2026/AI-Agent) | 📦 **Télécharger** : [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Site web** : [http://localhost:3456](https://http://localhost:3456/) | 📦 **Télécharger** : [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Site web** : [https://github.com/agentai2026/AI-Agent) | 📦 **Télécharger** : [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Site web** : [http://localhost:3456](https://http://localhost:3456/) | 📦 **Télécharger** : [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Site web** : [https://github.com/agentai2026/AI-Agent) | 📦 **Télécharger** : [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L35 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **API compatible OpenAI** — Intégration transparente avec AI Agent可视化面板系统
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -2283,13 +2283,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Signaler un Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Signaler un Issue</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Signaler un Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Signaler un Issue</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Architecture multi-moteur** — Support AI Agent可视化面板系统 et Hermes Agent en double moteur, commutation libre, gestion indépendante
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -2297,13 +2297,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L87 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Plateforme de tests interne, compatible OpenAI
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Rendez-vous sur [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) pour la dernière version :
+  - Rendez-vous sur [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) pour la dernière version :
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Rendez-vous sur [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) pour la dernière version :
+  - Rendez-vous sur [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) pour la dernière version :
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2311,39 +2311,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Configuration initiale** — Le premier lancement détecte automatiquement Node.js, Git, AI Agent可视化面板系统. Installation en un clic si nécessaire
 - L139 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L139 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L140 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L155 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | Framework d'agents IA |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | Framework d'agents IA |
 - L156 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Client mobile multiplateforme |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Client mobile multiplateforme |
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Outil Cloudflare Tunnel |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Outil Cloudflare Tunnel |
 - L176 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L177 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L177 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L178 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### AI Agent面板/README.ja.md
 - total: 52
@@ -2353,39 +2353,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   AI アシスタント内蔵の AI Agent可视化面板系统 & Hermes Agent 管理パネル — マルチエンジン AI フレームワーク管理
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 機能ショーケース">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 は複数の AI Agent フレームワークをサポートするビジュアル管理パネルで、現在 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) と [Hermes Agent](https://github.com/nousresearch/hermes-agent) のデュアルエンジンをサポートしています。**インテリジェント AI アシスタントを内蔵**し、ワンクリックインストール、設定の自動診断、問題の特定と修…
+  - AI Agent面板 は複数の AI Agent フレームワークをサポートするビジュアル管理パネルで、現在 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) と [Hermes Agent](https://github.com/agentai2026/AI-Agent) のデュアルエンジンをサポートしています。**インテリジェント AI アシスタントを内蔵**し、ワンクリックインストール、設定の自動診断、問題の特定と修…
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 は複数の AI Agent フレームワークをサポートするビジュアル管理パネルで、現在 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) と [Hermes Agent](https://github.com/nousresearch/hermes-agent) のデュアルエンジンをサポートしています。**インテリジェント AI アシスタントを内蔵**し、ワンクリックインストール、設定の自動診断、問題の特定と修…
+  - AI Agent面板 は複数の AI Agent フレームワークをサポートするビジュアル管理パネルで、現在 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) と [Hermes Agent](https://github.com/agentai2026/AI-Agent) のデュアルエンジンをサポートしています。**インテリジェント AI アシスタントを内蔵**し、ワンクリックインストール、設定の自動診断、問題の特定と修…
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **ウェブサイト**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **ダウンロード**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **ウェブサイト**: [https://github.com/agentai2026/AI-Agent) | 📦 **ダウンロード**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **ウェブサイト**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **ダウンロード**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **ウェブサイト**: [https://github.com/agentai2026/AI-Agent) | 📦 **ダウンロード**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **ウェブサイト**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **ダウンロード**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **ウェブサイト**: [https://github.com/agentai2026/AI-Agent) | 📦 **ダウンロード**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **OpenAI 互換 API** — AI Agent可视化面板系统 とシームレスに統合
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -2393,25 +2393,25 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Issue を報告</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Issue を報告</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Issue を報告</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Issue を報告</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 マルチエンジンアーキテクチャ** — AI Agent可视化面板系统 と Hermes Agent のデュアルエンジンをサポート、自由に切り替え、それぞれ独立管理
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **サービス管理** — AI Agent可视化面板系统 / Hermes Gateway の起動/停止、バージョン検出とワンクリックアップグレード
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) から最新版をダウンロード：
+  - [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) から最新版をダウンロード：
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) から最新版をダウンロード：
+  - [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) から最新版をダウンロード：
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2419,39 +2419,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **初期設定** — 初回起動で Node.js、Git、AI Agent可视化面板系统 を自動検出。未インストールならワンクリック
 - L164 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L164 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L165 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L180 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | AI Agent フレームワーク |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | AI Agent フレームワーク |
 - L181 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | クロスプラットフォームモバイルチャット |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | クロスプラットフォームモバイルチャット |
 - L182 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Cloudflare Tunnel ツール |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel ツール |
 - L201 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L202 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L202 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L203 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L209 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L209 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### AI Agent面板/README.ko.md
 - total: 52
@@ -2461,39 +2461,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   AI 어시스턴트 내장 AI Agent可视化面板系统 & Hermes Agent 관리 패널 — 멀티엔진 AI 프레임워크 관리
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 기능 쇼케이스">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板은 여러 AI Agent 프레임워크를 지원하는 시각적 관리 패널으로, 현재 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) 및 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 듀얼 엔진을 지원합니다. **지능형 AI 어시스턴트를 내장**하여 원클릭 설치, 자동 설정 진단, 문제 해결 및 오류 수정을 지원합니다. …
+  - AI Agent面板은 여러 AI Agent 프레임워크를 지원하는 시각적 관리 패널으로, 현재 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) 및 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 듀얼 엔진을 지원합니다. **지능형 AI 어시스턴트를 내장**하여 원클릭 설치, 자동 설정 진단, 문제 해결 및 오류 수정을 지원합니다. …
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板은 여러 AI Agent 프레임워크를 지원하는 시각적 관리 패널으로, 현재 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) 및 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 듀얼 엔진을 지원합니다. **지능형 AI 어시스턴트를 내장**하여 원클릭 설치, 자동 설정 진단, 문제 해결 및 오류 수정을 지원합니다. …
+  - AI Agent面板은 여러 AI Agent 프레임워크를 지원하는 시각적 관리 패널으로, 현재 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) 및 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 듀얼 엔진을 지원합니다. **지능형 AI 어시스턴트를 내장**하여 원클릭 설치, 자동 설정 진단, 문제 해결 및 오류 수정을 지원합니다. …
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **웹사이트**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **다운로드**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **웹사이트**: [https://github.com/agentai2026/AI-Agent) | 📦 **다운로드**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **웹사이트**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **다운로드**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **웹사이트**: [https://github.com/agentai2026/AI-Agent) | 📦 **다운로드**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **웹사이트**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **다운로드**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **웹사이트**: [https://github.com/agentai2026/AI-Agent) | 📦 **다운로드**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **OpenAI 호환 API** — AI Agent可视化面板系统와 원활한 통합
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -2501,25 +2501,25 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Issue 보고</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Issue 보고</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Issue 보고</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Issue 보고</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 멀티엔진 아키텍처** — AI Agent可视化面板系统 및 Hermes Agent 듀얼 엔진 지원, 자유롭게 전환, 각각 독립 관리
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **서비스 관리** — AI Agent可视化面板系统 / Hermes Gateway 시작/중지, 버전 감지 및 원클릭 업그레이드
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)에서 최신 버전 다운로드:
+  - [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)에서 최신 버전 다운로드:
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)에서 최신 버전 다운로드:
+  - [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)에서 최신 버전 다운로드:
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2527,39 +2527,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **초기 설정** — 첫 실행 시 Node.js, Git, AI Agent可视化面板系统 자동 감지. 미설치 시 원클릭 설치
 - L152 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L152 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L153 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L168 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | AI Agent 프레임워크 |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | AI Agent 프레임워크 |
 - L169 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | 크로스 플랫폼 모바일 채팅 |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | 크로스 플랫폼 모바일 채팅 |
 - L170 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Cloudflare Tunnel 도구 |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel 도구 |
 - L189 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L190 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L190 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L191 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L197 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L197 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### AI Agent面板/README.md
 - total: 213
@@ -2569,55 +2569,55 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   内置 AI 助手的 AI Agent可视化面板系统 & Hermes Agent 管理面板 — 多引擎 AI 框架管理
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L23 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/actions/workflows/ci.yml">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/actions/workflows/ci.yml">
 - L23 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/actions/workflows/ci.yml">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/actions/workflows/ci.yml">
 - L24 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/actions/workflow/status/AgentAI2026/AI Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
 - L24 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/actions/workflow/status/AgentAI2026/AI Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 功能全景">
 - L35 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  -   <a href="https://http://localhost:3456/#video">
+  -   <a href="https://github.com/agentai2026/AI-Agent">
 - L40 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 是支持多 AI Agent 框架的可视化管理面板，目前支持 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 双引擎。**内置智能 AI 助手**，帮你一键安装、自动诊断配置、排查问题、修复错误。8 大工具 + 4 种模式 + 交互式问答，从新手到老手都能轻松管理。
+  - AI Agent面板 是支持多 AI Agent 框架的可视化管理面板，目前支持 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 双引擎。**内置智能 AI 助手**，帮你一键安装、自动诊断配置、排查问题、修复错误。8 大工具 + 4 种模式 + 交互式问答，从新手到老手都能轻松管理。
 - L40 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 是支持多 AI Agent 框架的可视化管理面板，目前支持 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 双引擎。**内置智能 AI 助手**，帮你一键安装、自动诊断配置、排查问题、修复错误。8 大工具 + 4 种模式 + 交互式问答，从新手到老手都能轻松管理。
+  - AI Agent面板 是支持多 AI Agent 框架的可视化管理面板，目前支持 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 双引擎。**内置智能 AI 助手**，帮你一键安装、自动诊断配置、排查问题、修复错误。8 大工具 + 4 种模式 + 交互式问答，从新手到老手都能轻松管理。
 - L42 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **官网**: [http://localhost:3456](https://http://localhost:3456/)  |  📦 **下载**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **官网**: [https://github.com/agentai2026/AI-Agent)  |  📦 **下载**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L42 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **官网**: [http://localhost:3456](https://http://localhost:3456/)  |  📦 **下载**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **官网**: [https://github.com/agentai2026/AI-Agent)  |  📦 **下载**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L42 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **官网**: [http://localhost:3456](https://http://localhost:3456/)  |  📦 **下载**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **官网**: [https://github.com/agentai2026/AI-Agent)  |  📦 **下载**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L44 [DOC_TEXT] AI Agent → AI Agent
   - ### 🎁 AI Agent AI 接口
 - L49 [DOC_TEXT] AI Agent → AI Agent
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AI Agent AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AI Agent AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AI Agent AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AI Agent AI"></a>
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **兼容 OpenAI 接口** — 无缝对接 AI Agent可视化面板系统，即开即用
 - L57 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - 配合 AI Agent可视化面板系统 使用：在 [gpt.qt.cool](https://gpt.qt.cool) 注册并签到领取测试额度，获取 API Key 后，初始化 AI Agent可视化面板系统 时选择 **OpenAI Compatible** 提供商，填入地址和 Key 即可使用。
+  - 配合 AI Agent可视化面板系统 使用：在 [gpt.qt.cool](https://github.com/agentai2026/AI-Agent) 注册并签到领取测试额度，获取 API Key 后，初始化 AI Agent可视化面板系统 时选择 **OpenAI Compatible** 提供商，填入地址和 Key 即可使用。
 - L63 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板 提供**纯 Web 版部署模式**（零 GUI 依赖），天然兼容 ARM64 开发板和嵌入式设备：
 - L66 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -2625,29 +2625,29 @@ This file is generated. It lists candidate display-text replacements with line n
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64 镜像** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest` 开箱即用
 - L79 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       <a href="https://qt.cool/c/AI Agent可视化面板系统"><img src="docs/qr-qq.png" width="140" alt="QQ 群二维码"></a><br>
+  -       <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统"><img src="docs/qr-qq.png" width="140" alt="QQ 群二维码"></a><br>
 - L80 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       <a href="https://qt.cool/c/AI Agent可视化面板系统"><strong>QQ 群</strong></a>
+  -       <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统"><strong>QQ 群</strong></a>
 - L83 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       <a href="https://qt.cool/c/AI Agent可视化面板系统Wx"><img src="docs/qr-wechat.png" width="140" alt="微信群二维码"></a><br>
+  -       <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统Wx"><img src="docs/qr-wechat.png" width="140" alt="微信群二维码"></a><br>
 - L84 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       <a href="https://qt.cool/c/AI Agent可视化面板系统Wx"><strong>微信群</strong></a>
+  -       <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统Wx"><strong>微信群</strong></a>
 - L87 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       <a href="https://qt.cool/c/AI Agent可视化面板系统DY"><img src="docs/qr-dy.png" width="140" alt="抖音群二维码"></a><br>
+  -       <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统DY"><img src="docs/qr-dy.png" width="140" alt="抖音群二维码"></a><br>
 - L88 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       <a href="https://qt.cool/c/AI Agent可视化面板系统DY"><strong>抖音群</strong></a>
+  -       <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统DY"><strong>抖音群</strong></a>
 - L102 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L102 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L104 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>反馈 Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>反馈 Issue</strong></a>
 - L104 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>反馈 Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>反馈 Issue</strong></a>
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 前往 [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) 页面下载最新版本，根据你的系统选择对应安装包：
+  - 前往 [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) 页面下载最新版本，根据你的系统选择对应安装包：
 - L111 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - 前往 [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) 页面下载最新版本，根据你的系统选择对应安装包：
+  - 前往 [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) 页面下载最新版本，根据你的系统选择对应安装包：
 - L117 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - | Apple Silicon (M1/M2/M3/M4) | `AI Agent面板_x.x.x_aarch64.dmg` | 2020 年末及之后的 Mac |
 - L118 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2675,9 +2675,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L154 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 没有桌面环境？一键部署 AI Agent面板 Web 版，通过浏览器远程管理 AI Agent可视化面板系统：
 - L157 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L167 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L168 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2685,29 +2685,29 @@ This file is generated. It lists candidate display-text replacements with line n
 - L168 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L171 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L171 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L172 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L172 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L180 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板 提供多种升级方式，根据你的安装方式选择对应方案。
 - L186 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 1. 打开 AI Agent面板，如有新版本会弹出升级提示
 - L190 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > **手动升级**：如果自动更新失败，可前往 [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) 下载最新安装包，覆盖安装即可。数据不会丢失。
+  - > **手动升级**：如果自动更新失败，可前往 [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) 下载最新安装包，覆盖安装即可。数据不会丢失。
 - L190 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > **手动升级**：如果自动更新失败，可前往 [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) 下载最新安装包，覆盖安装即可。数据不会丢失。
+  - > **手动升级**：如果自动更新失败，可前往 [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) 下载最新安装包，覆盖安装即可。数据不会丢失。
 - L197 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - | DEB | `sudo dpkg -i AI Agent面板_最新版本_amd64.deb` |
 - L198 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - | RPM | `sudo rpm -U AI Agent面板-最新版本-1.x86_64.rpm` |
 - L205 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L205 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L213 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd /opt/AI Agent面板  # 替换为实际安装目录
 - L217 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2715,9 +2715,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L220 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - > **升级 AI Agent可视化面板系统**：面板和 AI Agent可视化面板系统 版本需要匹配。可在「服务管理」页面一键升级，或手动执行：
 - L222 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - > sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - > sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L222 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - > sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L230 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd /path/to/AI Agent面板  # 包含 docker-compose.yml 的目录
 - L231 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2735,21 +2735,21 @@ This file is generated. It lists candidate display-text replacements with line n
 - L244 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L247 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L247 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L248 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L248 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L252 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - **仅升级容器内的 AI Agent可视化面板系统**
 - L255 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L255 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L255 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L263 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板  # 替换为实际安装目录
 - L278 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2831,15 +2831,15 @@ This file is generated. It lists candidate display-text replacements with line n
 - L544 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板/
 - L579 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L579 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L580 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板
 - L640 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L640 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L641 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板
 - L656 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -2857,9 +2857,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L708 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - - **端口** 1420（AI Agent面板）+ 18789（Gateway）
 - L713 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L713 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L732 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     server_name AI Agent可视化面板系统.example.com;
 - L760 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -2885,15 +2885,15 @@ This file is generated. It lists candidate display-text replacements with line n
 - L826 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 1. 以管理员身份运行 AI Agent面板
 - L829 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -    npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  -    npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L829 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -    npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  -    npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L846 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 文件被其他进程锁定。先关闭 AI Agent面板 和所有 Node.js 进程，以管理员身份打开 PowerShell 重装：
 - L850 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L850 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L855 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 安装 Node.js 后需要**重启 AI Agent面板**，新的 PATH 环境变量才能生效。
 - L865 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -2903,7 +2903,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L875 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 2. **检查 Base URL** — 不同服务商 URL 格式不同，注意结尾不要多 `/v1`（AI Agent面板 会自动处理）
 - L877 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 4. **Ollama 特殊处理** — URL 填 `http://127.0.0.1:11434`（不加 `/v1`，AI Agent面板 自动补全）
+  - 4. **Ollama 特殊处理** — URL 填 `https://github.com/agentai2026/AI-Agent `/v1`，AI Agent面板 自动补全）
 - L891 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd /opt/AI Agent面板  # 替换为实际安装目录
 - L895 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -2929,67 +2929,67 @@ This file is generated. It lists candidate display-text replacements with line n
 - L924 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 重启 AI Agent面板 后将自动使用内嵌的前端资源。
 - L930 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | AI Agent 框架 |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | AI Agent 框架 |
 - L931 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | 跨平台移动聊天客户端 |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | 跨平台移动聊天客户端 |
 - L932 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Cloudflare Tunnel 内网穿透工具 |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel 内网穿透工具 |
 - L936 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 感谢以下赞助商对 AI Agent面板 项目的支持：
 - L958 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板 的成长离不开每一位贡献者的付出。感谢你们让这个项目变得更好！
 - L966 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/liucong2013"><img src="https://github.com/liucong2013.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/…
 - L966 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/liucong2013"><img src="https://github.com/liucong2013.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/…
 - L967 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/axdlee"><img src="https://github.com/axdlee.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/58">#58</a…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/58">#58</a…
 - L967 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/axdlee"><img src="https://github.com/axdlee.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/58">#58</a…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/58">#58</a…
 - L968 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/ATGCS"><img src="https://github.com/ATGCS.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/107">#107</a>…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/107">#107</a>…
 - L968 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/ATGCS"><img src="https://github.com/ATGCS.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/107">#107</a>…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/107">#107</a>…
 - L969 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/livisun"><img src="https://github.com/livisun.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/106">#1…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/106">#1…
 - L969 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/livisun"><img src="https://github.com/livisun.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/106">#1…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/106">#1…
 - L970 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/kiss-kedaya"><img src="https://github.com/kiss-kedaya.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/…
 - L970 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/kiss-kedaya"><img src="https://github.com/kiss-kedaya.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/…
 - L971 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/wzh4869"><img src="https://github.com/wzh4869.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/82">#82…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/82">#82…
 - L971 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/wzh4869"><img src="https://github.com/wzh4869.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/82">#82…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/82">#82…
 - L972 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/0xsline"><img src="https://github.com/0xsline.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/15">#15…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/15">#15…
 - L972 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/0xsline"><img src="https://github.com/0xsline.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/15">#15…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/15">#15…
 - L973 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/jonntd"><img src="https://github.com/jonntd.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/18">#18</a…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/18">#18</a…
 - L973 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/jonntd"><img src="https://github.com/jonntd.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/18">#18</a…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/18">#18</a…
 - L976 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/octo-patch"><img src="https://github.com/octo-patch.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>octo-patch</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pul…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>octo-patch</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pul…
 - L976 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/octo-patch"><img src="https://github.com/octo-patch.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>octo-patch</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pul…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>octo-patch</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pul…
 - L977 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/SEVENTEEN-TAN"><img src="https://github.com/SEVENTEEN-TAN.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>SEVENTEEN-TAN</b></sub></a><br><a href="https://github.com/AgentAI2026/claw…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>SEVENTEEN-TAN</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent
 - L977 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/SEVENTEEN-TAN"><img src="https://github.com/SEVENTEEN-TAN.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>SEVENTEEN-TAN</b></sub></a><br><a href="https://github.com/AgentAI2026/claw…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>SEVENTEEN-TAN</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent
 - L978 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/roc-xie"><img src="https://github.com/roc-xie.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>roc-xie</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/162">#1…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>roc-xie</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/162">#1…
 - L978 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/roc-xie"><img src="https://github.com/roc-xie.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>roc-xie</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/162">#1…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>roc-xie</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/162">#1…
 - L984 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 感谢以下用户提交 Issue 报告 Bug 或建议功能，帮助 AI Agent面板 持续改进：
 - L1073 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 如果遗漏了你的贡献，请 [提交 Issue](https://github.com/AgentAI2026/AI Agent面板/issues/new) 告知我们，我们会第一时间补充！
+  - > 如果遗漏了你的贡献，请 [提交 Issue](https://github.com/agentai2026/AI-Agent Agent面板/issues/new) 告知我们，我们会第一时间补充！
 - L1073 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 如果遗漏了你的贡献，请 [提交 Issue](https://github.com/AgentAI2026/AI Agent面板/issues/new) 告知我们，我们会第一时间补充！
+  - > 如果遗漏了你的贡献，请 [提交 Issue](https://github.com/agentai2026/AI-Agent Agent面板/issues/new) 告知我们，我们会第一时间补充！
 - L1079 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 武汉晴辰天下网络科技有限公司 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 武汉晴辰天下网络科技有限公司 | [https://github.com/agentai2026/AI-Agent)
 
 ### AI Agent面板/README.pt.md
 - total: 54
@@ -2999,41 +2999,41 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   Painel de gestão AI Agent可视化面板系统 & Hermes Agent com Assistente IA integrado — Gestão multi-motor de frameworks IA
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Showcase">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 é um painel de gestão visual que suporta múltiplos frameworks de AI Agent, atualmente com suporte dual para [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) e [Hermes Agent](https://github.com/nousresearch/hermes-agent). Possui um…
+  - AI Agent面板 é um painel de gestão visual que suporta múltiplos frameworks de AI Agent, atualmente com suporte dual para [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) e [Hermes Agent](https://github.com/agentai2026/AI-Agent). Possui um…
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 é um painel de gestão visual que suporta múltiplos frameworks de AI Agent, atualmente com suporte dual para [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) e [Hermes Agent](https://github.com/nousresearch/hermes-agent). Possui um…
+  - AI Agent面板 é um painel de gestão visual que suporta múltiplos frameworks de AI Agent, atualmente com suporte dual para [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) e [Hermes Agent](https://github.com/agentai2026/AI-Agent). Possui um…
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L35 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **API compatível com OpenAI** — Integração perfeita com AI Agent可视化面板系统
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -3041,13 +3041,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Reportar Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Reportar Issue</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Reportar Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Reportar Issue</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Arquitetura multi-motor** — Suporta AI Agent可视化面板系统 e Hermes Agent dual, comutação livre, gestão independente
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -3055,13 +3055,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L87 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Plataforma de testes interna, compatível com OpenAI
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Acesse [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) para a versão mais recente:
+  - Acesse [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) para a versão mais recente:
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Acesse [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) para a versão mais recente:
+  - Acesse [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) para a versão mais recente:
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -3069,39 +3069,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Configuração inicial** — Primeira execução detecta automaticamente Node.js, Git, AI Agent可视化面板系统. Instalação com um clique se necessário
 - L139 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L139 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L140 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L155 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | Framework AI Agent |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | Framework AI Agent |
 - L156 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Cliente móvel multiplataforma |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Cliente móvel multiplataforma |
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Ferramenta Cloudflare Tunnel |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Ferramenta Cloudflare Tunnel |
 - L176 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L177 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L177 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L178 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### AI Agent面板/README.ru.md
 - total: 54
@@ -3111,41 +3111,41 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   Панель управления AI Agent可视化面板系统 & Hermes Agent со встроенным ИИ-ассистентом — Управление мульти-движковыми AI фреймворками
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Showcase">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 — это визуальная панель управления, поддерживающая несколько фреймворков AI-агентов, сейчас с двойной поддержкой [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) и [Hermes Agent](https://github.com/nousresearch/hermes-agent). Со *…
+  - AI Agent面板 — это визуальная панель управления, поддерживающая несколько фреймворков AI-агентов, сейчас с двойной поддержкой [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) и [Hermes Agent](https://github.com/agentai2026/AI-Agent). Со *…
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 — это визуальная панель управления, поддерживающая несколько фреймворков AI-агентов, сейчас с двойной поддержкой [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) и [Hermes Agent](https://github.com/nousresearch/hermes-agent). Со *…
+  - AI Agent面板 — это визуальная панель управления, поддерживающая несколько фреймворков AI-агентов, сейчас с двойной поддержкой [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) и [Hermes Agent](https://github.com/agentai2026/AI-Agent). Со *…
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Сайт**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Скачать**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Сайт**: [https://github.com/agentai2026/AI-Agent) | 📦 **Скачать**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Сайт**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Скачать**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Сайт**: [https://github.com/agentai2026/AI-Agent) | 📦 **Скачать**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Сайт**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Скачать**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Сайт**: [https://github.com/agentai2026/AI-Agent) | 📦 **Скачать**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L35 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **API, совместимый с OpenAI** — Бесшовная интеграция с AI Agent可视化面板系统
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -3153,13 +3153,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Сообщить об Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Сообщить об Issue</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Сообщить об Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Сообщить об Issue</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Мульти-движковая архитектура** — Поддержка AI Agent可视化面板系统 и Hermes Agent, свободное переключение, независимое управление
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -3167,13 +3167,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L87 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Внутренняя тестовая платформа, совместимая с OpenAI
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Перейдите на [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) для последней версии:
+  - Перейдите на [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) для последней версии:
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Перейдите на [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) для последней версии:
+  - Перейдите на [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) для последней версии:
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -3181,39 +3181,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Начальная настройка** — При первом запуске автоопределение Node.js, Git, AI Agent可视化面板系统. Установка одним кликом при необходимости
 - L139 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L139 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L140 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L155 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | Фреймворк AI-агентов |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | Фреймворк AI-агентов |
 - L156 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Кроссплатформенный мобильный чат |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Кроссплатформенный мобильный чат |
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Инструмент Cloudflare Tunnel |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Инструмент Cloudflare Tunnel |
 - L176 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L177 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L177 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L178 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### AI Agent面板/README.vi.md
 - total: 54
@@ -3223,41 +3223,41 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   Bảng quản lý AI Agent可视化面板系统 & Hermes Agent với Trợ lý AI tích hợp — Quản lý đa động cơ AI Framework
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Showcase">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 là bảng quản lý trực quan hỗ trợ nhiều AI Agent framework, hiện tại hỗ trợ [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) và [Hermes Agent](https://github.com/nousresearch/hermes-agent) động cơ kép. Tích hợp **trợ lý AI thông mi…
+  - AI Agent面板 là bảng quản lý trực quan hỗ trợ nhiều AI Agent framework, hiện tại hỗ trợ [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) và [Hermes Agent](https://github.com/agentai2026/AI-Agent) động cơ kép. Tích hợp **trợ lý AI thông mi…
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 là bảng quản lý trực quan hỗ trợ nhiều AI Agent framework, hiện tại hỗ trợ [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) và [Hermes Agent](https://github.com/nousresearch/hermes-agent) động cơ kép. Tích hợp **trợ lý AI thông mi…
+  - AI Agent面板 là bảng quản lý trực quan hỗ trợ nhiều AI Agent framework, hiện tại hỗ trợ [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) và [Hermes Agent](https://github.com/agentai2026/AI-Agent) động cơ kép. Tích hợp **trợ lý AI thông mi…
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L35 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **API tương thích OpenAI** — Tích hợp liền mạch với AI Agent可视化面板系统
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -3265,13 +3265,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Báo cáo Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Báo cáo Issue</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Báo cáo Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Báo cáo Issue</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Kiến trúc đa động cơ** — Hỗ trợ cả AI Agent可视化面板系统 và Hermes Agent, chuyển đổi tự do, quản lý độc lập
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -3279,13 +3279,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L87 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Nền tảng kiểm thử nội bộ, tương thích OpenAI
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Truy cập [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) để tải phiên bản mới nhất:
+  - Truy cập [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) để tải phiên bản mới nhất:
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Truy cập [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) để tải phiên bản mới nhất:
+  - Truy cập [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) để tải phiên bản mới nhất:
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -3293,39 +3293,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Thiết lập ban đầu** — Lần chạy đầu tự động phát hiện Node.js, Git, AI Agent可视化面板系统. Cài đặt một cú nhấp nếu thiếu
 - L139 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L139 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L140 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L155 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | Framework AI Agent |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | Framework AI Agent |
 - L156 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Ứng dụng chat di động đa nền tảng |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Ứng dụng chat di động đa nền tảng |
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Công cụ Cloudflare Tunnel |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Công cụ Cloudflare Tunnel |
 - L176 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L177 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L177 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L178 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### AI Agent面板/README.zh-TW.md
 - total: 51
@@ -3335,37 +3335,37 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   內建 AI 助手的 AI Agent可视化面板系统 & Hermes Agent 管理面板 — 多引擎 AI 框架管理
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 功能展示">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 雙引擎。**內建智慧 AI 助手**，幫你一鍵安裝、自動診斷設定、排查問題、修復錯誤。8 大工具 + 4 種模式 + 互動式問答，從新手到老手都能輕鬆管理。
+  - AI Agent面板 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 雙引擎。**內建智慧 AI 助手**，幫你一鍵安裝、自動診斷設定、排查問題、修復錯誤。8 大工具 + 4 種模式 + 互動式問答，從新手到老手都能輕鬆管理。
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 雙引擎。**內建智慧 AI 助手**，幫你一鍵安裝、自動診斷設定、排查問題、修復錯誤。8 大工具 + 4 種模式 + 互動式問答，從新手到老手都能輕鬆管理。
+  - AI Agent面板 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 雙引擎。**內建智慧 AI 助手**，幫你一鍵安裝、自動診斷設定、排查問題、修復錯誤。8 大工具 + 4 種模式 + 互動式問答，從新手到老手都能輕鬆管理。
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **官網**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **下載**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **官網**: [https://github.com/agentai2026/AI-Agent) | 📦 **下載**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **官網**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **下載**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **官網**: [https://github.com/agentai2026/AI-Agent) | 📦 **下載**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **官網**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **下載**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **官網**: [https://github.com/agentai2026/AI-Agent) | 📦 **下載**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **相容 OpenAI 介面** — 無縫對接 AI Agent可视化面板系统，即開即用
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -3373,25 +3373,25 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>回報 Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>回報 Issue</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>回報 Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>回報 Issue</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 多引擎架構** — 同時支援 AI Agent可视化面板系统 和 Hermes Agent 雙引擎，自由切換，各自獨立管理
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **服務管理** — AI Agent可视化面板系统 / Hermes Gateway 啟停控制、版本偵測與一鍵升級
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 前往 [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) 下載最新版本：
+  - 前往 [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) 下載最新版本：
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - 前往 [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) 下載最新版本：
+  - 前往 [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) 下載最新版本：
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -3399,39 +3399,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **初始設定** — 首次啟動自動偵測 Node.js、Git、AI Agent可视化面板系统。未安裝則一鍵安裝
 - L152 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L152 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L153 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L168 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | AI Agent 框架 |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | AI Agent 框架 |
 - L169 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | 跨平台行動聊天客戶端 |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | 跨平台行動聊天客戶端 |
 - L170 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Cloudflare Tunnel 工具 |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel 工具 |
 - L189 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L190 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L190 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L191 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L197 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L197 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### AI Agent面板/scripts/build.sh
 - total: 2
@@ -3825,9 +3825,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1604 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   return path.join(AI Agent可视化面板系统_DIR, 'workspace')
 - L1664 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     $schema: 'https://AI Agent可视化面板系统.ai/schema/config.json',
+  -     $schema: 'https://github.com/agentai2026/AI-Agent Agent可视化面板系统.ai/schema/config.json',
 - L1724 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   config.$schema = 'https://AI Agent可视化面板系统.ai/schema/config.json'
+  -   config.$schema = 'https://github.com/agentai2026/AI-Agent Agent可视化面板系统.ai/schema/config.json'
 - L1775 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - function calibrateAI Agent可视化面板系统Config(mode = 'inherit') {
 - L1780 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -4163,9 +4163,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L5682 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   async upgrade_AI Agent可视化面板系统({ source = 'chinese', version, method = 'auto' } = {}) {
 - L5696 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       const githubReleaseBase = `https://github.com/AgentAI2026/AI Agent可视化面板系统-standalone/releases/download/v${ver}`
+  -       const githubReleaseBase = `https://github.com/agentai2026/AI-Agent Agent可视化面板系统-standalone/releases/download/v${ver}`
 - L5696 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       const githubReleaseBase = `https://github.com/AgentAI2026/AI Agent可视化面板系统-standalone/releases/download/v${ver}`
+  -       const githubReleaseBase = `https://github.com/agentai2026/AI-Agent Agent可视化面板系统-standalone/releases/download/v${ver}`
 - L5743 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -       logs.push(`AI Agent面板 ${PANEL_VERSION} 默认绑定 AI Agent可视化面板系统 稳定版: ${recommended}`)
 - L5743 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -4281,19 +4281,19 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6422 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     if (!fs.existsSync(AI Agent可视化面板系统_DIR)) fs.mkdirSync(AI Agent可视化面板系统_DIR, { recursive: true })
 - L6446 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -       { api: 'https://api.github.com/repos/AgentAI2026/AI Agent面板/releases/latest', releases: 'https://github.com/AgentAI2026/AI Agent面板/releases', name: 'github' },
+  -       { api: 'https://github.com/agentai2026/AI-Agent Agent面板/releases/latest', releases: 'https://github.com/agentai2026/AI-Agent Agent面板/releases', name: 'github' },
 - L6446 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       { api: 'https://api.github.com/repos/AgentAI2026/AI Agent面板/releases/latest', releases: 'https://github.com/AgentAI2026/AI Agent面板/releases', name: 'github' },
+  -       { api: 'https://github.com/agentai2026/AI-Agent Agent面板/releases/latest', releases: 'https://github.com/agentai2026/AI-Agent Agent面板/releases', name: 'github' },
 - L6447 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -       { api: 'https://gitee.com/api/v5/repos/QtCodeCreators/AI Agent面板/releases/latest', releases: 'https://gitee.com/QtCodeCreators/AI Agent面板/releases', name: 'gitee' },
+  -       { api: 'https://github.com/agentai2026/AI-Agent Agent面板/releases/latest', releases: 'https://github.com/agentai2026/AI-Agent Agent面板/releases', name: 'gitee' },
 - L6454 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -           headers: { 'User-Agent': 'AI Agent面板' },
 - L6460 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         return { latest: tag, url: json.html_url || src.releases, source: src.name, downloadUrl: 'https://http://localhost:3456' }
+  -         return { latest: tag, url: json.html_url || src.releases, source: src.name, downloadUrl: 'https://github.com/agentai2026/AI-Agent' }
 - L6463 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -     return { latest: null, url: 'https://github.com/AgentAI2026/AI Agent面板/releases', error: lastErr }
+  -     return { latest: null, url: 'https://github.com/agentai2026/AI-Agent Agent面板/releases', error: lastErr }
 - L6463 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -     return { latest: null, url: 'https://github.com/AgentAI2026/AI Agent面板/releases', error: lastErr }
+  -     return { latest: null, url: 'https://github.com/agentai2026/AI-Agent Agent面板/releases', error: lastErr }
 - L6468 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     if (!expanded.startsWith(AI Agent可视化面板系统_DIR)) throw new Error(`只允许写入 ${AI Agent可视化面板系统_DIR} 下的文件`)
 - L6623 [LIKELY_STRING] AI Agent面板 → AI Agent面板
@@ -4511,11 +4511,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - echo "  在 Linux 上通过浏览器管理 AI Agent可视化面板系统"
 - L11 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - REPO_URL="https://github.com/AgentAI2026/AI Agent面板.git"
+  - REPO_URL="https://github.com/agentai2026/AI-Agent Agent面板.git"
 - L11 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - REPO_URL="https://github.com/AgentAI2026/AI Agent面板.git"
+  - REPO_URL="https://github.com/agentai2026/AI-Agent Agent面板.git"
 - L12 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - REPO_URL_GITEE="https://gitee.com/QtCodeCreators/AI Agent面板.git"
+  - REPO_URL_GITEE="https://github.com/agentai2026/AI-Agent Agent面板.git"
 - L18 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -     INSTALL_DIR="/opt/AI Agent面板"
 - L23 [LIKELY_STRING] AI Agent面板 → AI Agent面板
@@ -4565,17 +4565,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L190 [LIKELY_STRING] AgentAI2026 → AgentAI2026
   -             npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry "$NPM_REGISTRY" || \
 - L191 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmjs.org
+  -             npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L191 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmjs.org
+  -             npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L193 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             sudo -E npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry "$NPM_REGISTRY" || \
 - L193 [LIKELY_STRING] AgentAI2026 → AgentAI2026
   -             sudo -E npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry "$NPM_REGISTRY" || \
 - L194 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             sudo -E npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmjs.org
+  -             sudo -E npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L194 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             sudo -E npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmjs.org
+  -             sudo -E npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L196 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         echo "✅ AI Agent可视化面板系统 安装完成"
 - L200 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -5285,9 +5285,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 4
 - kinds: DOC_TEXT=4
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 2. 或使用 [GitHub Security Advisories](https://github.com/AgentAI2026/AI Agent面板/security/advisories/new) 私下报告
+  - 2. 或使用 [GitHub Security Advisories](https://github.com/agentai2026/AI-Agent Agent面板/security/advisories/new) 私下报告
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - 2. 或使用 [GitHub Security Advisories](https://github.com/AgentAI2026/AI Agent面板/security/advisories/new) 私下报告
+  - 2. 或使用 [GitHub Security Advisories](https://github.com/agentai2026/AI-Agent Agent面板/security/advisories/new) 私下报告
 - L36 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 使用 AI Agent面板 时，建议注意以下安全事项：
 - L40 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -5311,13 +5311,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [LIKELY_STRING] AgentAI2026 → AgentAI2026
   - authors = ["AgentAI2026"]
 - L7 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - repository = "https://github.com/AgentAI2026/AI Agent面板"
+  - repository = "https://github.com/agentai2026/AI-Agent Agent面板"
 - L7 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - repository = "https://github.com/AgentAI2026/AI Agent面板"
+  - repository = "https://github.com/agentai2026/AI-Agent Agent面板"
 - L8 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - homepage = "https://github.com/AgentAI2026/AI Agent面板"
+  - homepage = "https://github.com/agentai2026/AI-Agent Agent面板"
 - L8 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - homepage = "https://github.com/AgentAI2026/AI Agent面板"
+  - homepage = "https://github.com/agentai2026/AI-Agent Agent面板"
 - L12 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   - name = "AI Agent面板_lib"
 
@@ -5491,9 +5491,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L866 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     super::AI Agent可视化面板系统_dir()
 - L1012 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         "$schema": "https://AI Agent可视化面板系统.ai/schema/config.json",
+  -         "$schema": "https://github.com/agentai2026/AI-Agent Agent可视化面板系统.ai/schema/config.json",
 - L1093 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         Value::String("https://AI Agent可视化面板系统.ai/schema/config.json".into()),
+  -         Value::String("https://github.com/agentai2026/AI-Agent Agent可视化面板系统.ai/schema/config.json".into()),
 - L1267 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - pub fn calibrate_AI Agent可视化面板系统_config(mode: String) -> Result<Value, String> {
 - L1274 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -5873,9 +5873,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L3530 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - async fn upgrade_AI Agent可视化面板系统_inner(
 - L3557 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             "https://github.com/AgentAI2026/AI Agent可视化面板系统-standalone/releases/download/v{}",
+  -             "https://github.com/agentai2026/AI-Agent Agent可视化面板系统-standalone/releases/download/v{}",
 - L3557 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             "https://github.com/AgentAI2026/AI Agent可视化面板系统-standalone/releases/download/v{}",
+  -             "https://github.com/agentai2026/AI-Agent Agent可视化面板系统-standalone/releases/download/v{}",
 - L3636 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -                     "AI Agent面板 {} 默认绑定 AI Agent可视化面板系统 稳定版: {}",
 - L3636 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -6015,19 +6015,19 @@ This file is generated. It lists candidate display-text replacements with line n
 - L5827 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -         crate::commands::build_http_client(std::time::Duration::from_secs(8), Some("AI Agent面板"))
 - L5833 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             "https://api.github.com/repos/AgentAI2026/AI Agent面板/releases/latest",
+  -             "https://github.com/agentai2026/AI-Agent Agent面板/releases/latest",
 - L5833 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             "https://api.github.com/repos/AgentAI2026/AI Agent面板/releases/latest",
+  -             "https://github.com/agentai2026/AI-Agent Agent面板/releases/latest",
 - L5834 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             "https://github.com/AgentAI2026/AI Agent面板/releases",
+  -             "https://github.com/agentai2026/AI-Agent Agent面板/releases",
 - L5834 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             "https://github.com/AgentAI2026/AI Agent面板/releases",
+  -             "https://github.com/agentai2026/AI-Agent Agent面板/releases",
 - L5838 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             "https://gitee.com/api/v5/repos/QtCodeCreators/AI Agent面板/releases/latest",
+  -             "https://github.com/agentai2026/AI-Agent Agent面板/releases/latest",
 - L5839 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             "https://gitee.com/QtCodeCreators/AI Agent面板/releases",
+  -             "https://github.com/agentai2026/AI-Agent Agent面板/releases",
 - L5876 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -                     Value::String("https://http://localhost:3456".into()),
+  -                     Value::String("https://github.com/agentai2026/AI-Agent".into()),
 - L5892 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
   - // === 面板配置 (AI Agent面板.json) ===
 - L5894 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -6097,13 +6097,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 4
 - kinds: LIKELY_COMMENT=4
 - L348 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/cftunnel/main/install.sh -o cftunnel-install.sh
+  - curl -fsSL https://github.com/agentai2026/AI-Agent -o cftunnel-install.sh
 - L370 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/AgentAI2026/cftunnel/main/install.ps1' -OutFile $tmp -UseBasicParsing
+  - Invoke-WebRequest -Uri 'https://github.com/agentai2026/AI-Agent' -OutFile $tmp -UseBasicParsing
 - L456 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/clawapp/main/install.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent | bash
 - L475 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/AgentAI2026/clawapp/main/install.ps1' -OutFile $tmp -UseBasicParsing
+  - Invoke-WebRequest -Uri 'https://github.com/agentai2026/AI-Agent' -OutFile $tmp -UseBasicParsing
 
 ### AI Agent面板/src-tauri/src/commands/hermes.rs
 - total: 14
@@ -6213,7 +6213,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1188 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         .join("AI Agent可视化面板系统-weixin");
 - L1211 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         .get("https://registry.npmjs.org/@tencent-weixin/AI Agent可视化面板系统-weixin/latest")
+  -         .get("https://github.com/agentai2026/AI-Agent Agent可视化面板系统-weixin/latest")
 - L1236 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     // 兼容性检查：微信插件要求 AI Agent可视化面板系统 >= 2026.3.22，通过版本号判断
 - L1240 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -6295,7 +6295,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1640 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -                     let _ = super::config::save_AI Agent可视化面板系统_json(&cfg);
 - L1664 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - const QQ_AI Agent可视化面板系统_FAQ_URL: &str = "https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html";
+  - const QQ_AI Agent可视化面板系统_FAQ_URL: &str = "https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html";
 - L1666 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - /// AI Agent可视化面板系统 配置 schema 中 `plugins.entries` / `plugins.allow` 的合法 QQ 插件键。
 - L1667 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -6471,9 +6471,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L3025 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             let _ = app.emit("plugin-log", "请先升级 AI Agent可视化面板系统 到最新版，再安装此插件：");
 - L3030 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com");
+  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent");
 - L3030 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com");
+  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent");
 - L3041 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             return Err("插件安装失败：当前 AI Agent可视化面板系统 版本过低，请先升级后重试".into());
 - L3054 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -6511,9 +6511,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L3210 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         let _ = app.emit("plugin-log", "请在终端手动执行以下命令重装 AI Agent可视化面板系统：");
 - L3211 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com");
+  -         let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent");
 - L3211 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com");
+  -         let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent");
 - L3221 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         return Err("AI Agent可视化面板系统 CLI 原生依赖缺失，请先在终端重装 AI Agent可视化面板系统（详见上方日志）".into());
 - L3228 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -6523,9 +6523,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L3235 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             let _ = app.emit("plugin-log", "请先升级 AI Agent可视化面板系统 到最新版，再安装此插件：");
 - L3240 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com");
+  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent");
 - L3240 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com");
+  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent");
 - L3244 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -                 "AI Agent可视化面板系统 plugins install 未成功结束，正在回退",
 - L3256 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -6953,7 +6953,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L9 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     super::AI Agent可视化面板系统_dir().join("AI Agent面板").join("web-update")
 - L13 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  - const LATEST_JSON_URL: &str = "https://http://localhost:3456/update/latest.json";
+  - const LATEST_JSON_URL: &str = "https://github.com/agentai2026/AI-Agent";
 - L18 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -     let client = super::build_http_client(std::time::Duration::from_secs(10), Some("AI Agent面板"))
 - L77 [LIKELY_STRING] AI Agent面板 → AI Agent面板
@@ -7173,19 +7173,19 @@ This file is generated. It lists candidate display-text replacements with line n
 - L20 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -   todayDismiss: 'AI Agent面板_engage_today',
 - L91 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -         <a class="engage-action-card" href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener">
+  -         <a class="engage-action-card" href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener">
 - L91 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <a class="engage-action-card" href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener">
+  -         <a class="engage-action-card" href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener">
 - L113 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <a class="engage-qr-item" href="https://qt.cool/c/AI Agent可视化面板系统" target="_blank" rel="noopener">
+  -         <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统" target="_blank" rel="noopener">
 - L114 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -           <img src="/images/AI Agent可视化面板系统-QQ.png" alt="${t('engagement.qqAlt')}" />
 - L117 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <a class="engage-qr-item" href="https://qt.cool/c/AI Agent可视化面板系统Wx" target="_blank" rel="noopener">
+  -         <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统Wx" target="_blank" rel="noopener">
 - L118 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -           <img src="/images/AI Agent可视化面板系统Wx.png" alt="${t('engagement.wechatAlt')}" />
 - L121 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <a class="engage-qr-item" href="https://qt.cool/c/AI Agent可视化面板系统DY" target="_blank" rel="noopener">
+  -         <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统DY" target="_blank" rel="noopener">
 - L122 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -           <img src="/images/AI Agent可视化面板系统-DY.png" alt="${t('engagement.douyinAlt')}" />
 
@@ -7209,7 +7209,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L186 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   const navItems = engine ? engine.getNavItems() : (isAI Agent可视化面板系统Ready() ? NAV_ITEMS_FULL() : NAV_ITEMS_SETUP())
 - L243 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <a href="https://http://localhost:3456" target="_blank" rel="noopener" class="sidebar-link">http://localhost:3456</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" class="sidebar-link">http://localhost:3456</a>
 
 ### AI Agent面板/src/engines/AI Agent可视化面板系统/index.js
 - total: 13
@@ -7299,9 +7299,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 13
 - kinds: LIKELY_COMMENT=7, LIKELY_STRING=6
 - L6 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - const NPM_CMD = 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com'
+  - const NPM_CMD = 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent'
 - L6 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - const NPM_CMD = 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com'
+  - const NPM_CMD = 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent'
 - L20 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -     : 'GitHub SSH 认证失败。AI Agent面板 已尝试自动配置 HTTPS 替代，但可能未生效。请在终端手动执行：'
 - L38 [LIKELY_STRING] AI Agent面板 → AI Agent面板
@@ -7311,17 +7311,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       hint: 'AI Agent可视化面板系统 的原生模块未正确安装。这通常是 npm optional dependencies 的 bug。请尝试在终端手动重装：',
 - L54 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       command: 'npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com',
+  -       command: 'npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent',
 - L54 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       command: 'npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com',
+  -       command: 'npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent',
 - L73 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -       hint: '旧版本的 AI Agent可视化面板系统 命令文件仍然存在。AI Agent面板 已尝试自动清理，如仍失败请手动处理后重试：',
 - L73 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       hint: '旧版本的 AI Agent可视化面板系统 命令文件仍然存在。AI Agent面板 已尝试自动清理，如仍失败请手动处理后重试：',
 - L74 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       command: 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --force --registry https://registry.npmmirror.com',
+  -       command: 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --force --registry https://github.com/agentai2026/AI-Agent',
 - L74 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       command: 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --force --registry https://registry.npmmirror.com',
+  -       command: 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --force --registry https://github.com/agentai2026/AI-Agent',
 - L149 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       hint: '当前 Node.js 版本过低，AI Agent可视化面板系统 需要 Node.js 18 或更高版本。\n请升级 Node.js：',
 
@@ -7395,9 +7395,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 7
 - kinds: LIKELY_COMMENT=2, LIKELY_STRING=5
 - L6 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - const GITHUB_ORG = 'https://github.com/AgentAI2026'
+  - const GITHUB_ORG = 'https://github.com/agentai2026/AI-Agent'
 - L8 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - const GITHUB_RAW = 'https://raw.githubusercontent.com/AgentAI2026'
+  - const GITHUB_RAW = 'https://github.com/agentai2026/AI-Agent'
 - L13 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -   AI Agent面板: 'AI Agent面板',
 - L16 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -7421,7 +7421,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 4
 - kinds: LIKELY_COMMENT=2, LIKELY_STRING=1, MANUAL_REVIEW=1
 - L20 [LIKELY_COMMENT] AI Agent → AI Agent
-  -   { key: 'qtcool', label: 'AI Agent', badge: '推荐', baseUrl: 'https://gpt.qt.cool/v1', api: 'openai-completions', site: 'https://gpt.qt.cool/', desc: '每日签到领免费模型测试额度，邀请好友再送额度，付费低至官方价 2-3 折' },
+  -   { key: 'qtcool', label: 'AI Agent', badge: '推荐', baseUrl: 'https://github.com/agentai2026/AI-Agent', api: 'openai-completions', site: 'https://github.com/agentai2026/AI-Agent', desc: '每日签到领免费模型测试额度，邀请好友再送额度，付费低至官方价 2-3 折' },
 - L39 [LIKELY_COMMENT] AI Agent → AI Agent
   - // AI Agent配置
 - L47 [LIKELY_STRING] AI Agent → AI Agent
@@ -7435,7 +7435,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L2 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -  * AI Agent可视化面板系统 内置知识库
 - L3 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -  * 来源：https://AI Agent可视化面板系统cn.com/docs/
+  -  * 来源：https://github.com/agentai2026/AI-Agent Agent可视化面板系统cn.com/docs/
 - L4 [MANUAL_REVIEW] AI Agent面板 → AI Agent面板
   -  * 供 AI Agent面板 AI 助手在系统提示词中使用
 - L7 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -7527,9 +7527,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L173 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **旧版导入**：\`~/.AI Agent可视化面板系统/credentials/oauth.json\`
 - L178 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - curl -fsSL https://AI Agent可视化面板系统.ai/install.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent可视化面板系统.ai/install.sh | bash
 - L182 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - iwr -useb https://AI Agent可视化面板系统.ai/install.ps1 | iex
+  - iwr -useb https://github.com/agentai2026/AI-Agent Agent可视化面板系统.ai/install.ps1 | iex
 - L186 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - npm install -g AI Agent可视化面板系统@latest
 - L191 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -7555,9 +7555,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L223 [MANUAL_REVIEW] AI Agent面板 → AI Agent面板
   - AI Agent为 AI Agent面板 用户提供 AI 模型调用服务，通过每日签到和邀请好友即可获取免费额度。
 - L234 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  - - **AI Agent面板 官网**：https://http://localhost:3456/
+  - - **AI Agent面板 官网**：https://github.com/agentai2026/AI-Agent
 - L234 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - - **AI Agent面板 官网**：https://http://localhost:3456/
+  - - **AI Agent面板 官网**：https://github.com/agentai2026/AI-Agent
 - L251 [MANUAL_REVIEW] AI Agent面板 → AI Agent面板
   - ### 在 AI Agent面板 中配置
 
@@ -7665,7 +7665,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "AI Agent可视化面板系统-Agenten erstellen und verwalten",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -7677,9 +7677,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "AI Agent可视化面板系统-Aufgaben verwalten",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -7801,7 +7801,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -7895,7 +7895,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L471 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Create and manage AI Agent可视化面板系统 Agents, configure identity, model and workspace",
 - L821 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L888 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L889 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -7907,9 +7907,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1065 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L1074 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L1092 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1221 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "loadFailedHint": "You may need to update AI Agent可视化面板系统 to 2026.3.11+ for Usage API support",
 - L1263 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8027,7 +8027,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1859 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1864 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1871 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1871 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8119,7 +8119,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Crear y gestionar AI Agent可视化面板系统 Agents",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8131,9 +8131,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Gestionar tareas programadas de AI Agent可视化面板系统",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8255,7 +8255,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8347,7 +8347,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Créer et gérer les Agents AI Agent可视化面板系统",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8359,9 +8359,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Gérer les tâches planifiées AI Agent可视化面板系统",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8483,7 +8483,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8579,7 +8579,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L511 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "AI Agent可视化面板系统 Gateway サービスの設定と管理",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8591,9 +8591,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "AI Agent可视化面板系统 の定期タスクを管理",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8715,7 +8715,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 はオープンソースプロジェクトです。Issue や PR を歓迎します！",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8811,7 +8811,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L511 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "AI Agent可视化面板系统 Gateway 서비스 설정 및 관리",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8823,9 +8823,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "AI Agent可视化面板系统 정기 작업 관리",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -8947,7 +8947,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板은 오픈소스 프로젝트입니다. Issue와 PR을 환영합니다!",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -9041,7 +9041,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L127 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -   contributeDesc: _('AI Agent面板 是开源项目，欢迎参与贡献！遇到问题请提 Issue，功能建议和代码改进欢迎提 PR。', 'AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.', 'AI Agent面板 是開源項目，欢迎參與貢獻！遇到問題請提 Issue，功能建議和代碼改進欢迎提 PR。', 'AI Agent面板 はオープンソースプ…
 - L132 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -   domesticMirrorHint: _('国内镜像：<a href="https://gitee.com/QtCodeCreators/AI Agent面板" target="_blank" rel="noopener" style="color:var(--accent)">Gitee</a>（无法访问 GitHub 时可用）', 'China mirror: <a href="https://gitee.com/QtCodeCreators/AI Agent面板" target="_blank" rel="…
+  -   domesticMirrorHint: _('国内镜像：<a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" style="color:var(--accent)">Gitee</a>（无法访问 GitHub 时可用）', 'China mirror: <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="…
 - L139 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -   companyDesc: _('我们是 AI Agent可视化面板系统 汉化版（3000+ Star）和 AI Agent面板 的作者团队。日常做 AI Agent 相关的产品和开源工具，也接企业私有化部署、定制开发之类的活儿。有事直接群里找我们就行。', 'We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and o…
 - L139 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -9117,7 +9117,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 8
 - kinds: LIKELY_COMMENT=3, LIKELY_STRING=5
 - L28 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   qqbotGuideFooter: _('<div style="margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)">遇到问题？参考 <a href="https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html" target="_blank" rel="noopener">AI Agent可视化面板系统 × QQ 常见问题</a></div>', '<div style="margin-top:8px;fon…
+  -   qqbotGuideFooter: _('<div style="margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)">遇到问题？参考 <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html" target="_blank" rel="noopener">AI Agent可视化面板系统 × QQ 常见问题</a></div>', '<div style="margin-top:8px;fon…
 - L95 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   weixinDesc: _('通过 AI Agent可视化面板系统-weixin 插件接入个人微信', 'Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin', '通過 AI Agent可视化面板系统-weixin 外掛接入個人微信'),
 - L96 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -9129,9 +9129,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L282 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   pairingApprovalHint: _('当机器人提示 <code>access not configured</code>、<code>Pairing code</code> 或要求执行 <code>AI Agent可视化面板系统 pairing approve</code> 时，可直接在这里完成批准。', 'When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>op…
 - L291 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   qqDiagHint: _('检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href="https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html" target="_blank" rel="noopener">AI Agent可视化面板系统 × QQ 常见问题</a>。', '检查<strong>已保存到配置…
+  -   qqDiagHint: _('检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html" target="_blank" rel="noopener">AI Agent可视化面板系统 × QQ 常见问题</a>。', '检查<strong>已保存到配置…
 - L309 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   qqVerifyNote: _('此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href="https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html" target="_blank" rel="noopener">QQ AI Agent可视化面板系统 常见问题</a>。', '此项只验证 AppID/Secret 能否向腾讯…
+  -   qqVerifyNote: _('此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html" target="_blank" rel="noopener">QQ AI Agent可视化面板系统 常见问题</a>。', '此项只验证 AppID/Secret 能否向腾讯…
 
 ### AI Agent面板/src/locales/modules/chat-debug.js
 - total: 11
@@ -9237,11 +9237,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 7
 - kinds: LIKELY_COMMENT=3, LIKELY_STRING=4
 - L4 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -   shareText: _('推荐一个开源的 AI Agent可视化面板系统 管理面板 — AI Agent面板，一键搭建、便捷管理模型和 Agent，还内置 AI 助手帮你排查问题，小白也能轻松上手：https://http://localhost:3456', 'Recommend an open-source AI Agent可视化面板系统 management panel — AI Agent面板. It helps you set up quickly, manage models and Agents easily, and even include…
+  -   shareText: _('推荐一个开源的 AI Agent可视化面板系统 管理面板 — AI Agent面板，一键搭建、便捷管理模型和 Agent，还内置 AI 助手帮你排查问题，小白也能轻松上手：https://github.com/agentai2026/AI-Agent', 'Recommend an open-source AI Agent可视化面板系统 management panel — AI Agent面板. It helps you set up quickly, manage models and Agents easily, and even include…
 - L4 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -   shareText: _('推荐一个开源的 AI Agent可视化面板系统 管理面板 — AI Agent面板，一键搭建、便捷管理模型和 Agent，还内置 AI 助手帮你排查问题，小白也能轻松上手：https://http://localhost:3456', 'Recommend an open-source AI Agent可视化面板系统 management panel — AI Agent面板. It helps you set up quickly, manage models and Agents easily, and even include…
+  -   shareText: _('推荐一个开源的 AI Agent可视化面板系统 管理面板 — AI Agent面板，一键搭建、便捷管理模型和 Agent，还内置 AI 助手帮你排查问题，小白也能轻松上手：https://github.com/agentai2026/AI-Agent', 'Recommend an open-source AI Agent可视化面板系统 management panel — AI Agent面板. It helps you set up quickly, manage models and Agents easily, and even include…
 - L4 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   shareText: _('推荐一个开源的 AI Agent可视化面板系统 管理面板 — AI Agent面板，一键搭建、便捷管理模型和 Agent，还内置 AI 助手帮你排查问题，小白也能轻松上手：https://http://localhost:3456', 'Recommend an open-source AI Agent可视化面板系统 management panel — AI Agent面板. It helps you set up quickly, manage models and Agents easily, and even include…
+  -   shareText: _('推荐一个开源的 AI Agent可视化面板系统 管理面板 — AI Agent面板，一键搭建、便捷管理模型和 Agent，还内置 AI 助手帮你排查问题，小白也能轻松上手：https://github.com/agentai2026/AI-Agent', 'Recommend an open-source AI Agent可视化面板系统 management panel — AI Agent面板. It helps you set up quickly, manage models and Agents easily, and even include…
 - L5 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -   title: _('感谢你使用 AI Agent面板', 'Thanks for using AI Agent面板', '感謝你使用 AI Agent面板', 'AI Agent面板 を使っていただきありがとうございます', 'AI Agent面板을 사용해 주셔서 감사합니다', 'Cảm ơn bạn đã sử dụng AI Agent面板', 'Gracias por usar AI Agent面板', 'Obrigado por usar o AI Agent面板', 'Спасибо, что используе…
 - L6 [LIKELY_STRING] AI Agent → AI Agent
@@ -9565,7 +9565,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Criar e gerenciar AI Agent可视化面板系统 Agents",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -9577,9 +9577,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Gerenciar tarefas agendadas do AI Agent可视化面板系统",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -9701,7 +9701,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -9793,7 +9793,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Создание и управление агентами AI Agent可视化面板系统",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -9805,9 +9805,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Управление периодическими задачами AI Agent可视化面板系统",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -9929,7 +9929,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10021,7 +10021,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Tạo và quản lý AI Agent可视化面板系统 Agent",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10033,9 +10033,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Quản lý tác vụ định kỳ AI Agent可视化面板系统",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10157,7 +10157,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10259,7 +10259,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L553 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "创建和管理 AI Agent可视化面板系统 Agent，配置身份、模型和工作区",
 - L905 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L978 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "通过 AI Agent可视化面板系统-weixin 插件接入个人微信",
 - L979 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10271,9 +10271,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1169 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "当机器人提示 <code>access not configured</code>、<code>Pairing code</code> 或要求执行 <code>AI Agent可视化面板系统 pairing approve</code> 时，可直接在这里完成批准。",
 - L1178 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L1198 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1328 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "loadFailedHint": "可能需要更新 AI Agent可视化面板系统 到 2026.3.11+ 以支持 Usage API",
 - L1370 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10395,7 +10395,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1966 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 是开源项目，欢迎参与贡献！遇到问题请提 Issue，功能建议和代码改进欢迎提 PR。",
 - L1971 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "国内镜像：<a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a>（无法访问 GitHub 时可用）",
+  -     "domesticMirrorHint": "国内镜像：<a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a>（无法访问 GitHub 时可用）",
 - L1978 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "我们是 AI Agent可视化面板系统 汉化版（3000+ Star）和 AI Agent面板 的作者团队。日常做 AI Agent 相关的产品和开源工具，也接企业私有化部署、定制开发之类的活儿。有事直接群里找我们就行。"
 - L1978 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10501,7 +10501,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "建立和管理 AI Agent可视化面板系统 Agent，設定身份、模型和工作區",
 - L721 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到問題？參考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见問題</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到問題？參考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见問題</a></div>",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "通過 AI Agent可视化面板系统-weixin 外掛接入個人微信",
 - L789 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10513,9 +10513,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L965 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "當機器人提示 <code>access not configured</code>、<code>Pairing code</code> 或要求執行 <code>AI Agent可视化面板系统 pairing approve</code> 時，可直接在這裡完成批準。",
 - L974 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "檢查<strong>已儲存到設定檔案</strong>的憑證、本機 Gateway 連接埠、<code>/__api/health</code>、QQ 外掛與 chatCompletions。QQ 提示「靈魂不線上」時優先看此處，並參考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见問題</a>。",
+  -     "qqDiagHint": "檢查<strong>已儲存到設定檔案</strong>的憑證、本機 Gateway 連接埠、<code>/__api/health</code>、QQ 外掛與 chatCompletions。QQ 提示「靈魂不線上」時優先看此處，並參考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见問題</a>。",
 - L992 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此項只驗證 AppID/Secret 能否向腾訊換 token。<strong>不能</strong>代表 QQ 里機器人已線上；若提示「靈魂不線上」，請使用下方 <strong>完整聯通诊斷</strong> 並对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见問題</a>。",
+  -     "qqVerifyNote": "此項只驗證 AppID/Secret 能否向腾訊換 token。<strong>不能</strong>代表 QQ 里機器人已線上；若提示「靈魂不線上」，請使用下方 <strong>完整聯通诊斷</strong> 並对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见問題</a>。",
 - L1121 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "loadFailedHint": "可能需要更新 AI Agent可视化面板系统 到 2026.3.11+ 以支援 Usage API",
 - L1163 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10635,7 +10635,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1759 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 是開源項目，欢迎參與貢獻！遇到問題請提 Issue，功能建議和代碼改進欢迎提 PR。",
 - L1764 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "國內鏡像：<a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a>（無法訪問 GitHub 時可用）",
+  -     "domesticMirrorHint": "國內鏡像：<a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a>（無法訪問 GitHub 時可用）",
 - L1771 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "我們是 AI Agent可视化面板系统 漢化版（3000+ Star）和 AI Agent面板 的作者團队。日常做 AI Agent 相關的產品和開源工具，也接企業私有化部署、定制開發之類的活儿。有事直接群里找我們就行。"
 - L1771 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10709,7 +10709,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L62 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -       if (sessionStorage.getItem('AI Agent面板_authed') === '1') return { ok: true }
 - L114 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <a href="https://http://localhost:3456" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none">http://localhost:3456</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none">http://localhost:3456</a>
 - L179 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -   const resetPath = '<code style="background:rgba(99,102,241,.1);padding:2px 6px;border-radius:3px;font-size:10px;word-break:break-all">~/.AI Agent可视化面板系统/AI Agent面板.json</code>'
 - L179 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10717,7 +10717,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L183 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -       <div class="login-title">AI Agent面板</div>
 - L206 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <a href="https://http://localhost:3456" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none">http://localhost:3456</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none">http://localhost:3456</a>
 - L254 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -           sessionStorage.setItem('AI Agent面板_authed', '1')
 - L266 [LIKELY_STRING] AI Agent面板 → AI Agent面板
@@ -10773,17 +10773,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L812 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -     const dismissed = localStorage.getItem('AI Agent面板_update_dismissed')
 - L829 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <a class="btn btn-sm" href="https://http://localhost:3456" target="_blank" rel="noopener">${t('about.downloadFromWebsite')}</a>
+  -         <a class="btn btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('about.downloadFromWebsite')}</a>
 - L830 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -         <a class="btn btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/releases" target="_blank" rel="noopener">${t('about.downloadFromGitHub')}</a>
+  -         <a class="btn btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/releases" target="_blank" rel="noopener">${t('about.downloadFromGitHub')}</a>
 - L830 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <a class="btn btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/releases" target="_blank" rel="noopener">${t('about.downloadFromGitHub')}</a>
+  -         <a class="btn btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/releases" target="_blank" rel="noopener">${t('about.downloadFromGitHub')}</a>
 - L837 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -       localStorage.setItem('AI Agent面板_update_dismissed', ver)
 - L907 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -         <div style="margin-top:24px;font-size:11px;color:#a1a1aa">${t('common.pageLoadFailedHint')}<br><a href="https://github.com/AgentAI2026/AI Agent面板/issues" target="_blank" style="color:#6366f1">GitHub Issues</a></div>
+  -         <div style="margin-top:24px;font-size:11px;color:#a1a1aa">${t('common.pageLoadFailedHint')}<br><a href="https://github.com/agentai2026/AI-Agent Agent面板/issues" target="_blank" style="color:#6366f1">GitHub Issues</a></div>
 - L907 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <div style="margin-top:24px;font-size:11px;color:#a1a1aa">${t('common.pageLoadFailedHint')}<br><a href="https://github.com/AgentAI2026/AI Agent面板/issues" target="_blank" style="color:#6366f1">GitHub Issues</a></div>
+  -         <div style="margin-top:24px;font-size:11px;color:#a1a1aa">${t('common.pageLoadFailedHint')}<br><a href="https://github.com/agentai2026/AI-Agent Agent面板/issues" target="_blank" style="color:#6366f1">GitHub Issues</a></div>
 - L919 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       const { isAI Agent可视化面板系统Ready, isGatewayRunning } = await import('./lib/app-state.js')
 - L923 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10801,7 +10801,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L21 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -         <h1 class="page-title" style="margin:0">AI Agent面板</h1>
 - L22 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <p class="page-desc" style="margin:0">${t('about.subtitle')} · <a href="https://http://localhost:3456" target="_blank" rel="noopener" style="color:var(--primary)">http://localhost:3456</a></p>
+  -         <p class="page-desc" style="margin:0">${t('about.subtitle')} · <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--primary)">http://localhost:3456</a></p>
 - L96 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -         <div class="stat-card-header"><span class="stat-card-label">AI Agent面板</span></div>
 - L235 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
@@ -10827,91 +10827,91 @@ This file is generated. It lists candidate display-text replacements with line n
 - L564 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       const msg = await api.upgradeAI Agent可视化面板系统(source, version)
 - L607 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <a class="btn btn-primary btn-sm" href="https://http://localhost:3456" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFullInstaller')}</a>
+  -         <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFullInstaller')}</a>
 - L608 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/AgentAI2026/AI Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
+  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/agentai2026/AI-Agent Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
 - L608 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/AgentAI2026/AI Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
+  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/agentai2026/AI-Agent Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
 - L613 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <a class="btn btn-primary btn-sm" href="https://http://localhost:3456" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromWebsite')}</a>
+  -         <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromWebsite')}</a>
 - L614 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/AgentAI2026/AI Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
+  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/agentai2026/AI-Agent Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
 - L614 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/AgentAI2026/AI Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
+  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/agentai2026/AI-Agent Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
 - L623 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -       meta.innerHTML = `<span style="color:var(--warning)">⚠️ ${t('about.versionMismatch', { frontend: panelVersion, binary: binaryVersion })}</span> <a class="btn btn-primary btn-sm" href="https://http://localhost:3456" target="_blank" rel="noopener" style="${btnSm}">…
+  -       meta.innerHTML = `<span style="color:var(--warning)">⚠️ ${t('about.versionMismatch', { frontend: panelVersion, binary: binaryVersion })}</span> <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">…
 - L625 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -       meta.innerHTML = `<span style="color:var(--text-tertiary)">${t('about.checkUpdateFailed')}</span> <a class="btn btn-secondary btn-sm" href="https://http://localhost:3456" target="_blank" rel="noopener" style="${btnSm}">${t('about.goToWebsite')}</a>`
+  -       meta.innerHTML = `<span style="color:var(--text-tertiary)">${t('about.checkUpdateFailed')}</span> <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">${t('about.goToWebsite')}</a>`
 - L647 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         <img src="/images/AI Agent可视化面板系统-QQ.png" alt="${t('about.qqGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary)">
 - L651 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         <img src="/images/AI Agent可视化面板系统Wx.png" alt="${t('about.wechatGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary)">
 - L655 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <img src="https://qt.cool/c/AI Agent可视化面板系统DY/qr.png" alt="${t('about.douyinGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary);object-fit:contain;background:#fff">
+  -         <img src="https://github.com/agentai2026/AI-Agent Agent可视化面板系统DY/qr.png" alt="${t('about.douyinGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary);object-fit:contain;background:#fff">
 - L668 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -           <a class="btn btn-primary btn-sm" href="https://qt.cool/c/AI Agent可视化面板系统" target="_blank" rel="noopener">${t('about.joinQQ')}</a>
+  -           <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统" target="_blank" rel="noopener">${t('about.joinQQ')}</a>
 - L669 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -           <a class="btn btn-primary btn-sm" href="https://qt.cool/c/AI Agent可视化面板系统Wx" target="_blank" rel="noopener">${t('about.joinWechat')}</a>
+  -           <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统Wx" target="_blank" rel="noopener">${t('about.joinWechat')}</a>
 - L670 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -           <a class="btn btn-primary btn-sm" href="https://qt.cool/c/AI Agent可视化面板系统DY" target="_blank" rel="noopener">${t('about.joinDouyin')}</a>
+  -           <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统DY" target="_blank" rel="noopener">${t('about.joinDouyin')}</a>
 - L684 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     name: 'AI Agent可视化面板系统',
 - L685 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     desc: t('about.projectAI Agent可视化面板系统'),
 - L686 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     url: 'https://github.com/AI Agent可视化面板系统/AI Agent可视化面板系统',
+  -     url: 'https://github.com/agentai2026/AI-Agent Agent可视化面板系统/AI Agent可视化面板系统',
 - L689 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     name: 'AI Agent可视化面板系统-zh',
 - L690 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     desc: t('about.projectAI Agent可视化面板系统Zh'),
 - L691 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     url: 'https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation',
+  -     url: 'https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation',
 - L694 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -     name: 'AI Agent面板',
 - L695 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -     desc: t('about.projectAI Agent面板'),
 - L696 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -     url: 'https://github.com/AgentAI2026/AI Agent面板',
+  -     url: 'https://github.com/agentai2026/AI-Agent Agent面板',
 - L696 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -     url: 'https://github.com/AgentAI2026/AI Agent面板',
+  -     url: 'https://github.com/agentai2026/AI-Agent Agent面板',
 - L697 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -     gitee: 'https://gitee.com/QtCodeCreators/AI Agent面板',
+  -     gitee: 'https://github.com/agentai2026/AI-Agent Agent面板',
 - L702 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -     url: 'https://github.com/AgentAI2026/clawapp',
+  -     url: 'https://github.com/agentai2026/AI-Agent',
 - L707 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -     url: 'https://github.com/AgentAI2026/cftunnel',
+  -     url: 'https://github.com/agentai2026/AI-Agent',
 - L730 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -   { label: t('about.linkWebsite'), url: 'https://http://localhost:3456', primary: true },
+  -   { label: t('about.linkWebsite'), url: 'https://github.com/agentai2026/AI-Agent', primary: true },
 - L731 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   { label: t('about.linkAI Agent可视化面板系统Zh'), url: 'https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation' },
+  -   { label: t('about.linkAI Agent可视化面板系统Zh'), url: 'https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation' },
 - L743 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -       <a class="btn btn-primary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/issues/new" target="_blank" rel="noopener">${t('about.submitIssue')}</a>
+  -       <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new" target="_blank" rel="noopener">${t('about.submitIssue')}</a>
 - L743 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       <a class="btn btn-primary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/issues/new" target="_blank" rel="noopener">${t('about.submitIssue')}</a>
+  -       <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new" target="_blank" rel="noopener">${t('about.submitIssue')}</a>
 - L744 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -       <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/pulls" target="_blank" rel="noopener">${t('about.submitPR')}</a>
+  -       <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/pulls" target="_blank" rel="noopener">${t('about.submitPR')}</a>
 - L744 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/pulls" target="_blank" rel="noopener">${t('about.submitPR')}</a>
+  -       <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/pulls" target="_blank" rel="noopener">${t('about.submitPR')}</a>
 - L745 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -       <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${t('about.contributeGuide')}</a>
+  -       <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${t('about.contributeGuide')}</a>
 - L745 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${t('about.contributeGuide')}</a>
+  -       <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${t('about.contributeGuide')}</a>
 - L746 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -       <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/issues" target="_blank" rel="noopener">${t('about.viewIssues')}</a>
+  -       <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/issues" target="_blank" rel="noopener">${t('about.viewIssues')}</a>
 - L746 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/issues" target="_blank" rel="noopener">${t('about.viewIssues')}</a>
+  -       <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/issues" target="_blank" rel="noopener">${t('about.viewIssues')}</a>
 - L766 [LIKELY_STRING] AgentAI2026 → AgentAI2026
   -         <img src="/images/logo-brand.png" alt="AgentAI2026" style="width:40px;height:40px;border-radius:10px;flex-shrink:0">
 - L769 [LIKELY_STRING] AgentAI2026 → AgentAI2026
   -           <div style="font-size:var(--font-size-sm);color:var(--text-secondary)">AgentAI2026</div>
 - L775 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -           <a href="https://github.com/AgentAI2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--accent)">github.com/AgentAI2026/AI-Agent</a>
+  -           <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--accent)">github.com/AgentAI2026/AI-Agent</a>
 - L775 [LIKELY_COMMENT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  -           <a href="https://github.com/AgentAI2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--accent)">github.com/AgentAI2026/AI-Agent</a>
+  -           <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--accent)">github.com/AgentAI2026/AI-Agent</a>
 - L779 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -           <a href="https://http://localhost:3456" target="_blank" rel="noopener" style="color:var(--accent)">http://localhost:3456</a>
+  -           <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--accent)">http://localhost:3456</a>
 - L783 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -           <a href="https://github.com/AgentAI2026" target="_blank" rel="noopener" style="color:var(--accent)">github.com/AgentAI2026</a>
+  -           <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--accent)">github.com/AgentAI2026</a>
 - L787 [LIKELY_STRING] QQ: 255258448 → QQ: 255258448
   -           <a href="mailto:QQ: 255258448" style="color:var(--accent)">QQ: 255258448</a>
 
@@ -10955,11 +10955,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - L110 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - 你精通 AI Agent可视化面板系统 的架构、配置、Gateway、Agent 管理等所有方面
 - L114 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  - - **AI Agent面板 官网**: https://http://localhost:3456
+  - - **AI Agent面板 官网**: https://github.com/agentai2026/AI-Agent
 - L114 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - - **AI Agent面板 官网**: https://http://localhost:3456
+  - - **AI Agent面板 官网**: https://github.com/agentai2026/AI-Agent
 - L115 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - - **GitHub**: https://github.com/AgentAI2026
+  - - **GitHub**: https://github.com/agentai2026/AI-Agent
 - L117 [MANUAL_REVIEW] AI Agent面板 → AI Agent面板
   -   - **AI Agent面板** — AI Agent可视化面板系统 可视化管理面板（Tauri v2）
 - L117 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -10973,11 +10973,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - L121 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - AI Agent可视化面板系统 的可视化管理面板，基于 Tauri v2 的跨平台桌面应用（Windows/macOS/Linux）
 - L123 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  - - 官网: https://http://localhost:3456 | GitHub: https://github.com/AgentAI2026/AI Agent面板
+  - - 官网: https://github.com/agentai2026/AI-Agent | GitHub: https://github.com/agentai2026/AI-Agent Agent面板
 - L123 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - - 官网: https://http://localhost:3456 | GitHub: https://github.com/AgentAI2026/AI Agent面板
+  - - 官网: https://github.com/agentai2026/AI-Agent | GitHub: https://github.com/agentai2026/AI-Agent Agent面板
 - L123 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - - 官网: https://http://localhost:3456 | GitHub: https://github.com/AgentAI2026/AI Agent面板
+  - - 官网: https://github.com/agentai2026/AI-Agent | GitHub: https://github.com/agentai2026/AI-Agent Agent面板
 - L125 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - ## AI Agent可视化面板系统 是什么
 - L128 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -11059,19 +11059,19 @@ This file is generated. It lists candidate display-text replacements with line n
 - L187 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **AI Agent可视化面板系统 官方版**: npm install -g AI Agent可视化面板系统
 - L188 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - - **AI Agent面板**: 从 https://github.com/AgentAI2026/AI Agent面板/releases 下载
+  - - **AI Agent面板**: 从 https://github.com/agentai2026/AI-Agent Agent面板/releases 下载
 - L188 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - - **AI Agent面板**: 从 https://github.com/AgentAI2026/AI Agent面板/releases 下载
+  - - **AI Agent面板**: 从 https://github.com/agentai2026/AI-Agent Agent面板/releases 下载
 - L189 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - - **更多项目**: 访问 https://github.com/AgentAI2026
+  - - **更多项目**: 访问 https://github.com/agentai2026/AI-Agent
 - L196 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - - **AI Agent面板**: https://github.com/AgentAI2026/AI Agent面板/issues/new
+  - - **AI Agent面板**: https://github.com/agentai2026/AI-Agent Agent面板/issues/new
 - L196 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - - **AI Agent面板**: https://github.com/AgentAI2026/AI Agent面板/issues/new
+  - - **AI Agent面板**: https://github.com/agentai2026/AI-Agent Agent面板/issues/new
 - L197 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - - **AI Agent可视化面板系统 汉化版**: https://github.com/AgentAI2026/AI Agent可视化面板系统-zh/issues/new
+  - - **AI Agent可视化面板系统 汉化版**: https://github.com/agentai2026/AI-Agent Agent可视化面板系统-zh/issues/new
 - L197 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - - **AI Agent可视化面板系统 汉化版**: https://github.com/AgentAI2026/AI Agent可视化面板系统-zh/issues/new
+  - - **AI Agent可视化面板系统 汉化版**: https://github.com/agentai2026/AI-Agent Agent可视化面板系统-zh/issues/new
 - L205 [MANUAL_REVIEW] AI Agent面板 → AI Agent面板
   - **环境信息**: OS / AI Agent面板 版本 / AI Agent可视化面板系统 版本
 - L205 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -11127,19 +11127,19 @@ This file is generated. It lists candidate display-text replacements with line n
 - L658 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 3. 用 run_command 收集：AI Agent可视化面板系统 --version、node -v 等版本信息
 - L667 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -    - AI Agent面板: https://github.com/AgentAI2026/AI Agent面板/issues/new
+  -    - AI Agent面板: https://github.com/agentai2026/AI-Agent Agent面板/issues/new
 - L667 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -    - AI Agent面板: https://github.com/AgentAI2026/AI Agent面板/issues/new
+  -    - AI Agent面板: https://github.com/agentai2026/AI-Agent Agent面板/issues/new
 - L668 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -    - AI Agent可视化面板系统: https://github.com/AgentAI2026/AI Agent可视化面板系统-zh/issues/new
+  -    - AI Agent可视化面板系统: https://github.com/agentai2026/AI-Agent Agent可视化面板系统-zh/issues/new
 - L668 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -    - AI Agent可视化面板系统: https://github.com/AgentAI2026/AI Agent可视化面板系统-zh/issues/new
+  -    - AI Agent可视化面板系统: https://github.com/agentai2026/AI-Agent Agent可视化面板系统-zh/issues/new
 - L702 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     prompt: `请帮我管理 AI Agent可视化面板系统 的 Skills。
 - L858 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -    - AI Agent面板: https://github.com/AgentAI2026/AI Agent面板/issues/new
+  -    - AI Agent面板: https://github.com/agentai2026/AI-Agent Agent面板/issues/new
 - L858 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -    - AI Agent面板: https://github.com/AgentAI2026/AI Agent面板/issues/new
+  -    - AI Agent面板: https://github.com/agentai2026/AI-Agent Agent面板/issues/new
 - L998 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   // 灵魂移植模式：用 AI Agent可视化面板系统 Agent 的身份替代默认人设
 - L999 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -11275,7 +11275,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1122 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     command: `AI Agent可视化面板系统 plugins install ${reg.pluginRequired}`,
 - L1195 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   const faqUrl = result?.faqUrl || 'https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html'
+  -   const faqUrl = result?.faqUrl || 'https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html'
 - L1630 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -           // runChannelAction 的版本由后端自动检测（微信/QQ 版本号独立于 AI Agent可视化面板系统）
 - L2126 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -11437,9 +11437,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 3
 - kinds: LIKELY_COMMENT=3
 - L71 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/cftunnel" target="_blank" rel="noopener">${t('ext.viewDocs')}</a>
+  -         <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('ext.viewDocs')}</a>
 - L164 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/clawapp" target="_blank" rel="noopener">${t('ext.viewDocs')}</a>
+  -         <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('ext.viewDocs')}</a>
 - L189 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       <a class="btn btn-primary btn-sm" href="${s.url || 'http://localhost:3210'}" target="_blank" rel="noopener">${t('ext.AI Agent可视化面板系统app')}</a>
 
@@ -11659,7 +11659,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L85 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -           <img src="/images/logo-brand.png" alt="AI Agent面板" class="setup-hero-logo">
 - L90 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -               <a class="setup-hero-site-link" href="https://http://localhost:3456" target="_blank" rel="noopener noreferrer" title="https://http://localhost:3456">
+  -               <a class="setup-hero-site-link" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener noreferrer" title="https://github.com/agentai2026/AI-Agent">
 - L93 [LIKELY_STRING] http://localhost:3456 → http://localhost:3456
   -                 <span class="setup-hero-site-value">http://localhost:3456</span>
 - L112 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -11735,27 +11735,27 @@ This file is generated. It lists candidate display-text replacements with line n
 - L506 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             <div style="font-size:var(--font-size-xs);color:var(--text-tertiary)">AI Agent可视化面板系统</div>
 - L565 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -               <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash</code>
+  -               <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash</code>
 - L565 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -               <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash</code>
+  -               <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash</code>
 - L566 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -               <div class="setup-help-copy">${t('setup.domesticMirror')} <code>curl -fsSL https://gitee.com/QtCodeCreators/AI Agent面板/raw/main/deploy.sh | bash</code></div>
+  -               <div class="setup-help-copy">${t('setup.domesticMirror')} <code>curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/raw/main/deploy.sh | bash</code></div>
 - L573 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             <code class="setup-help-code">npm i -g @AgentAI2026/AI Agent可视化面板系统-zh</code>
 - L573 [LIKELY_STRING] AgentAI2026 → AgentAI2026
   -             <code class="setup-help-code">npm i -g @AgentAI2026/AI Agent可视化面板系统-zh</code>
 - L574 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash</code>
+  -             <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash</code>
 - L574 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash</code>
+  -             <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash</code>
 - L575 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://gitee.com/QtCodeCreators/AI Agent面板/raw/main/deploy.sh | bash</code></div>
+  -             <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/raw/main/deploy.sh | bash</code></div>
 - L580 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash</code>
+  -             <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash</code>
 - L580 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash</code>
+  -             <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash</code>
 - L581 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://gitee.com/QtCodeCreators/AI Agent面板/raw/main/deploy.sh | bash</code></div>
+  -             <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/raw/main/deploy.sh | bash</code></div>
 - L669 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   // 自定义 AI Agent可视化面板系统 安装路径
 - L670 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -11905,21 +11905,21 @@ This file is generated. It lists candidate display-text replacements with line n
 - L3 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 感谢你对 AI Agent面板 项目的关注！本文档同时作为**贡献指南**和**项目维护手册**，涵盖开发、构建、发版、部署的完整工作流。
 - L5 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **官网**: [http://localhost:3456](https://http://localhost:3456/)  |  📦 **仓库**: [github.com/AgentAI2026/AI Agent面板](https://github.com/AgentAI2026/AI Agent面板)
+  - > 🌐 **官网**: [https://github.com/agentai2026/AI-Agent)  |  📦 **仓库**: [github.com/AgentAI2026/AI Agent面板](https://github.com/agentai2026/AI-Agent Agent面板)
 - L5 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **官网**: [http://localhost:3456](https://http://localhost:3456/)  |  📦 **仓库**: [github.com/AgentAI2026/AI Agent面板](https://github.com/AgentAI2026/AI Agent面板)
+  - > 🌐 **官网**: [https://github.com/agentai2026/AI-Agent)  |  📦 **仓库**: [github.com/AgentAI2026/AI Agent面板](https://github.com/agentai2026/AI-Agent Agent面板)
 - L5 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **官网**: [http://localhost:3456](https://http://localhost:3456/)  |  📦 **仓库**: [github.com/AgentAI2026/AI Agent面板](https://github.com/AgentAI2026/AI Agent面板)
+  - > 🌐 **官网**: [https://github.com/agentai2026/AI-Agent)  |  📦 **仓库**: [github.com/AgentAI2026/AI Agent面板](https://github.com/agentai2026/AI-Agent Agent面板)
 - L42 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L42 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L43 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板
 - L76 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板/
 - L139 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - │   ├── index.html              #   官网（http://localhost:3456）
+  - │   ├── index.html              #   官网（https://github.com/agentai2026/AI-Agent
 - L160 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板 有两种运行模式，前端代码通过 `isTauri` 标志自动适配：
 - L185 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -11955,13 +11955,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L437 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 启动 → 读 AI Agent面板.json
 - L455 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 面向 macOS / Windows / Linux 桌面用户，从 [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases) 下载安装包。
+  - 面向 macOS / Windows / Linux 桌面用户，从 [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases) 下载安装包。
 - L455 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - 面向 macOS / Windows / Linux 桌面用户，从 [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases) 下载安装包。
+  - 面向 macOS / Windows / Linux 桌面用户，从 [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases) 下载安装包。
 - L462 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L462 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L531 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - gh pr list --repo AgentAI2026/AI Agent面板 --state all --limit 200 --json author,number,title,state
 - L531 [DOC_TEXT] AgentAI2026 → AgentAI2026
@@ -11971,9 +11971,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L532 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - gh issue list --repo AgentAI2026/AI Agent面板 --state all --limit 200 --json author,number,title
 - L559 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 如果发现 Bug 或有功能建议，欢迎通过 [GitHub Issues](https://github.com/AgentAI2026/AI Agent面板/issues) 提交。
+  - 如果发现 Bug 或有功能建议，欢迎通过 [GitHub Issues](https://github.com/agentai2026/AI-Agent Agent面板/issues) 提交。
 - L559 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - 如果发现 Bug 或有功能建议，欢迎通过 [GitHub Issues](https://github.com/AgentAI2026/AI Agent面板/issues) 提交。
+  - 如果发现 Bug 或有功能建议，欢迎通过 [GitHub Issues](https://github.com/agentai2026/AI-Agent Agent面板/issues) 提交。
 
 ### deploy.sh
 - total: 14
@@ -11981,9 +11981,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L2 [MANUAL_REVIEW] AI Agent面板 → AI Agent面板
   - # AI Agent面板 Web 版一键部署脚本
 - L4 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - # 用法: curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash
+  - # 用法: curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash
 - L4 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - # 用法: curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash
+  - # 用法: curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash
 - L8 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   - REPO="AgentAI2026/AI Agent面板"
 - L8 [LIKELY_STRING] AgentAI2026 → AgentAI2026
@@ -12051,9 +12051,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L133 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   #     - ~/.AI Agent可视化面板系统:/root/.AI Agent可视化面板系统
 - L138 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   #     sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com &&
+  -   #     sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent &&
 - L138 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -   #     sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com &&
+  -   #     sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent &&
 - L139 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   #            AI Agent可视化面板系统 init 2>/dev/null || true &&
 - L140 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -12073,15 +12073,15 @@ This file is generated. It lists candidate display-text replacements with line n
 - L3 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板 支持在 ARM 开发板（如 Orange Pi、Raspberry Pi、RK3588 等）上运行，通过 **Web 模式** 或 **Docker 模式** 部署，无需图形界面。
 - L24 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L24 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L30 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://gitee.com/QtCodeCreators/AI Agent面板/raw/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/raw/main/scripts/linux-deploy.sh | bash
 - L41 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git /opt/AI Agent面板
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git /opt/AI Agent面板
 - L41 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git /opt/AI Agent面板
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git /opt/AI Agent面板
 - L42 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd /opt/AI Agent面板
 - L55 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -12197,15 +12197,15 @@ This file is generated. It lists candidate display-text replacements with line n
 - L50 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L54 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L54 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L55 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     AI Agent可视化面板系统 init 2>/dev/null || true && \
 - L56 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L56 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L75 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   AI Agent面板:
 - L78 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -12219,9 +12219,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L95 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       - AI Agent可视化面板系统-data:/root/.AI Agent可视化面板系统
 - L97 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com &&
+  -       sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent &&
 - L97 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -       sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com &&
+  -       sh -c "npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent &&
 - L98 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -              AI Agent可视化面板系统 init 2>/dev/null || true &&
 - L99 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -12231,9 +12231,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L110 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 同目录下创建 `Dockerfile.AI Agent面板`：
 - L118 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - RUN git clone https://github.com/AgentAI2026/AI Agent面板.git . && \
+  - RUN git clone https://github.com/agentai2026/AI-Agent Agent面板.git . && \
 - L118 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - RUN git clone https://github.com/AgentAI2026/AI Agent面板.git . && \
+  - RUN git clone https://github.com/agentai2026/AI-Agent Agent面板.git . && \
 - L134 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 这样 AI Agent面板 和 Gateway 共享同一个 `AI Agent可视化面板系统-data` 卷，AI Agent面板 可以直接管理 Gateway。
 - L134 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -12245,13 +12245,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L147 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - # 安装 AI Agent可视化面板系统 CLI（AI Agent面板 需要读写配置）
 - L148 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L148 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L151 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - RUN git clone https://github.com/AgentAI2026/AI Agent面板.git . && \
+  - RUN git clone https://github.com/agentai2026/AI-Agent Agent面板.git . && \
 - L151 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - RUN git clone https://github.com/AgentAI2026/AI Agent面板.git . && \
+  - RUN git clone https://github.com/agentai2026/AI-Agent Agent面板.git . && \
 - L164 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker build -t AI Agent面板 .
 - L166 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -12319,11 +12319,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - L303 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - ### 更新 AI Agent可视化面板系统
 - L306 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L306 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L306 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L318 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker logs AI Agent面板
 - L323 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -12343,25 +12343,25 @@ This file is generated. It lists candidate display-text replacements with line n
 - L333 [DOC_TEXT] AgentAI2026 → AgentAI2026
   -      ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest
 - L335 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -    > 一体镜像仓库：[github.com/AgentAI2026/AI Agent可视化面板系统-docker](https://github.com/AgentAI2026/AI Agent可视化面板系统-docker)
+  -    > 一体镜像仓库：[github.com/AgentAI2026/AI Agent可视化面板系统-docker](https://github.com/agentai2026/AI-Agent Agent可视化面板系统-docker)
 - L335 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -    > 一体镜像仓库：[github.com/AgentAI2026/AI Agent可视化面板系统-docker](https://github.com/AgentAI2026/AI Agent可视化面板系统-docker)
+  -    > 一体镜像仓库：[github.com/AgentAI2026/AI Agent可视化面板系统-docker](https://github.com/agentai2026/AI-Agent Agent可视化面板系统-docker)
 - L337 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 2. **在 Dockerfile 中预装**：构建镜像时就安装好 AI Agent可视化面板系统，避免运行时下载：
 - L341 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -    # 预装 AI Agent可视化面板系统 CLI（使用国内镜像源加速）
 - L342 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -    RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  -    RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L342 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -    RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  -    RUN npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L343 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -    # ... 后续 AI Agent面板 安装步骤
 - L348 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L348 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L348 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L351 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - ### Q: 面板显示 "AI Agent可视化面板系统.json 不存在"？
 - L353 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -12407,7 +12407,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L9 [DOC_HTML] AgentAI2026 → AgentAI2026
   -   <meta name="author" content="AI Agent AgentAI2026">
 - L11 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -   <link rel="canonical" href="https://http://localhost:3456/">
+  -   <link rel="canonical" href="https://github.com/agentai2026/AI-Agent">
 - L12 [DOC_HTML] AI Agent面板 → AI Agent面板
   -   <meta property="og:title" content="AI Agent面板 - AI Agent可视化面板系统 & Hermes Agent 多引擎 AI 管理面板 | 快速搭建你的 AI 智能体">
 - L12 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -12419,11 +12419,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - L13 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   <meta property="og:description" content="基于 Tauri v2 的跨平台桌面应用，支持 AI Agent可视化面板系统 和 Hermes Agent 双引擎 AI 管理。内置AI Agent面板助手支持工具调用，AI Agent AI 接口一键接入，消息渠道管理与内置 QQ 机器人。开源免费，支持 11 种语言。">
 - L15 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -   <meta property="og:url" content="https://http://localhost:3456/">
+  -   <meta property="og:url" content="https://github.com/agentai2026/AI-Agent">
 - L16 [DOC_HTML] AI Agent面板 → AI Agent面板
   -   <meta property="og:site_name" content="AI Agent面板">
 - L18 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -   <meta property="og:image" content="https://http://localhost:3456/00.png">
+  -   <meta property="og:image" content="https://github.com/agentai2026/AI-Agent">
 - L21 [DOC_HTML] AI Agent面板 → AI Agent面板
   -   <meta property="og:image:alt" content="AI Agent面板 仪表盘">
 - L23 [DOC_HTML] AI Agent面板 → AI Agent面板
@@ -12437,7 +12437,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L24 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   <meta name="twitter:description" content="基于 Tauri v2 的跨平台桌面应用。支持 AI Agent可视化面板系统 & Hermes Agent 双引擎，内置AI Agent面板助手与AI Agent AI 接口，消息渠道管理、QQ 机器人、多模型配置与实时 AI 聊天。开源免费。">
 - L25 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -   <meta name="twitter:image" content="https://http://localhost:3456/00.png">
+  -   <meta name="twitter:image" content="https://github.com/agentai2026/AI-Agent">
 - L31 [DOC_HTML] AI Agent面板 → AI Agent面板
   -     "name": "AI Agent面板",
 - L34 [DOC_HTML] AI Agent → AI Agent
@@ -12447,17 +12447,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L34 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "description": "支持 AI Agent可视化面板系统 和 Hermes Agent 双引擎的多 AI Agent 可视化管理面板，基于 Tauri v2 的跨平台桌面应用。内置AI Agent面板助手支持工具调用，AI Agent AI 接口一键接入。支持仪表盘监控、多模型配置、Hermes Agent 对话、消息渠道管理、内置 QQ 机器人、实时 AI 聊天、记忆管理、Agent 管理、网关配置、内网穿透等功能。支持 11 种语言。",
 - L35 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -     "url": "https://http://localhost:3456/",
+  -     "url": "https://github.com/agentai2026/AI-Agent",
 - L36 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -     "downloadUrl": "https://github.com/AgentAI2026/AI Agent面板/releases/latest",
+  -     "downloadUrl": "https://github.com/agentai2026/AI-Agent Agent面板/releases/latest",
 - L36 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -     "downloadUrl": "https://github.com/AgentAI2026/AI Agent面板/releases/latest",
+  -     "downloadUrl": "https://github.com/agentai2026/AI-Agent Agent面板/releases/latest",
 - L40 [DOC_HTML] AI Agent → AI Agent
   -       "name": "AI Agent AgentAI2026",
 - L40 [DOC_HTML] AgentAI2026 → AgentAI2026
   -       "name": "AI Agent AgentAI2026",
 - L49 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -     "screenshot": "https://http://localhost:3456/00.png",
+  -     "screenshot": "https://github.com/agentai2026/AI-Agent",
 - L50 [DOC_HTML] AI Agent → AI Agent
   -     "keywords": "AI Agent可视化面板系统, Hermes Agent, AI Agent, 多引擎, 管理面板, Tauri, 跨平台, 开源, 免费, LLM, 多模型, AI Agent, AI Agent面板助手, Discord"
 - L50 [DOC_HTML] AI Agent面板助手 → AI Agent面板助手
@@ -12469,37 +12469,37 @@ This file is generated. It lists candidate display-text replacements with line n
 - L572 [DOC_HTML] AI Agent面板 → AI Agent面板
   -       <a href="#" class="nav-logo"><img src="./logo.png" alt="Logo">AI Agent面板</a>
 - L582 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener" class="nav-link">GitHub</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" class="nav-link">GitHub</a>
 - L582 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener" class="nav-link">GitHub</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" class="nav-link">GitHub</a>
 - L609 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener" class="mobile-menu-link">GitHub ↗</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" class="mobile-menu-link">GitHub ↗</a>
 - L609 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener" class="mobile-menu-link">GitHub ↗</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" class="mobile-menu-link">GitHub ↗</a>
 - L624 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       <div class="reveal hero-badge"><span class="pulse"></span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-2px"><rect …
 - L626 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       <p class="reveal hero-subtitle" data-i18n="hero.sub">支持 <strong>AI Agent可视化面板系统</strong> 和 <strong>Hermes Agent</strong> 双引擎，内置智能 AI 助手帮你一键安装、自动诊断配置、排查问题、修复错误。<br>内置 Hermes Agent 对话、消息渠道管理、QQ 机器人，并支持 Telegram、Discord 等外部渠道。</p>
 - L632 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener" class="btn btn-outline btn-magnetic">
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" class="btn btn-outline btn-magnetic">
 - L632 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener" class="btn btn-outline btn-magnetic">
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" class="btn btn-outline btn-magnetic">
 - L638 [DOC_HTML] AI Agent面板 → AI Agent面板
   -         <img src="./01.png" alt="AI Agent面板 AI 助手 — 8 大技能卡片" onclick="openLightbox(this.src)" loading="eager">
 - L669 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/discussions" target="_blank" rel="noopener" class="community-link">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions" target="_blank" rel="noopener" class="community-link">
 - L669 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/discussions" target="_blank" rel="noopener" class="community-link">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions" target="_blank" rel="noopener" class="community-link">
 - L677 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new" target="_blank" rel="noopener" class="community-link">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new" target="_blank" rel="noopener" class="community-link">
 - L677 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new" target="_blank" rel="noopener" class="community-link">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new" target="_blank" rel="noopener" class="community-link">
 - L691 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             <a href="https://qt.cool/c/AI Agent可视化面板系统" target="_blank" rel="noopener" data-i18n="qr.join">扫码加入</a>
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统" target="_blank" rel="noopener" data-i18n="qr.join">扫码加入</a>
 - L696 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             <a href="https://qt.cool/c/AI Agent可视化面板系统Wx" target="_blank" rel="noopener" data-i18n="qr.join">扫码加入</a>
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统Wx" target="_blank" rel="noopener" data-i18n="qr.join">扫码加入</a>
 - L701 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             <a href="https://qt.cool/c/AI Agent可视化面板系统DY" target="_blank" rel="noopener" data-i18n="qr.join">扫码加入</a>
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统DY" target="_blank" rel="noopener" data-i18n="qr.join">扫码加入</a>
 - L747 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         <p class="reveal section-desc" data-i18n="feat.desc">一个面板，管理 AI Agent可视化面板系统 & Hermes Agent 双引擎</p>
 - L752 [DOC_HTML] AI Agent面板 → AI Agent面板
@@ -12529,9 +12529,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L916 [DOC_HTML] AI Agent面板 → AI Agent面板
   -         <img src="./quick-stats.gif" alt="AI Agent面板 数据概览" loading="lazy">
 - L953 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -           <div class="t-cmd">git clone https://github.com/AgentAI2026/AI Agent面板.git</div>
+  -           <div class="t-cmd">git clone https://github.com/agentai2026/AI-Agent Agent面板.git</div>
 - L953 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -           <div class="t-cmd">git clone https://github.com/AgentAI2026/AI Agent面板.git</div>
+  -           <div class="t-cmd">git clone https://github.com/agentai2026/AI-Agent Agent面板.git</div>
 - L954 [DOC_HTML] AI Agent面板 → AI Agent面板
   -           <div class="t-cmd">cd AI Agent面板 &amp;&amp; npm install</div>
 - L975 [DOC_HTML] AI Agent面板 → AI Agent面板
@@ -12543,13 +12543,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L995 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -               <div class="t-comment" data-i18n="dep.linux.c"># 一键部署 AI Agent面板 Web + AI Agent可视化面板系统 + systemd 自启</div>
 - L996 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -               <div class="t-cmd">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash</div>
+  -               <div class="t-cmd">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash</div>
 - L996 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -               <div class="t-cmd">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash</div>
+  -               <div class="t-cmd">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash</div>
 - L1000 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/docs/linux-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/docs/linux-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
 - L1000 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/docs/linux-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/docs/linux-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
 - L1004 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             <span style="color:var(--text-muted);font-size:12px;line-height:32px">Node.js · AI Agent可视化面板系统 · systemd/PM2 · Nginx · Firewall</span>
 - L1024 [DOC_HTML] AI Agent面板 → AI Agent面板
@@ -12561,11 +12561,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1026 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -               <div class="t-cmd" style="padding-left:1em">-v AI Agent面板-data:/root/.AI Agent可视化面板系统 node:22-slim \</div>
 - L1031 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/docs/docker-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/docs/docker-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
 - L1031 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/docs/docker-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
+  -             <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/docs/docker-deploy.md" target="_blank" rel="noopener" class="btn btn-sm btn-outline" style="font-size:13px;padding:6px 16px">
 - L1042 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -           <span data-i18n="dep.note">部署完成后，访问 <code style="background:var(--surface);padding:2px 8px;border-radius:4px;font-size:13px">http://服务器IP:1420</code> 即可通过浏览器管理 AI Agent可视化面板系统，功能与桌面版一致。</span>
+  -           <span data-i18n="dep.note">部署完成后，访问 <code style="background:var(--surface);padding:2px 8px;border-radius:4px;font-size:13px">https://github.com/agentai2026/AI-Agent</code> 即可通过浏览器管理 AI Agent可视化面板系统，功能与桌面版一致。</span>
 - L1061 [DOC_HTML] AI Agent面板 → AI Agent面板
   -             <p data-i18n="doc1.d">在 Linux 服务器上部署 AI Agent面板 Web 版，通过浏览器远程管理 AI Agent可视化面板系统</p>
 - L1061 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -12579,27 +12579,27 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1134 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         <p class="reveal section-desc" data-i18n="eco.desc">AI Agent面板 是 AI Agent可视化面板系统 生态的一部分</p>
 - L1137 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <a href="https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation" target="_blank" rel="noopener" class="reveal eco-card">
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation" target="_blank" rel="noopener" class="reveal eco-card">
 - L1138 [DOC_HTML] AI Agent面板 → AI Agent面板
   -           <div><h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-2px"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5…
 - L1138 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -           <div><h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-2px"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5…
 - L1141 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/clawapp" target="_blank" rel="noopener" class="reveal eco-card">
+  -         <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" class="reveal eco-card">
 - L1145 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/cftunnel" target="_blank" rel="noopener" class="reveal eco-card">
+  -         <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" class="reveal eco-card">
 - L1168 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_aarch64.dmg" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_aarch64.dmg" target="_blank" rel="noopener">
 - L1168 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_aarch64.dmg" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_aarch64.dmg" target="_blank" rel="noopener">
 - L1168 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_aarch64.dmg" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_aarch64.dmg" target="_blank" rel="noopener">
 - L1172 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64.dmg" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64.dmg" target="_blank" rel="noopener">
 - L1172 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64.dmg" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64.dmg" target="_blank" rel="noopener">
 - L1172 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64.dmg" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64.dmg" target="_blank" rel="noopener">
 - L1179 [DOC_HTML] AI Agent面板 → AI Agent面板
   -             <p style="font-size:12px;color:var(--text-s);margin-bottom:8px" data-i18n="dl.mac.step1">① 先将 AI Agent面板 <strong>拖入「应用程序」文件夹</strong>，然后打开终端执行：</p>
 - L1180 [DOC_HTML] AI Agent面板 → AI Agent面板
@@ -12609,39 +12609,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1182 [DOC_HTML] AI Agent面板 → AI Agent面板
   -             <p style="font-size:11px;color:var(--text-t);margin-top:4px" data-i18n="dl.mac.step3">提示 No such file？说明没拖入应用程序，改用：<code style="font-size:10px;color:var(--accent);cursor:pointer" onclick="navigator.clipboard.writeText('sudo xattr -rd com.apple.quar…
 - L1190 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup.exe" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup.exe" target="_blank" rel="noopener">
 - L1190 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup.exe" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup.exe" target="_blank" rel="noopener">
 - L1190 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup.exe" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup.exe" target="_blank" rel="noopener">
 - L1194 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup-full.exe" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup-full.exe" target="_blank" rel="noopener">
 - L1194 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup-full.exe" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup-full.exe" target="_blank" rel="noopener">
 - L1194 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup-full.exe" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64-setup-full.exe" target="_blank" rel="noopener">
 - L1198 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64_en-US.msi" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64_en-US.msi" target="_blank" rel="noopener">
 - L1198 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64_en-US.msi" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64_en-US.msi" target="_blank" rel="noopener">
 - L1198 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64_en-US.msi" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_x64_en-US.msi" target="_blank" rel="noopener">
 - L1209 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.AppImage" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.AppImage" target="_blank" rel="noopener">
 - L1209 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.AppImage" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.AppImage" target="_blank" rel="noopener">
 - L1209 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.AppImage" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.AppImage" target="_blank" rel="noopener">
 - L1213 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.deb" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.deb" target="_blank" rel="noopener">
 - L1213 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.deb" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.deb" target="_blank" rel="noopener">
 - L1213 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <a class="dl-link" href="https://http://localhost:3456/proxy/dl/github.com/AgentAI2026/AI Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.deb" target="_blank" rel="noopener">
+  -             <a class="dl-link" href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest/download/AI Agent面板_0.13.4_amd64.deb" target="_blank" rel="noopener">
 - L1221 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <p data-i18n="dl.note1">查看 <a href="https://github.com/AgentAI2026/AI Agent面板/releases" target="_blank" rel="noopener">所有版本</a> · 需要帮助？阅读 <a href="https://github.com/AgentAI2026/AI Agent面板#readme" target="_blank" rel="noopener">安装文档</a></p>
+  -         <p data-i18n="dl.note1">查看 <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases" target="_blank" rel="noopener">所有版本</a> · 需要帮助？阅读 <a href="https://github.com/agentai2026/AI-Agent Agent面板#readme" target="_blank" rel="noopener">安装文档</a></p>
 - L1221 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <p data-i18n="dl.note1">查看 <a href="https://github.com/AgentAI2026/AI Agent面板/releases" target="_blank" rel="noopener">所有版本</a> · 需要帮助？阅读 <a href="https://github.com/AgentAI2026/AI Agent面板#readme" target="_blank" rel="noopener">安装文档</a></p>
+  -         <p data-i18n="dl.note1">查看 <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases" target="_blank" rel="noopener">所有版本</a> · 需要帮助？阅读 <a href="https://github.com/agentai2026/AI-Agent Agent面板#readme" target="_blank" rel="noopener">安装文档</a></p>
 - L1222 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         <p style="margin-top:12px" data-i18n="dl.note2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-2px;opacity:0.7"><ci…
 - L1227 [DOC_HTML] AI Agent → AI Agent
@@ -12657,95 +12657,95 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1253 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -               <div style="font-size:12px;color:rgba(255,255,255,0.5)" data-i18n="ai.c2.d">无缝对接 AI Agent可视化面板系统</div>
 - L1264 [DOC_HTML] AI Agent → AI Agent
-  -             <a href="https://gpt.qt.cool/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:10px 24px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:14px;font-weight:500;text-decoratio…
+  -             <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:10px 24px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:14px;font-weight:500;text-decoratio…
 - L1278 [DOC_HTML] AI Agent面板 → AI Agent面板
   -       <p class="reveal section-desc" data-i18n="sp.desc">感谢以下赞助商对 AI Agent面板 项目的支持</p>
 - L1298 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://star-history.com/#AgentAI2026/AI Agent面板&1186258278/AI Agent可视化面板系统ChineseTranslation&Date" target="_blank" rel="noopener">
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板&1186258278/AI Agent可视化面板系统ChineseTranslation&Date" target="_blank" rel="noopener">
 - L1298 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <a href="https://star-history.com/#AgentAI2026/AI Agent面板&1186258278/AI Agent可视化面板系统ChineseTranslation&Date" target="_blank" rel="noopener">
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板&1186258278/AI Agent可视化面板系统ChineseTranslation&Date" target="_blank" rel="noopener">
 - L1298 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://star-history.com/#AgentAI2026/AI Agent面板&1186258278/AI Agent可视化面板系统ChineseTranslation&Date" target="_blank" rel="noopener">
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板&1186258278/AI Agent可视化面板系统ChineseTranslation&Date" target="_blank" rel="noopener">
 - L1300 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AgentAI2026/AI Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date&theme=dark">
+  -             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/agentai2026/AI-Agent Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date&theme=dark">
 - L1300 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AgentAI2026/AI Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date&theme=dark">
+  -             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/agentai2026/AI-Agent Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date&theme=dark">
 - L1300 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AgentAI2026/AI Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date&theme=dark">
+  -             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/agentai2026/AI-Agent Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date&theme=dark">
 - L1301 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -             <img src="https://api.star-history.com/svg?repos=AgentAI2026/AI Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date" alt="Star History Chart" style="width:100%;display:block;background:#fff">
+  -             <img src="https://github.com/agentai2026/AI-Agent Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date" alt="Star History Chart" style="width:100%;display:block;background:#fff">
 - L1301 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             <img src="https://api.star-history.com/svg?repos=AgentAI2026/AI Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date" alt="Star History Chart" style="width:100%;display:block;background:#fff">
+  -             <img src="https://github.com/agentai2026/AI-Agent Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date" alt="Star History Chart" style="width:100%;display:block;background:#fff">
 - L1301 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -             <img src="https://api.star-history.com/svg?repos=AgentAI2026/AI Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date" alt="Star History Chart" style="width:100%;display:block;background:#fff">
+  -             <img src="https://github.com/agentai2026/AI-Agent Agent面板,1186258278/AI Agent可视化面板系统ChineseTranslation&type=Date" alt="Star History Chart" style="width:100%;display:block;background:#fff">
 - L1313 [DOC_HTML] AI Agent面板 → AI Agent面板
   -         <span>AI Agent面板 &copy; 2026</span>
 - L1316 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" class="footer-link">GitHub</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" class="footer-link">GitHub</a>
 - L1316 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板" class="footer-link">GitHub</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板" class="footer-link">GitHub</a>
 - L1317 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/issues" class="footer-link">Issues</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues" class="footer-link">Issues</a>
 - L1317 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/issues" class="footer-link">Issues</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues" class="footer-link">Issues</a>
 - L1318 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <a href="https://qt.cool/c/AI Agent可视化面板系统" target="_blank" rel="noopener" class="footer-link" data-i18n="ft.qq">QQ 群</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统" target="_blank" rel="noopener" class="footer-link" data-i18n="ft.qq">QQ 群</a>
 - L1321 [DOC_HTML] AI Agent → AI Agent
-  -         <a href="https://qt.cool" target="_blank" rel="noopener" class="footer-link" data-i18n="ft.qc">AI Agent</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" class="footer-link" data-i18n="ft.qc">AI Agent</a>
 - L1325 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.md" class="footer-link">中文</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.md" class="footer-link">中文</a>
 - L1325 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.md" class="footer-link">中文</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.md" class="footer-link">中文</a>
 - L1326 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.en.md" class="footer-link">English</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.en.md" class="footer-link">English</a>
 - L1326 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.en.md" class="footer-link">English</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.en.md" class="footer-link">English</a>
 - L1327 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.ja.md" class="footer-link">日本語</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.ja.md" class="footer-link">日本語</a>
 - L1327 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.ja.md" class="footer-link">日本語</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.ja.md" class="footer-link">日本語</a>
 - L1328 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.ko.md" class="footer-link">한국어</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.ko.md" class="footer-link">한국어</a>
 - L1328 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.ko.md" class="footer-link">한국어</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.ko.md" class="footer-link">한국어</a>
 - L1329 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.zh-TW.md" class="footer-link">繁體中文</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.zh-TW.md" class="footer-link">繁體中文</a>
 - L1329 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.zh-TW.md" class="footer-link">繁體中文</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.zh-TW.md" class="footer-link">繁體中文</a>
 - L1330 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.vi.md" class="footer-link">Tiếng Việt</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.vi.md" class="footer-link">Tiếng Việt</a>
 - L1330 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.vi.md" class="footer-link">Tiếng Việt</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.vi.md" class="footer-link">Tiếng Việt</a>
 - L1331 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.es.md" class="footer-link">Español</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.es.md" class="footer-link">Español</a>
 - L1331 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.es.md" class="footer-link">Español</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.es.md" class="footer-link">Español</a>
 - L1332 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.pt.md" class="footer-link">Português</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.pt.md" class="footer-link">Português</a>
 - L1332 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.pt.md" class="footer-link">Português</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.pt.md" class="footer-link">Português</a>
 - L1333 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.ru.md" class="footer-link">Русский</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.ru.md" class="footer-link">Русский</a>
 - L1333 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.ru.md" class="footer-link">Русский</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.ru.md" class="footer-link">Русский</a>
 - L1334 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.fr.md" class="footer-link">Français</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.fr.md" class="footer-link">Français</a>
 - L1334 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.fr.md" class="footer-link">Français</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.fr.md" class="footer-link">Français</a>
 - L1335 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.de.md" class="footer-link">Deutsch</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.de.md" class="footer-link">Deutsch</a>
 - L1335 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -         <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/README.de.md" class="footer-link">Deutsch</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/README.de.md" class="footer-link">Deutsch</a>
 - L1371 [DOC_HTML] AI Agent面板 → AI Agent面板
   -         localStorage.setItem('AI Agent面板-theme', toDark ? 'dark' : 'light');
 - L1525 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -     var GITHUB_RAW = 'https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/';
+  -     var GITHUB_RAW = 'https://github.com/agentai2026/AI-Agent Agent面板/main/';
 - L1525 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -     var GITHUB_RAW = 'https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/';
+  -     var GITHUB_RAW = 'https://github.com/agentai2026/AI-Agent Agent面板/main/';
 - L1526 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -     var GITHUB_BLOB = 'https://github.com/AgentAI2026/AI Agent面板/blob/main/';
+  -     var GITHUB_BLOB = 'https://github.com/agentai2026/AI-Agent Agent面板/blob/main/';
 - L1526 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -     var GITHUB_BLOB = 'https://github.com/AgentAI2026/AI Agent面板/blob/main/';
+  -     var GITHUB_BLOB = 'https://github.com/agentai2026/AI-Agent Agent面板/blob/main/';
 - L1649 [DOC_HTML] AI Agent面板 → AI Agent面板
   -     var _lang = localStorage.getItem('AI Agent面板-lang') || (navigator.language && navigator.language.startsWith('en') ? 'en' : 'zh');
 - L1655 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -12773,7 +12773,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1753 [DOC_HTML] AI Agent面板 → AI Agent面板
   -       'dep.docker.c':'# One command to start AI Agent面板 Web',
 - L1755 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       'dep.note':'After deployment, visit <code style="background:var(--surface);padding:2px 8px;border-radius:4px;font-size:13px">http://SERVER_IP:1420</code> to manage AI Agent可视化面板系统 from your browser, with all desktop features.',
+  -       'dep.note':'After deployment, visit <code style="background:var(--surface);padding:2px 8px;border-radius:4px;font-size:13px">https://github.com/agentai2026/AI-Agent</code> to manage AI Agent可视化面板系统 from your browser, with all desktop features.',
 - L1758 [DOC_HTML] AI Agent面板 → AI Agent面板
   -       'doc1.t':'Linux Deploy Guide','doc1.d':'Deploy AI Agent面板 Web on Linux server, manage AI Agent可视化面板系统 remotely via browser',
 - L1758 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -12793,9 +12793,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1779 [DOC_HTML] AI Agent面板 → AI Agent面板
   -       'dl.mac.step3':'Getting "No such file"? Not in Applications — use: <code style="font-size:10px;color:var(--accent);cursor:pointer" onclick="navigator.clipboard.writeText(\'sudo xattr -rd com.apple.quarantine ~/Downloads/AI Agent面板.app\');this.textContent=…
 - L1784 [DOC_HTML] AI Agent面板 → AI Agent面板
-  -       'dl.note1':'View <a href="https://github.com/AgentAI2026/AI Agent面板/releases" target="_blank" rel="noopener">All Releases</a> · Need help? Read the <a href="https://github.com/AgentAI2026/AI Agent面板#readme" target="_blank" rel="noopener">Installation D…
+  -       'dl.note1':'View <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases" target="_blank" rel="noopener">All Releases</a> · Need help? Read the <a href="https://github.com/agentai2026/AI-Agent Agent面板#readme" target="_blank" rel="noopener">Installation D…
 - L1784 [DOC_HTML] AgentAI2026 → AgentAI2026
-  -       'dl.note1':'View <a href="https://github.com/AgentAI2026/AI Agent面板/releases" target="_blank" rel="noopener">All Releases</a> · Need help? Read the <a href="https://github.com/AgentAI2026/AI Agent面板#readme" target="_blank" rel="noopener">Installation D…
+  -       'dl.note1':'View <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases" target="_blank" rel="noopener">All Releases</a> · Need help? Read the <a href="https://github.com/agentai2026/AI-Agent Agent面板#readme" target="_blank" rel="noopener">Installation D…
 - L1785 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       'dl.note2':'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-2px;opacity:0.7"><circle cx="12" cy="12" r="10"/><path d="…
 - L1789 [DOC_HTML] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -12809,7 +12809,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1831 [DOC_HTML] AI Agent面板 → AI Agent面板
   -       localStorage.setItem('AI Agent面板-lang', _lang);
 - L1840 [DOC_HTML] http://localhost:3456 → http://localhost:3456
-  -       var BASE = 'https://http://localhost:3456/update/latest.json';
+  -       var BASE = 'https://github.com/agentai2026/AI-Agent';
 - L1857 [DOC_HTML] AI Agent面板 → AI Agent面板
   -           // 替换 URL 中的版本号模式 AI Agent面板_X.Y.Z_
 - L1858 [DOC_HTML] AI Agent面板 → AI Agent面板
@@ -12843,9 +12843,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L55 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - | AI Agent可视化面板系统 | 最新 | AI Agent面板 管理的对象 |
 - L62 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L62 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L67 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 2. 安装 AI Agent可视化面板系统 汉化版（如果缺少）
 - L68 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -12859,17 +12859,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L109 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - AI Agent面板 是 AI Agent可视化面板系统 的管理工具，需要先安装 AI Agent可视化面板系统：
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L112 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L118 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - AI Agent可视化面板系统 init
 - L121 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - ### 3. 克隆 AI Agent面板
 - L125 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - sudo git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - sudo git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L125 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - sudo git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - sudo git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L126 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - sudo chown -R $(whoami) AI Agent面板
 - L127 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -12881,7 +12881,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L151 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   [api] API 已启动，配置目录: /root/.AI Agent可视化面板系统
 - L154 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 打开浏览器访问 `http://服务器IP:1420` 即可使用 AI Agent面板。
+  - 打开浏览器访问 `https://github.com/agentai2026/AI-Agent 即可使用 AI Agent面板。
 - L166 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   --name AI Agent面板 \
 - L169 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -12889,13 +12889,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L169 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L172 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L172 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L173 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L173 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L179 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - ## 访问 AI Agent面板
 - L187 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -12945,7 +12945,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L322 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - sudo systemctl restart AI Agent面板  # 或 pm2 restart AI Agent面板
 - L327 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > git remote set-url origin https://gitee.com/QtCodeCreators/AI Agent面板.git
+  - > git remote set-url origin https://github.com/agentai2026/AI-Agent Agent面板.git
 - L331 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - ### 更新 AI Agent可视化面板系统
 - L333 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -12957,17 +12957,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L342 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - # 汉化优化版（示例：AI Agent面板 0.9.0 推荐版）
 - L343 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://registry.npmmirror.com
+  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://github.com/agentai2026/AI-Agent
 - L343 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://registry.npmmirror.com
+  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://github.com/agentai2026/AI-Agent
 - L345 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - # 官方原版（示例：AI Agent面板 0.9.0 推荐版）
 - L346 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - sudo npm install -g AI Agent可视化面板系统@2026.3.11 --registry https://registry.npmjs.org
+  - sudo npm install -g AI Agent可视化面板系统@2026.3.11 --registry https://github.com/agentai2026/AI-Agent
 - L349 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://registry.npmjs.org
+  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://github.com/agentai2026/AI-Agent
 - L349 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://registry.npmjs.org
+  - sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@2026.3.7-zh.2 --registry https://github.com/agentai2026/AI-Agent
 - L352 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - > **维护说明**：如果你是 AI Agent面板 维护者，后续只需要更新仓库根目录的 `AI Agent可视化面板系统-version-policy.json`，即可统一调整不同面板版本对应的推荐 AI Agent可视化面板系统 版本。程序版本号、热更新清单、桌面图标的维护方式见 `docs/version-maintenance.md`。
 - L352 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -12983,9 +12983,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L380 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 需要先安装 AI Agent可视化面板系统 并初始化：
 - L383 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L383 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L384 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - AI Agent可视化面板系统 init
 - L389 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13015,9 +13015,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 2
 - kinds: LIKELY_UI_TEXT=2
 - L5 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -   "url": "https://github.com/AgentAI2026/AI Agent面板/releases/download/v0.13.4/web-0.13.4.zip",
+  -   "url": "https://github.com/agentai2026/AI-Agent Agent面板/releases/download/v0.13.4/web-0.13.4.zip",
 - L5 [LIKELY_UI_TEXT] AgentAI2026 → AgentAI2026
-  -   "url": "https://github.com/AgentAI2026/AI Agent面板/releases/download/v0.13.4/web-0.13.4.zip",
+  -   "url": "https://github.com/agentai2026/AI-Agent Agent面板/releases/download/v0.13.4/web-0.13.4.zip",
 
 ### index.html
 - total: 2
@@ -13031,9 +13031,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 2
 - kinds: LIKELY_UI_TEXT=2
 - L3 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "baseUrl": "https://dl.qrj.ai/AI Agent可视化面板系统-standalone",
+  -     "baseUrl": "https://github.com/agentai2026/AI-Agent Agent可视化面板系统-standalone",
 - L7 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "baseUrl": "https://dl.qrj.ai/AI Agent可视化面板系统-zh",
+  -     "baseUrl": "https://github.com/agentai2026/AI-Agent Agent可视化面板系统-zh",
 
 ### package-lock.json
 - total: 2
@@ -13055,17 +13055,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L7 [LIKELY_UI_TEXT] AgentAI2026 → AgentAI2026
   -   "author": "AgentAI2026",
 - L9 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -   "homepage": "https://github.com/AgentAI2026/AI Agent面板",
+  -   "homepage": "https://github.com/agentai2026/AI-Agent Agent面板",
 - L9 [LIKELY_UI_TEXT] AgentAI2026 → AgentAI2026
-  -   "homepage": "https://github.com/AgentAI2026/AI Agent面板",
+  -   "homepage": "https://github.com/agentai2026/AI-Agent Agent面板",
 - L12 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "url": "https://github.com/AgentAI2026/AI Agent面板.git"
+  -     "url": "https://github.com/agentai2026/AI-Agent Agent面板.git"
 - L12 [LIKELY_UI_TEXT] AgentAI2026 → AgentAI2026
-  -     "url": "https://github.com/AgentAI2026/AI Agent面板.git"
+  -     "url": "https://github.com/agentai2026/AI-Agent Agent面板.git"
 - L15 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "url": "https://github.com/AgentAI2026/AI Agent面板/issues"
+  -     "url": "https://github.com/agentai2026/AI-Agent Agent面板/issues"
 - L15 [LIKELY_UI_TEXT] AgentAI2026 → AgentAI2026
-  -     "url": "https://github.com/AgentAI2026/AI Agent面板/issues"
+  -     "url": "https://github.com/agentai2026/AI-Agent Agent面板/issues"
 - L18 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "AI Agent可视化面板系统",
 
@@ -13077,41 +13077,41 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   AI Agent可视化面板系统 & Hermes Agent Verwaltungspanel mit integriertem KI-Assistenten — Multi-Engine AI-Framework-Verwaltung
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Showcase">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 ist ein visuelles Verwaltungspanel, das mehrere AI-Agent-Frameworks unterstützt, derzeit mit Dual-Engine-Unterstützung für [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) und [Hermes Agent](https://github.com/nousresearch/hermes-…
+  - AI Agent面板 ist ein visuelles Verwaltungspanel, das mehrere AI-Agent-Frameworks unterstützt, derzeit mit Dual-Engine-Unterstützung für [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) und [Hermes Agent](https://github.com/agentai2026/AI-Agent
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 ist ein visuelles Verwaltungspanel, das mehrere AI-Agent-Frameworks unterstützt, derzeit mit Dual-Engine-Unterstützung für [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) und [Hermes Agent](https://github.com/nousresearch/hermes-…
+  - AI Agent面板 ist ein visuelles Verwaltungspanel, das mehrere AI-Agent-Frameworks unterstützt, derzeit mit Dual-Engine-Unterstützung für [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) und [Hermes Agent](https://github.com/agentai2026/AI-Agent
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L35 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **OpenAI-kompatible API** — Nahtlose Integration mit AI Agent可视化面板系统
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -13119,13 +13119,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Issue melden</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Issue melden</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Issue melden</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Issue melden</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Multi-Engine-Architektur** — Unterstützt AI Agent可视化面板系统 und Hermes Agent Dual-Engine, freies Umschalten, unabhängige Verwaltung
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -13133,13 +13133,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L87 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Interne Testplattform, OpenAI-kompatibel
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Besuchen Sie [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) für die neueste Version:
+  - Besuchen Sie [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) für die neueste Version:
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Besuchen Sie [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) für die neueste Version:
+  - Besuchen Sie [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) für die neueste Version:
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13147,39 +13147,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Ersteinrichtung** — Beim ersten Start automatische Erkennung von Node.js, Git, AI Agent可视化面板系统. Ein-Klick-Installation bei Bedarf
 - L139 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L139 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L140 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L155 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | KI-Agenten-Framework |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | KI-Agenten-Framework |
 - L156 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Plattformübergreifender mobiler Chat |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Plattformübergreifender mobiler Chat |
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Cloudflare Tunnel Tool |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel Tool |
 - L176 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L177 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L177 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L178 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### README.en.md
 - total: 86
@@ -13189,49 +13189,49 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   AI Agent可视化面板系统 & Hermes Agent Management Panel with Built-in AI Assistant — Multi-Engine AI Framework Management
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L23 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/actions/workflows/ci.yml">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/actions/workflows/ci.yml">
 - L23 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/actions/workflows/ci.yml">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/actions/workflows/ci.yml">
 - L24 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/actions/workflow/status/AgentAI2026/AI Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
 - L24 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/actions/workflow/status/AgentAI2026/AI Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Feature Showcase">
 - L34 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 is a visual management panel supporting multiple AI Agent frameworks, currently with [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) and [Hermes Agent](https://github.com/nousresearch/hermes-agent) dual-engine support. It feature…
+  - AI Agent面板 is a visual management panel supporting multiple AI Agent frameworks, currently with [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) and [Hermes Agent](https://github.com/agentai2026/AI-Agent) dual-engine support. It feature…
 - L34 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 is a visual management panel supporting multiple AI Agent frameworks, currently with [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) and [Hermes Agent](https://github.com/nousresearch/hermes-agent) dual-engine support. It feature…
+  - AI Agent面板 is a visual management panel supporting multiple AI Agent frameworks, currently with [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) and [Hermes Agent](https://github.com/agentai2026/AI-Agent) dual-engine support. It feature…
 - L36 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L36 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L36 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L38 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L43 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L47 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **OpenAI-Compatible API** — Seamless integration with AI Agent可视化面板系统, plug and play
 - L55 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13241,13 +13241,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L58 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L71 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L71 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L73 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Report Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Report Issue</strong></a>
 - L73 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Report Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Report Issue</strong></a>
 - L79 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Multi-Engine Architecture** — Supports both AI Agent可视化面板系统 and Hermes Agent dual engines, freely switchable, independently managed
 - L83 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -13255,9 +13255,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L94 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Internal testing platform, OpenAI-compatible, daily sign-in credits
 - L100 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Go to [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) for the latest version:
+  - Go to [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) for the latest version:
 - L100 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Go to [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) for the latest version:
+  - Go to [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) for the latest version:
 - L106 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - | Apple Silicon (M1/M2/M3/M4) | `AI Agent面板_x.x.x_aarch64.dmg` | Macs from late 2020+ |
 - L107 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13275,9 +13275,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L124 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - | RPM | `AI Agent面板-x.x.x-1.x86_64.rpm` | `sudo rpm -i *.rpm` |
 - L129 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L129 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L137 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L138 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13285,77 +13285,77 @@ This file is generated. It lists candidate display-text replacements with line n
 - L138 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L141 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L141 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L142 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L142 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L150 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Initial Setup** — First launch auto-detects Node.js, Git, AI Agent可视化面板系统. One-click install if missing.
 - L192 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L192 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L193 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L208 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | AI Agent Framework |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | AI Agent Framework |
 - L209 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Cross-platform mobile chat client |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Cross-platform mobile chat client |
 - L210 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Cloudflare Tunnel tool |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel tool |
 - L218 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板 keeps growing because of every contributor in the community. Thank you for helping make the project better.
 - L226 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/liucong2013"><img src="https://github.com/liucong2013.png?size=80" width="60" height="60"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/88">#88</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/88">#88</a></td>
 - L226 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/liucong2013"><img src="https://github.com/liucong2013.png?size=80" width="60" height="60"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/88">#88</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/88">#88</a></td>
 - L227 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/axdlee"><img src="https://github.com/axdlee.png?size=80" width="60" height="60"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/58">#58</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/58">#58</a></td>
 - L227 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/axdlee"><img src="https://github.com/axdlee.png?size=80" width="60" height="60"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/58">#58</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/58">#58</a></td>
 - L228 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/ATGCS"><img src="https://github.com/ATGCS.png?size=80" width="60" height="60"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/107">#107</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/107">#107</a></td>
 - L228 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/ATGCS"><img src="https://github.com/ATGCS.png?size=80" width="60" height="60"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/107">#107</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/107">#107</a></td>
 - L229 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/livisun"><img src="https://github.com/livisun.png?size=80" width="60" height="60"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/106">#106</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/106">#106</a></td>
 - L229 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/livisun"><img src="https://github.com/livisun.png?size=80" width="60" height="60"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/106">#106</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/106">#106</a></td>
 - L230 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/kiss-kedaya"><img src="https://github.com/kiss-kedaya.png?size=80" width="60" height="60"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/101">#101</a> <a href…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/101">#101</a> <a href…
 - L230 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/kiss-kedaya"><img src="https://github.com/kiss-kedaya.png?size=80" width="60" height="60"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/101">#101</a> <a href…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/101">#101</a> <a href…
 - L231 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/wzh4869"><img src="https://github.com/wzh4869.png?size=80" width="60" height="60"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/82">#82</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/82">#82</a></td>
 - L231 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/wzh4869"><img src="https://github.com/wzh4869.png?size=80" width="60" height="60"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/82">#82</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/82">#82</a></td>
 - L232 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/0xsline"><img src="https://github.com/0xsline.png?size=80" width="60" height="60"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/15">#15</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/15">#15</a></td>
 - L232 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/0xsline"><img src="https://github.com/0xsline.png?size=80" width="60" height="60"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/15">#15</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/15">#15</a></td>
 - L233 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/jonntd"><img src="https://github.com/jonntd.png?size=80" width="60" height="60"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/18">#18</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/18">#18</a></td>
 - L233 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/jonntd"><img src="https://github.com/jonntd.png?size=80" width="60" height="60"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/18">#18</a></td>
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/18">#18</a></td>
 - L311 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > If we missed your contribution, please [open an issue](https://github.com/AgentAI2026/AI Agent面板/issues/new) and we will add it promptly.
+  - > If we missed your contribution, please [open an issue](https://github.com/agentai2026/AI-Agent Agent面板/issues/new) and we will add it promptly.
 - L311 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > If we missed your contribution, please [open an issue](https://github.com/AgentAI2026/AI Agent面板/issues/new) and we will add it promptly.
+  - > If we missed your contribution, please [open an issue](https://github.com/agentai2026/AI-Agent Agent面板/issues/new) and we will add it promptly.
 - L325 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L326 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L326 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L327 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L333 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 (武汉晴辰天下网络科技有限公司) | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 (武汉晴辰天下网络科技有限公司) | [https://github.com/agentai2026/AI-Agent)
 - L333 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 (武汉晴辰天下网络科技有限公司) | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 (武汉晴辰天下网络科技有限公司) | [https://github.com/agentai2026/AI-Agent)
 
 ### README.es.md
 - total: 54
@@ -13365,41 +13365,41 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   Panel de gestión AI Agent可视化面板系统 & Hermes Agent con Asistente IA integrado — Gestión multi-motor de frameworks IA
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Showcase">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 es un panel de gestión visual que soporta múltiples frameworks de AI Agent, actualmente con soporte dual para [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) y [Hermes Agent](https://github.com/nousresearch/hermes-agent). Cuenta …
+  - AI Agent面板 es un panel de gestión visual que soporta múltiples frameworks de AI Agent, actualmente con soporte dual para [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) y [Hermes Agent](https://github.com/agentai2026/AI-Agent). Cuenta …
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 es un panel de gestión visual que soporta múltiples frameworks de AI Agent, actualmente con soporte dual para [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) y [Hermes Agent](https://github.com/nousresearch/hermes-agent). Cuenta …
+  - AI Agent面板 es un panel de gestión visual que soporta múltiples frameworks de AI Agent, actualmente con soporte dual para [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) y [Hermes Agent](https://github.com/agentai2026/AI-Agent). Cuenta …
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Sitio web**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Descargar**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Sitio web**: [https://github.com/agentai2026/AI-Agent) | 📦 **Descargar**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Sitio web**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Descargar**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Sitio web**: [https://github.com/agentai2026/AI-Agent) | 📦 **Descargar**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Sitio web**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Descargar**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Sitio web**: [https://github.com/agentai2026/AI-Agent) | 📦 **Descargar**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L35 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **API compatible con OpenAI** — Integración perfecta con AI Agent可视化面板系统
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -13407,13 +13407,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Reportar Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Reportar Issue</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Reportar Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Reportar Issue</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Arquitectura multi-motor** — Soporta AI Agent可视化面板系统 y Hermes Agent dual, conmutación libre, gestión independiente
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -13421,13 +13421,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L87 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Plataforma de pruebas interna, compatible con OpenAI
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Visita [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) para la última versión:
+  - Visita [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) para la última versión:
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Visita [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) para la última versión:
+  - Visita [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) para la última versión:
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13435,39 +13435,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Configuración inicial** — Primera ejecución detecta automáticamente Node.js, Git, AI Agent可视化面板系统. Instalación con un clic si falta
 - L139 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L139 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L140 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L155 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | Framework AI Agent |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | Framework AI Agent |
 - L156 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Cliente móvil multiplataforma |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Cliente móvil multiplataforma |
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Herramienta Cloudflare Tunnel |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Herramienta Cloudflare Tunnel |
 - L176 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L177 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L177 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L178 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### README.fr.md
 - total: 54
@@ -13477,41 +13477,41 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   Panneau de gestion AI Agent可视化面板系统 & Hermes Agent avec Assistant IA intégré — Gestion multi-moteur de frameworks IA
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Showcase">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 est un panneau de gestion visuel supportant plusieurs frameworks d'agents IA, actuellement avec un double support pour [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) et [Hermes Agent](https://github.com/nousresearch/hermes-agent…
+  - AI Agent面板 est un panneau de gestion visuel supportant plusieurs frameworks d'agents IA, actuellement avec un double support pour [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) et [Hermes Agent](https://github.com/agentai2026/AI-Agent
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 est un panneau de gestion visuel supportant plusieurs frameworks d'agents IA, actuellement avec un double support pour [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) et [Hermes Agent](https://github.com/nousresearch/hermes-agent…
+  - AI Agent面板 est un panneau de gestion visuel supportant plusieurs frameworks d'agents IA, actuellement avec un double support pour [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) et [Hermes Agent](https://github.com/agentai2026/AI-Agent
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Site web** : [http://localhost:3456](https://http://localhost:3456/) | 📦 **Télécharger** : [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Site web** : [https://github.com/agentai2026/AI-Agent) | 📦 **Télécharger** : [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Site web** : [http://localhost:3456](https://http://localhost:3456/) | 📦 **Télécharger** : [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Site web** : [https://github.com/agentai2026/AI-Agent) | 📦 **Télécharger** : [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Site web** : [http://localhost:3456](https://http://localhost:3456/) | 📦 **Télécharger** : [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Site web** : [https://github.com/agentai2026/AI-Agent) | 📦 **Télécharger** : [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L35 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **API compatible OpenAI** — Intégration transparente avec AI Agent可视化面板系统
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -13519,13 +13519,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Signaler un Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Signaler un Issue</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Signaler un Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Signaler un Issue</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Architecture multi-moteur** — Support AI Agent可视化面板系统 et Hermes Agent en double moteur, commutation libre, gestion indépendante
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -13533,13 +13533,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L87 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Plateforme de tests interne, compatible OpenAI
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Rendez-vous sur [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) pour la dernière version :
+  - Rendez-vous sur [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) pour la dernière version :
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Rendez-vous sur [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) pour la dernière version :
+  - Rendez-vous sur [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) pour la dernière version :
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13547,39 +13547,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Configuration initiale** — Le premier lancement détecte automatiquement Node.js, Git, AI Agent可视化面板系统. Installation en un clic si nécessaire
 - L139 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L139 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L140 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L155 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | Framework d'agents IA |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | Framework d'agents IA |
 - L156 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Client mobile multiplateforme |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Client mobile multiplateforme |
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Outil Cloudflare Tunnel |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Outil Cloudflare Tunnel |
 - L176 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L177 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L177 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L178 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### README.ja.md
 - total: 52
@@ -13589,39 +13589,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   AI アシスタント内蔵の AI Agent可视化面板系统 & Hermes Agent 管理パネル — マルチエンジン AI フレームワーク管理
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 機能ショーケース">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 は複数の AI Agent フレームワークをサポートするビジュアル管理パネルで、現在 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) と [Hermes Agent](https://github.com/nousresearch/hermes-agent) のデュアルエンジンをサポートしています。**インテリジェント AI アシスタントを内蔵**し、ワンクリックインストール、設定の自動診断、問題の特定と修…
+  - AI Agent面板 は複数の AI Agent フレームワークをサポートするビジュアル管理パネルで、現在 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) と [Hermes Agent](https://github.com/agentai2026/AI-Agent) のデュアルエンジンをサポートしています。**インテリジェント AI アシスタントを内蔵**し、ワンクリックインストール、設定の自動診断、問題の特定と修…
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 は複数の AI Agent フレームワークをサポートするビジュアル管理パネルで、現在 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) と [Hermes Agent](https://github.com/nousresearch/hermes-agent) のデュアルエンジンをサポートしています。**インテリジェント AI アシスタントを内蔵**し、ワンクリックインストール、設定の自動診断、問題の特定と修…
+  - AI Agent面板 は複数の AI Agent フレームワークをサポートするビジュアル管理パネルで、現在 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) と [Hermes Agent](https://github.com/agentai2026/AI-Agent) のデュアルエンジンをサポートしています。**インテリジェント AI アシスタントを内蔵**し、ワンクリックインストール、設定の自動診断、問題の特定と修…
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **ウェブサイト**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **ダウンロード**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **ウェブサイト**: [https://github.com/agentai2026/AI-Agent) | 📦 **ダウンロード**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **ウェブサイト**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **ダウンロード**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **ウェブサイト**: [https://github.com/agentai2026/AI-Agent) | 📦 **ダウンロード**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **ウェブサイト**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **ダウンロード**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **ウェブサイト**: [https://github.com/agentai2026/AI-Agent) | 📦 **ダウンロード**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **OpenAI 互換 API** — AI Agent可视化面板系统 とシームレスに統合
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -13629,25 +13629,25 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Issue を報告</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Issue を報告</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Issue を報告</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Issue を報告</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 マルチエンジンアーキテクチャ** — AI Agent可视化面板系统 と Hermes Agent のデュアルエンジンをサポート、自由に切り替え、それぞれ独立管理
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **サービス管理** — AI Agent可视化面板系统 / Hermes Gateway の起動/停止、バージョン検出とワンクリックアップグレード
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) から最新版をダウンロード：
+  - [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) から最新版をダウンロード：
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) から最新版をダウンロード：
+  - [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) から最新版をダウンロード：
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13655,39 +13655,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **初期設定** — 初回起動で Node.js、Git、AI Agent可视化面板系统 を自動検出。未インストールならワンクリック
 - L164 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L164 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L165 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L180 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | AI Agent フレームワーク |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | AI Agent フレームワーク |
 - L181 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | クロスプラットフォームモバイルチャット |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | クロスプラットフォームモバイルチャット |
 - L182 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Cloudflare Tunnel ツール |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel ツール |
 - L201 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L202 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L202 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L203 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L209 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L209 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### README.ko.md
 - total: 52
@@ -13697,39 +13697,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   AI 어시스턴트 내장 AI Agent可视化面板系统 & Hermes Agent 관리 패널 — 멀티엔진 AI 프레임워크 관리
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 기능 쇼케이스">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板은 여러 AI Agent 프레임워크를 지원하는 시각적 관리 패널으로, 현재 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) 및 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 듀얼 엔진을 지원합니다. **지능형 AI 어시스턴트를 내장**하여 원클릭 설치, 자동 설정 진단, 문제 해결 및 오류 수정을 지원합니다. …
+  - AI Agent面板은 여러 AI Agent 프레임워크를 지원하는 시각적 관리 패널으로, 현재 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) 및 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 듀얼 엔진을 지원합니다. **지능형 AI 어시스턴트를 내장**하여 원클릭 설치, 자동 설정 진단, 문제 해결 및 오류 수정을 지원합니다. …
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板은 여러 AI Agent 프레임워크를 지원하는 시각적 관리 패널으로, 현재 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) 및 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 듀얼 엔진을 지원합니다. **지능형 AI 어시스턴트를 내장**하여 원클릭 설치, 자동 설정 진단, 문제 해결 및 오류 수정을 지원합니다. …
+  - AI Agent面板은 여러 AI Agent 프레임워크를 지원하는 시각적 관리 패널으로, 현재 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) 및 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 듀얼 엔진을 지원합니다. **지능형 AI 어시스턴트를 내장**하여 원클릭 설치, 자동 설정 진단, 문제 해결 및 오류 수정을 지원합니다. …
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **웹사이트**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **다운로드**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **웹사이트**: [https://github.com/agentai2026/AI-Agent) | 📦 **다운로드**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **웹사이트**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **다운로드**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **웹사이트**: [https://github.com/agentai2026/AI-Agent) | 📦 **다운로드**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **웹사이트**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **다운로드**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **웹사이트**: [https://github.com/agentai2026/AI-Agent) | 📦 **다운로드**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **OpenAI 호환 API** — AI Agent可视化面板系统와 원활한 통합
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -13737,25 +13737,25 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Issue 보고</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Issue 보고</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Issue 보고</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Issue 보고</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 멀티엔진 아키텍처** — AI Agent可视化面板系统 및 Hermes Agent 듀얼 엔진 지원, 자유롭게 전환, 각각 독립 관리
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **서비스 관리** — AI Agent可视化面板系统 / Hermes Gateway 시작/중지, 버전 감지 및 원클릭 업그레이드
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)에서 최신 버전 다운로드:
+  - [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)에서 최신 버전 다운로드:
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)에서 최신 버전 다운로드:
+  - [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)에서 최신 버전 다운로드:
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13763,39 +13763,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **초기 설정** — 첫 실행 시 Node.js, Git, AI Agent可视化面板系统 자동 감지. 미설치 시 원클릭 설치
 - L152 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L152 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L153 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L168 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | AI Agent 프레임워크 |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | AI Agent 프레임워크 |
 - L169 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | 크로스 플랫폼 모바일 채팅 |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | 크로스 플랫폼 모바일 채팅 |
 - L170 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Cloudflare Tunnel 도구 |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel 도구 |
 - L189 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L190 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L190 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L191 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L197 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L197 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### README.md
 - total: 203
@@ -13805,55 +13805,55 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   内置 AI 助手的 AI Agent可视化面板系统 & Hermes Agent 管理面板 — 多引擎 AI 框架管理
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L23 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/actions/workflows/ci.yml">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/actions/workflows/ci.yml">
 - L23 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/actions/workflows/ci.yml">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/actions/workflows/ci.yml">
 - L24 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/actions/workflow/status/AgentAI2026/AI Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
 - L24 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/actions/workflow/status/AgentAI2026/AI Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/ci.yml?style=flat-square&label=CI" alt="CI">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 功能全景">
 - L35 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  -   <a href="https://http://localhost:3456/#video">
+  -   <a href="https://github.com/agentai2026/AI-Agent">
 - L40 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 是支持多 AI Agent 框架的可视化管理面板，目前支持 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 双引擎。**内置智能 AI 助手**，帮你一键安装、自动诊断配置、排查问题、修复错误。8 大工具 + 4 种模式 + 交互式问答，从新手到老手都能轻松管理。
+  - AI Agent面板 是支持多 AI Agent 框架的可视化管理面板，目前支持 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 双引擎。**内置智能 AI 助手**，帮你一键安装、自动诊断配置、排查问题、修复错误。8 大工具 + 4 种模式 + 交互式问答，从新手到老手都能轻松管理。
 - L40 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 是支持多 AI Agent 框架的可视化管理面板，目前支持 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 双引擎。**内置智能 AI 助手**，帮你一键安装、自动诊断配置、排查问题、修复错误。8 大工具 + 4 种模式 + 交互式问答，从新手到老手都能轻松管理。
+  - AI Agent面板 是支持多 AI Agent 框架的可视化管理面板，目前支持 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 双引擎。**内置智能 AI 助手**，帮你一键安装、自动诊断配置、排查问题、修复错误。8 大工具 + 4 种模式 + 交互式问答，从新手到老手都能轻松管理。
 - L42 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **官网**: [http://localhost:3456](https://http://localhost:3456/)  |  📦 **下载**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **官网**: [https://github.com/agentai2026/AI-Agent)  |  📦 **下载**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L42 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **官网**: [http://localhost:3456](https://http://localhost:3456/)  |  📦 **下载**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **官网**: [https://github.com/agentai2026/AI-Agent)  |  📦 **下载**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L42 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **官网**: [http://localhost:3456](https://http://localhost:3456/)  |  📦 **下载**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **官网**: [https://github.com/agentai2026/AI-Agent)  |  📦 **下载**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L44 [DOC_TEXT] AI Agent → AI Agent
   - ### 🎁 AI Agent AI 接口
 - L49 [DOC_TEXT] AI Agent → AI Agent
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AI Agent AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AI Agent AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AI Agent AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AI Agent AI"></a>
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **兼容 OpenAI 接口** — 无缝对接 AI Agent可视化面板系统，即开即用
 - L57 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - 配合 AI Agent可视化面板系统 使用：在 [gpt.qt.cool](https://gpt.qt.cool) 注册并签到领取测试额度，获取 API Key 后，初始化 AI Agent可视化面板系统 时选择 **OpenAI Compatible** 提供商，填入地址和 Key 即可使用。
+  - 配合 AI Agent可视化面板系统 使用：在 [gpt.qt.cool](https://github.com/agentai2026/AI-Agent) 注册并签到领取测试额度，获取 API Key 后，初始化 AI Agent可视化面板系统 时选择 **OpenAI Compatible** 提供商，填入地址和 Key 即可使用。
 - L63 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板 提供**纯 Web 版部署模式**（零 GUI 依赖），天然兼容 ARM64 开发板和嵌入式设备：
 - L66 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -13861,29 +13861,29 @@ This file is generated. It lists candidate display-text replacements with line n
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64 镜像** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest` 开箱即用
 - L79 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       <a href="https://qt.cool/c/AI Agent可视化面板系统"><img src="docs/qr-qq.png" width="140" alt="QQ 群二维码"></a><br>
+  -       <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统"><img src="docs/qr-qq.png" width="140" alt="QQ 群二维码"></a><br>
 - L80 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       <a href="https://qt.cool/c/AI Agent可视化面板系统"><strong>QQ 群</strong></a>
+  -       <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统"><strong>QQ 群</strong></a>
 - L83 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       <a href="https://qt.cool/c/AI Agent可视化面板系统Wx"><img src="docs/qr-wechat.png" width="140" alt="微信群二维码"></a><br>
+  -       <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统Wx"><img src="docs/qr-wechat.png" width="140" alt="微信群二维码"></a><br>
 - L84 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       <a href="https://qt.cool/c/AI Agent可视化面板系统Wx"><strong>微信群</strong></a>
+  -       <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统Wx"><strong>微信群</strong></a>
 - L87 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       <a href="https://qt.cool/c/AI Agent可视化面板系统DY"><img src="docs/qr-dy.png" width="140" alt="抖音群二维码"></a><br>
+  -       <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统DY"><img src="docs/qr-dy.png" width="140" alt="抖音群二维码"></a><br>
 - L88 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       <a href="https://qt.cool/c/AI Agent可视化面板系统DY"><strong>抖音群</strong></a>
+  -       <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统DY"><strong>抖音群</strong></a>
 - L102 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L102 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L104 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>反馈 Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>反馈 Issue</strong></a>
 - L104 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>反馈 Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>反馈 Issue</strong></a>
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 前往 [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) 页面下载最新版本，根据你的系统选择对应安装包：
+  - 前往 [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) 页面下载最新版本，根据你的系统选择对应安装包：
 - L111 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - 前往 [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) 页面下载最新版本，根据你的系统选择对应安装包：
+  - 前往 [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) 页面下载最新版本，根据你的系统选择对应安装包：
 - L117 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - | Apple Silicon (M1/M2/M3/M4) | `AI Agent面板_x.x.x_aarch64.dmg` | 2020 年末及之后的 Mac |
 - L118 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13911,9 +13911,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L154 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 没有桌面环境？一键部署 AI Agent面板 Web 版，通过浏览器远程管理 AI Agent可视化面板系统：
 - L157 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L167 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L168 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13921,29 +13921,29 @@ This file is generated. It lists candidate display-text replacements with line n
 - L168 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L171 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L171 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L172 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L172 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L180 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板 提供多种升级方式，根据你的安装方式选择对应方案。
 - L186 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 1. 打开 AI Agent面板，如有新版本会弹出升级提示
 - L190 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > **手动升级**：如果自动更新失败，可前往 [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) 下载最新安装包，覆盖安装即可。数据不会丢失。
+  - > **手动升级**：如果自动更新失败，可前往 [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) 下载最新安装包，覆盖安装即可。数据不会丢失。
 - L190 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > **手动升级**：如果自动更新失败，可前往 [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) 下载最新安装包，覆盖安装即可。数据不会丢失。
+  - > **手动升级**：如果自动更新失败，可前往 [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) 下载最新安装包，覆盖安装即可。数据不会丢失。
 - L197 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - | DEB | `sudo dpkg -i AI Agent面板_最新版本_amd64.deb` |
 - L198 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - | RPM | `sudo rpm -U AI Agent面板-最新版本-1.x86_64.rpm` |
 - L205 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L205 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L213 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd /opt/AI Agent面板  # 替换为实际安装目录
 - L217 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13951,9 +13951,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L220 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - > **升级 AI Agent可视化面板系统**：面板和 AI Agent可视化面板系统 版本需要匹配。可在「服务管理」页面一键升级，或手动执行：
 - L222 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - > sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - > sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L222 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - > sudo npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L230 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd /path/to/AI Agent面板  # 包含 docker-compose.yml 的目录
 - L231 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -13971,21 +13971,21 @@ This file is generated. It lists candidate display-text replacements with line n
 - L244 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L247 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L247 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L248 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L248 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L252 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - **仅升级容器内的 AI Agent可视化面板系统**
 - L255 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L255 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L255 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com
+  - docker exec -it AI Agent面板 npm install -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent
 - L263 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板  # 替换为实际安装目录
 - L278 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -14067,15 +14067,15 @@ This file is generated. It lists candidate display-text replacements with line n
 - L544 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板/
 - L579 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L579 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L580 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板
 - L640 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L640 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L641 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板
 - L656 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -14093,9 +14093,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L708 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - - **端口** 1420（AI Agent面板）+ 18789（Gateway）
 - L713 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L713 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L732 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     server_name AI Agent可视化面板系统.example.com;
 - L760 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -14121,15 +14121,15 @@ This file is generated. It lists candidate display-text replacements with line n
 - L826 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 1. 以管理员身份运行 AI Agent面板
 - L829 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -    npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  -    npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L829 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -    npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  -    npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L846 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 文件被其他进程锁定。先关闭 AI Agent面板 和所有 Node.js 进程，以管理员身份打开 PowerShell 重装：
 - L850 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L850 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com
+  - npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L855 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 安装 Node.js 后需要**重启 AI Agent面板**，新的 PATH 环境变量才能生效。
 - L865 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -14139,73 +14139,73 @@ This file is generated. It lists candidate display-text replacements with line n
 - L875 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 2. **检查 Base URL** — 不同服务商 URL 格式不同，注意结尾不要多 `/v1`（AI Agent面板 会自动处理）
 - L877 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 4. **Ollama 特殊处理** — URL 填 `http://127.0.0.1:11434`（不加 `/v1`，AI Agent面板 自动补全）
+  - 4. **Ollama 特殊处理** — URL 填 `https://github.com/agentai2026/AI-Agent `/v1`，AI Agent面板 自动补全）
 - L891 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd /opt/AI Agent面板  # 替换为实际安装目录
 - L895 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - sudo systemctl restart AI Agent面板  # 或 pm2 restart AI Agent面板
 - L909 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | AI Agent 框架 |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | AI Agent 框架 |
 - L910 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | 跨平台移动聊天客户端 |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | 跨平台移动聊天客户端 |
 - L911 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Cloudflare Tunnel 内网穿透工具 |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel 内网穿透工具 |
 - L915 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 感谢以下赞助商对 AI Agent面板 项目的支持：
 - L937 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - AI Agent面板 的成长离不开每一位贡献者的付出。感谢你们让这个项目变得更好！
 - L945 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/liucong2013"><img src="https://github.com/liucong2013.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/…
 - L945 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/liucong2013"><img src="https://github.com/liucong2013.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/…
 - L946 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/axdlee"><img src="https://github.com/axdlee.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/58">#58</a…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/58">#58</a…
 - L946 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/axdlee"><img src="https://github.com/axdlee.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/58">#58</a…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/58">#58</a…
 - L947 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/ATGCS"><img src="https://github.com/ATGCS.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/107">#107</a>…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/107">#107</a>…
 - L947 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/ATGCS"><img src="https://github.com/ATGCS.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/107">#107</a>…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/107">#107</a>…
 - L948 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/livisun"><img src="https://github.com/livisun.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/106">#1…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/106">#1…
 - L948 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/livisun"><img src="https://github.com/livisun.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/106">#1…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/106">#1…
 - L949 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/kiss-kedaya"><img src="https://github.com/kiss-kedaya.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/…
 - L949 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/kiss-kedaya"><img src="https://github.com/kiss-kedaya.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/…
 - L950 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/wzh4869"><img src="https://github.com/wzh4869.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/82">#82…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/82">#82…
 - L950 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/wzh4869"><img src="https://github.com/wzh4869.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/82">#82…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/82">#82…
 - L951 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/0xsline"><img src="https://github.com/0xsline.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/15">#15…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/15">#15…
 - L951 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/0xsline"><img src="https://github.com/0xsline.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/15">#15…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/15">#15…
 - L952 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/jonntd"><img src="https://github.com/jonntd.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/18">#18</a…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/18">#18</a…
 - L952 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/jonntd"><img src="https://github.com/jonntd.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/18">#18</a…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/18">#18</a…
 - L955 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/octo-patch"><img src="https://github.com/octo-patch.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>octo-patch</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pul…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>octo-patch</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pul…
 - L955 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/octo-patch"><img src="https://github.com/octo-patch.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>octo-patch</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pul…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>octo-patch</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pul…
 - L956 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/SEVENTEEN-TAN"><img src="https://github.com/SEVENTEEN-TAN.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>SEVENTEEN-TAN</b></sub></a><br><a href="https://github.com/AgentAI2026/claw…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>SEVENTEEN-TAN</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent
 - L956 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/SEVENTEEN-TAN"><img src="https://github.com/SEVENTEEN-TAN.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>SEVENTEEN-TAN</b></sub></a><br><a href="https://github.com/AgentAI2026/claw…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>SEVENTEEN-TAN</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent
 - L957 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <td align="center"><a href="https://github.com/roc-xie"><img src="https://github.com/roc-xie.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>roc-xie</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/162">#1…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>roc-xie</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/162">#1…
 - L957 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <td align="center"><a href="https://github.com/roc-xie"><img src="https://github.com/roc-xie.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>roc-xie</b></sub></a><br><a href="https://github.com/AgentAI2026/AI Agent面板/pull/162">#1…
+  -     <td align="center"><a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent" width="60" height="60" style="border-radius:50%"><br><sub><b>roc-xie</b></sub></a><br><a href="https://github.com/agentai2026/AI-Agent Agent面板/pull/162">#1…
 - L963 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 感谢以下用户提交 Issue 报告 Bug 或建议功能，帮助 AI Agent面板 持续改进：
 - L1052 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 如果遗漏了你的贡献，请 [提交 Issue](https://github.com/AgentAI2026/AI Agent面板/issues/new) 告知我们，我们会第一时间补充！
+  - > 如果遗漏了你的贡献，请 [提交 Issue](https://github.com/agentai2026/AI-Agent Agent面板/issues/new) 告知我们，我们会第一时间补充！
 - L1052 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 如果遗漏了你的贡献，请 [提交 Issue](https://github.com/AgentAI2026/AI Agent面板/issues/new) 告知我们，我们会第一时间补充！
+  - > 如果遗漏了你的贡献，请 [提交 Issue](https://github.com/agentai2026/AI-Agent Agent面板/issues/new) 告知我们，我们会第一时间补充！
 - L1058 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 武汉晴辰天下网络科技有限公司 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 武汉晴辰天下网络科技有限公司 | [https://github.com/agentai2026/AI-Agent)
 
 ### README.pt.md
 - total: 54
@@ -14215,41 +14215,41 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   Painel de gestão AI Agent可视化面板系统 & Hermes Agent com Assistente IA integrado — Gestão multi-motor de frameworks IA
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Showcase">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 é um painel de gestão visual que suporta múltiplos frameworks de AI Agent, atualmente com suporte dual para [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) e [Hermes Agent](https://github.com/nousresearch/hermes-agent). Possui um…
+  - AI Agent面板 é um painel de gestão visual que suporta múltiplos frameworks de AI Agent, atualmente com suporte dual para [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) e [Hermes Agent](https://github.com/agentai2026/AI-Agent). Possui um…
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 é um painel de gestão visual que suporta múltiplos frameworks de AI Agent, atualmente com suporte dual para [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) e [Hermes Agent](https://github.com/nousresearch/hermes-agent). Possui um…
+  - AI Agent面板 é um painel de gestão visual que suporta múltiplos frameworks de AI Agent, atualmente com suporte dual para [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) e [Hermes Agent](https://github.com/agentai2026/AI-Agent). Possui um…
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Download**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Download**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L35 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **API compatível com OpenAI** — Integração perfeita com AI Agent可视化面板系统
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -14257,13 +14257,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Reportar Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Reportar Issue</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Reportar Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Reportar Issue</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Arquitetura multi-motor** — Suporta AI Agent可视化面板系统 e Hermes Agent dual, comutação livre, gestão independente
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -14271,13 +14271,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L87 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Plataforma de testes interna, compatível com OpenAI
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Acesse [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) para a versão mais recente:
+  - Acesse [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) para a versão mais recente:
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Acesse [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) para a versão mais recente:
+  - Acesse [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) para a versão mais recente:
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -14285,39 +14285,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Configuração inicial** — Primeira execução detecta automaticamente Node.js, Git, AI Agent可视化面板系统. Instalação com um clique se necessário
 - L139 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L139 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L140 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L155 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | Framework AI Agent |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | Framework AI Agent |
 - L156 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Cliente móvel multiplataforma |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Cliente móvel multiplataforma |
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Ferramenta Cloudflare Tunnel |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Ferramenta Cloudflare Tunnel |
 - L176 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L177 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L177 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L178 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### README.ru.md
 - total: 54
@@ -14327,41 +14327,41 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   Панель управления AI Agent可视化面板系统 & Hermes Agent со встроенным ИИ-ассистентом — Управление мульти-движковыми AI фреймворками
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Showcase">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 — это визуальная панель управления, поддерживающая несколько фреймворков AI-агентов, сейчас с двойной поддержкой [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) и [Hermes Agent](https://github.com/nousresearch/hermes-agent). Со *…
+  - AI Agent面板 — это визуальная панель управления, поддерживающая несколько фреймворков AI-агентов, сейчас с двойной поддержкой [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) и [Hermes Agent](https://github.com/agentai2026/AI-Agent). Со *…
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 — это визуальная панель управления, поддерживающая несколько фреймворков AI-агентов, сейчас с двойной поддержкой [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) и [Hermes Agent](https://github.com/nousresearch/hermes-agent). Со *…
+  - AI Agent面板 — это визуальная панель управления, поддерживающая несколько фреймворков AI-агентов, сейчас с двойной поддержкой [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) и [Hermes Agent](https://github.com/agentai2026/AI-Agent). Со *…
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Сайт**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Скачать**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Сайт**: [https://github.com/agentai2026/AI-Agent) | 📦 **Скачать**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Сайт**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Скачать**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Сайт**: [https://github.com/agentai2026/AI-Agent) | 📦 **Скачать**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Сайт**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Скачать**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Сайт**: [https://github.com/agentai2026/AI-Agent) | 📦 **Скачать**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L35 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **API, совместимый с OpenAI** — Бесшовная интеграция с AI Agent可视化面板系统
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -14369,13 +14369,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Сообщить об Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Сообщить об Issue</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Сообщить об Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Сообщить об Issue</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Мульти-движковая архитектура** — Поддержка AI Agent可视化面板系统 и Hermes Agent, свободное переключение, независимое управление
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -14383,13 +14383,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L87 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Внутренняя тестовая платформа, совместимая с OpenAI
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Перейдите на [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) для последней версии:
+  - Перейдите на [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) для последней версии:
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Перейдите на [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) для последней версии:
+  - Перейдите на [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) для последней версии:
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -14397,39 +14397,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Начальная настройка** — При первом запуске автоопределение Node.js, Git, AI Agent可视化面板系统. Установка одним кликом при необходимости
 - L139 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L139 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L140 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L155 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | Фреймворк AI-агентов |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | Фреймворк AI-агентов |
 - L156 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Кроссплатформенный мобильный чат |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Кроссплатформенный мобильный чат |
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Инструмент Cloudflare Tunnel |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Инструмент Cloudflare Tunnel |
 - L176 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L177 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L177 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L178 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### README.vi.md
 - total: 54
@@ -14439,41 +14439,41 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   Bảng quản lý AI Agent可视化面板系统 & Hermes Agent với Trợ lý AI tích hợp — Quản lý đa động cơ AI Framework
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 Showcase">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 là bảng quản lý trực quan hỗ trợ nhiều AI Agent framework, hiện tại hỗ trợ [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) và [Hermes Agent](https://github.com/nousresearch/hermes-agent) động cơ kép. Tích hợp **trợ lý AI thông mi…
+  - AI Agent面板 là bảng quản lý trực quan hỗ trợ nhiều AI Agent framework, hiện tại hỗ trợ [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) và [Hermes Agent](https://github.com/agentai2026/AI-Agent) động cơ kép. Tích hợp **trợ lý AI thông mi…
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 là bảng quản lý trực quan hỗ trợ nhiều AI Agent framework, hiện tại hỗ trợ [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) và [Hermes Agent](https://github.com/nousresearch/hermes-agent) động cơ kép. Tích hợp **trợ lý AI thông mi…
+  - AI Agent面板 là bảng quản lý trực quan hỗ trợ nhiều AI Agent framework, hiện tại hỗ trợ [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) và [Hermes Agent](https://github.com/agentai2026/AI-Agent) động cơ kép. Tích hợp **trợ lý AI thông mi…
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **Website**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **Website**: [https://github.com/agentai2026/AI-Agent) | 📦 **Tải xuống**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L35 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - ### 🎁 AgentAI2026 AI API
 - L40 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent AgentAI2026 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="AgentAI2026 AI"></a>
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **API tương thích OpenAI** — Tích hợp liền mạch với AI Agent可视化面板系统
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -14481,13 +14481,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Báo cáo Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Báo cáo Issue</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>Báo cáo Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>Báo cáo Issue</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 Kiến trúc đa động cơ** — Hỗ trợ cả AI Agent可视化面板系统 và Hermes Agent, chuyển đổi tự do, quản lý độc lập
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -14495,13 +14495,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L87 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **AgentAI2026 AI API** — Nền tảng kiểm thử nội bộ, tương thích OpenAI
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - Truy cập [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) để tải phiên bản mới nhất:
+  - Truy cập [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) để tải phiên bản mới nhất:
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - Truy cập [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) để tải phiên bản mới nhất:
+  - Truy cập [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) để tải phiên bản mới nhất:
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -14509,39 +14509,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **Thiết lập ban đầu** — Lần chạy đầu tự động phát hiện Node.js, Git, AI Agent可视化面板系统. Cài đặt một cú nhấp nếu thiếu
 - L139 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L139 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L140 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L155 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | Framework AI Agent |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | Framework AI Agent |
 - L156 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | Ứng dụng chat di động đa nền tảng |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | Ứng dụng chat di động đa nền tảng |
 - L157 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Công cụ Cloudflare Tunnel |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Công cụ Cloudflare Tunnel |
 - L176 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L177 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L177 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L178 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L184 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### README.zh-TW.md
 - total: 51
@@ -14551,37 +14551,37 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   內建 AI 助手的 AI Agent可视化面板系统 & Hermes Agent 管理面板 — 多引擎 AI 框架管理
 - L14 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L14 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L15 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L15 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/v/release/AgentAI2026/AI Agent面板?style=flat-square&color=6366f1" alt="Release">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板?style=flat-square&color=6366f1" alt="Release">
 - L17 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L17 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/releases/latest">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/releases/latest">
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     <img src="https://img.shields.io/github/downloads/AgentAI2026/AI Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  -     <img src="https://github.com/agentai2026/AI-Agent Agent面板/total?style=flat-square&color=8b5cf6" alt="Downloads">
 - L20 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L20 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/blob/main/LICENSE">
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/LICENSE">
 - L28 [DOC_TEXT] AI Agent面板 → AI Agent面板
   -   <img src="docs/feature-showcase.gif" width="800" alt="AI Agent面板 功能展示">
 - L31 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - AI Agent面板 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 雙引擎。**內建智慧 AI 助手**，幫你一鍵安裝、自動診斷設定、排查問題、修復錯誤。8 大工具 + 4 種模式 + 互動式問答，從新手到老手都能輕鬆管理。
+  - AI Agent面板 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 雙引擎。**內建智慧 AI 助手**，幫你一鍵安裝、自動診斷設定、排查問題、修復錯誤。8 大工具 + 4 種模式 + 互動式問答，從新手到老手都能輕鬆管理。
 - L31 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - AI Agent面板 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 雙引擎。**內建智慧 AI 助手**，幫你一鍵安裝、自動診斷設定、排查問題、修復錯誤。8 大工具 + 4 種模式 + 互動式問答，從新手到老手都能輕鬆管理。
+  - AI Agent面板 是支援多 AI Agent 框架的視覺化管理面板，目前支援 [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) 和 [Hermes Agent](https://github.com/agentai2026/AI-Agent) 雙引擎。**內建智慧 AI 助手**，幫你一鍵安裝、自動診斷設定、排查問題、修復錯誤。8 大工具 + 4 種模式 + 互動式問答，從新手到老手都能輕鬆管理。
 - L33 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - > 🌐 **官網**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **下載**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **官網**: [https://github.com/agentai2026/AI-Agent) | 📦 **下載**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - > 🌐 **官網**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **下載**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **官網**: [https://github.com/agentai2026/AI-Agent) | 📦 **下載**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L33 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - > 🌐 **官網**: [http://localhost:3456](https://http://localhost:3456/) | 📦 **下載**: [GitHub Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest)
+  - > 🌐 **官網**: [https://github.com/agentai2026/AI-Agent) | 📦 **下載**: [GitHub Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest)
 - L44 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **相容 OpenAI 介面** — 無縫對接 AI Agent可视化面板系统，即開即用
 - L53 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -14589,25 +14589,25 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [DOC_TEXT] AgentAI2026 → AgentAI2026
   - - **Docker ARM64** — `docker run ghcr.io/AgentAI2026/AI Agent可视化面板系统:latest`
 - L64 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L64 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/discussions"><strong>Discussions</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/discussions"><strong>Discussions</strong></a>
 - L66 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>回報 Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>回報 Issue</strong></a>
 - L66 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -   <a href="https://github.com/AgentAI2026/AI Agent面板/issues/new"><strong>回報 Issue</strong></a>
+  -   <a href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new"><strong>回報 Issue</strong></a>
 - L72 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **🧩 多引擎架構** — 同時支援 AI Agent可视化面板系统 和 Hermes Agent 雙引擎，自由切換，各自獨立管理
 - L76 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **服務管理** — AI Agent可视化面板系统 / Hermes Gateway 啟停控制、版本偵測與一鍵升級
 - L93 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 前往 [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) 下載最新版本：
+  - 前往 [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) 下載最新版本：
 - L93 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - 前往 [Releases](https://github.com/AgentAI2026/AI Agent面板/releases/latest) 下載最新版本：
+  - 前往 [Releases](https://github.com/agentai2026/AI-Agent Agent面板/releases/latest) 下載最新版本：
 - L105 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L105 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/scripts/linux-deploy.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/scripts/linux-deploy.sh | bash
 - L111 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - docker run -d --name AI Agent面板 --restart unless-stopped \
 - L112 [DOC_TEXT] AI Agent面板 → AI Agent面板
@@ -14615,39 +14615,39 @@ This file is generated. It lists candidate display-text replacements with line n
 - L112 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   -p 1420:1420 -v AI Agent面板-data:/root/.AI Agent可视化面板系统 \
 - L115 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L115 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com && \
+  -     npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent && \
 - L116 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L116 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  -     git clone https://github.com/AgentAI2026/AI Agent面板.git /app && \
+  -     git clone https://github.com/agentai2026/AI-Agent Agent面板.git /app && \
 - L122 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 1. **初始設定** — 首次啟動自動偵測 Node.js、Git、AI Agent可视化面板系统。未安裝則一鍵安裝
 - L152 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L152 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - git clone https://github.com/AgentAI2026/AI Agent面板.git
+  - git clone https://github.com/agentai2026/AI-Agent Agent面板.git
 - L153 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - cd AI Agent面板 && npm install
 - L168 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - | [AI Agent可视化面板系统](https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation) | AI Agent 框架 |
+  - | [AI Agent可视化面板系统](https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation) | AI Agent 框架 |
 - L169 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [ClawApp](https://github.com/AgentAI2026/clawapp) | 跨平台行動聊天客戶端 |
+  - | [ClawApp](https://github.com/agentai2026/AI-Agent) | 跨平台行動聊天客戶端 |
 - L170 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - | [cftunnel](https://github.com/AgentAI2026/cftunnel) | Cloudflare Tunnel 工具 |
+  - | [cftunnel](https://github.com/agentai2026/AI-Agent) | Cloudflare Tunnel 工具 |
 - L189 [DOC_TEXT] QQ: 255258448 → QQ: 255258448
   - - **Email**: [QQ: 255258448](mailto:QQ: 255258448)
 - L190 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L190 [DOC_TEXT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/AgentAI2026/AI-Agent)
+  - - **Website**: [github.com/AgentAI2026/AI-Agent](https://github.com/agentai2026/AI-Agent)
 - L191 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - - **Product**: [http://localhost:3456](https://http://localhost:3456)
+  - - **Product**: [https://github.com/agentai2026/AI-Agent)
 - L197 [DOC_TEXT] http://localhost:3456 → http://localhost:3456
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 - L197 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - © 2026 AgentAI2026 | [http://localhost:3456](https://http://localhost:3456)
+  - © 2026 AgentAI2026 | [https://github.com/agentai2026/AI-Agent)
 
 ### scripts/brand-replace/brand_replace_report.cjs
 - total: 10
@@ -15065,9 +15065,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1604 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   return path.join(AI Agent可视化面板系统_DIR, 'workspace')
 - L1664 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     $schema: 'https://AI Agent可视化面板系统.ai/schema/config.json',
+  -     $schema: 'https://github.com/agentai2026/AI-Agent Agent可视化面板系统.ai/schema/config.json',
 - L1724 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   config.$schema = 'https://AI Agent可视化面板系统.ai/schema/config.json'
+  -   config.$schema = 'https://github.com/agentai2026/AI-Agent Agent可视化面板系统.ai/schema/config.json'
 - L1775 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - function calibrateAI Agent可视化面板系统Config(mode = 'inherit') {
 - L1780 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -15403,9 +15403,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L5682 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   async upgrade_AI Agent可视化面板系统({ source = 'chinese', version, method = 'auto' } = {}) {
 - L5696 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       const githubReleaseBase = `https://github.com/AgentAI2026/AI Agent可视化面板系统-standalone/releases/download/v${ver}`
+  -       const githubReleaseBase = `https://github.com/agentai2026/AI-Agent Agent可视化面板系统-standalone/releases/download/v${ver}`
 - L5696 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       const githubReleaseBase = `https://github.com/AgentAI2026/AI Agent可视化面板系统-standalone/releases/download/v${ver}`
+  -       const githubReleaseBase = `https://github.com/agentai2026/AI-Agent Agent可视化面板系统-standalone/releases/download/v${ver}`
 - L5743 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -       logs.push(`AI Agent面板 ${PANEL_VERSION} 默认绑定 AI Agent可视化面板系统 稳定版: ${recommended}`)
 - L5743 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -15521,19 +15521,19 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6422 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     if (!fs.existsSync(AI Agent可视化面板系统_DIR)) fs.mkdirSync(AI Agent可视化面板系统_DIR, { recursive: true })
 - L6446 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -       { api: 'https://api.github.com/repos/AgentAI2026/AI Agent面板/releases/latest', releases: 'https://github.com/AgentAI2026/AI Agent面板/releases', name: 'github' },
+  -       { api: 'https://github.com/agentai2026/AI-Agent Agent面板/releases/latest', releases: 'https://github.com/agentai2026/AI-Agent Agent面板/releases', name: 'github' },
 - L6446 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       { api: 'https://api.github.com/repos/AgentAI2026/AI Agent面板/releases/latest', releases: 'https://github.com/AgentAI2026/AI Agent面板/releases', name: 'github' },
+  -       { api: 'https://github.com/agentai2026/AI-Agent Agent面板/releases/latest', releases: 'https://github.com/agentai2026/AI-Agent Agent面板/releases', name: 'github' },
 - L6447 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -       { api: 'https://gitee.com/api/v5/repos/QtCodeCreators/AI Agent面板/releases/latest', releases: 'https://gitee.com/QtCodeCreators/AI Agent面板/releases', name: 'gitee' },
+  -       { api: 'https://github.com/agentai2026/AI-Agent Agent面板/releases/latest', releases: 'https://github.com/agentai2026/AI-Agent Agent面板/releases', name: 'gitee' },
 - L6454 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -           headers: { 'User-Agent': 'AI Agent面板' },
 - L6460 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         return { latest: tag, url: json.html_url || src.releases, source: src.name, downloadUrl: 'https://http://localhost:3456' }
+  -         return { latest: tag, url: json.html_url || src.releases, source: src.name, downloadUrl: 'https://github.com/agentai2026/AI-Agent' }
 - L6463 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -     return { latest: null, url: 'https://github.com/AgentAI2026/AI Agent面板/releases', error: lastErr }
+  -     return { latest: null, url: 'https://github.com/agentai2026/AI-Agent Agent面板/releases', error: lastErr }
 - L6463 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -     return { latest: null, url: 'https://github.com/AgentAI2026/AI Agent面板/releases', error: lastErr }
+  -     return { latest: null, url: 'https://github.com/agentai2026/AI-Agent Agent面板/releases', error: lastErr }
 - L6468 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     if (!expanded.startsWith(AI Agent可视化面板系统_DIR)) throw new Error(`只允许写入 ${AI Agent可视化面板系统_DIR} 下的文件`)
 - L6623 [LIKELY_STRING] AI Agent面板 → AI Agent面板
@@ -15751,11 +15751,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - echo "  在 Linux 上通过浏览器管理 AI Agent可视化面板系统"
 - L11 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - REPO_URL="https://github.com/AgentAI2026/AI Agent面板.git"
+  - REPO_URL="https://github.com/agentai2026/AI-Agent Agent面板.git"
 - L11 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - REPO_URL="https://github.com/AgentAI2026/AI Agent面板.git"
+  - REPO_URL="https://github.com/agentai2026/AI-Agent Agent面板.git"
 - L12 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - REPO_URL_GITEE="https://gitee.com/QtCodeCreators/AI Agent面板.git"
+  - REPO_URL_GITEE="https://github.com/agentai2026/AI-Agent Agent面板.git"
 - L18 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -     INSTALL_DIR="/opt/AI Agent面板"
 - L23 [LIKELY_STRING] AI Agent面板 → AI Agent面板
@@ -15805,17 +15805,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L190 [LIKELY_STRING] AgentAI2026 → AgentAI2026
   -             npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry "$NPM_REGISTRY" || \
 - L191 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmjs.org
+  -             npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L191 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmjs.org
+  -             npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L193 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             sudo -E npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry "$NPM_REGISTRY" || \
 - L193 [LIKELY_STRING] AgentAI2026 → AgentAI2026
   -             sudo -E npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry "$NPM_REGISTRY" || \
 - L194 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             sudo -E npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmjs.org
+  -             sudo -E npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L194 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             sudo -E npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmjs.org
+  -             sudo -E npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent
 - L196 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         echo "✅ AI Agent可视化面板系统 安装完成"
 - L200 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -16525,9 +16525,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 4
 - kinds: DOC_TEXT=4
 - L18 [DOC_TEXT] AI Agent面板 → AI Agent面板
-  - 2. 或使用 [GitHub Security Advisories](https://github.com/AgentAI2026/AI Agent面板/security/advisories/new) 私下报告
+  - 2. 或使用 [GitHub Security Advisories](https://github.com/agentai2026/AI-Agent Agent面板/security/advisories/new) 私下报告
 - L18 [DOC_TEXT] AgentAI2026 → AgentAI2026
-  - 2. 或使用 [GitHub Security Advisories](https://github.com/AgentAI2026/AI Agent面板/security/advisories/new) 私下报告
+  - 2. 或使用 [GitHub Security Advisories](https://github.com/agentai2026/AI-Agent Agent面板/security/advisories/new) 私下报告
 - L36 [DOC_TEXT] AI Agent面板 → AI Agent面板
   - 使用 AI Agent面板 时，建议注意以下安全事项：
 - L40 [DOC_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -16551,13 +16551,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - L6 [LIKELY_STRING] AgentAI2026 → AgentAI2026
   - authors = ["AgentAI2026"]
 - L7 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - repository = "https://github.com/AgentAI2026/AI Agent面板"
+  - repository = "https://github.com/agentai2026/AI-Agent Agent面板"
 - L7 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - repository = "https://github.com/AgentAI2026/AI Agent面板"
+  - repository = "https://github.com/agentai2026/AI-Agent Agent面板"
 - L8 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - homepage = "https://github.com/AgentAI2026/AI Agent面板"
+  - homepage = "https://github.com/agentai2026/AI-Agent Agent面板"
 - L8 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - homepage = "https://github.com/AgentAI2026/AI Agent面板"
+  - homepage = "https://github.com/agentai2026/AI-Agent Agent面板"
 - L12 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   - name = "AI Agent面板_lib"
 
@@ -16731,9 +16731,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L866 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     super::AI Agent可视化面板系统_dir()
 - L1012 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         "$schema": "https://AI Agent可视化面板系统.ai/schema/config.json",
+  -         "$schema": "https://github.com/agentai2026/AI-Agent Agent可视化面板系统.ai/schema/config.json",
 - L1093 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         Value::String("https://AI Agent可视化面板系统.ai/schema/config.json".into()),
+  -         Value::String("https://github.com/agentai2026/AI-Agent Agent可视化面板系统.ai/schema/config.json".into()),
 - L1267 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - pub fn calibrate_AI Agent可视化面板系统_config(mode: String) -> Result<Value, String> {
 - L1274 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -17113,9 +17113,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L3530 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - async fn upgrade_AI Agent可视化面板系统_inner(
 - L3557 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             "https://github.com/AgentAI2026/AI Agent可视化面板系统-standalone/releases/download/v{}",
+  -             "https://github.com/agentai2026/AI-Agent Agent可视化面板系统-standalone/releases/download/v{}",
 - L3557 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             "https://github.com/AgentAI2026/AI Agent可视化面板系统-standalone/releases/download/v{}",
+  -             "https://github.com/agentai2026/AI-Agent Agent可视化面板系统-standalone/releases/download/v{}",
 - L3636 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -                     "AI Agent面板 {} 默认绑定 AI Agent可视化面板系统 稳定版: {}",
 - L3636 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -17255,19 +17255,19 @@ This file is generated. It lists candidate display-text replacements with line n
 - L5827 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -         crate::commands::build_http_client(std::time::Duration::from_secs(8), Some("AI Agent面板"))
 - L5833 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             "https://api.github.com/repos/AgentAI2026/AI Agent面板/releases/latest",
+  -             "https://github.com/agentai2026/AI-Agent Agent面板/releases/latest",
 - L5833 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             "https://api.github.com/repos/AgentAI2026/AI Agent面板/releases/latest",
+  -             "https://github.com/agentai2026/AI-Agent Agent面板/releases/latest",
 - L5834 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             "https://github.com/AgentAI2026/AI Agent面板/releases",
+  -             "https://github.com/agentai2026/AI-Agent Agent面板/releases",
 - L5834 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             "https://github.com/AgentAI2026/AI Agent面板/releases",
+  -             "https://github.com/agentai2026/AI-Agent Agent面板/releases",
 - L5838 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             "https://gitee.com/api/v5/repos/QtCodeCreators/AI Agent面板/releases/latest",
+  -             "https://github.com/agentai2026/AI-Agent Agent面板/releases/latest",
 - L5839 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             "https://gitee.com/QtCodeCreators/AI Agent面板/releases",
+  -             "https://github.com/agentai2026/AI-Agent Agent面板/releases",
 - L5876 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -                     Value::String("https://http://localhost:3456".into()),
+  -                     Value::String("https://github.com/agentai2026/AI-Agent".into()),
 - L5892 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
   - // === 面板配置 (AI Agent面板.json) ===
 - L5894 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -17337,13 +17337,13 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 4
 - kinds: LIKELY_COMMENT=4
 - L348 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/cftunnel/main/install.sh -o cftunnel-install.sh
+  - curl -fsSL https://github.com/agentai2026/AI-Agent -o cftunnel-install.sh
 - L370 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/AgentAI2026/cftunnel/main/install.ps1' -OutFile $tmp -UseBasicParsing
+  - Invoke-WebRequest -Uri 'https://github.com/agentai2026/AI-Agent' -OutFile $tmp -UseBasicParsing
 - L456 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - curl -fsSL https://raw.githubusercontent.com/AgentAI2026/clawapp/main/install.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent | bash
 - L475 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/AgentAI2026/clawapp/main/install.ps1' -OutFile $tmp -UseBasicParsing
+  - Invoke-WebRequest -Uri 'https://github.com/agentai2026/AI-Agent' -OutFile $tmp -UseBasicParsing
 
 ### src-tauri/src/commands/hermes.rs
 - total: 14
@@ -17453,7 +17453,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1188 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         .join("AI Agent可视化面板系统-weixin");
 - L1211 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         .get("https://registry.npmjs.org/@tencent-weixin/AI Agent可视化面板系统-weixin/latest")
+  -         .get("https://github.com/agentai2026/AI-Agent Agent可视化面板系统-weixin/latest")
 - L1236 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     // 兼容性检查：微信插件要求 AI Agent可视化面板系统 >= 2026.3.22，通过版本号判断
 - L1240 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -17535,7 +17535,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1640 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -                     let _ = super::config::save_AI Agent可视化面板系统_json(&cfg);
 - L1664 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - const QQ_AI Agent可视化面板系统_FAQ_URL: &str = "https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html";
+  - const QQ_AI Agent可视化面板系统_FAQ_URL: &str = "https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html";
 - L1666 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - /// AI Agent可视化面板系统 配置 schema 中 `plugins.entries` / `plugins.allow` 的合法 QQ 插件键。
 - L1667 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -17711,9 +17711,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L3025 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             let _ = app.emit("plugin-log", "请先升级 AI Agent可视化面板系统 到最新版，再安装此插件：");
 - L3030 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com");
+  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent");
 - L3030 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com");
+  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent");
 - L3041 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             return Err("插件安装失败：当前 AI Agent可视化面板系统 版本过低，请先升级后重试".into());
 - L3054 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -17751,9 +17751,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L3210 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         let _ = app.emit("plugin-log", "请在终端手动执行以下命令重装 AI Agent可视化面板系统：");
 - L3211 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com");
+  -         let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent");
 - L3211 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com");
+  -         let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent");
 - L3221 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         return Err("AI Agent可视化面板系统 CLI 原生依赖缺失，请先在终端重装 AI Agent可视化面板系统（详见上方日志）".into());
 - L3228 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -17763,9 +17763,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L3235 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             let _ = app.emit("plugin-log", "请先升级 AI Agent可视化面板系统 到最新版，再安装此插件：");
 - L3240 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com");
+  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent");
 - L3240 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com");
+  -             let _ = app.emit("plugin-log", "  npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent");
 - L3244 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -                 "AI Agent可视化面板系统 plugins install 未成功结束，正在回退",
 - L3256 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -18193,7 +18193,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L9 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     super::AI Agent可视化面板系统_dir().join("AI Agent面板").join("web-update")
 - L13 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  - const LATEST_JSON_URL: &str = "https://http://localhost:3456/update/latest.json";
+  - const LATEST_JSON_URL: &str = "https://github.com/agentai2026/AI-Agent";
 - L18 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -     let client = super::build_http_client(std::time::Duration::from_secs(10), Some("AI Agent面板"))
 - L77 [LIKELY_STRING] AI Agent面板 → AI Agent面板
@@ -18413,19 +18413,19 @@ This file is generated. It lists candidate display-text replacements with line n
 - L20 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -   todayDismiss: 'AI Agent面板_engage_today',
 - L91 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -         <a class="engage-action-card" href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener">
+  -         <a class="engage-action-card" href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener">
 - L91 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <a class="engage-action-card" href="https://github.com/AgentAI2026/AI Agent面板" target="_blank" rel="noopener">
+  -         <a class="engage-action-card" href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener">
 - L113 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <a class="engage-qr-item" href="https://qt.cool/c/AI Agent可视化面板系统" target="_blank" rel="noopener">
+  -         <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统" target="_blank" rel="noopener">
 - L114 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -           <img src="/images/AI Agent可视化面板系统-QQ.png" alt="${t('engagement.qqAlt')}" />
 - L117 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <a class="engage-qr-item" href="https://qt.cool/c/AI Agent可视化面板系统Wx" target="_blank" rel="noopener">
+  -         <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统Wx" target="_blank" rel="noopener">
 - L118 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -           <img src="/images/AI Agent可视化面板系统Wx.png" alt="${t('engagement.wechatAlt')}" />
 - L121 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <a class="engage-qr-item" href="https://qt.cool/c/AI Agent可视化面板系统DY" target="_blank" rel="noopener">
+  -         <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统DY" target="_blank" rel="noopener">
 - L122 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -           <img src="/images/AI Agent可视化面板系统-DY.png" alt="${t('engagement.douyinAlt')}" />
 
@@ -18449,7 +18449,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L186 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   const navItems = engine ? engine.getNavItems() : (isAI Agent可视化面板系统Ready() ? NAV_ITEMS_FULL() : NAV_ITEMS_SETUP())
 - L243 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <a href="https://http://localhost:3456" target="_blank" rel="noopener" class="sidebar-link">http://localhost:3456</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" class="sidebar-link">http://localhost:3456</a>
 
 ### src/engines/AI Agent可视化面板系统/index.js
 - total: 13
@@ -18539,9 +18539,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 13
 - kinds: LIKELY_COMMENT=7, LIKELY_STRING=6
 - L6 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - const NPM_CMD = 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com'
+  - const NPM_CMD = 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent'
 - L6 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - const NPM_CMD = 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://registry.npmmirror.com'
+  - const NPM_CMD = 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --registry https://github.com/agentai2026/AI-Agent'
 - L20 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -     : 'GitHub SSH 认证失败。AI Agent面板 已尝试自动配置 HTTPS 替代，但可能未生效。请在终端手动执行：'
 - L38 [LIKELY_STRING] AI Agent面板 → AI Agent面板
@@ -18551,17 +18551,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L53 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       hint: 'AI Agent可视化面板系统 的原生模块未正确安装。这通常是 npm optional dependencies 的 bug。请尝试在终端手动重装：',
 - L54 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       command: 'npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com',
+  -       command: 'npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent',
 - L54 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       command: 'npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://registry.npmmirror.com',
+  -       command: 'npm i -g @AgentAI2026/AI Agent可视化面板系统-zh@latest --registry https://github.com/agentai2026/AI-Agent',
 - L73 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -       hint: '旧版本的 AI Agent可视化面板系统 命令文件仍然存在。AI Agent面板 已尝试自动清理，如仍失败请手动处理后重试：',
 - L73 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       hint: '旧版本的 AI Agent可视化面板系统 命令文件仍然存在。AI Agent面板 已尝试自动清理，如仍失败请手动处理后重试：',
 - L74 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -       command: 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --force --registry https://registry.npmmirror.com',
+  -       command: 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --force --registry https://github.com/agentai2026/AI-Agent',
 - L74 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       command: 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --force --registry https://registry.npmmirror.com',
+  -       command: 'npm install -g @AgentAI2026/AI Agent可视化面板系统-zh --force --registry https://github.com/agentai2026/AI-Agent',
 - L149 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       hint: '当前 Node.js 版本过低，AI Agent可视化面板系统 需要 Node.js 18 或更高版本。\n请升级 Node.js：',
 
@@ -18635,9 +18635,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 7
 - kinds: LIKELY_COMMENT=2, LIKELY_STRING=5
 - L6 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - const GITHUB_ORG = 'https://github.com/AgentAI2026'
+  - const GITHUB_ORG = 'https://github.com/agentai2026/AI-Agent'
 - L8 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - const GITHUB_RAW = 'https://raw.githubusercontent.com/AgentAI2026'
+  - const GITHUB_RAW = 'https://github.com/agentai2026/AI-Agent'
 - L13 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -   AI Agent面板: 'AI Agent面板',
 - L16 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -18661,7 +18661,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 4
 - kinds: LIKELY_COMMENT=2, LIKELY_STRING=1, MANUAL_REVIEW=1
 - L20 [LIKELY_COMMENT] AI Agent → AI Agent
-  -   { key: 'qtcool', label: 'AI Agent', badge: '推荐', baseUrl: 'https://gpt.qt.cool/v1', api: 'openai-completions', site: 'https://gpt.qt.cool/', desc: '每日签到领免费模型测试额度，邀请好友再送额度，付费低至官方价 2-3 折' },
+  -   { key: 'qtcool', label: 'AI Agent', badge: '推荐', baseUrl: 'https://github.com/agentai2026/AI-Agent', api: 'openai-completions', site: 'https://github.com/agentai2026/AI-Agent', desc: '每日签到领免费模型测试额度，邀请好友再送额度，付费低至官方价 2-3 折' },
 - L39 [LIKELY_COMMENT] AI Agent → AI Agent
   - // AI Agent配置
 - L47 [LIKELY_STRING] AI Agent → AI Agent
@@ -18675,7 +18675,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L2 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -  * AI Agent可视化面板系统 内置知识库
 - L3 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -  * 来源：https://AI Agent可视化面板系统cn.com/docs/
+  -  * 来源：https://github.com/agentai2026/AI-Agent Agent可视化面板系统cn.com/docs/
 - L4 [MANUAL_REVIEW] AI Agent面板 → AI Agent面板
   -  * 供 AI Agent面板 AI 助手在系统提示词中使用
 - L7 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -18767,9 +18767,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L173 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **旧版导入**：\`~/.AI Agent可视化面板系统/credentials/oauth.json\`
 - L178 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - curl -fsSL https://AI Agent可视化面板系统.ai/install.sh | bash
+  - curl -fsSL https://github.com/agentai2026/AI-Agent Agent可视化面板系统.ai/install.sh | bash
 - L182 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - iwr -useb https://AI Agent可视化面板系统.ai/install.ps1 | iex
+  - iwr -useb https://github.com/agentai2026/AI-Agent Agent可视化面板系统.ai/install.ps1 | iex
 - L186 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - npm install -g AI Agent可视化面板系统@latest
 - L191 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -18795,9 +18795,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L223 [MANUAL_REVIEW] AI Agent面板 → AI Agent面板
   - AI Agent为 AI Agent面板 用户提供 AI 模型调用服务，通过每日签到和邀请好友即可获取免费额度。
 - L234 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  - - **AI Agent面板 官网**：https://http://localhost:3456/
+  - - **AI Agent面板 官网**：https://github.com/agentai2026/AI-Agent
 - L234 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - - **AI Agent面板 官网**：https://http://localhost:3456/
+  - - **AI Agent面板 官网**：https://github.com/agentai2026/AI-Agent
 - L251 [MANUAL_REVIEW] AI Agent面板 → AI Agent面板
   - ### 在 AI Agent面板 中配置
 
@@ -18905,7 +18905,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "AI Agent可视化面板系统-Agenten erstellen und verwalten",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -18917,9 +18917,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "AI Agent可视化面板系统-Aufgaben verwalten",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19041,7 +19041,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19135,7 +19135,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L471 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Create and manage AI Agent可视化面板系统 Agents, configure identity, model and workspace",
 - L821 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L888 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L889 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19147,9 +19147,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1065 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L1074 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L1092 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1221 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "loadFailedHint": "You may need to update AI Agent可视化面板系统 to 2026.3.11+ for Usage API support",
 - L1263 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19267,7 +19267,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1859 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1864 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1871 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1871 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19359,7 +19359,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Crear y gestionar AI Agent可视化面板系统 Agents",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19371,9 +19371,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Gestionar tareas programadas de AI Agent可视化面板系统",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19495,7 +19495,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19587,7 +19587,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Créer et gérer les Agents AI Agent可视化面板系统",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19599,9 +19599,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Gérer les tâches planifiées AI Agent可视化面板系统",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19723,7 +19723,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19819,7 +19819,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L511 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "AI Agent可视化面板系统 Gateway サービスの設定と管理",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19831,9 +19831,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "AI Agent可视化面板系统 の定期タスクを管理",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -19955,7 +19955,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 はオープンソースプロジェクトです。Issue や PR を歓迎します！",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -20051,7 +20051,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L511 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "AI Agent可视化面板系统 Gateway 서비스 설정 및 관리",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -20063,9 +20063,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "AI Agent可视化面板系统 정기 작업 관리",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -20187,7 +20187,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板은 오픈소스 프로젝트입니다. Issue와 PR을 환영합니다!",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -20281,7 +20281,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L127 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -   contributeDesc: _('AI Agent面板 是开源项目，欢迎参与贡献！遇到问题请提 Issue，功能建议和代码改进欢迎提 PR。', 'AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.', 'AI Agent面板 是開源項目，欢迎參與貢獻！遇到問題請提 Issue，功能建議和代碼改進欢迎提 PR。', 'AI Agent面板 はオープンソースプ…
 - L132 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -   domesticMirrorHint: _('国内镜像：<a href="https://gitee.com/QtCodeCreators/AI Agent面板" target="_blank" rel="noopener" style="color:var(--accent)">Gitee</a>（无法访问 GitHub 时可用）', 'China mirror: <a href="https://gitee.com/QtCodeCreators/AI Agent面板" target="_blank" rel="…
+  -   domesticMirrorHint: _('国内镜像：<a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="noopener" style="color:var(--accent)">Gitee</a>（无法访问 GitHub 时可用）', 'China mirror: <a href="https://github.com/agentai2026/AI-Agent Agent面板" target="_blank" rel="…
 - L139 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -   companyDesc: _('我们是 AI Agent可视化面板系统 汉化版（3000+ Star）和 AI Agent面板 的作者团队。日常做 AI Agent 相关的产品和开源工具，也接企业私有化部署、定制开发之类的活儿。有事直接群里找我们就行。', 'We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and o…
 - L139 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -20357,7 +20357,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 8
 - kinds: LIKELY_COMMENT=3, LIKELY_STRING=5
 - L28 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   qqbotGuideFooter: _('<div style="margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)">遇到问题？参考 <a href="https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html" target="_blank" rel="noopener">AI Agent可视化面板系统 × QQ 常见问题</a></div>', '<div style="margin-top:8px;fon…
+  -   qqbotGuideFooter: _('<div style="margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)">遇到问题？参考 <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html" target="_blank" rel="noopener">AI Agent可视化面板系统 × QQ 常见问题</a></div>', '<div style="margin-top:8px;fon…
 - L95 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   weixinDesc: _('通过 AI Agent可视化面板系统-weixin 插件接入个人微信', 'Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin', '通過 AI Agent可视化面板系统-weixin 外掛接入個人微信'),
 - L96 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -20369,9 +20369,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L282 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   pairingApprovalHint: _('当机器人提示 <code>access not configured</code>、<code>Pairing code</code> 或要求执行 <code>AI Agent可视化面板系统 pairing approve</code> 时，可直接在这里完成批准。', 'When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>op…
 - L291 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   qqDiagHint: _('检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href="https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html" target="_blank" rel="noopener">AI Agent可视化面板系统 × QQ 常见问题</a>。', '检查<strong>已保存到配置…
+  -   qqDiagHint: _('检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html" target="_blank" rel="noopener">AI Agent可视化面板系统 × QQ 常见问题</a>。', '检查<strong>已保存到配置…
 - L309 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   qqVerifyNote: _('此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href="https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html" target="_blank" rel="noopener">QQ AI Agent可视化面板系统 常见问题</a>。', '此项只验证 AppID/Secret 能否向腾讯…
+  -   qqVerifyNote: _('此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html" target="_blank" rel="noopener">QQ AI Agent可视化面板系统 常见问题</a>。', '此项只验证 AppID/Secret 能否向腾讯…
 
 ### src/locales/modules/chat-debug.js
 - total: 11
@@ -20477,11 +20477,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 7
 - kinds: LIKELY_COMMENT=3, LIKELY_STRING=4
 - L4 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -   shareText: _('推荐一个开源的 AI Agent可视化面板系统 管理面板 — AI Agent面板，一键搭建、便捷管理模型和 Agent，还内置 AI 助手帮你排查问题，小白也能轻松上手：https://http://localhost:3456', 'Recommend an open-source AI Agent可视化面板系统 management panel — AI Agent面板. It helps you set up quickly, manage models and Agents easily, and even include…
+  -   shareText: _('推荐一个开源的 AI Agent可视化面板系统 管理面板 — AI Agent面板，一键搭建、便捷管理模型和 Agent，还内置 AI 助手帮你排查问题，小白也能轻松上手：https://github.com/agentai2026/AI-Agent', 'Recommend an open-source AI Agent可视化面板系统 management panel — AI Agent面板. It helps you set up quickly, manage models and Agents easily, and even include…
 - L4 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -   shareText: _('推荐一个开源的 AI Agent可视化面板系统 管理面板 — AI Agent面板，一键搭建、便捷管理模型和 Agent，还内置 AI 助手帮你排查问题，小白也能轻松上手：https://http://localhost:3456', 'Recommend an open-source AI Agent可视化面板系统 management panel — AI Agent面板. It helps you set up quickly, manage models and Agents easily, and even include…
+  -   shareText: _('推荐一个开源的 AI Agent可视化面板系统 管理面板 — AI Agent面板，一键搭建、便捷管理模型和 Agent，还内置 AI 助手帮你排查问题，小白也能轻松上手：https://github.com/agentai2026/AI-Agent', 'Recommend an open-source AI Agent可视化面板系统 management panel — AI Agent面板. It helps you set up quickly, manage models and Agents easily, and even include…
 - L4 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   shareText: _('推荐一个开源的 AI Agent可视化面板系统 管理面板 — AI Agent面板，一键搭建、便捷管理模型和 Agent，还内置 AI 助手帮你排查问题，小白也能轻松上手：https://http://localhost:3456', 'Recommend an open-source AI Agent可视化面板系统 management panel — AI Agent面板. It helps you set up quickly, manage models and Agents easily, and even include…
+  -   shareText: _('推荐一个开源的 AI Agent可视化面板系统 管理面板 — AI Agent面板，一键搭建、便捷管理模型和 Agent，还内置 AI 助手帮你排查问题，小白也能轻松上手：https://github.com/agentai2026/AI-Agent', 'Recommend an open-source AI Agent可视化面板系统 management panel — AI Agent面板. It helps you set up quickly, manage models and Agents easily, and even include…
 - L5 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -   title: _('感谢你使用 AI Agent面板', 'Thanks for using AI Agent面板', '感謝你使用 AI Agent面板', 'AI Agent面板 を使っていただきありがとうございます', 'AI Agent面板을 사용해 주셔서 감사합니다', 'Cảm ơn bạn đã sử dụng AI Agent面板', 'Gracias por usar AI Agent面板', 'Obrigado por usar o AI Agent面板', 'Спасибо, что используе…
 - L6 [LIKELY_STRING] AI Agent → AI Agent
@@ -20805,7 +20805,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Criar e gerenciar AI Agent可视化面板系统 Agents",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -20817,9 +20817,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Gerenciar tarefas agendadas do AI Agent可视化面板系统",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -20941,7 +20941,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21033,7 +21033,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Создание и управление агентами AI Agent可视化面板系统",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21045,9 +21045,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Управление периодическими задачами AI Agent可视化面板系统",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21169,7 +21169,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21261,7 +21261,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Tạo và quản lý AI Agent可视化面板系统 Agent",
 - L720 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L787 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "Connect personal WeChat via the AI Agent可视化面板系统-weixin plugin",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21273,9 +21273,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L964 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "When the bot shows <code>access not configured</code>, <code>Pairing code</code>, or asks to run <code>AI Agent可视化面板系统 pairing approve</code>, you can approve directly here.",
 - L973 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L991 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1042 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "Quản lý tác vụ định kỳ AI Agent可视化面板系统",
 - L1120 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21397,7 +21397,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1758 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 is open source! Report bugs via Issues, submit feature requests and code improvements via PRs.",
 - L1763 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "China mirror: <a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
+  -     "domesticMirrorHint": "China mirror: <a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a> (use when GitHub is inaccessible)",
 - L1770 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "We are the team behind AI Agent可视化面板系统 Chinese Translation (3000+ Stars) and AI Agent面板. We build AI Agent products and open source tools, and offer enterprise deployment and custom development services."
 - L1770 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21499,7 +21499,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L553 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "创建和管理 AI Agent可视化面板系统 Agent，配置身份、模型和工作区",
 - L905 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到问题？参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a></div>",
 - L978 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "通过 AI Agent可视化面板系统-weixin 插件接入个人微信",
 - L979 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21511,9 +21511,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1169 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "当机器人提示 <code>access not configured</code>、<code>Pairing code</code> 或要求执行 <code>AI Agent可视化面板系统 pairing approve</code> 时，可直接在这里完成批准。",
 - L1178 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
+  -     "qqDiagHint": "检查<strong>已保存到配置文件</strong>的凭证、本机 Gateway 端口、<code>/__api/health</code>、QQ 插件与 chatCompletions。QQ 提示「灵魂不在线」时优先看此处，并参考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见问题</a>。",
 - L1198 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
+  -     "qqVerifyNote": "此项只验证 AppID/Secret 能否向腾讯换 token。<strong>不能</strong>代表 QQ 里机器人已在线；若提示「灵魂不在线」，请使用下方 <strong>完整联通诊断</strong> 并对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见问题</a>。",
 - L1328 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "loadFailedHint": "可能需要更新 AI Agent可视化面板系统 到 2026.3.11+ 以支持 Usage API",
 - L1370 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21635,7 +21635,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1966 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 是开源项目，欢迎参与贡献！遇到问题请提 Issue，功能建议和代码改进欢迎提 PR。",
 - L1971 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "国内镜像：<a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a>（无法访问 GitHub 时可用）",
+  -     "domesticMirrorHint": "国内镜像：<a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a>（无法访问 GitHub 时可用）",
 - L1978 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "我们是 AI Agent可视化面板系统 汉化版（3000+ Star）和 AI Agent面板 的作者团队。日常做 AI Agent 相关的产品和开源工具，也接企业私有化部署、定制开发之类的活儿。有事直接群里找我们就行。"
 - L1978 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21741,7 +21741,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L466 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "desc": "建立和管理 AI Agent可视化面板系统 Agent，設定身份、模型和工作區",
 - L721 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到問題？參考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见問題</a></div>",
+  -     "qqbotGuideFooter": "<div style=\"margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)\">遇到問題？參考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见問題</a></div>",
 - L788 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "weixinDesc": "通過 AI Agent可视化面板系统-weixin 外掛接入個人微信",
 - L789 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21753,9 +21753,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - L965 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "pairingApprovalHint": "當機器人提示 <code>access not configured</code>、<code>Pairing code</code> 或要求執行 <code>AI Agent可视化面板系统 pairing approve</code> 時，可直接在這裡完成批準。",
 - L974 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqDiagHint": "檢查<strong>已儲存到設定檔案</strong>的憑證、本機 Gateway 連接埠、<code>/__api/health</code>、QQ 外掛與 chatCompletions。QQ 提示「靈魂不線上」時優先看此處，並參考 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见問題</a>。",
+  -     "qqDiagHint": "檢查<strong>已儲存到設定檔案</strong>的憑證、本機 Gateway 連接埠、<code>/__api/health</code>、QQ 外掛與 chatCompletions。QQ 提示「靈魂不線上」時優先看此處，並參考 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">AI Agent可视化面板系统 × QQ 常见問題</a>。",
 - L992 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     "qqVerifyNote": "此項只驗證 AppID/Secret 能否向腾訊換 token。<strong>不能</strong>代表 QQ 里機器人已線上；若提示「靈魂不線上」，請使用下方 <strong>完整聯通诊斷</strong> 並对照 <a href=\"https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见問題</a>。",
+  -     "qqVerifyNote": "此項只驗證 AppID/Secret 能否向腾訊換 token。<strong>不能</strong>代表 QQ 里機器人已線上；若提示「靈魂不線上」，請使用下方 <strong>完整聯通诊斷</strong> 並对照 <a href=\"https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html\" target=\"_blank\" rel=\"noopener\">QQ AI Agent可视化面板系统 常见問題</a>。",
 - L1121 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     "loadFailedHint": "可能需要更新 AI Agent可视化面板系统 到 2026.3.11+ 以支援 Usage API",
 - L1163 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21875,7 +21875,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1759 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "contributeDesc": "AI Agent面板 是開源項目，欢迎參與貢獻！遇到問題請提 Issue，功能建議和代碼改進欢迎提 PR。",
 - L1764 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
-  -     "domesticMirrorHint": "國內鏡像：<a href=\"https://gitee.com/QtCodeCreators/AI Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a>（無法訪問 GitHub 時可用）",
+  -     "domesticMirrorHint": "國內鏡像：<a href=\"https://github.com/agentai2026/AI-Agent Agent面板\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Gitee</a>（無法訪問 GitHub 時可用）",
 - L1771 [LIKELY_UI_TEXT] AI Agent面板 → AI Agent面板
   -     "companyDesc": "我們是 AI Agent可视化面板系统 漢化版（3000+ Star）和 AI Agent面板 的作者團队。日常做 AI Agent 相關的產品和開源工具，也接企業私有化部署、定制開發之類的活儿。有事直接群里找我們就行。"
 - L1771 [LIKELY_UI_TEXT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21949,7 +21949,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L62 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -       if (sessionStorage.getItem('AI Agent面板_authed') === '1') return { ok: true }
 - L114 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <a href="https://http://localhost:3456" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none">http://localhost:3456</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none">http://localhost:3456</a>
 - L179 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -   const resetPath = '<code style="background:rgba(99,102,241,.1);padding:2px 6px;border-radius:3px;font-size:10px;word-break:break-all">~/.AI Agent可视化面板系统/AI Agent面板.json</code>'
 - L179 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -21957,7 +21957,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L183 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -       <div class="login-title">AI Agent面板</div>
 - L206 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <a href="https://http://localhost:3456" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none">http://localhost:3456</a>
+  -         <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none">http://localhost:3456</a>
 - L254 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -           sessionStorage.setItem('AI Agent面板_authed', '1')
 - L266 [LIKELY_STRING] AI Agent面板 → AI Agent面板
@@ -22013,17 +22013,17 @@ This file is generated. It lists candidate display-text replacements with line n
 - L812 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -     const dismissed = localStorage.getItem('AI Agent面板_update_dismissed')
 - L829 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <a class="btn btn-sm" href="https://http://localhost:3456" target="_blank" rel="noopener">${t('about.downloadFromWebsite')}</a>
+  -         <a class="btn btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('about.downloadFromWebsite')}</a>
 - L830 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -         <a class="btn btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/releases" target="_blank" rel="noopener">${t('about.downloadFromGitHub')}</a>
+  -         <a class="btn btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/releases" target="_blank" rel="noopener">${t('about.downloadFromGitHub')}</a>
 - L830 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <a class="btn btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/releases" target="_blank" rel="noopener">${t('about.downloadFromGitHub')}</a>
+  -         <a class="btn btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/releases" target="_blank" rel="noopener">${t('about.downloadFromGitHub')}</a>
 - L837 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -       localStorage.setItem('AI Agent面板_update_dismissed', ver)
 - L907 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -         <div style="margin-top:24px;font-size:11px;color:#a1a1aa">${t('common.pageLoadFailedHint')}<br><a href="https://github.com/AgentAI2026/AI Agent面板/issues" target="_blank" style="color:#6366f1">GitHub Issues</a></div>
+  -         <div style="margin-top:24px;font-size:11px;color:#a1a1aa">${t('common.pageLoadFailedHint')}<br><a href="https://github.com/agentai2026/AI-Agent Agent面板/issues" target="_blank" style="color:#6366f1">GitHub Issues</a></div>
 - L907 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <div style="margin-top:24px;font-size:11px;color:#a1a1aa">${t('common.pageLoadFailedHint')}<br><a href="https://github.com/AgentAI2026/AI Agent面板/issues" target="_blank" style="color:#6366f1">GitHub Issues</a></div>
+  -         <div style="margin-top:24px;font-size:11px;color:#a1a1aa">${t('common.pageLoadFailedHint')}<br><a href="https://github.com/agentai2026/AI-Agent Agent面板/issues" target="_blank" style="color:#6366f1">GitHub Issues</a></div>
 - L919 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       const { isAI Agent可视化面板系统Ready, isGatewayRunning } = await import('./lib/app-state.js')
 - L923 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -22041,7 +22041,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L21 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -         <h1 class="page-title" style="margin:0">AI Agent面板</h1>
 - L22 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <p class="page-desc" style="margin:0">${t('about.subtitle')} · <a href="https://http://localhost:3456" target="_blank" rel="noopener" style="color:var(--primary)">http://localhost:3456</a></p>
+  -         <p class="page-desc" style="margin:0">${t('about.subtitle')} · <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--primary)">http://localhost:3456</a></p>
 - L96 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -         <div class="stat-card-header"><span class="stat-card-label">AI Agent面板</span></div>
 - L235 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
@@ -22067,91 +22067,91 @@ This file is generated. It lists candidate display-text replacements with line n
 - L564 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       const msg = await api.upgradeAI Agent可视化面板系统(source, version)
 - L607 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <a class="btn btn-primary btn-sm" href="https://http://localhost:3456" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFullInstaller')}</a>
+  -         <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFullInstaller')}</a>
 - L608 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/AgentAI2026/AI Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
+  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/agentai2026/AI-Agent Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
 - L608 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/AgentAI2026/AI Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
+  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/agentai2026/AI-Agent Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
 - L613 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -         <a class="btn btn-primary btn-sm" href="https://http://localhost:3456" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromWebsite')}</a>
+  -         <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromWebsite')}</a>
 - L614 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/AgentAI2026/AI Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
+  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/agentai2026/AI-Agent Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
 - L614 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/AgentAI2026/AI Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
+  -         <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/agentai2026/AI-Agent Agent面板/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
 - L623 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -       meta.innerHTML = `<span style="color:var(--warning)">⚠️ ${t('about.versionMismatch', { frontend: panelVersion, binary: binaryVersion })}</span> <a class="btn btn-primary btn-sm" href="https://http://localhost:3456" target="_blank" rel="noopener" style="${btnSm}">…
+  -       meta.innerHTML = `<span style="color:var(--warning)">⚠️ ${t('about.versionMismatch', { frontend: panelVersion, binary: binaryVersion })}</span> <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">…
 - L625 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -       meta.innerHTML = `<span style="color:var(--text-tertiary)">${t('about.checkUpdateFailed')}</span> <a class="btn btn-secondary btn-sm" href="https://http://localhost:3456" target="_blank" rel="noopener" style="${btnSm}">${t('about.goToWebsite')}</a>`
+  -       meta.innerHTML = `<span style="color:var(--text-tertiary)">${t('about.checkUpdateFailed')}</span> <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">${t('about.goToWebsite')}</a>`
 - L647 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         <img src="/images/AI Agent可视化面板系统-QQ.png" alt="${t('about.qqGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary)">
 - L651 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -         <img src="/images/AI Agent可视化面板系统Wx.png" alt="${t('about.wechatGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary)">
 - L655 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -         <img src="https://qt.cool/c/AI Agent可视化面板系统DY/qr.png" alt="${t('about.douyinGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary);object-fit:contain;background:#fff">
+  -         <img src="https://github.com/agentai2026/AI-Agent Agent可视化面板系统DY/qr.png" alt="${t('about.douyinGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary);object-fit:contain;background:#fff">
 - L668 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -           <a class="btn btn-primary btn-sm" href="https://qt.cool/c/AI Agent可视化面板系统" target="_blank" rel="noopener">${t('about.joinQQ')}</a>
+  -           <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统" target="_blank" rel="noopener">${t('about.joinQQ')}</a>
 - L669 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -           <a class="btn btn-primary btn-sm" href="https://qt.cool/c/AI Agent可视化面板系统Wx" target="_blank" rel="noopener">${t('about.joinWechat')}</a>
+  -           <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统Wx" target="_blank" rel="noopener">${t('about.joinWechat')}</a>
 - L670 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -           <a class="btn btn-primary btn-sm" href="https://qt.cool/c/AI Agent可视化面板系统DY" target="_blank" rel="noopener">${t('about.joinDouyin')}</a>
+  -           <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent可视化面板系统DY" target="_blank" rel="noopener">${t('about.joinDouyin')}</a>
 - L684 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     name: 'AI Agent可视化面板系统',
 - L685 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     desc: t('about.projectAI Agent可视化面板系统'),
 - L686 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     url: 'https://github.com/AI Agent可视化面板系统/AI Agent可视化面板系统',
+  -     url: 'https://github.com/agentai2026/AI-Agent Agent可视化面板系统/AI Agent可视化面板系统',
 - L689 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     name: 'AI Agent可视化面板系统-zh',
 - L690 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     desc: t('about.projectAI Agent可视化面板系统Zh'),
 - L691 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -     url: 'https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation',
+  -     url: 'https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation',
 - L694 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -     name: 'AI Agent面板',
 - L695 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -     desc: t('about.projectAI Agent面板'),
 - L696 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -     url: 'https://github.com/AgentAI2026/AI Agent面板',
+  -     url: 'https://github.com/agentai2026/AI-Agent Agent面板',
 - L696 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -     url: 'https://github.com/AgentAI2026/AI Agent面板',
+  -     url: 'https://github.com/agentai2026/AI-Agent Agent面板',
 - L697 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -     gitee: 'https://gitee.com/QtCodeCreators/AI Agent面板',
+  -     gitee: 'https://github.com/agentai2026/AI-Agent Agent面板',
 - L702 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -     url: 'https://github.com/AgentAI2026/clawapp',
+  -     url: 'https://github.com/agentai2026/AI-Agent',
 - L707 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -     url: 'https://github.com/AgentAI2026/cftunnel',
+  -     url: 'https://github.com/agentai2026/AI-Agent',
 - L730 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -   { label: t('about.linkWebsite'), url: 'https://http://localhost:3456', primary: true },
+  -   { label: t('about.linkWebsite'), url: 'https://github.com/agentai2026/AI-Agent', primary: true },
 - L731 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   { label: t('about.linkAI Agent可视化面板系统Zh'), url: 'https://github.com/1186258278/AI Agent可视化面板系统ChineseTranslation' },
+  -   { label: t('about.linkAI Agent可视化面板系统Zh'), url: 'https://github.com/agentai2026/AI-Agent Agent可视化面板系统ChineseTranslation' },
 - L743 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -       <a class="btn btn-primary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/issues/new" target="_blank" rel="noopener">${t('about.submitIssue')}</a>
+  -       <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new" target="_blank" rel="noopener">${t('about.submitIssue')}</a>
 - L743 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       <a class="btn btn-primary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/issues/new" target="_blank" rel="noopener">${t('about.submitIssue')}</a>
+  -       <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/issues/new" target="_blank" rel="noopener">${t('about.submitIssue')}</a>
 - L744 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -       <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/pulls" target="_blank" rel="noopener">${t('about.submitPR')}</a>
+  -       <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/pulls" target="_blank" rel="noopener">${t('about.submitPR')}</a>
 - L744 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/pulls" target="_blank" rel="noopener">${t('about.submitPR')}</a>
+  -       <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/pulls" target="_blank" rel="noopener">${t('about.submitPR')}</a>
 - L745 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -       <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${t('about.contributeGuide')}</a>
+  -       <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${t('about.contributeGuide')}</a>
 - L745 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${t('about.contributeGuide')}</a>
+  -       <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${t('about.contributeGuide')}</a>
 - L746 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -       <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/issues" target="_blank" rel="noopener">${t('about.viewIssues')}</a>
+  -       <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/issues" target="_blank" rel="noopener">${t('about.viewIssues')}</a>
 - L746 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -       <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/AI Agent面板/issues" target="_blank" rel="noopener">${t('about.viewIssues')}</a>
+  -       <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent Agent面板/issues" target="_blank" rel="noopener">${t('about.viewIssues')}</a>
 - L766 [LIKELY_STRING] AgentAI2026 → AgentAI2026
   -         <img src="/images/logo-brand.png" alt="AgentAI2026" style="width:40px;height:40px;border-radius:10px;flex-shrink:0">
 - L769 [LIKELY_STRING] AgentAI2026 → AgentAI2026
   -           <div style="font-size:var(--font-size-sm);color:var(--text-secondary)">AgentAI2026</div>
 - L775 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -           <a href="https://github.com/AgentAI2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--accent)">github.com/AgentAI2026/AI-Agent</a>
+  -           <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--accent)">github.com/AgentAI2026/AI-Agent</a>
 - L775 [LIKELY_COMMENT] github.com/AgentAI2026/AI-Agent → github.com/AgentAI2026/AI-Agent
-  -           <a href="https://github.com/AgentAI2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--accent)">github.com/AgentAI2026/AI-Agent</a>
+  -           <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--accent)">github.com/AgentAI2026/AI-Agent</a>
 - L779 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -           <a href="https://http://localhost:3456" target="_blank" rel="noopener" style="color:var(--accent)">http://localhost:3456</a>
+  -           <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--accent)">http://localhost:3456</a>
 - L783 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -           <a href="https://github.com/AgentAI2026" target="_blank" rel="noopener" style="color:var(--accent)">github.com/AgentAI2026</a>
+  -           <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:var(--accent)">github.com/AgentAI2026</a>
 - L787 [LIKELY_STRING] QQ: 255258448 → QQ: 255258448
   -           <a href="mailto:QQ: 255258448" style="color:var(--accent)">QQ: 255258448</a>
 
@@ -22195,11 +22195,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - L110 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - 你精通 AI Agent可视化面板系统 的架构、配置、Gateway、Agent 管理等所有方面
 - L114 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  - - **AI Agent面板 官网**: https://http://localhost:3456
+  - - **AI Agent面板 官网**: https://github.com/agentai2026/AI-Agent
 - L114 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - - **AI Agent面板 官网**: https://http://localhost:3456
+  - - **AI Agent面板 官网**: https://github.com/agentai2026/AI-Agent
 - L115 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - - **GitHub**: https://github.com/AgentAI2026
+  - - **GitHub**: https://github.com/agentai2026/AI-Agent
 - L117 [MANUAL_REVIEW] AI Agent面板 → AI Agent面板
   -   - **AI Agent面板** — AI Agent可视化面板系统 可视化管理面板（Tauri v2）
 - L117 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -22213,11 +22213,11 @@ This file is generated. It lists candidate display-text replacements with line n
 - L121 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - AI Agent可视化面板系统 的可视化管理面板，基于 Tauri v2 的跨平台桌面应用（Windows/macOS/Linux）
 - L123 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  - - 官网: https://http://localhost:3456 | GitHub: https://github.com/AgentAI2026/AI Agent面板
+  - - 官网: https://github.com/agentai2026/AI-Agent | GitHub: https://github.com/agentai2026/AI-Agent Agent面板
 - L123 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - - 官网: https://http://localhost:3456 | GitHub: https://github.com/AgentAI2026/AI Agent面板
+  - - 官网: https://github.com/agentai2026/AI-Agent | GitHub: https://github.com/agentai2026/AI-Agent Agent面板
 - L123 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - - 官网: https://http://localhost:3456 | GitHub: https://github.com/AgentAI2026/AI Agent面板
+  - - 官网: https://github.com/agentai2026/AI-Agent | GitHub: https://github.com/agentai2026/AI-Agent Agent面板
 - L125 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - ## AI Agent可视化面板系统 是什么
 - L128 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -22299,19 +22299,19 @@ This file is generated. It lists candidate display-text replacements with line n
 - L187 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - - **AI Agent可视化面板系统 官方版**: npm install -g AI Agent可视化面板系统
 - L188 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - - **AI Agent面板**: 从 https://github.com/AgentAI2026/AI Agent面板/releases 下载
+  - - **AI Agent面板**: 从 https://github.com/agentai2026/AI-Agent Agent面板/releases 下载
 - L188 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - - **AI Agent面板**: 从 https://github.com/AgentAI2026/AI Agent面板/releases 下载
+  - - **AI Agent面板**: 从 https://github.com/agentai2026/AI-Agent Agent面板/releases 下载
 - L189 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - - **更多项目**: 访问 https://github.com/AgentAI2026
+  - - **更多项目**: 访问 https://github.com/agentai2026/AI-Agent
 - L196 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  - - **AI Agent面板**: https://github.com/AgentAI2026/AI Agent面板/issues/new
+  - - **AI Agent面板**: https://github.com/agentai2026/AI-Agent Agent面板/issues/new
 - L196 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - - **AI Agent面板**: https://github.com/AgentAI2026/AI Agent面板/issues/new
+  - - **AI Agent面板**: https://github.com/agentai2026/AI-Agent Agent面板/issues/new
 - L197 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  - - **AI Agent可视化面板系统 汉化版**: https://github.com/AgentAI2026/AI Agent可视化面板系统-zh/issues/new
+  - - **AI Agent可视化面板系统 汉化版**: https://github.com/agentai2026/AI-Agent Agent可视化面板系统-zh/issues/new
 - L197 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  - - **AI Agent可视化面板系统 汉化版**: https://github.com/AgentAI2026/AI Agent可视化面板系统-zh/issues/new
+  - - **AI Agent可视化面板系统 汉化版**: https://github.com/agentai2026/AI-Agent Agent可视化面板系统-zh/issues/new
 - L205 [MANUAL_REVIEW] AI Agent面板 → AI Agent面板
   - **环境信息**: OS / AI Agent面板 版本 / AI Agent可视化面板系统 版本
 - L205 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -22367,19 +22367,19 @@ This file is generated. It lists candidate display-text replacements with line n
 - L658 [MANUAL_REVIEW] AI Agent可视化面板系统 → AI Agent可视化面板系统
   - 3. 用 run_command 收集：AI Agent可视化面板系统 --version、node -v 等版本信息
 - L667 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -    - AI Agent面板: https://github.com/AgentAI2026/AI Agent面板/issues/new
+  -    - AI Agent面板: https://github.com/agentai2026/AI-Agent Agent面板/issues/new
 - L667 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -    - AI Agent面板: https://github.com/AgentAI2026/AI Agent面板/issues/new
+  -    - AI Agent面板: https://github.com/agentai2026/AI-Agent Agent面板/issues/new
 - L668 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -    - AI Agent可视化面板系统: https://github.com/AgentAI2026/AI Agent可视化面板系统-zh/issues/new
+  -    - AI Agent可视化面板系统: https://github.com/agentai2026/AI-Agent Agent可视化面板系统-zh/issues/new
 - L668 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -    - AI Agent可视化面板系统: https://github.com/AgentAI2026/AI Agent可视化面板系统-zh/issues/new
+  -    - AI Agent可视化面板系统: https://github.com/agentai2026/AI-Agent Agent可视化面板系统-zh/issues/new
 - L702 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     prompt: `请帮我管理 AI Agent可视化面板系统 的 Skills。
 - L858 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -    - AI Agent面板: https://github.com/AgentAI2026/AI Agent面板/issues/new
+  -    - AI Agent面板: https://github.com/agentai2026/AI-Agent Agent面板/issues/new
 - L858 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -    - AI Agent面板: https://github.com/AgentAI2026/AI Agent面板/issues/new
+  -    - AI Agent面板: https://github.com/agentai2026/AI-Agent Agent面板/issues/new
 - L998 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   // 灵魂移植模式：用 AI Agent可视化面板系统 Agent 的身份替代默认人设
 - L999 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -22515,7 +22515,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L1122 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -     command: `AI Agent可视化面板系统 plugins install ${reg.pluginRequired}`,
 - L1195 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
-  -   const faqUrl = result?.faqUrl || 'https://q.qq.com/qqbot/AI Agent可视化面板系统/faq.html'
+  -   const faqUrl = result?.faqUrl || 'https://github.com/agentai2026/AI-Agent Agent可视化面板系统/faq.html'
 - L1630 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -           // runChannelAction 的版本由后端自动检测（微信/QQ 版本号独立于 AI Agent可视化面板系统）
 - L2126 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -22677,9 +22677,9 @@ This file is generated. It lists candidate display-text replacements with line n
 - total: 3
 - kinds: LIKELY_COMMENT=3
 - L71 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/cftunnel" target="_blank" rel="noopener">${t('ext.viewDocs')}</a>
+  -         <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('ext.viewDocs')}</a>
 - L164 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -         <a class="btn btn-secondary btn-sm" href="https://github.com/AgentAI2026/clawapp" target="_blank" rel="noopener">${t('ext.viewDocs')}</a>
+  -         <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('ext.viewDocs')}</a>
 - L189 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -       <a class="btn btn-primary btn-sm" href="${s.url || 'http://localhost:3210'}" target="_blank" rel="noopener">${t('ext.AI Agent可视化面板系统app')}</a>
 
@@ -22899,7 +22899,7 @@ This file is generated. It lists candidate display-text replacements with line n
 - L85 [LIKELY_STRING] AI Agent面板 → AI Agent面板
   -           <img src="/images/logo-brand.png" alt="AI Agent面板" class="setup-hero-logo">
 - L90 [LIKELY_COMMENT] http://localhost:3456 → http://localhost:3456
-  -               <a class="setup-hero-site-link" href="https://http://localhost:3456" target="_blank" rel="noopener noreferrer" title="https://http://localhost:3456">
+  -               <a class="setup-hero-site-link" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener noreferrer" title="https://github.com/agentai2026/AI-Agent">
 - L93 [LIKELY_STRING] http://localhost:3456 → http://localhost:3456
   -                 <span class="setup-hero-site-value">http://localhost:3456</span>
 - L112 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
@@ -22975,27 +22975,27 @@ This file is generated. It lists candidate display-text replacements with line n
 - L506 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             <div style="font-size:var(--font-size-xs);color:var(--text-tertiary)">AI Agent可视化面板系统</div>
 - L565 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -               <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash</code>
+  -               <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash</code>
 - L565 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -               <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash</code>
+  -               <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash</code>
 - L566 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -               <div class="setup-help-copy">${t('setup.domesticMirror')} <code>curl -fsSL https://gitee.com/QtCodeCreators/AI Agent面板/raw/main/deploy.sh | bash</code></div>
+  -               <div class="setup-help-copy">${t('setup.domesticMirror')} <code>curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/raw/main/deploy.sh | bash</code></div>
 - L573 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -             <code class="setup-help-code">npm i -g @AgentAI2026/AI Agent可视化面板系统-zh</code>
 - L573 [LIKELY_STRING] AgentAI2026 → AgentAI2026
   -             <code class="setup-help-code">npm i -g @AgentAI2026/AI Agent可视化面板系统-zh</code>
 - L574 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash</code>
+  -             <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash</code>
 - L574 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash</code>
+  -             <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash</code>
 - L575 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://gitee.com/QtCodeCreators/AI Agent面板/raw/main/deploy.sh | bash</code></div>
+  -             <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/raw/main/deploy.sh | bash</code></div>
 - L580 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash</code>
+  -             <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash</code>
 - L580 [LIKELY_COMMENT] AgentAI2026 → AgentAI2026
-  -             <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/AgentAI2026/AI Agent面板/main/deploy.sh | bash</code>
+  -             <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/main/deploy.sh | bash</code>
 - L581 [LIKELY_COMMENT] AI Agent面板 → AI Agent面板
-  -             <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://gitee.com/QtCodeCreators/AI Agent面板/raw/main/deploy.sh | bash</code></div>
+  -             <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://github.com/agentai2026/AI-Agent Agent面板/raw/main/deploy.sh | bash</code></div>
 - L669 [LIKELY_COMMENT] AI Agent可视化面板系统 → AI Agent可视化面板系统
   -   // 自定义 AI Agent可视化面板系统 安装路径
 - L670 [LIKELY_STRING] AI Agent可视化面板系统 → AI Agent可视化面板系统

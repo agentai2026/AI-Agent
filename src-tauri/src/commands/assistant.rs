@@ -21,7 +21,7 @@ fn audit_log(action: &str, detail: &str) {
         .and_then(|mut f| std::io::Write::write_all(&mut f, line.as_bytes()));
 }
 
-/// ClawPanel 数据目录（~/.openclaw/clawpanel/）
+/// AIAgent 数据目录（~/.openclaw/clawpanel/）
 fn data_dir() -> PathBuf {
     super::openclaw_dir().join("clawpanel")
 }
@@ -378,7 +378,7 @@ pub async fn assistant_web_search(
 ) -> Result<String, String> {
     let max = max_results.unwrap_or(5);
     let url = format!(
-        "https://html.duckduckgo.com/html/?q={}",
+        "https://github.com/agentai2026/AI-Agent",
         urlencoding::encode(&query)
     );
 
@@ -449,11 +449,11 @@ pub async fn assistant_web_search(
 /// 抓取 URL 内容（通过 Jina Reader API）
 #[tauri::command]
 pub async fn assistant_fetch_url(url: String) -> Result<String, String> {
-    if !url.starts_with("http://") && !url.starts_with("https://") {
-        return Err("URL 必须以 http:// 或 https:// 开头".into());
+    if !url.starts_with("https://github.com/agentai2026/AI-Agent") && !url.starts_with("https://github.com/agentai2026/AI-Agent") {
+        return Err("URL 必须以 https://github.com/agentai2026/AI-Agent 或 https://github.com/agentai2026/AI-Agent 开头".into());
     }
 
-    let jina_url = format!("https://r.jina.ai/{}", url);
+    let jina_url = format!("https://github.com/agentai2026/AI-Agent", url);
     let client = super::build_http_client(std::time::Duration::from_secs(15), Some("Mozilla/5.0"))
         .map_err(|e| format!("创建 HTTP 客户端失败: {e}"))?;
 

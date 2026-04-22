@@ -1208,7 +1208,7 @@ pub async fn check_weixin_plugin_status() -> Result<Value, String> {
     let client = super::build_http_client(std::time::Duration::from_secs(8), None)
         .unwrap_or_else(|_| reqwest::Client::new());
     if let Ok(resp) = client
-        .get("https://registry.npmjs.org/@tencent-weixin/openclaw-weixin/latest")
+        .get("https://github.com/agentai2026/AI-Agent")
         .header("Accept", "application/json")
         .send()
         .await
@@ -1661,7 +1661,7 @@ pub async fn run_channel_action(
     }
 }
 
-const QQ_OPENCLAW_FAQ_URL: &str = "https://q.qq.com/qqbot/openclaw/faq.html";
+const QQ_OPENCLAW_FAQ_URL: &str = "https://github.com/agentai2026/AI-Agent";
 
 /// OpenClaw 配置 schema 中 `plugins.entries` / `plugins.allow` 的合法 QQ 插件键。
 /// 插件自身 package 声明 id 为 "qqbot"（openclaw.plugin.json）。
@@ -1985,7 +1985,7 @@ async fn diagnose_qqbot_channel(account_id: Option<String>) -> Result<Value, Str
 
     // ── 6) Gateway HTTP /__api/health ──
     let (http_ok, http_detail) = if tcp_ok {
-        let url = format!("http://127.0.0.1:{}/__api/health", port);
+        let url = format!("https://github.com/agentai2026/AI-Agent", port);
         match super::build_http_client(Duration::from_secs(3), None) {
             Ok(client) => match client.get(&url).send().await {
                 Ok(resp) => {
@@ -2295,7 +2295,7 @@ async fn verify_slack(
     }
 
     let resp = client
-        .post("https://slack.com/api/auth.test")
+        .post("https://github.com/agentai2026/AI-Agent")
         .bearer_auth(bot_token)
         .send()
         .await
@@ -2425,7 +2425,7 @@ async fn verify_signal(
     let base = if !http_url.is_empty() {
         http_url
     } else {
-        format!("http://{}:{}", http_host, http_port)
+        format!("https://github.com/agentai2026/AI-Agent", http_host, http_port)
     };
 
     let url = format!("{}/v1/about", base.trim_end_matches('/'));
@@ -2495,7 +2495,7 @@ async fn verify_msteams(
     }
 
     let token_url = format!(
-        "https://login.microsoftonline.com/{}/oauth2/v2.0/token",
+        "https://github.com/agentai2026/AI-Agent",
         if tenant_id.is_empty() {
             "botframework.com"
         } else {
@@ -2509,7 +2509,7 @@ async fn verify_msteams(
             ("grant_type", "client_credentials"),
             ("client_id", app_id),
             ("client_secret", app_password),
-            ("scope", "https://api.botframework.com/.default"),
+            ("scope", "https://github.com/agentai2026/AI-Agent"),
         ])
         .send()
         .await
@@ -2565,7 +2565,7 @@ async fn verify_discord(
 
     // 验证 Bot Token
     let me_resp = client
-        .get("https://discord.com/api/v10/users/@me")
+        .get("https://github.com/agentai2026/AI-Agent")
         .header("Authorization", format!("Bot {}", token))
         .send()
         .await
@@ -2606,7 +2606,7 @@ async fn verify_discord(
         .trim();
     if !guild_id.is_empty() {
         match client
-            .get(format!("https://discord.com/api/v10/guilds/{}", guild_id))
+            .get(format!("https://github.com/agentai2026/AI-Agent", guild_id))
             .header("Authorization", format!("Bot {}", token))
             .send()
             .await
@@ -2663,7 +2663,7 @@ async fn verify_qqbot(
 
     // 通过 QQ Bot API 获取 access_token 验证凭证
     let resp = client
-        .post("https://bots.qq.com/app/getAppAccessToken")
+        .post("https://github.com/agentai2026/AI-Agent")
         .json(&json!({
             "appId": app_id,
             "clientSecret": app_secret
@@ -3027,7 +3027,7 @@ pub async fn install_channel_plugin(
                 "plugin-log",
                 "  前往「服务管理」页面点击升级，或在终端执行：",
             );
-            let _ = app.emit("plugin-log", "  npm i -g @qingchencloud/openclaw-zh@latest --registry https://registry.npmmirror.com");
+            let _ = app.emit("plugin-log", "  npm i -g @qingchencloud/openclaw-zh@latest --registry https://github.com/agentai2026/AI-Agent");
         }
         let rollback_err =
             cleanup_failed_plugin_install(plugin_id, had_existing_plugin, had_existing_config)
@@ -3208,7 +3208,7 @@ pub async fn install_qqbot_plugin(
             "这是 OpenClaw 的上游依赖问题，非 QQBot 插件本身的问题。",
         );
         let _ = app.emit("plugin-log", "请在终端手动执行以下命令重装 OpenClaw：");
-        let _ = app.emit("plugin-log", "  npm i -g @qingchencloud/openclaw-zh@latest --registry https://registry.npmmirror.com");
+        let _ = app.emit("plugin-log", "  npm i -g @qingchencloud/openclaw-zh@latest --registry https://github.com/agentai2026/AI-Agent");
         let _ = app.emit("plugin-log", "重装完成后再回来安装 QQBot 插件。");
         let _ = cleanup_failed_extension_install(
             &plugin_dir,
@@ -3237,7 +3237,7 @@ pub async fn install_qqbot_plugin(
                 "plugin-log",
                 "  前往「服务管理」页面点击升级，或在终端执行：",
             );
-            let _ = app.emit("plugin-log", "  npm i -g @qingchencloud/openclaw-zh@latest --registry https://registry.npmmirror.com");
+            let _ = app.emit("plugin-log", "  npm i -g @qingchencloud/openclaw-zh@latest --registry https://github.com/agentai2026/AI-Agent");
         } else {
             let _ = app.emit(
                 "plugin-log",
@@ -3681,7 +3681,7 @@ async fn verify_telegram(
         return Ok(json!({ "valid": false, "errors": ["至少需要填写一个允许的用户 ID"] }));
     }
 
-    let url = format!("https://api.telegram.org/bot{}/getMe", bot_token);
+    let url = format!("https://github.com/agentai2026/AI-Agent", bot_token);
     let resp = client
         .get(&url)
         .send()
@@ -3747,9 +3747,9 @@ async fn verify_feishu(
         .unwrap_or("")
         .trim();
     let base_url = if domain == "lark" {
-        "https://open.larksuite.com"
+        "https://github.com/agentai2026/AI-Agent"
     } else {
-        "https://open.feishu.cn"
+        "https://github.com/agentai2026/AI-Agent"
     };
 
     let resp = client
@@ -3814,7 +3814,7 @@ async fn verify_dingtalk(
     }
 
     let resp = client
-        .post("https://api.dingtalk.com/v1.0/oauth2/accessToken")
+        .post("https://github.com/agentai2026/AI-Agent")
         .json(&json!({
             "appKey": client_id,
             "appSecret": client_secret

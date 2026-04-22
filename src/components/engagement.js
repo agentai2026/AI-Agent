@@ -110,19 +110,19 @@ export function tryShowEngagement() {
 
       <div class="engage-section-label">${t('engagement.communityLabel')}</div>
       <div class="engage-qrcodes">
-        <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent/discussions" target="_blank" rel="noopener">
+        <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">
           <img src="/images/logo.png" alt="${t('engagement.qqAlt')}" />
           <div class="engage-qr-label">${t('engagement.qqLabel')}</div>
         </a>
-        <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent/discussions" target="_blank" rel="noopener">
+        <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">
           <img src="/images/logo.png" alt="${t('engagement.wechatAlt')}" />
           <div class="engage-qr-label">${t('engagement.wechatLabel')}</div>
         </a>
-        <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent/discussions" target="_blank" rel="noopener">
+        <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">
           <img src="/images/logo.png" alt="${t('engagement.douyinAlt')}" />
           <div class="engage-qr-label">${t('engagement.douyinLabel')}</div>
         </a>
-        <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent/discussions" target="_blank" rel="noopener">
+        <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">
           <img src="/images/logo.png" alt="${t('engagement.feishuAlt')}" />
           <div class="engage-qr-label">${t('engagement.feishuLabel')}</div>
         </a>

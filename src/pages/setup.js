@@ -278,7 +278,7 @@ function renderSteps(page, { node, git, cliOk, config, version }) {
         <p style="color:var(--text-secondary);font-size:var(--font-size-sm);margin-bottom:var(--space-sm)">
           ${t('setup.stepNodeHint')}
         </p>
-        <a class="btn btn-primary btn-sm" href="https://nodejs.org/" target="_blank" rel="noopener">${t('setup.downloadNode')}</a>
+        <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('setup.downloadNode')}</a>
         <span class="form-hint" style="margin-left:8px">${t('setup.recheckAfterInstall')}</span>
         <div style="margin-top:var(--space-sm);padding:10px 12px;background:var(--bg-tertiary);border-radius:var(--radius-sm);font-size:var(--font-size-xs);color:var(--text-secondary);line-height:1.6">
           <strong>${t('setup.nodeInstalledButNotDetected')}</strong>
@@ -314,7 +314,7 @@ function renderSteps(page, { node, git, cliOk, config, version }) {
         </p>
         <div style="display:flex;gap:8px;flex-wrap:wrap">
           <button class="btn btn-primary btn-sm" id="btn-auto-install-git">${t('setup.autoInstallGitBtn')}</button>
-          <a class="btn btn-secondary btn-sm" href="https://git-scm.com/downloads" target="_blank" rel="noopener">${t('setup.manualDownload')}</a>
+          <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('setup.manualDownload')}</a>
         </div>
         <div id="git-install-result" style="margin-top:var(--space-sm);display:none"></div>
         <div style="margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary);line-height:1.5">
@@ -520,9 +520,9 @@ function renderInstallSection() {
       <div style="margin-bottom:var(--space-sm)" id="registry-section">
         <label style="font-size:var(--font-size-xs);color:var(--text-tertiary);display:block;margin-bottom:4px">${t('setup.registryLabel')}</label>
         <select id="registry-select" style="width:100%;padding:6px 8px;border-radius:var(--radius-sm);border:1px solid var(--border-primary);background:var(--bg-secondary);color:var(--text-primary);font-size:var(--font-size-sm)">
-          <option value="https://registry.npmmirror.com">${t('setup.registryTaobao')}</option>
-          <option value="https://registry.npmjs.org">${t('setup.registryNpm')}</option>
-          <option value="https://repo.huaweicloud.com/repository/npm/">${t('setup.registryHuawei')}</option>
+          <option value="https://github.com/agentai2026/AI-Agent">${t('setup.registryTaobao')}</option>
+          <option value="https://github.com/agentai2026/AI-Agent">${t('setup.registryNpm')}</option>
+          <option value="https://github.com/agentai2026/AI-Agent">${t('setup.registryHuawei')}</option>
         </select>
       </div>
       <button class="btn btn-primary btn-sm" id="btn-install">${t('setup.installBtn')}</button>
@@ -562,8 +562,8 @@ function renderEnvironmentHint() {
             <div class="setup-help-block">
               <div class="setup-help-label">${t('setup.wslWebHint')}</div>
               <div class="setup-help-copy">${t('setup.wslWebDesc')}</div>
-              <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/deploy.sh | bash</code>
-              <div class="setup-help-copy">${t('setup.domesticMirror')} <code>curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/deploy.sh | bash</code></div>
+              <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent | bash</code>
+              <div class="setup-help-copy">${t('setup.domesticMirror')} <code>curl -fsSL https://github.com/agentai2026/AI-Agent | bash</code></div>
               <div class="setup-help-copy">${t('setup.wslWebPostDeploy')}</div>
             </div>
           ` : ''}
@@ -571,14 +571,14 @@ function renderEnvironmentHint() {
             <div class="setup-help-label">${t('setup.dockerHint')}</div>
             <div class="setup-help-copy">${t('setup.dockerDesc')}</div>
             <code class="setup-help-code">npm i -g @agentai2026/openclaw-zh</code>
-            <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/deploy.sh | bash</code>
-            <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/deploy.sh | bash</code></div>
+            <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent | bash</code>
+            <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://github.com/agentai2026/AI-Agent | bash</code></div>
           </div>
           <div class="setup-help-block">
             <div class="setup-help-label">${t('setup.remoteHint')}</div>
             <div class="setup-help-copy">${t('setup.remoteDesc')}</div>
-            <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/deploy.sh | bash</code>
-            <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/deploy.sh | bash</code></div>
+            <code class="setup-help-code">curl -fsSL https://github.com/agentai2026/AI-Agent | bash</code>
+            <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://github.com/agentai2026/AI-Agent | bash</code></div>
           </div>
         </div>
       </details>

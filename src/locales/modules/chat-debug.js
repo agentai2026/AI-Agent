@@ -67,7 +67,7 @@ export default {
   signTime: _('签名时间', 'Sign Time', '簽章時間'),
   deviceKeySuccess: _('设备密钥生成成功', 'Device key generated successfully', '設備金鑰生成成功'),
   viewConnectFrame: _('查看完整 Connect Frame', 'View full Connect Frame'),
-  diagNodeNotInstalled: _('Node.js 未安装，请先安装 Node.js（<a href="https://nodejs.org/" target="_blank" rel="noopener">下载地址</a>）', 'Node.js not installed. Please install Node.js first (<a href="https://nodejs.org/" target="_blank" rel="noopener">Download</a>)', 'Node.js 未安裝，請先安裝 Node.js（<a href="https://nodejs.org/" target="_blank" rel="noopener">下載位址</a>）'),
+  diagNodeNotInstalled: _('Node.js 未安装，请先安装 Node.js（<a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">下载地址</a>）', 'Node.js not installed. Please install Node.js first (<a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">Download</a>)', 'Node.js 未安裝，請先安裝 Node.js（<a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">下載位址</a>）'),
   diagConfigMissing: _('配置文件不存在或损坏，请前往「初始设置」页面完成配置', 'Config file missing or corrupted, please go to Setup page to complete configuration', '設定檔案不存在或損壞，請前往「初始設定」頁面完成設定'),
   diagCliNotInstalled: _('AI Agent CLI 未安装，请前往「初始设置」页面安装', 'AI Agent CLI not installed, please go to Setup page to install', 'AI Agent CLI 未安裝，請前往「初始設定」頁面安裝'),
   diagGatewayNotRunning: _('Gateway 未启动，请前往「服务管理」页面启动服务', 'Gateway not running, please go to Services page to start', 'Gateway 未啟動，請前往「服務管理」頁面啟動服務'),

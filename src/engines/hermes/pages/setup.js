@@ -53,7 +53,7 @@ export function render() {
         ${phase === 'gateway' ? renderGateway() : ''}
         ${phase === 'complete' ? renderComplete() : ''}
         <div style="margin-top:16px;text-align:right">
-          <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation/" target="_blank" rel="noopener"
+          <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener"
              style="font-size:13px;color:var(--accent);text-decoration:none">
             ${t('engine.hermesSetupDocLink')} →
           </a>
@@ -245,7 +245,7 @@ export function render() {
           </div>
           <label class="hermes-field">
             <span>API Base URL</span>
-            <input type="text" id="hm-baseurl" class="input" placeholder="https://openrouter.ai/api/v1">
+            <input type="text" id="hm-baseurl" class="input" placeholder="https://github.com/agentai2026/AI-Agent">
           </label>
           <div class="hermes-field">
             <span>${t('engine.configApiKey')}</span>

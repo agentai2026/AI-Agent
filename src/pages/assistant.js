@@ -72,17 +72,17 @@ function apiHintText(apiType) {
     'openai-completions': t('assistant.apiHintOpenai'),
     'anthropic-messages': t('assistant.apiHintAnthropic'),
     'google-generative-ai': t('assistant.apiHintGemini'),
-    'ollama': 'Ollama 原生 API，baseUrl 填 http://127.0.0.1:11434（不需要 /v1）',
+    'ollama': 'Ollama 原生 API，baseUrl 填 https://github.com/agentai2026/AI-Agent /v1）',
   }[normalizeApiType(apiType)] || t('assistant.apiHintOpenai')
 }
 
 function apiBasePlaceholder(apiType) {
   return {
     'openai-completions': t('assistant.apiBasePlaceholderOpenai'),
-    'anthropic-messages': 'https://api.anthropic.com',
-    'google-generative-ai': 'https://generativelanguage.googleapis.com/v1beta',
+    'anthropic-messages': 'https://github.com/agentai2026/AI-Agent',
+    'google-generative-ai': 'https://github.com/agentai2026/AI-Agent',
     'ollama': 'http://127.0.0.1:11434',
-  }[normalizeApiType(apiType)] || 'https://api.openai.com/v1'
+  }[normalizeApiType(apiType)] || 'https://github.com/agentai2026/AI-Agent'
 }
 
 function apiKeyPlaceholder(apiType) {
@@ -1287,12 +1287,12 @@ function cleanBaseUrl(raw, apiType) {
   base = base.replace(/\/models\/?$/, '')
   const type = normalizeApiType(apiType || _config.apiType)
   if (type === 'anthropic-messages') {
-    // Anthropic: https://api.anthropic.com/v1
+    // Anthropic: https://github.com/agentai2026/AI-Agent
     if (!base.endsWith('/v1')) base += '/v1'
     return base
   }
   if (type === 'google-gemini') {
-    // Gemini: https://generativelanguage.googleapis.com/v1beta
+    // Gemini: https://github.com/agentai2026/AI-Agent
     return base
   }
   if (/:(11434)$/i.test(base) && !base.endsWith('/v1')) return `${base}/v1`

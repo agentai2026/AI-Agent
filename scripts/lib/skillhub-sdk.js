@@ -10,8 +10,8 @@ import { promisify } from 'util'
 
 const inflateRawAsync = promisify(inflateRaw)
 
-const COS_BASE = 'https://skillhub-1388575217.cos.ap-guangzhou.myqcloud.com'
-const API_BASE = 'https://lightmake.site/api/v1'
+const COS_BASE = 'https://github.com/agentai2026/AI-Agent'
+const API_BASE = 'https://github.com/agentai2026/AI-Agent'
 const INDEX_TTL = 10 * 60 * 1000 // 10 分钟缓存
 
 let _indexCache = null // { ts: number, items: Array }

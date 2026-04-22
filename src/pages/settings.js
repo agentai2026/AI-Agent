@@ -56,9 +56,9 @@ function dedupeOpenclawInstallations(list = []) {
 }
 
 const REGISTRIES = [
-  { label: () => t('settings.registryTaobao'), value: 'https://registry.npmmirror.com' },
-  { label: () => t('settings.registryNpm'), value: 'https://registry.npmjs.org' },
-  { label: () => t('settings.registryHuawei'), value: 'https://repo.huaweicloud.com/repository/npm/' },
+  { label: () => t('settings.registryTaobao'), value: 'https://github.com/agentai2026/AI-Agent' },
+  { label: () => t('settings.registryNpm'), value: 'https://github.com/agentai2026/AI-Agent' },
+  { label: () => t('settings.registryHuawei'), value: 'https://github.com/agentai2026/AI-Agent' },
 ]
 
 export async function render() {
@@ -210,7 +210,7 @@ async function loadRegistry(page) {
           ${REGISTRIES.map(r => `<option value="${r.value}" ${r.value === current ? 'selected' : ''}>${typeof r.label === 'function' ? r.label() : r.label}</option>`).join('')}
           <option value="custom" ${!isPreset ? 'selected' : ''}>${t('settings.registryCustom')}</option>
         </select>
-        <input class="form-input" data-name="custom-registry" placeholder="https://..." value="${isPreset ? '' : escapeHtml(current)}" style="max-width:320px;${isPreset ? 'display:none' : ''}">
+        <input class="form-input" data-name="custom-registry" placeholder="https://github.com/agentai2026/AI-Agent" value="${isPreset ? '' : escapeHtml(current)}" style="max-width:320px;${isPreset ? 'display:none' : ''}">
         <button class="btn btn-primary btn-sm" data-action="save-registry">${t('common.save')}</button>
       </div>
       <div class="form-hint" style="margin-top:var(--space-xs)">${t('settings.registryHint')}</div>

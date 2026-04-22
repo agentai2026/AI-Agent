@@ -6,8 +6,8 @@
 //!   3. 写入 ~/.hermes/config.yaml + .env
 //!
 //! 参考：
-//!   - uv docs: https://docs.astral.sh/uv/
-//!   - Hermes 官方安装: https://hermes-agent.nousresearch.com/docs/getting-started/installation/
+//!   - uv docs: https://github.com/agentai2026/AI-Agent
+//!   - Hermes 官方安装: https://github.com/agentai2026/AI-Agent
 
 use serde_json::Value;
 use std::path::PathBuf;
@@ -50,7 +50,7 @@ fn hermes_gateway_url() -> String {
         return url.trim_end_matches('/').to_string();
     }
     let port = hermes_gateway_port();
-    format!("http://127.0.0.1:{port}")
+    format!("https://github.com/agentai2026/AI-Agent")
 }
 
 /// 精准杀掉我们 spawn 的 Gateway 进程
@@ -310,7 +310,7 @@ fn hermes_home() -> PathBuf {
     dirs::home_dir().unwrap_or_default().join(".hermes")
 }
 
-/// ClawPanel 管理的 uv 二进制存放路径
+/// AIAgent 管理的 uv 二进制存放路径
 fn uv_bin_dir() -> PathBuf {
     #[cfg(target_os = "windows")]
     {
@@ -368,7 +368,7 @@ fn uv_download_url(version: &str) -> String {
     #[cfg(all(target_os = "linux", target_arch = "aarch64"))]
     let filename = "uv-aarch64-unknown-linux-gnu.tar.gz";
 
-    format!("https://github.com/astral-sh/uv/releases/download/{version}/{filename}")
+    format!("https://github.com/agentai2026/AI-Agent")
 }
 
 /// 构建增强 PATH，确保能找到 uv、hermes、python 等
@@ -377,7 +377,7 @@ fn hermes_enhanced_path() -> String {
     let home = dirs::home_dir().unwrap_or_default();
     let mut extra: Vec<String> = vec![];
 
-    // ClawPanel 管理的 uv 二进制目录
+    // AIAgent 管理的 uv 二进制目录
     extra.push(uv_bin_dir().to_string_lossy().to_string());
 
     // uv tool 安装的可执行文件目录
@@ -732,8 +732,8 @@ pub fn check_hermes() -> Result<Value, String> {
     // 从 URL 中提取 host:port 用于 TCP 探测
     let probe_addr = {
         let stripped = gw_url
-            .trim_start_matches("http://")
-            .trim_start_matches("https://")
+            .trim_start_matches("https://github.com/agentai2026/AI-Agent")
+            .trim_start_matches("https://github.com/agentai2026/AI-Agent")
             .trim_end_matches('/');
         if stripped.contains(':') {
             stripped.to_string()
@@ -860,7 +860,7 @@ async fn ensure_uv(app: &tauri::AppHandle) -> Result<String, String> {
     let url = uv_download_url(version);
     let _ = app.emit("hermes-install-log", format!("下载: {url}"));
 
-    let client = super::build_http_client(std::time::Duration::from_secs(300), Some("ClawPanel"))
+    let client = super::build_http_client(std::time::Duration::from_secs(300), Some("AIAgent"))
         .map_err(|e| format!("HTTP 客户端创建失败: {e}"))?;
 
     let resp = client
@@ -973,7 +973,7 @@ fn extract_uv_tar_gz(data: &[u8], dest: &std::path::Path) -> Result<(), String> 
 }
 
 /// Hermes Agent 的 GitHub 仓库地址（不在 PyPI 上发布，只能从 GitHub 安装）
-const HERMES_GIT_URL: &str = "git+https://github.com/NousResearch/hermes-agent.git";
+const HERMES_GIT_URL: &str = "git+https://github.com/agentai2026/AI-Agent";
 
 /// 通过 uv tool install 安装 Hermes Agent（从 GitHub）
 async fn install_via_uv_tool(
@@ -1235,7 +1235,7 @@ pub async fn configure_hermes(
     } else {
         // 首次创建：生成完整的基线配置
         format!(
-            r#"# Hermes Agent configuration (managed by ClawPanel)
+            r#"# Hermes Agent configuration (managed by AIAgent)
 model:
   default: {model_str}
 {base_url_line}platform_toolsets:
@@ -1258,7 +1258,7 @@ platforms:
         "openrouter" => "OPENROUTER_API_KEY",
         _ => "OPENAI_API_KEY",
     };
-    // ClawPanel 管理的 key 列表（更新时覆盖，其他 key 保留）
+    // AIAgent 管理的 key 列表（更新时覆盖，其他 key 保留）
     let managed_keys: Vec<&str> = vec![
         "OPENAI_API_KEY",
         "ANTHROPIC_API_KEY",
@@ -2016,7 +2016,7 @@ pub async fn hermes_gateway_action(
 pub async fn hermes_health_check() -> Result<Value, String> {
     let url = format!("{}/health", hermes_gateway_url());
 
-    let client = super::build_http_client(std::time::Duration::from_secs(5), Some("ClawPanel"))
+    let client = super::build_http_client(std::time::Duration::from_secs(5), Some("AIAgent"))
         .map_err(|e| format!("HTTP 客户端创建失败: {e}"))?;
 
     match client.get(&url).send().await {
@@ -2109,7 +2109,7 @@ pub async fn hermes_detect_environments() -> Result<Value, String> {
                             result["wsl2"]["gatewayRunning"] = serde_json::json!(reachable);
                             if reachable {
                                 result["wsl2"]["gatewayUrl"] =
-                                    serde_json::json!(format!("http://{ip}:{port}"));
+                                    serde_json::json!(format!("https://github.com/agentai2026/AI-Agent"));
                             }
                         }
                     }
@@ -2348,7 +2348,7 @@ pub async fn hermes_api_proxy(
     } else {
         std::time::Duration::from_secs(30)
     };
-    let client = super::build_http_client(timeout, Some("ClawPanel"))
+    let client = super::build_http_client(timeout, Some("AIAgent"))
         .map_err(|e| format!("HTTP 客户端创建失败: {e}"))?;
 
     let mut req = match method.to_uppercase().as_str() {
@@ -2468,7 +2468,7 @@ pub async fn hermes_agent_run(
         payload["instructions"] = Value::String(inst.clone());
     }
 
-    let client = super::build_http_client(std::time::Duration::from_secs(10), Some("ClawPanel"))
+    let client = super::build_http_client(std::time::Duration::from_secs(10), Some("AIAgent"))
         .map_err(|e| format!("HTTP 客户端创建失败: {e}"))?;
 
     // 1. POST /v1/runs → 获取 run_id
@@ -2506,7 +2506,7 @@ pub async fn hermes_agent_run(
     // 2. GET /v1/runs/{run_id}/events — SSE 事件流
     let events_url = format!("{gw_url}/v1/runs/{run_id}/events");
     let sse_client =
-        super::build_http_client(std::time::Duration::from_secs(300), Some("ClawPanel"))
+        super::build_http_client(std::time::Duration::from_secs(300), Some("AIAgent"))
             .map_err(|e| format!("SSE 客户端创建失败: {e}"))?;
 
     let mut sse_req = sse_client.get(&events_url);

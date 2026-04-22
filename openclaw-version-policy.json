@@ -1,10 +1,10 @@
 {
   "standalone": {
-    "baseUrl": "https://dl.qrj.ai/openclaw-standalone",
+    "baseUrl": "https://github.com/agentai2026/AI-Agent",
     "enabled": true
   },
   "r2": {
-    "baseUrl": "https://dl.qrj.ai/openclaw-zh",
+    "baseUrl": "https://github.com/agentai2026/AI-Agent",
     "enabled": true
   },
   "default": {

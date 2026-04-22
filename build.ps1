@@ -1,5 +1,5 @@
 #!/usr/bin/env pwsh
-# ClawPanel 本地构建脚本（Windows）
+# AIAgent 本地构建脚本（Windows）
 # 用法:
 #   .\build.ps1            — 构建 Windows 安装包（默认）
 #   .\build.ps1 -Debug     — Debug 构建（快，不打包）
@@ -23,7 +23,7 @@ function Write-Fail([string]$msg) {
 }
 
 Write-Host ""
-Write-Host "  ClawPanel 构建工具" -ForegroundColor Magenta
+Write-Host "  AIAgent 构建工具" -ForegroundColor Magenta
 Write-Host "  ─────────────────────────────────────" -ForegroundColor DarkGray
 Write-Host "  平台: Windows x64 (本机构建)" -ForegroundColor DarkGray
 Write-Host "  跨平台构建 (macOS / Linux) 请推送 tag 触发 GitHub Actions" -ForegroundColor DarkGray
@@ -34,7 +34,7 @@ Write-Host ""
 Write-Step "检查构建依赖"
 
 if (-not (Get-Command node -ErrorAction SilentlyContinue)) {
-    Write-Fail "未找到 Node.js，请从 https://nodejs.org 安装 v18+"
+    Write-Fail "未找到 Node.js，请从 https://github.com/agentai2026/AI-Agent 安装 v18+"
     exit 1
 }
 $nodeVer = (node --version)
@@ -46,7 +46,7 @@ if (-not (Get-Command npm -ErrorAction SilentlyContinue)) {
 }
 
 if (-not (Get-Command cargo -ErrorAction SilentlyContinue)) {
-    Write-Fail "未找到 Rust/Cargo，请从 https://rustup.rs 安装"
+    Write-Fail "未找到 Rust/Cargo，请从 https://github.com/agentai2026/AI-Agent 安装"
     exit 1
 }
 $rustVer = (rustc --version)
@@ -56,7 +56,7 @@ Write-Ok "Rust $rustVer"
 $webview2Key = "HKLM:\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}"
 if (-not (Test-Path $webview2Key)) {
     Write-Host "  ⚠ 未检测到 WebView2 Runtime，目标用户需要安装" -ForegroundColor Yellow
-    Write-Host "    下载地址: https://developer.microsoft.com/microsoft-edge/webview2/" -ForegroundColor DarkGray
+    Write-Host "    下载地址: https://github.com/agentai2026/AI-Agent" -ForegroundColor DarkGray
 }
 
 # ── 依赖安装 ──────────────────────────────────────────────────────────────────

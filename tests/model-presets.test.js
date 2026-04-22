@@ -18,7 +18,7 @@ test('PROVIDER_PRESETS contains MiniMax entry', () => {
 
 test('MiniMax provider preset uses correct API base URL', () => {
   const minimax = PROVIDER_PRESETS.find(p => p.key === 'minimax')
-  assert.equal(minimax.baseUrl, 'https://api.minimax.io/v1')
+  assert.equal(minimax.baseUrl, 'https://github.com/agentai2026/AI-Agent')
 })
 
 test('MiniMax provider preset has site and description', () => {

@@ -1,5 +1,5 @@
 #!/bin/bash
-# ClawPanel 开发模式启动脚本
+# AIAgent 开发模式启动脚本
 # 用法: ./scripts/dev.sh [web|tauri]
 #   web   - 仅启动 Vite 前端（浏览器调试，mock 数据）
 #   tauri - 启动完整 Tauri 桌面应用（默认）

@@ -8,7 +8,7 @@ export default {
   addInstance: _('添加实例', 'Add Instance', '新增執行個體', 'インスタンス追加', '인스턴스 추가', 'Thêm instance', 'Agregar instancia', 'Adicionar instância', 'Добавить экземпляр', 'Ajouter une instance', 'Instanz hinzufügen'),
   addRemote: _('添加远程实例', 'Add Remote Instance', '新增遠程執行個體', 'リモートインスタンス追加', '원격 인스턴스 추가', 'Thêm instance từ xa', 'Agregar instancia remota', 'Adicionar instância remota', 'Добавить удалённый', 'Ajouter une instance distante', 'Remote-Instanz hinzufügen'),
   namePlaceholder: _('远程服务器', 'Remote Server', '遠程伺服器', 'リモートサーバー', '원격 서버'),
-  endpointPlaceholder: _('http://192.168.1.100:1420', 'http://192.168.1.100:1420'),
+  endpointPlaceholder: _('https://github.com/agentai2026/AI-Agent', 'https://github.com/agentai2026/AI-Agent'),
   nameLabel: _('名称', 'Name', '名稱', '名前', '이름', 'Tên', 'Nombre', 'Nome', 'Имя', 'Nom'),
   endpointLabel: _('面板地址', 'Panel Address', '面板位址', 'パネルアドレス', '패널 주소', 'Địa chỉ panel', 'Dirección del panel', 'Endereço do painel', 'Адрес панели', 'Adresse du panneau', 'Panel-Adresse'),
   gwPortLabel: _('Gateway 端口（可选）', 'Gateway Port (optional)', 'Gateway 連接埠（可選）', 'Gateway ポート（任意）', 'Gateway 포트 (선택)'),

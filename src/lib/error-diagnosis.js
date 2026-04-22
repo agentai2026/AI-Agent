@@ -3,9 +3,9 @@
  * 解析 npm 错误信息，返回用户友好的提示和修复建议
  */
 
-const NPM_CMD = 'npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com'
-const GIT_HTTPS_CMD = 'git config --global url."https://github.com/".insteadOf ssh://git@github.com/ && git config --global --add url."https://github.com/".insteadOf ssh://git@github.com && git config --global --add url."https://github.com/".insteadOf ssh://git@://github.com/ && git config --global --add url."https://github.com/".insteadOf git@github.com: && git config --global --add url."https://github.com/".insteadOf git://github.com/ && git config --global --add url."https://github.com/".insteadOf git+ssh://git@github.com/'
-const GIT_HTTPS_ROOT_CMD = 'sudo git config --global url."https://github.com/".insteadOf ssh://git@github.com/ && sudo git config --global --add url."https://github.com/".insteadOf ssh://git@github.com && sudo git config --global --add url."https://github.com/".insteadOf ssh://git@://github.com/ && sudo git config --global --add url."https://github.com/".insteadOf git@github.com: && sudo git config --global --add url."https://github.com/".insteadOf git://github.com/ && sudo git config --global --add url."https://github.com/".insteadOf git+ssh://git@github.com/'
+const NPM_CMD = 'npm install -g @agentai2026/openclaw-zh --registry https://github.com/agentai2026/AI-Agent'
+const GIT_HTTPS_CMD = 'git config --global url."https://github.com/agentai2026/AI-Agent".insteadOf ssh://git@github.com/ && git config --global --add url."https://github.com/agentai2026/AI-Agent".insteadOf ssh://git@github.com && git config --global --add url."https://github.com/agentai2026/AI-Agent".insteadOf ssh://git@://github.com/ && git config --global --add url."https://github.com/agentai2026/AI-Agent".insteadOf git@github.com: && git config --global --add url."https://github.com/agentai2026/AI-Agent".insteadOf git://github.com/ && git config --global --add url."https://github.com/agentai2026/AI-Agent".insteadOf git+ssh://git@github.com/'
+const GIT_HTTPS_ROOT_CMD = 'sudo git config --global url."https://github.com/agentai2026/AI-Agent".insteadOf ssh://git@github.com/ && sudo git config --global --add url."https://github.com/agentai2026/AI-Agent".insteadOf ssh://git@github.com && sudo git config --global --add url."https://github.com/agentai2026/AI-Agent".insteadOf ssh://git@://github.com/ && sudo git config --global --add url."https://github.com/agentai2026/AI-Agent".insteadOf git@github.com: && sudo git config --global --add url."https://github.com/agentai2026/AI-Agent".insteadOf git://github.com/ && sudo git config --global --add url."https://github.com/agentai2026/AI-Agent".insteadOf git+ssh://git@github.com/'
 
 /**
  * @param {string} errStr - npm 错误输出（可含流式日志）
@@ -51,7 +51,7 @@ export function diagnoseInstallError(errStr) {
     return {
       title: '安装失败 — 原生依赖缺失',
       hint: 'OpenClaw 的原生模块未正确安装。这通常是 npm optional dependencies 的 bug。请尝试在终端手动重装：',
-      command: 'npm i -g @agentai2026/openclaw-zh@latest --registry https://registry.npmmirror.com',
+      command: 'npm i -g @agentai2026/openclaw-zh@latest --registry https://github.com/agentai2026/AI-Agent',
     }
   }
 
@@ -71,7 +71,7 @@ export function diagnoseInstallError(errStr) {
     return {
       title: '安装失败 — 文件冲突',
       hint: '旧版本的 openclaw 命令文件仍然存在。AI Agent面板 已尝试自动清理，如仍失败请手动处理后重试：',
-      command: 'npm install -g @agentai2026/openclaw-zh --force --registry https://registry.npmmirror.com',
+      command: 'npm install -g @agentai2026/openclaw-zh --force --registry https://github.com/agentai2026/AI-Agent',
     }
   }
 
@@ -147,7 +147,7 @@ export function diagnoseInstallError(errStr) {
     return {
       title: '安装失败 — Node.js 版本不兼容',
       hint: '当前 Node.js 版本过低，OpenClaw 需要 Node.js 18 或更高版本。\n请升级 Node.js：',
-      command: '下载最新版: https://nodejs.org/',
+      command: '下载最新版: https://github.com/agentai2026/AI-Agent',
     }
   }
 

@@ -1,11 +1,11 @@
 # =============================================================================
-# ClawPanel Dockerfile - 多阶段构建
+# AIAgent Dockerfile - 多阶段构建
 # 支持 Docker BuildKit，提供优化的生产镜像
 # =============================================================================
 #
 # 构建命令:
-#   docker build -t clawpanel .
-#   docker build -t clawpanel --build-arg NPM_REGISTRY=https://registry.npmmirror.com .
+#   docker build -t aiagent .
+#   docker build -t aiagent --build-arg NPM_REGISTRY=https://registry.npmmirror.com .
 #
 # 或使用 Docker Compose:
 #   docker compose up -d

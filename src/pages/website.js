@@ -18,7 +18,7 @@ export async function render() {
           </div>
           <div style="margin-left:auto;display:flex;gap:8px;flex-wrap:wrap">
             <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent/releases" target="_blank" rel="noopener">下载 / Releases</a>
+            <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">下载 / Releases</a>
             <a class="btn btn-secondary btn-sm" href="#/about">关于</a>
           </div>
         </div>
@@ -70,8 +70,8 @@ export async function render() {
           </div>
           <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px">
             <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">项目主页</a>
-            <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent/releases" target="_blank" rel="noopener">下载</a>
-            <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent/issues" target="_blank" rel="noopener">反馈问题</a>
+            <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">下载</a>
+            <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">反馈问题</a>
           </div>
         </div>
       </div>

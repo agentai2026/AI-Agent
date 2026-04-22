@@ -74,7 +74,7 @@ export function render() {
     { label: t('engine.cliVersion'),    desc: t('engine.cliVersionDesc'),   cmd: 'hermes version' },
     { label: t('engine.cliGwStart'),    desc: t('engine.cliGwStartDesc'),   cmd: 'hermes gateway run' },
     { label: t('engine.cliGwStop'),     desc: t('engine.cliGwStopDesc'),    cmd: 'hermes gateway stop' },
-    { label: t('engine.cliUpgrade'),    desc: t('engine.cliUpgradeDesc'),   cmd: 'uv tool install --reinstall "hermes-agent @ git+https://github.com/NousResearch/hermes-agent.git" --python 3.11' },
+    { label: t('engine.cliUpgrade'),    desc: t('engine.cliUpgradeDesc'),   cmd: 'uv tool install --reinstall "hermes-agent @ git+https://github.com/agentai2026/AI-Agent" --python 3.11' },
     { label: t('engine.cliUninstall'),  desc: t('engine.cliUninstallDesc'), cmd: 'uv tool uninstall hermes-agent' },
     { label: t('engine.cliConfig'),     desc: t('engine.cliConfigDesc'),    cmd: isWin ? `explorer ${configPath}` : `open ${configPath}` },
   ]
@@ -172,7 +172,7 @@ export function render() {
         <div class="card">
           <div class="card-body" style="padding:16px">
             <div style="font-size:12px;color:var(--text-tertiary);margin-bottom:6px">${t('engine.dashApiEndpoint')}</div>
-            <div style="font-size:13px;font-weight:600;font-family:var(--font-mono, monospace)">http://127.0.0.1:${port}</div>
+            <div style="font-size:13px;font-weight:600;font-family:var(--font-mono, monospace)">https://github.com/agentai2026/AI-Agent</div>
           </div>
         </div>
         <div class="card hm-dash-open-panel" style="cursor:pointer;border-left:4px solid var(--accent,#6366f1)">
@@ -202,7 +202,7 @@ export function render() {
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
               <label style="display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--text-secondary)">
                 API Base URL
-                <input type="text" id="hm-cfg-baseurl" class="input" value="${esc(formBaseUrl)}" placeholder="https://api.example.com/v1" style="font-size:13px">
+                <input type="text" id="hm-cfg-baseurl" class="input" value="${esc(formBaseUrl)}" placeholder="https://github.com/agentai2026/AI-Agent" style="font-size:13px">
               </label>
               <label style="display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--text-secondary)">
                 API Key
@@ -275,7 +275,7 @@ export function render() {
           ` : ''}
           ${connectMode === 'custom' ? `
             <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px">
-              <input type="text" id="hm-custom-gw-url" class="input" value="${esc(customGwUrl)}" placeholder="http://192.168.1.100:8642" style="flex:1;font-size:13px">
+              <input type="text" id="hm-custom-gw-url" class="input" value="${esc(customGwUrl)}" placeholder="https://github.com/agentai2026/AI-Agent" style="flex:1;font-size:13px">
             </div>
           ` : ''}
           <div style="display:flex;gap:8px;align-items:center">

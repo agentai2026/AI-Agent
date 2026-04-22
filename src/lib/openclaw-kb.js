@@ -1,6 +1,6 @@
 /**
  * AI Agent 内置知识库
- * 来源：https://openclawcn.com/docs/
+ * 来源：https://github.com/agentai2026/AI-Agent
  * 供 AI Agent面板 AI 助手在系统提示词中使用
  */
 
@@ -175,11 +175,11 @@ AI Agent 是开源个人 AI 助手平台，核心组件：
 ## 八、安装
 **macOS/Linux：**
 \`\`\`bash
-curl -fsSL https://openclaw.ai/install.sh | bash
+curl -fsSL https://github.com/agentai2026/AI-Agent | bash
 \`\`\`
 **Windows（WSL2 推荐）：**
 \`\`\`powershell
-iwr -useb https://openclaw.ai/install.ps1 | iex
+iwr -useb https://github.com/agentai2026/AI-Agent | iex
 \`\`\`
 **npm 全局安装：**
 \`\`\`bash

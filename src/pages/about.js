@@ -605,12 +605,12 @@ async function checkNewVersion(cards, panelVersion) {
       meta.innerHTML = `
         <span style="color:var(--warning)">⚠️ ${t('about.versionMismatch', { frontend: panelVersion, binary: binaryVersion })}</span>
         <span style="color:var(--text-tertiary);font-size:var(--font-size-xs)">${t('about.hotUpdateDeprecated')}</span>
-        <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent/releases" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
+        <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
       `
     } else if (latest && latest !== effectiveVersion && compareVersions(latest, effectiveVersion) > 0) {
       meta.innerHTML = `
         <span style="color:var(--accent)">${t('about.newVersionAvailable', { version: latest })}</span>
-        <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent/releases" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
+        <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
       `
     } else {
       meta.innerHTML = `<span style="color:var(--success)">${t('about.upToDate')}</span>`
@@ -619,7 +619,7 @@ async function checkNewVersion(cards, panelVersion) {
     const meta = el()
     if (!meta) return
     if (isFakeUpdate) {
-      meta.innerHTML = `<span style="color:var(--warning)">⚠️ ${t('about.versionMismatch', { frontend: panelVersion, binary: binaryVersion })}</span> <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent/releases" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>`
+      meta.innerHTML = `<span style="color:var(--warning)">⚠️ ${t('about.versionMismatch', { frontend: panelVersion, binary: binaryVersion })}</span> <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>`
     } else {
       meta.innerHTML = `<span style="color:var(--text-tertiary)">${t('about.checkUpdateFailed')}</span> <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>`
     }
@@ -655,8 +655,8 @@ function renderCommunity(page) {
         <div style="font-size:var(--font-size-sm);color:var(--text-secondary);font-style:italic">${t('about.communityWelcomeIntl')}</div>
         <div style="font-size:var(--font-size-sm);color:var(--text-secondary);margin-top:4px">${t('about.communityDesc')}</div>
         <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px">
-          <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent/discussions" target="_blank" rel="noopener">${t('about.joinQQ')}</a>
-          <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent/discussions" target="_blank" rel="noopener">${t('about.joinFeishu')}</a>
+          <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('about.joinQQ')}</a>
+          <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('about.joinFeishu')}</a>
         </div>
         <div style="font-size:var(--font-size-xs);color:var(--text-tertiary);margin-top:8px">
           ${t('about.communityNote')}
@@ -670,7 +670,7 @@ const PROJECTS = [
   {
     name: 'AI Agent',
     desc: t('about.projectRuntime'),
-    url: 'https://github.com/openclaw/openclaw',
+    url: 'https://github.com/agentai2026/AI-Agent',
   },
   {
     name: 'AI Agent面板',
@@ -680,12 +680,12 @@ const PROJECTS = [
   {
     name: t('about.linkMobileApp'),
     desc: t('about.projectMobileClient'),
-    url: 'https://github.com/agentai2026/clawapp',
+    url: 'https://github.com/agentai2026/AI-Agent',
   },
   {
     name: 'cftunnel',
     desc: t('about.projectCftunnel'),
-    url: 'https://github.com/agentai2026/cftunnel',
+    url: 'https://github.com/agentai2026/AI-Agent',
   },
 ]
 
@@ -709,7 +709,7 @@ function renderProjects(page) {
 
 const LINKS = [
   { label: t('about.openSourceRepo'), url: 'https://github.com/agentai2026/AI-Agent', primary: true },
-  { label: 'GitHub Releases', url: 'https://github.com/agentai2026/AI-Agent/releases' },
+  { label: 'GitHub Releases', url: 'https://github.com/agentai2026/AI-Agent' },
 ]
 
 function renderContribute(page) {
@@ -719,10 +719,10 @@ function renderContribute(page) {
       ${t('about.contributeDesc')}
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:8px">
-      <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent/issues/new" target="_blank" rel="noopener">${t('about.submitIssue')}</a>
-      <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent/pulls" target="_blank" rel="noopener">${t('about.submitPR')}</a>
-      <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${t('about.contributeGuide')}</a>
-      <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent/issues" target="_blank" rel="noopener">${t('about.viewIssues')}</a>
+      <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('about.submitIssue')}</a>
+      <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('about.submitPR')}</a>
+      <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('about.contributeGuide')}</a>
+      <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">${t('about.viewIssues')}</a>
     </div>
     <div style="margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)">
       ${t('about.domesticMirrorHint')}

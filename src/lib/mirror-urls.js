@@ -3,10 +3,10 @@
  * 国内用户自动使用 Gitee 镜像，解决 GitHub 访问慢/不可达的问题
  */
 
-const GITHUB_ORG = 'https://github.com/agentai2026'
-const GITEE_ORG = 'https://gitee.com/QtCodeCreators'
-const GITHUB_RAW = 'https://raw.githubusercontent.com/agentai2026'
-const GITEE_RAW = 'https://gitee.com/QtCodeCreators'
+const GITHUB_ORG = 'https://github.com/agentai2026/AI-Agent'
+const GITEE_ORG = 'https://github.com/agentai2026/AI-Agent'
+const GITHUB_RAW = 'https://github.com/agentai2026/AI-Agent'
+const GITEE_RAW = 'https://github.com/agentai2026/AI-Agent'
 
 // 逻辑仓库 key → GitHub 仓库目录名（与 Gitee 可能不同）
 const GITHUB_REPO_SLUG = {
@@ -44,7 +44,7 @@ async function isGithubReachable() {
   try {
     const ctrl = new AbortController()
     const timer = setTimeout(() => ctrl.abort(), 3000)
-    await fetch('https://github.com/favicon.ico', { method: 'HEAD', mode: 'no-cors', signal: ctrl.signal })
+    await fetch('https://github.com/agentai2026/AI-Agent', { method: 'HEAD', mode: 'no-cors', signal: ctrl.signal })
     clearTimeout(timer)
     _githubReachable = true
   } catch {

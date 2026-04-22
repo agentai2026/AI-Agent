@@ -1,7 +1,7 @@
 #!/bin/bash
-# ClawPanel Web 版一键部署脚本
+# AIAgent Web 版一键部署脚本
 # 适用于 WSL / Docker / 远程服务器
-# 用法: curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/deploy.sh | bash
+# 用法: curl -fsSL https://github.com/agentai2026/AI-Agent | bash
 
 set -e
 
@@ -10,7 +10,7 @@ INSTALL_DIR="$HOME/.clawpanel-web"
 PORT="${CLAWPANEL_PORT:-9099}"
 
 echo ""
-echo "  ClawPanel Web 版 一键部署脚本"
+echo "  AIAgent Web 版 一键部署脚本"
 echo "  =============================="
 echo ""
 
@@ -35,19 +35,19 @@ download() {
 
 # ── 检查依赖 ──
 echo "[1/5] 检查依赖..."
-command -v node >/dev/null 2>&1 || { echo "❌ 需要 Node.js，请先安装: https://nodejs.org/"; exit 1; }
+command -v node >/dev/null 2>&1 || { echo "❌ 需要 Node.js，请先安装: https://github.com/agentai2026/AI-Agent"; exit 1; }
 command -v npm >/dev/null 2>&1 || { echo "❌ 需要 npm"; exit 1; }
 echo "  node $(node -v) / npm $(npm -v)"
 
 # ── 获取最新版本号 ──
 echo "[2/5] 获取最新版本..."
-LATEST=$(fetch "https://api.github.com/repos/$REPO/releases/latest" 2>/dev/null | grep '"tag_name"' | sed -E 's/.*"v?([^"]+)".*/\1/' || echo "")
+LATEST=$(fetch "https://github.com/agentai2026/AI-Agent" 2>/dev/null | grep '"tag_name"' | sed -E 's/.*"v?([^"]+)".*/\1/' || echo "")
 if [ -z "$LATEST" ]; then
   echo "  无法获取最新版本，使用 main 分支"
-  DOWNLOAD_URL="https://github.com/$REPO/archive/refs/heads/main.tar.gz"
+  DOWNLOAD_URL="https://github.com/agentai2026/AI-Agent"
 else
   echo "  最新版本: v$LATEST"
-  DOWNLOAD_URL="https://github.com/$REPO/archive/refs/tags/v$LATEST.tar.gz"
+  DOWNLOAD_URL="https://github.com/agentai2026/AI-Agent"
 fi
 
 # ── 下载并解压 ──
@@ -72,12 +72,12 @@ npx vite build --mode development 2>&1 | tail -2
 
 echo ""
 echo "  ==============================="
-echo "  ClawPanel Web 版部署完成！"
+echo "  AIAgent Web 版部署完成！"
 echo "  ==============================="
 echo ""
 echo "  启动:  cd $INSTALL_DIR && npx serve dist -l $PORT"
 IP=$(hostname -I 2>/dev/null | awk '{print $1}' || echo "localhost")
-echo "  访问:  http://$IP:$PORT"
+echo "  访问:  https://github.com/agentai2026/AI-Agent"
 echo ""
 echo "  提示: 需要本地 OpenClaw Gateway 运行中（默认端口 3456）"
 echo "        安装: npm i -g @qingchencloud/openclaw-zh"

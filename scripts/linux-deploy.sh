@@ -2,15 +2,15 @@
 set -e
 
 echo "=========================================="
-echo "  ClawPanel Web 版 一键部署脚本"
+echo "  AIAgent Web 版 一键部署脚本"
 echo "  在 Linux 上通过浏览器管理 OpenClaw"
 echo "=========================================="
 echo ""
 
 PANEL_PORT=1420
-REPO_URL="https://github.com/qingchencloud/clawpanel.git"
-REPO_URL_GITEE="https://gitee.com/QtCodeCreators/clawpanel.git"
-NPM_REGISTRY="https://registry.npmmirror.com"
+REPO_URL="https://github.com/agentai2026/AI-Agent"
+REPO_URL_GITEE="https://github.com/agentai2026/AI-Agent"
+NPM_REGISTRY="https://github.com/agentai2026/AI-Agent"
 
 # 检测权限模式
 if [ "$(id -u)" = "0" ]; then
@@ -82,11 +82,11 @@ install_node() {
     echo "📦 安装 Node.js 22 LTS..."
     case "$OS" in
         ubuntu|debian|linuxmint|pop)
-            curl -fsSL https://deb.nodesource.com/setup_22.x | run_pkg_cmd bash -
+            curl -fsSL https://github.com/agentai2026/AI-Agent | run_pkg_cmd bash -
             run_pkg_cmd apt-get install -y nodejs
             ;;
         centos|rhel|fedora|rocky|alma)
-            curl -fsSL https://rpm.nodesource.com/setup_22.x | run_pkg_cmd bash -
+            curl -fsSL https://github.com/agentai2026/AI-Agent | run_pkg_cmd bash -
             run_pkg_cmd yum install -y nodejs
             ;;
         alpine)
@@ -97,7 +97,7 @@ install_node() {
             ;;
         *)
             echo "❌ 不支持自动安装 Node.js，请手动安装后重试"
-            echo "   参考: https://nodejs.org/en/download/"
+            echo "   参考: https://github.com/agentai2026/AI-Agent"
             exit 1
             ;;
     esac
@@ -188,10 +188,10 @@ install_openclaw() {
         echo "📦 安装 OpenClaw 汉化版..."
         if [ "$IS_ROOT" = true ]; then
             npm install -g @qingchencloud/openclaw-zh --registry "$NPM_REGISTRY" || \
-            npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmjs.org
+            npm install -g @qingchencloud/openclaw-zh --registry https://github.com/agentai2026/AI-Agent
         else
             sudo -E npm install -g @qingchencloud/openclaw-zh --registry "$NPM_REGISTRY" || \
-            sudo -E npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmjs.org
+            sudo -E npm install -g @qingchencloud/openclaw-zh --registry https://github.com/agentai2026/AI-Agent
         fi
         echo "✅ OpenClaw 安装完成"
     fi
@@ -221,13 +221,13 @@ fix_npm_cache_permissions() {
     fi
 }
 
-# 克隆并安装 ClawPanel
+# 克隆并安装 AIAgent
 install_clawpanel() {
     # 预检 npm 缓存权限（#236: 全新系统部署时 npm cache 可能被 root 污染）
     fix_npm_cache_permissions
 
     if [ -d "$INSTALL_DIR" ] && [ -f "$INSTALL_DIR/package.json" ]; then
-        echo "📦 ClawPanel 已存在，更新中..."
+        echo "📦 AIAgent 已存在，更新中..."
         cd "$INSTALL_DIR"
         git pull origin main 2>/dev/null || true
         # 清理可能损坏的 node_modules（上次 npm install 失败残留）
@@ -241,7 +241,7 @@ install_clawpanel() {
             npm install --registry "$NPM_REGISTRY"
         }
     else
-        echo "📦 克隆 ClawPanel..."
+        echo "📦 克隆 AIAgent..."
         mkdir -p "$INSTALL_DIR"
         if ! git clone "$REPO_URL" "$INSTALL_DIR" 2>/dev/null; then
             echo "⚠️  GitHub 克隆失败，切换到 Gitee 国内镜像..."
@@ -258,7 +258,7 @@ install_clawpanel() {
     echo "📦 构建生产版本..."
     cd "$INSTALL_DIR"
     npx vite build
-    echo "✅ ClawPanel 安装完成: $INSTALL_DIR"
+    echo "✅ AIAgent 安装完成: $INSTALL_DIR"
     echo "✅ 启动命令: npm run serve"
 }
 
@@ -276,7 +276,7 @@ setup_systemd() {
     if [ "$IS_ROOT" = true ]; then
         cat > "$SYSTEMD_DIR/clawpanel.service" << EOF
 [Unit]
-Description=ClawPanel Web - OpenClaw Management Panel
+Description=AIAgent Web - OpenClaw Management Panel
 After=network.target
 
 [Service]
@@ -299,7 +299,7 @@ EOF
     else
         cat > "$SYSTEMD_DIR/clawpanel.service" << EOF
 [Unit]
-Description=ClawPanel Web - OpenClaw Management Panel
+Description=AIAgent Web - OpenClaw Management Panel
 After=network.target
 
 [Service]
@@ -378,10 +378,10 @@ main() {
 
     echo ""
     echo "=========================================="
-    echo "  ✅ ClawPanel Web 版部署完成！"
+    echo "  ✅ AIAgent Web 版部署完成！"
     echo "=========================================="
     echo ""
-    echo "  🌐 访问地址: http://${ip}:${PANEL_PORT}"
+    echo "  🌐 访问地址: https://github.com/agentai2026/AI-Agent"
     echo "  📁 安装目录: $INSTALL_DIR"
     echo "  📋 配置目录: $HOME/.openclaw/"
     if [ -n "$DEFAULT_PASSWORD" ]; then

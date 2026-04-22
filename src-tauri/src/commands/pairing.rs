@@ -111,8 +111,8 @@ fn patch_gateway_origins() {
     // Tauri 应用 + 本地开发服务器必须存在的 origin
     let required: Vec<String> = vec![
         "tauri://localhost".into(),
-        "https://tauri.localhost".into(),
-        "http://tauri.localhost".into(),
+        "https://github.com/agentai2026/AI-Agent".into(),
+        "https://github.com/agentai2026/AI-Agent".into(),
         "http://localhost:1420".into(),
         "http://127.0.0.1:1420".into(),
     ];

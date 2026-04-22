@@ -159,7 +159,7 @@ pub fn create_connect_frame(
                 "signature": sig_b64,
             },
             "locale": "zh-CN",
-            "userAgent": format!("ClawPanel/{}", env!("CARGO_PKG_VERSION")),
+            "userAgent": format!("AIAgent/{}", env!("CARGO_PKG_VERSION")),
         }
     });
 

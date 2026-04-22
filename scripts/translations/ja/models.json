@@ -34,7 +34,7 @@
   "urlRequired": "Base URL を入力してください",
   "keyRequired": "API Key を入力してください",
   "namePlaceholder": "例: OpenAI",
-  "urlPlaceholder": "例: https://api.openai.com/v1",
+  "urlPlaceholder": "例: https://github.com/agentai2026/AI-Agent",
   "keyPlaceholder": "例: sk-...",
   "modelPlaceholder": "例: gpt-4o",
   "primaryModel": "プライマリモデル",

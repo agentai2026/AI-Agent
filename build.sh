@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# ClawPanel 本地构建脚本（macOS / Linux）
+# AIAgent 本地构建脚本（macOS / Linux）
 # 用法:
 #   ./build.sh                    — 构建当前平台安装包（默认）
 #   ./build.sh --debug            — Debug 构建（快，不打包）
@@ -31,7 +31,7 @@ echo ""
 ARCH=$(uname -m)
 OS=$(uname)
 
-echo -e "  ${MAGENTA}ClawPanel 构建工具${RESET}"
+echo -e "  ${MAGENTA}AIAgent 构建工具${RESET}"
 echo -e "  ${GRAY}─────────────────────────────────────${RESET}"
 if [[ "$OS" == "Darwin" ]]; then
   if [[ "$ARCH" == "arm64" ]]; then
@@ -53,12 +53,12 @@ echo ""
 step "检查构建依赖"
 
 if ! command -v node &>/dev/null; then
-  fail "未找到 Node.js，请从 https://nodejs.org 安装 v18+"
+  fail "未找到 Node.js，请从 https://github.com/agentai2026/AI-Agent 安装 v18+"
 fi
 ok "Node.js $(node --version)"
 
 if ! command -v cargo &>/dev/null; then
-  fail "未找到 Rust/Cargo，请从 https://rustup.rs 安装"
+  fail "未找到 Rust/Cargo，请从 https://github.com/agentai2026/AI-Agent 安装"
 fi
 ok "Rust $(rustc --version)"
 
