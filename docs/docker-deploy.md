@@ -1,8 +1,8 @@
-# ClawPanel Docker 部署指南
+# AI Agent面板 Docker 部署指南
 
-本文介绍如何用 Docker 部署 **ClawPanel Web 版**，通过浏览器远程管理 OpenClaw。
+本文介绍如何用 Docker 部署 **AI Agent面板 Web 版**，通过浏览器远程管理 AI Agent。
 
-> **ClawPanel** 有 Win/Mac 桌面客户端，但 Linux 没有桌面版。Docker 部署让你在任何有 Docker 的机器上一键跑起 ClawPanel Web 管理面板。
+> **AI Agent面板** 有 Win/Mac 桌面客户端，但 Linux 没有桌面版。Docker 部署让你在任何有 Docker 的机器上一键跑起 AI Agent面板 Web 管理面板。
 
 ---
 
@@ -24,17 +24,17 @@
 ## 架构说明
 
 ```
-浏览器 ──HTTP──▶ ClawPanel Web 容器 (:1420)
+浏览器 ──HTTP──▶ AI Agent面板 Web 容器 (:1420)
                         │
                         ├── /__api/*   读写 ~/.openclaw/ 配置
                         ├── /ws        WebSocket 代理 → Gateway
                         └── 管理 Gateway 进程
                               │
                               ▼
-              OpenClaw Gateway (容器内或宿主机, :18789)
+              AI Agent Gateway (容器内或宿主机, :18789)
 ```
 
-ClawPanel Web 版 = Vite 开发服务器 + `dev-api.js` 后端中间件，在容器内提供完整管理功能。
+AI Agent面板 Web 版 = Vite 开发服务器 + `dev-api.js` 后端中间件，在容器内提供完整管理功能。
 
 ---
 
@@ -51,9 +51,9 @@ docker run -d \
   node:22-slim \
   sh -c "\
     apt-get update && apt-get install -y git && \
-    npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com && \
+    npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com && \
     openclaw init 2>/dev/null || true && \
-    git clone https://github.com/qingchencloud/clawpanel.git /app && \
+    git clone https://github.com/agentai2026/AI-Agent.git /app && \
     cd /app && npm install && npm run build && \
     npm run serve"
 ```
@@ -94,7 +94,7 @@ services:
     volumes:
       - openclaw-data:/root/.openclaw
     command: >
-      sh -c "npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com &&
+      sh -c "npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com &&
              openclaw init 2>/dev/null || true &&
              openclaw gateway start --foreground"
     healthcheck:
@@ -115,7 +115,7 @@ FROM node:22-slim
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-RUN git clone https://github.com/qingchencloud/clawpanel.git . && \
+RUN git clone https://github.com/agentai2026/AI-Agent.git . && \
     npm install
 
 EXPOSE 1420
@@ -131,24 +131,24 @@ CMD ["npm", "run", "serve"]
 docker compose up -d
 ```
 
-这样 ClawPanel 和 Gateway 共享同一个 `openclaw-data` 卷，ClawPanel 可以直接管理 Gateway。
+这样 AI Agent面板 和 Gateway 共享同一个 `openclaw-data` 卷，AI Agent面板 可以直接管理 Gateway。
 
 ---
 
 ## 方式三：自定义 Dockerfile
 
-如果只需要 ClawPanel Web（Gateway 在宿主机或其他地方运行）：
+如果只需要 AI Agent面板 Web（Gateway 在宿主机或其他地方运行）：
 
 ```dockerfile
 FROM node:22-slim
 
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
-# 安装 OpenClaw CLI（ClawPanel 需要读写配置）
-RUN npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com
+# 安装 AI Agent CLI（AI Agent面板 需要读写配置）
+RUN npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com
 
 WORKDIR /app
-RUN git clone https://github.com/qingchencloud/clawpanel.git . && \
+RUN git clone https://github.com/agentai2026/AI-Agent.git . && \
     npm install
 
 EXPOSE 1420
@@ -176,7 +176,7 @@ docker run -d \
 
 ### 数据目录
 
-ClawPanel 的所有数据都存储在 `~/.openclaw/` 目录中：
+AI Agent面板 的所有数据都存储在 `~/.openclaw/` 目录中：
 
 | 文件/目录 | 说明 |
 |-----------|------|
@@ -215,11 +215,11 @@ docker exec -it clawpanel openclaw init
 
 ### 场景一：Gateway 在同一个 Compose 中
 
-使用上面的 Compose 配置，ClawPanel 和 Gateway 共享数据卷，ClawPanel 自动通过本地回环连接 Gateway。
+使用上面的 Compose 配置，AI Agent面板 和 Gateway 共享数据卷，AI Agent面板 自动通过本地回环连接 Gateway。
 
 ### 场景二：Gateway 在宿主机
 
-如果 Gateway 运行在宿主机（不在 Docker 中），ClawPanel 容器需要访问宿主机网络：
+如果 Gateway 运行在宿主机（不在 Docker 中），AI Agent面板 容器需要访问宿主机网络：
 
 ```bash
 docker run -d \
@@ -229,11 +229,11 @@ docker run -d \
   clawpanel
 ```
 
-使用 `--network host` 后，容器共享宿主机网络，ClawPanel 可以直接连接 `127.0.0.1:18789`。
+使用 `--network host` 后，容器共享宿主机网络，AI Agent面板 可以直接连接 `127.0.0.1:18789`。
 
 ### 场景三：Gateway 在远程服务器
 
-修改 `openclaw.json` 中的 Gateway 端口配置，或在 ClawPanel 面板中设置 Gateway 地址。
+修改 `openclaw.json` 中的 Gateway 端口配置，或在 AI Agent面板 面板中设置 Gateway 地址。
 
 ---
 
@@ -259,7 +259,7 @@ server {
 }
 ```
 
-> **重要：** 必须配置 WebSocket 升级头，否则 ClawPanel 无法通过 `/ws` 连接 Gateway。
+> **重要：** 必须配置 WebSocket 升级头，否则 AI Agent面板 无法通过 `/ws` 连接 Gateway。
 
 ---
 
@@ -286,7 +286,7 @@ docker stop clawpanel && docker rm clawpanel
 
 ## 更新升级
 
-### 更新 ClawPanel
+### 更新 AI Agent面板
 
 ```bash
 docker exec -it clawpanel bash -c "cd /app && git pull origin main && npm install"
@@ -300,10 +300,10 @@ docker compose build --no-cache clawpanel
 docker compose up -d clawpanel
 ```
 
-### 更新 OpenClaw
+### 更新 AI Agent
 
 ```bash
-docker exec -it clawpanel npm install -g @qingchencloud/openclaw-zh@latest --registry https://registry.npmmirror.com
+docker exec -it clawpanel npm install -g @agentai2026/openclaw-zh@latest --registry https://registry.npmmirror.com
 ```
 
 ---
@@ -320,37 +320,37 @@ docker logs clawpanel
 
 确认看到 `VITE ready` 和 `[dev-api] 开发 API 已启动` 输出。
 
-### Q: 面板里点"安装 OpenClaw"失败 / 拉取不了？
+### Q: 面板里点"安装 AI Agent"失败 / 拉取不了？
 
-面板中的"安装 OpenClaw"走的是 `npm install -g`（在容器内通过网络下载安装），**不是拉取 Docker 镜像**。失败原因通常是容器网络不通或 npm 源访问慢。
+面板中的"安装 AI Agent"走的是 `npm install -g`（在容器内通过网络下载安装），**不是拉取 Docker 镜像**。失败原因通常是容器网络不通或 npm 源访问慢。
 
 **推荐方案（二选一）：**
 
-1. **使用一体镜像（最简单）**：直接用预装了 OpenClaw + Gateway + ClawPanel 的一体镜像，不需要在面板里点安装：
+1. **使用一体镜像（最简单）**：直接用预装了 AI Agent + Gateway + AI Agent面板 的一体镜像，不需要在面板里点安装：
    ```bash
    docker run -d --name openclaw -p 1420:1420 -p 18789:18789 \
      -v openclaw-data:/root/.openclaw \
-     ghcr.io/qingchencloud/openclaw:latest
+     ghcr.io/openclaw/openclaw:latest
    ```
-   > 一体镜像仓库：[github.com/qingchencloud/openclaw-docker](https://github.com/qingchencloud/openclaw-docker)
+   > 一体镜像仓库：[github.com/agentai2026/openclaw-docker](https://github.com/agentai2026/openclaw-docker)
 
-2. **在 Dockerfile 中预装**：构建镜像时就安装好 OpenClaw，避免运行时下载：
+2. **在 Dockerfile 中预装**：构建镜像时就安装好 AI Agent，避免运行时下载：
    ```dockerfile
    FROM node:22-slim
    RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
-   # 预装 OpenClaw CLI（使用国内镜像源加速）
-   RUN npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com
-   # ... 后续 ClawPanel 安装步骤
+   # 预装 AI Agent CLI（使用国内镜像源加速）
+   RUN npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com
+   # ... 后续 AI Agent面板 安装步骤
    ```
 
 **临时方案**：如果容器已经在运行，可以手动进入容器安装：
 ```bash
-docker exec -it clawpanel npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com
+docker exec -it clawpanel npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com
 ```
 
 ### Q: 面板显示 "openclaw.json 不存在"？
 
-在容器内初始化 OpenClaw：
+在容器内初始化 AI Agent：
 
 ```bash
 docker exec -it clawpanel openclaw init
@@ -361,7 +361,7 @@ docker exec -it clawpanel openclaw init
 容器内管理 Gateway 进程需要特殊权限。推荐方案：
 
 1. **Compose 模式**：Gateway 作为独立容器运行，用 `docker compose restart gateway` 管理
-2. **Host 网络模式**：`--network host` 让 ClawPanel 直接管理宿主机进程
+2. **Host 网络模式**：`--network host` 让 AI Agent面板 直接管理宿主机进程
 
 ### Q: 数据会丢失吗？
 

@@ -1,5 +1,5 @@
 /**
- * ClawPanel 入口
+ * AI Agent面板 入口
  */
 
 // 标记 JS 模块已加载（供 index.html 多阶段启动检测使用）
@@ -21,6 +21,41 @@ import { initFeatureGates } from './lib/feature-gates.js'
 import { registerEngine, initEngineManager, getActiveEngine, getActiveEngineId, onEngineChange } from './lib/engine-manager.js'
 import openclawEngine from './engines/openclaw/index.js'
 import hermesEngine from './engines/hermes/index.js'
+
+function isClawQtCoolUrl(raw) {
+  if (!raw) return false
+  try {
+    const u = new URL(raw, window.location.href)
+    return u.hostname.toLowerCase() === 'claw.qt.cool'
+  } catch {
+    return false
+  }
+}
+
+function setupLocalWebsiteGuards() {
+  // Intercept anchor clicks to claw.qt.cool and route to local website page
+  document.addEventListener('click', (e) => {
+    const a = e.target?.closest?.('a[href]')
+    if (!a) return
+    const href = a.getAttribute('href') || ''
+    if (!isClawQtCoolUrl(href)) return
+    e.preventDefault()
+    e.stopPropagation()
+    navigate('/website')
+  }, true)
+
+  // Intercept window.open to claw.qt.cool
+  const _open = window.open?.bind(window)
+  if (_open) {
+    window.open = function(url, target, features) {
+      if (isClawQtCoolUrl(url)) {
+        navigate('/website')
+        return null
+      }
+      return _open(url, target, features)
+    }
+  }
+}
 
 // 样式
 import './style/variables.css'
@@ -111,7 +146,7 @@ function showBackendDownOverlay() {
       </button>
       <div id="backend-retry-status" style="font-size:12px;color:var(--text-tertiary);margin-top:12px"></div>
       <div style="margin-top:16px;font-size:11px;color:#aaa">
-        <a href="https://claw.qt.cool" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none">claw.qt.cool</a>
+        <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none">GitHub</a>
         <span style="margin:0 6px">&middot;</span>v${APP_VERSION}
       </div>
     </div>
@@ -180,7 +215,7 @@ function showLoginOverlay(defaultPw) {
   overlay.innerHTML = `
     <div class="login-card">
       ${_logoSvg}
-      <div class="login-title">ClawPanel</div>
+      <div class="login-title">AI Agent面板</div>
       <div class="login-desc">${hasDefault
         ? `${t('security.firstLoginHint')}<br><span style="font-size:12px;color:#6366f1;font-weight:600">${t('security.firstLoginChangeHint', { security: securityLabel })}</span>`
         : (isTauri ? t('security.appLocked') : t('security.loginPrompt'))}</div>
@@ -203,7 +238,7 @@ function showLoginOverlay(defaultPw) {
         </div>
       </details>` : ''}
       <div style="margin-top:${hasDefault ? '20' : '12'}px;font-size:11px;color:#aaa;text-align:center">
-        <a href="https://claw.qt.cool" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none">claw.qt.cool</a>
+        <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none">GitHub</a>
         <span style="margin:0 6px">·</span>v${APP_VERSION}
       </div>
     </div>
@@ -313,6 +348,9 @@ const sidebar = document.getElementById('sidebar')
 const content = document.getElementById('content')
 
 async function boot() {
+  // Global routes (not engine-specific)
+  registerRoute('/website', () => import('./pages/website.js'))
+
   // 注册引擎
   registerEngine(openclawEngine)
   registerEngine(hermesEngine)
@@ -323,6 +361,9 @@ async function boot() {
   renderSidebar(sidebar)
   initRouter(content)
 
+  // Ensure claw.qt.cool always opens local website page
+  setupLocalWebsiteGuards()
+
   // 移动端顶栏（汉堡菜单 + 标题）
   const mainCol = document.getElementById('main-col')
   const topbar = document.createElement('div')
@@ -332,7 +373,7 @@ async function boot() {
     <button class="mobile-hamburger" id="btn-mobile-menu">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
-    <span class="mobile-topbar-title">ClawPanel</span>
+    <span class="mobile-topbar-title">AI Agent面板</span>
   `
   topbar.querySelector('.mobile-hamburger').addEventListener('click', openMobileSidebar)
   mainCol.prepend(topbar)
@@ -429,7 +470,7 @@ async function boot() {
       // Gateway 横幅（所有引擎均注册，update() 内部按引擎判断显隐）
       setupGatewayBanner()
 
-      // === OpenClaw 专属逻辑（WebSocket、Guardian 守护等） ===
+      // === AI Agent 专属逻辑（WebSocket、Guardian 守护等） ===
       if (getActiveEngineId() === 'openclaw') {
         // 自动连接 WebSocket（如果 Gateway 正在运行）
         if (isGatewayRunning()) {
@@ -476,7 +517,7 @@ async function boot() {
       }
     }
 
-    // 全局监听后台任务完成/失败事件，自动刷新安装状态和侧边栏（仅 OpenClaw）
+    // 全局监听后台任务完成/失败事件，自动刷新安装状态和侧边栏（仅 AI Agent）
     if (isTauriRuntime() && getActiveEngineId() === 'openclaw') {
       import('@tauri-apps/api/event').then(async ({ listen }) => {
         const refreshAfterTask = async () => {
@@ -590,7 +631,7 @@ function setupGatewayBanner() {
   if (!banner) return
 
   function update(running, foreign) {
-    // Hermes 模式不显示 OpenClaw Gateway 横幅
+    // Hermes 模式不显示 AI Agent Gateway 横幅
     if (getActiveEngineId() !== 'openclaw') {
       banner.classList.add('gw-banner-hidden')
       return
@@ -708,7 +749,7 @@ function setupGatewayBanner() {
 
   update(isGatewayRunning(), isGatewayForeign())
   onGatewayChange(update)
-  // 引擎切换时刷新横幅（Hermes 模式隐藏，OpenClaw 模式按 Gateway 状态显示）
+  // 引擎切换时刷新横幅（Hermes 模式隐藏，AI Agent 模式按 Gateway 状态显示）
   onEngineChange(() => update(isGatewayRunning(), isGatewayForeign()))
 }
 
@@ -826,8 +867,8 @@ async function checkGlobalUpdate() {
           ${changelog ? `<span class="update-banner-changelog">· ${changelog}</span>` : ''}
         </div>
         ${canHotUpdate ? `<button class="btn btn-sm btn-primary" id="btn-hot-update">${t('about.hotUpdateNow')}</button>` : ''}
-        <a class="btn btn-sm" href="https://claw.qt.cool" target="_blank" rel="noopener">${t('about.downloadFromWebsite')}</a>
-        <a class="btn btn-sm" href="https://github.com/qingchencloud/clawpanel/releases" target="_blank" rel="noopener">${t('about.downloadFromGitHub')}</a>
+        <a class="btn btn-sm" href="https://github.com/agentai2026/AI-Agent/releases" target="_blank" rel="noopener">${t('about.downloadFromWebsite')}</a>
+        <a class="btn btn-sm" href="https://github.com/agentai2026/AI-Agent/releases" target="_blank" rel="noopener">${t('about.downloadFromGitHub')}</a>
         <button class="update-banner-close" id="btn-update-dismiss" title="${t('about.dismissVersion')}">✕</button>
       </div>
     `
@@ -904,7 +945,7 @@ function startUpdateChecker() {
         <div style="font-size:18px;font-weight:600;margin-bottom:8px;color:#18181b">${t('common.pageLoadFailed')}</div>
         <div style="font-size:13px;color:#71717a;max-width:400px;line-height:1.6;margin-bottom:16px">${String(bootErr?.message || bootErr).replace(/</g,'&lt;')}</div>
         <button onclick="location.reload()" style="padding:8px 20px;border-radius:8px;border:none;background:#6366f1;color:#fff;font-size:13px;cursor:pointer">${t('common.reloadRetry')}</button>
-        <div style="margin-top:24px;font-size:11px;color:#a1a1aa">${t('common.pageLoadFailedHint')}<br><a href="https://github.com/qingchencloud/clawpanel/issues" target="_blank" style="color:#6366f1">GitHub Issues</a></div>
+        <div style="margin-top:24px;font-size:11px;color:#a1a1aa">${t('common.pageLoadFailedHint')}<br><a href="https://github.com/agentai2026/AI-Agent/issues" target="_blank" style="color:#6366f1">GitHub Issues</a></div>
       </div>`
   }
   startUpdateChecker()
@@ -920,7 +961,7 @@ function startUpdateChecker() {
       const { wsClient } = await import('./lib/ws-client.js')
       const { api } = await import('./lib/tauri-api.js')
       const lines = ['## 系统诊断快照']
-      lines.push(`- OpenClaw: ${isOpenclawReady() ? '就绪' : '未就绪'}`)
+      lines.push(`- AI Agent: ${isOpenclawReady() ? '就绪' : '未就绪'}`)
       lines.push(`- Gateway: ${isGatewayRunning() ? '运行中' : '未运行'}`)
       lines.push(`- WebSocket: ${wsClient.connected ? '已连接' : '未连接'}`)
       try {
@@ -964,7 +1005,7 @@ function startUpdateChecker() {
     })
 
     registerPageContext('/setup', () => {
-      return { detail: '用户正在进行 OpenClaw 初始安装，请帮助检查 Node.js 环境和网络状况' }
+      return { detail: '用户正在进行 AI Agent 初始安装，请帮助检查 Node.js 环境和网络状况' }
     })
 
     // 挂到全局，供安装/升级失败时调用

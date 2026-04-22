@@ -1,10 +1,10 @@
-# ClawPanel 钉钉接入指南
+# AI Agent面板 钉钉接入指南
 
-本文面向 **ClawPanel / OpenClaw** 用户，说明如何把钉钉企业内部应用接入为消息渠道，并完成最小可用联调。
+本文面向 **AI Agent面板 / AI Agent** 用户，说明如何把钉钉企业内部应用接入为消息渠道，并完成最小可用联调。
 
 ## 适用方案
 
-当前 ClawPanel 走的是 **钉钉企业内部应用 + 机器人能力 + Stream 模式 + `dingtalk-connector` 插件** 方案。
+当前 AI Agent面板 走的是 **钉钉企业内部应用 + 机器人能力 + Stream 模式 + `dingtalk-connector` 插件** 方案。
 
 这不是自定义 Webhook 机器人方案，也不是 DEAP Agent 方案。
 
@@ -12,9 +12,9 @@
 
 在开始前，请确认：
 
-- 你已经安装并初始化 OpenClaw
+- 你已经安装并初始化 AI Agent
 - Gateway 可以正常运行
-- ClawPanel 已能读写 `~/.openclaw/openclaw.json`
+- AI Agent面板 已能读写 `~/.openclaw/openclaw.json`
 - 你拥有钉钉企业内部应用的创建和发布权限
 
 ## 一、在钉钉开放平台创建应用
@@ -54,9 +54,9 @@
 - `Client ID`
 - `Client Secret`
 
-在 ClawPanel 中的字段映射如下：
+在 AI Agent面板 中的字段映射如下：
 
-| ClawPanel 字段 | 钉钉后台字段 | 说明 |
+| AI Agent面板 字段 | 钉钉后台字段 | 说明 |
 |---|---|---|
 | `clientId` | Client ID / AppKey | 必填 |
 | `clientSecret` | Client Secret / AppSecret | 必填 |
@@ -75,7 +75,7 @@
 - 卡片能力不生效
 - 某些权限看起来已配置，但实际上线上不可用
 
-## 六、在 ClawPanel 中接入钉钉
+## 六、在 AI Agent面板 中接入钉钉
 
 打开 **消息渠道** 页面，选择 **钉钉**。
 
@@ -91,16 +91,16 @@
 - 如果 `gateway.auth.mode = password`，填写 `Gateway Password`
 - 如果 Gateway 未开启鉴权，这两个都可以留空
 
-从当前版本开始，ClawPanel 在打开钉钉配置弹窗时会自动读取 `openclaw.json` 中的 `gateway.auth`：
+从当前版本开始，AI Agent面板 在打开钉钉配置弹窗时会自动读取 `openclaw.json` 中的 `gateway.auth`：
 
 - 如果 `gateway.auth.mode = token`，会自动带出 `Gateway Token`
 - 如果 `gateway.auth.mode = password`，会自动带出 `Gateway Password`
 
 建议先点击 **校验凭证**，确认 `Client ID / Client Secret` 可用后，再点击保存。
 
-## 七、ClawPanel 保存时会自动做什么
+## 七、AI Agent面板 保存时会自动做什么
 
-保存钉钉渠道时，ClawPanel 会自动完成以下动作：
+保存钉钉渠道时，AI Agent面板 会自动完成以下动作：
 
 - 写入 `channels.dingtalk-connector`
 - 自动补齐 `plugins.allow`
@@ -114,7 +114,7 @@
 
 ## 八、手动配置时的最小示例
 
-如果你不通过 ClawPanel，而是手改 `~/.openclaw/openclaw.json`，最小示例如下：
+如果你不通过 AI Agent面板，而是手改 `~/.openclaw/openclaw.json`，最小示例如下：
 
 ```json5
 {
@@ -310,7 +310,7 @@ openclaw gateway restart
 
 ### Q8: 为什么会看到“dangerous code patterns”警告？
 
-这是 OpenClaw 对插件代码的静态审计提示，不一定等于本次安装失败的根因。
+这是 AI Agent 对插件代码的静态审计提示，不一定等于本次安装失败的根因。
 
 它表示插件中检测到了如下模式之一：
 
@@ -342,12 +342,12 @@ openclaw gateway restart
 
 ## 十四、当前可完成与仍需人工完成的部分
 
-ClawPanel 当前已经可以帮助你完成：
+AI Agent面板 当前已经可以帮助你完成：
 
 - 配置钉钉渠道
 - 校验 `Client ID / Client Secret`
 - 自动安装插件
-- 自动补齐 OpenClaw 关键配置
+- 自动补齐 AI Agent 关键配置
 
 但以下动作仍必须由你在钉钉侧人工完成：
 

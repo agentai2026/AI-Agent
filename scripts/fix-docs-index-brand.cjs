@@ -1,0 +1,22 @@
+const fs = require('fs')
+const path = require('path')
+const p = path.join(__dirname, '../docs/index.html')
+let s = fs.readFileSync(p, 'utf8')
+s = s.replace(/https:\/\/claw\.qt\.cool\/proxy\/dl\/[^"']+/g, 'https://github.com/agentai2026/AI-Agent/releases/latest')
+s = s.replace(/https:\/\/claw\.qt\.cool\//g, 'https://github.com/agentai2026/AI-Agent/')
+s = s.replace(/https:\/\/gpt\.qt\.cool[^"']*/g, 'https://github.com/agentai2026/AI-Agent')
+s = s.replace(/https:\/\/qt\.cool[^"']*/g, 'https://github.com/agentai2026/AI-Agent')
+s = s.replace(/agentai2026\/clawpanel/g, 'agentai2026/AI-Agent')
+s = s.replace(/1186258278\/AI AgentChineseTranslation/g, 'agentai2026/AI-Agent')
+s = s.replace(/Qingchen Cloud AI API/g, 'Project AI API')
+s = s.replace(/Qingchen Cloud AI/g, 'Project AI')
+s = s.replace(/Qingchen Cloud/g, 'Project')
+s = s.replace(/cd clawpanel/g, 'cd AI-Agent')
+s = s.replace(/--name clawpanel/g, '--name ai-agent-panel')
+s = s.replace(/clawpanel-data/g, 'ai-agent-data')
+s = s.replace(
+  /var BASE = 'https:\/\/github\.com\/agentai2026\/AI-Agent\/update\/latest\.json'/,
+  "var BASE = 'https://raw.githubusercontent.com/agentai2026/AI-Agent/main/docs/update/latest.json'"
+)
+fs.writeFileSync(p, s)
+console.log('patched', p)

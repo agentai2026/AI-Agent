@@ -9,7 +9,7 @@ import { showConfirm } from '../components/modal.js'
 import { api } from '../lib/tauri-api.js'
 import { OPENCLAW_KB } from '../lib/openclaw-kb.js'
 import { icon, statusIcon } from '../lib/icons.js'
-import { QTCOOL, PROVIDER_PRESETS, API_TYPES as SHARED_API_TYPES, fetchQtcoolModels } from '../lib/model-presets.js'
+import { PROVIDER_PRESETS, API_TYPES as SHARED_API_TYPES } from '../lib/model-presets.js'
 import { t } from '../lib/i18n.js'
 import { getActiveEngineId } from '../lib/engine-manager.js'
 import { enhanceModelCallError } from '../lib/model-error-diagnosis.js'
@@ -19,6 +19,8 @@ const STORAGE_KEY = 'clawpanel-assistant'
 const SESSIONS_KEY = 'clawpanel-assistant-sessions'
 const MAX_SESSIONS = 50
 const MAX_CONTEXT_TOKENS = 30 // 最近 N 条消息作为上下文
+/** 助手展示身份版本：升级后刷新本地已保存的默认名称/欢迎语/人设（仅文本字段） */
+const ASSISTANT_IDENTITY_VERSION = 1
 
 // ── 图片文件存储（通过 Tauri 后端持久化到 ~/.openclaw/clawpanel/images/）──
 async function saveImageToFile(id, dataUrl) {
@@ -41,10 +43,10 @@ const MODE_ICONS = {
   unlimited: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.739-8-4.585 0-4.585 8 0 8 5.606 0 7.644-8 12.74-8z"/></svg>',
 }
 const MODES = {
-  chat:     { label: t('assistant.modeChat'), desc: t('assistant.modeChatDesc'), tools: false, readOnly: false, confirmDanger: true, accent: 'var(--text-secondary)' },
-  plan:     { label: t('assistant.modePlan'), desc: t('assistant.modePlanDesc'), tools: true, readOnly: true, confirmDanger: true, accent: 'var(--info)' },
-  execute:  { label: t('assistant.modeExecute'), desc: t('assistant.modeExecuteDesc'), tools: true, readOnly: false, confirmDanger: true, accent: 'var(--accent)' },
-  unlimited:{ label: t('assistant.modeUnlimited'), desc: t('assistant.modeUnlimitedDesc'), tools: true, readOnly: false, confirmDanger: false, accent: 'var(--warning)' },
+  chat:     { label: '对话模式', desc: '自由对话，询问任何关于 AI Agent 的问题', tools: false, readOnly: false, confirmDanger: true, accent: 'var(--text-secondary)' },
+  plan:     { label: '规划模式', desc: '帮你制定 AI Agent 配置和部署计划', tools: true, readOnly: true, confirmDanger: true, accent: 'var(--info)' },
+  execute:  { label: '执行模式', desc: '直接执行配置变更和命令', tools: true, readOnly: false, confirmDanger: true, accent: 'var(--accent)' },
+  unlimited:{ label: '无限模式', desc: '无限制深度对话和复杂任务处理', tools: true, readOnly: false, confirmDanger: false, accent: 'var(--warning)' },
 }
 const DEFAULT_MODE = 'execute'
 
@@ -93,175 +95,20 @@ function apiKeyPlaceholder(apiType) {
 }
 
 // ── 系统提示词 ──
-const DEFAULT_NAME = t('assistant.defaultName')
-const DEFAULT_PERSONALITY = t('assistant.defaultPersonality')
+const DEFAULT_NAME = 'AI Agent面板助手'
+const DEFAULT_WELCOME_TEXT = '你好！我是 AI Agent面板助手，专门帮你管理和配置 AI Agent。有什么可以帮你的？'
+const DEFAULT_PERSONALITY = DEFAULT_WELCOME_TEXT
 
 function getSystemPromptBase() {
-  const name = _config?.assistantName || DEFAULT_NAME
-  const personality = _config?.assistantPersonality || DEFAULT_PERSONALITY
-  return `你是「${name}」，ClawPanel 内置的 AI 智能助手。
-
-## 你的性格
-${personality}
-
-## 你是谁
-- 你是 ClawPanel 内置的智能助手
-- 你帮助用户管理和排障 OpenClaw AI Agent 平台
-- 你精通 OpenClaw 的架构、配置、Gateway、Agent 管理等所有方面
-- 你善于分析日志、诊断错误、提供解决方案
-
-## 相关资源
-- **ClawPanel 官网**: https://claw.qt.cool
-- **GitHub**: https://github.com/qingchencloud
-- **开源项目**:
-  - **ClawPanel** — OpenClaw 可视化管理面板（Tauri v2）
-  - **OpenClaw 汉化版** — AI Agent 平台中文版，npm install -g @qingchencloud/openclaw-zh
-
-## ClawPanel 是什么
-- OpenClaw 的可视化管理面板，基于 Tauri v2 的跨平台桌面应用（Windows/macOS/Linux）
-- 支持仪表盘监控、模型配置、Agent 管理、实时聊天、记忆文件管理、AI 助手工具调用等
-- 官网: https://claw.qt.cool | GitHub: https://github.com/qingchencloud/clawpanel
-
-## OpenClaw 是什么
-- 开源的 AI Agent 平台，支持多模型、多 Agent、MCP 工具调用
-- 核心组件: Gateway（API 网关）、Agent（AI 代理）、Tools（工具系统）
-- 配置文件: ~/.openclaw/openclaw.json（全局配置）
-- 安装方式: npm install -g @qingchencloud/openclaw-zh（汉化版，推荐）或 npm install -g openclaw（官方英文版）
-
-## OpenClaw CLI 命令速查
-### 基础命令
-- openclaw --version — 查看版本
-- openclaw --help — 查看帮助
-- openclaw config show — 显示当前配置
-- openclaw config apply — 应用配置变更（同步 models.json）
-
-### Agent 管理
-- openclaw agent list — 列出所有 Agent
-- openclaw agent create <name> — 创建新 Agent
-- openclaw agent delete <id> — 删除 Agent
-- openclaw agent default <id> — 设为默认 Agent
-
-### Gateway 控制
-- openclaw gateway start — 启动 Gateway
-- openclaw gateway stop — 停止 Gateway
-- openclaw gateway restart — 重启 Gateway
-- openclaw gateway status — 查看 Gateway 状态
-- openclaw gateway log — 查看 Gateway 日志
-- openclaw gateway install — 安装 Gateway 为系统服务
-- openclaw gateway uninstall — 卸载 Gateway 系统服务
-
-### Skills 管理
-- openclaw skills list — 列出所有 Skills 及其状态
-- openclaw skills info <name> — 查看某个 Skill 详情
-- openclaw skills check — 检查所有 Skills 的依赖是否满足
-- Skill 依赖安装: 根据 install spec 执行 brew/npm/go/uv 安装缺少的命令行工具
-- SkillHub: 技能商店，可搜索和安装新 Skill（内置 HTTP，不依赖 CLI）
-- Skills 目录: 捆绑 Skills 在 openclaw 安装包内，自定义 Skills 通常位于 ~/.openclaw/skills/<name>/ 或 ~/.claude/skills/<name>/
-
-### 聊天与调试
-- openclaw chat — 进入交互式聊天
-- openclaw chat -m "消息" — 发送单条消息
-- openclaw chat --model <model> — 指定模型聊天
-- openclaw doctor — 诊断配置问题
-
-## 关键配置结构
-- openclaw.json: 全局配置（models.providers、gateway、tools）
-- models.json: Agent 运行时模型注册表（~/.openclaw/agents/<id>/agent/models.json）
-- clawpanel.json: ClawPanel 自身配置（~/.openclaw/clawpanel.json）
-- gateway.mode: "local"（必须在 gateway 对象内，不能在顶层）
-- gateway.port: 默认 18789
-- gateway.auth.mode: "none" | "token" | "password"
-
-## 常见问题速查
-1. **Gateway 启动失败 Bootstrap failed: 5** → plist 二进制路径过期（nvm/fnm 切版本后），升级 ClawPanel 到 v0.4.8+ 自动回退 CLI 启动
-2. **Unrecognized key: "mode"** → mode 字段不能放在顶层，必须在 gateway.mode，升级到 v0.4.6+ 自动修复
-3. **fnm 管理的 Node.js 检测不到** → 升级到 v0.4.7+，已支持 FNM_DIR/node-versions 扫描
-4. **models.json 不同步** → ClawPanel 改了 openclaw.json 但 Gateway 用的 models.json 未更新，重启 Gateway 或执行 openclaw config apply
-5. **WebSocket 连接失败** → 检查 gateway.controlUi.allowedOrigins 是否包含 ["*"]
-6. **SIGTERM 循环** → com.openclaw.healthcheck 服务异常，禁用: launchctl bootout gui/$(id -u)/com.openclaw.healthcheck
-7. **BOM 导致 JSON 解析失败** → PowerShell Set-Content 会加 BOM，ClawPanel 已自动剥离
-
-## 生态项目安装指引
-当用户问到如何安装其他产品时，推荐以下安装方式：
-- **OpenClaw 汉化版**: npm install -g @qingchencloud/openclaw-zh（推荐国内用户）
-- **OpenClaw 官方版**: npm install -g openclaw
-- **ClawPanel**: 从 https://github.com/qingchencloud/clawpanel/releases 下载
-- **更多项目**: 访问 https://github.com/qingchencloud
-
-## 社区贡献指引
-当用户发现 Bug 或有改进建议时，你应该主动引导用户参与开源贡献：
-
-### 提交 Issue
-引导用户到对应仓库提交 Issue，帮用户整理好格式：
-- **ClawPanel**: https://github.com/qingchencloud/clawpanel/issues/new
-- **OpenClaw 汉化版**: https://github.com/qingchencloud/openclaw-zh/issues/new
-
-Issue 模板（帮用户填好）：
-\`\`\`
-**问题描述**: [一句话描述]
-**复现步骤**: 1. ... 2. ... 3. ...
-**期望行为**: ...
-**实际行为**: ...
-**环境信息**: OS / ClawPanel 版本 / OpenClaw 版本
-**截图/日志**: （如有）
-\`\`\`
-
-### 提交 PR
-如果你能定位到 Bug 的原因和修复方案，主动帮用户生成 PR 内容：
-1. 分析问题根因（读配置/日志/代码）
-2. 给出具体的修复代码或配置变更
-3. 生成 PR 标题和描述（中文），格式：
-   - 标题: \`fix: 修复xxx问题\` 或 \`feat: 新增xxx功能\`
-   - 描述: 问题原因、修复方案、影响范围
-4. 告诉用户如何 Fork → 修改 → 提交 PR
-
-### 贡献流程（告诉用户）
-1. Fork 仓库到自己的 GitHub
-2. \`git clone\` 到本地
-3. 创建分支: \`git checkout -b fix/问题描述\`
-4. 修改代码并测试
-5. \`git commit -m "fix: 修复xxx"\`
-6. \`git push origin fix/问题描述\`
-7. 在 GitHub 上发起 Pull Request
-
-当用户遇到问题时，如果你判断这是一个 Bug，应该主动说「我可以帮你整理成 Issue 提交到我们仓库」或「这个 Bug 我能定位原因，要不要我帮你生成 PR？」
-
-### 自主操作（重要）
-你有能力直接通过工具完成 Issue/PR 全流程，用户只需确认：
-- 用 ask_user 工具询问用户确认方案
-- 用 run_command 执行 git clone、checkout -b、add、commit、push
-- 用 write_file 修改代码/配置
-- 不要只是告诉用户怎么做，而是直接帮用户做！
-
-## ask_user 工具使用指南
-你有一个强大的 ask_user 工具，可以向用户提问并获取结构化回答：
-- **单选 (single)**: 让用户从多个方案中选一个，如「选择要提交到哪个仓库」
-- **多选 (multiple)**: 让用户选择多项，如「选择要检查的组件」
-- **文本 (text)**: 让用户输入自由文本，如「请描述你遇到的问题」
-
-使用场景：
-- 需要用户做决定时（修复方案 A 还是 B？）
-- 需要用户提供信息时（Bug 复现步骤？）
-- 确认操作前（确定要执行这些 git 命令吗？）
-- 收集反馈时（哪些功能有问题？）
-
-注意：每个选项应该简短明了，不要超过 4 个选项（用户可以输入自定义内容）。
-
-## web_search / fetch_url 使用指南
-当你无法确定答案或需要最新信息时，可以使用 web_search 搜索互联网：
-- 搜索错误信息时，用引号包裹关键错误文本
-- 加 site:github.com 搜索 GitHub Issues
-- 加 site:stackoverflow.com 搜索 StackOverflow
-- 搜索后如需更多细节，用 fetch_url 抓取具体页面内容
-- fetch_url 返回纯文本格式，大页面会截断到 100KB
-
-## 你的工作方式
-- 用中文回复
-- 如果用户粘贴了日志，仔细分析每一行，找出关键错误
-- 给出具体的解决步骤，包括可直接执行的命令
-- 如果不确定，诚实说明并建议用户提供更多信息
-- 回复简洁专业，避免啰嗦
-- 发现 Bug 时主动引导用户提交 Issue 或 PR，降低贡献门槛`
+  return `"""
+你是 AI Agent面板助手，一个专业的 AI Agent 管理助手。
+你的职责是帮助用户：
+1. 配置和管理 AI 模型
+2. 监控 Gateway 服务状态
+3. 解答使用问题
+4. 提供最佳实践建议
+请用简洁专业的中文回答。
+"""`
 }
 
 // ── 工具定义（OpenAI function calling 格式）──
@@ -540,323 +387,72 @@ function isCriticalCommand(command) {
 // ── 内置 Skills ──
 const BUILTIN_SKILLS = [
   {
-    id: 'check-config',
+    id: 'quick-model-config',
     icon: icon('wrench', 16),
-    name: t('assistant.skillCheckConfig'),
-    desc: t('assistant.skillCheckConfigDesc'),
+    name: '如何配置模型？',
+    desc: '了解新增与配置 AI 模型的步骤',
     tools: ['fileOps'],
-    prompt: `请帮我检查 OpenClaw 的配置文件。
-
-具体操作：
-1. 调用 get_system_info 获取系统信息，确定主目录和 OS 类型
-2. 用 list_directory 查看 ~/.openclaw/ 目录结构
-3. 用 read_file 读取 ~/.openclaw/openclaw.json
-4. 分析配置内容，检查：
-   - models.providers 服务商配置（baseUrl 格式、apiKey 是否存在）
-   - gateway 配置（port 默认 18789、mode 必须在 gateway 对象内）
-   - 常见配置错误（mode 放在顶层、缺少 gateway 对象、controlUi.allowedOrigins 未配置）
-5. 给出配置健康度评估和具体改进建议`,
+    prompt: '请告诉我如何配置一个新的 AI 模型',
   },
   {
-    id: 'diagnose-gateway',
+    id: 'quick-gateway-fail',
     icon: icon('shield', 16),
-    name: t('assistant.skillDiagnoseGateway'),
-    desc: t('assistant.skillDiagnoseGatewayDesc'),
+    name: 'Gateway 启动失败',
+    desc: '排查 Gateway 无法启动的常见原因',
     tools: ['terminal', 'fileOps'],
-    prompt: `请帮我诊断 OpenClaw Gateway 的运行状态。
-
-具体操作：
-1. 调用 get_system_info 获取 OS 类型和主目录
-2. 用 list_processes 工具检查 openclaw/gateway 进程是否在运行
-3. 用 check_port 工具检查端口 18789 是否在监听
-4. 用 read_file 读取 ~/.openclaw/logs/gateway.log（取最后 50 行）
-5. 分析日志中的 ERROR、WARN、fail 等关键词
-6. 给出诊断结论（进程状态 + 端口状态 + 日志分析）和修复建议`,
+    prompt: 'Gateway 服务启动失败了，怎么排查？',
   },
   {
-    id: 'browse-dir',
-    icon: icon('folder', 16),
-    name: t('assistant.skillBrowseDir'),
-    desc: t('assistant.skillBrowseDirDesc'),
-    tools: ['fileOps'],
-    prompt: `请帮我浏览 OpenClaw 的配置目录结构。
-
-具体操作：
-1. 调用 get_system_info 获取主目录路径（Windows: $env:USERPROFILE, Mac/Linux: ~）
-2. 用 list_directory 列出 ~/.openclaw/ 根目录
-3. 列出 ~/.openclaw/agents/ 下的 Agent 列表
-4. 对于 main Agent，列出 ~/.openclaw/agents/main/agent/ 子目录
-5. 简要说明每个目录/文件的作用：
-   - openclaw.json: 全局配置（模型、Gateway、工具）
-   - clawpanel.json: ClawPanel 面板配置
-   - mcp.json: MCP 工具配置
-   - agents/: Agent 工作目录
-   - logs/: 日志文件
-   - backups/: 配置备份
-6. 标注关键配置文件和常用路径`,
-  },
-  {
-    id: 'check-env',
+    id: 'quick-system-status',
     icon: icon('monitor', 16),
-    name: t('assistant.skillCheckEnv'),
-    desc: t('assistant.skillCheckEnvDesc'),
+    name: '查看系统状态',
+    desc: '汇总本机与相关服务运行概况',
     tools: ['terminal'],
-    prompt: `请帮我检查当前系统环境是否满足 OpenClaw 的运行要求。
-
-具体操作：
-1. 调用 get_system_info 获取 OS、架构、Node.js 版本等基础信息
-2. 用 run_command 检查 Node.js 版本（node -v），要求 >= 18
-3. 用 run_command 检查 npm 版本（npm -v）
-4. 用 run_command 检查 OpenClaw CLI（openclaw --version）
-5. 用 check_port 检查 Gateway 端口 18789
-6. 给出环境评估报告，每项标注通过/失败，并给出缺失项的安装命令`,
+    prompt: '帮我查看当前系统运行状态',
   },
   {
-    id: 'analyze-logs',
-    icon: icon('clipboard', 16),
-    name: t('assistant.skillAnalyzeLogs'),
-    desc: t('assistant.skillAnalyzeLogsDesc'),
-    tools: ['terminal', 'fileOps'],
-    prompt: `请帮我分析 OpenClaw 最近的日志，找出可能的问题。
-
-具体操作：
-1. 调用 get_system_info 获取主目录路径
-2. 用 list_directory 查看 ~/.openclaw/logs/ 有哪些日志文件
-3. 用 read_file 读取 ~/.openclaw/logs/gateway.log
-4. 搜索 ERROR、WARN、fail、exception、SIGTERM、Bootstrap 等关键词
-5. 对照常见问题速查表分析错误原因
-6. 汇总日志分析报告，给出具体修复步骤`,
-  },
-  {
-    id: 'fix-common',
-    icon: icon('wrench', 16),
-    name: t('assistant.skillFixCommon'),
-    desc: t('assistant.skillFixCommonDesc'),
-    tools: ['terminal', 'fileOps'],
-    prompt: `请帮我自动检测并修复 OpenClaw 的常见问题。
-
-先调用 get_system_info 获取系统信息，然后按以下步骤逐一检查：
-1. **配置检查**：用 read_file 读取 openclaw.json，检查是否有已知错误（mode 在顶层、缺少 gateway 对象等）
-2. **models.json 同步**：用 read_file 对比 openclaw.json 和 agents/main/agent/models.json 的 providers
-3. **Gateway 状态**：用 list_processes 检查 openclaw 进程，用 check_port 检查端口 18789
-4. **WebSocket 配置**：检查 gateway.controlUi.allowedOrigins 是否包含 "*"
-5. **Node.js 环境**：用 run_command 检查 node 和 npm 版本
-
-对每个检查项给出通过/失败状态，并对发现的问题给出具体修复命令（但不要自动修改配置文件，等我确认）。`,
-  },
-  {
-    id: 'report-bug',
-    icon: icon('bug', 16),
-    name: t('assistant.skillReportBug'),
-    desc: t('assistant.skillReportBugDesc'),
-    tools: ['terminal', 'fileOps'],
-    prompt: `我想反馈一个 Bug，请帮我整理成标准的 GitHub Issue。
-
-具体操作：
-1. 用 ask_user 工具询问我遇到了什么问题（如果我还没说的话）
-2. 调用 get_system_info 获取系统环境信息
-3. 用 run_command 收集：openclaw --version、node -v 等版本信息
-4. 用 read_file 读取最近的错误日志（如有）
-5. 按标准 Issue 模板整理：
-   - **问题描述**（一句话）
-   - **复现步骤**（1, 2, 3...）
-   - **期望行为** / **实际行为**
-   - **环境信息**（自动填充）
-   - **相关日志**（如有）
-6. 用代码块展示完整 Issue 内容，给出对应仓库的 Issue 链接：
-   - ClawPanel: https://github.com/qingchencloud/clawpanel/issues/new
-   - OpenClaw: https://github.com/qingchencloud/openclaw-zh/issues/new
-`,
-  },
-  {
-    id: 'pr-assistant',
+    id: 'quick-config-tips',
     icon: icon('zap', 16),
-    name: t('assistant.skillPrAssistant'),
-    desc: t('assistant.skillPrAssistantDesc'),
-    tools: ['terminal', 'fileOps'],
-    prompt: `我发现了一个问题，想提交 PR 来修复它。请帮我走一遍 PR 流程。
-
-具体操作：
-1. 先听我描述问题（如果我还没说的话）
-2. 帮我分析问题可能的原因，如果有工具可以用就主动调用来诊断
-3. 定位到具体的代码/配置/逻辑问题
-4. 给出修复方案和具体代码
-5. 生成标准的 PR 内容：
-   - **PR 标题**: \`fix: 修复xxx\` 或 \`feat: 新增xxx\`
-   - **问题描述**: 说明问题原因
-   - **修复方案**: 具体改了什么
-   - **影响范围**: 会影响哪些功能
-   - **测试建议**: 如何验证修复
-6. 给出完整的贡献流程：
-   - Fork 仓库链接
-   - git clone / checkout -b / commit / push 命令
-   - 创建 PR 的链接
-7. 如果用户不熟悉 Git，给出每一步的详细命令`,
-  },
-  {
-    id: 'skills-manager',
-    icon: icon('box', 16),
-    name: t('assistant.skillSkillsManager'),
-    desc: t('assistant.skillSkillsManagerDesc'),
-    tools: ['skills'],
-    prompt: `请帮我管理 OpenClaw 的 Skills。
-
-具体操作：
-1. 调用 skills_list 获取所有 Skills 及其状态
-2. 汇总展示：多少个可用、多少个缺依赖、多少个已禁用
-3. 对于缺依赖的 Skills，列出每个缺少的依赖和对应的安装方法
-4. 询问用户是否要安装某些缺少的依赖（用 ask_user 列出选项）
-5. 如果用户选择安装，调用 skills_install_dep 执行安装
-6. 安装完成后再次调用 skills_list 确认状态变化
-
-注意：
-- 安装依赖可能需要特定的包管理器（brew 仅限 macOS，Windows 用 npm/go 等）
-- 先调用 get_system_info 判断操作系统，过滤出适合当前平台的安装选项
-- 如果用户想从 SkillHub 搜索安装新 Skill，使用 skillhub_search 和 skillhub_install`,
+    name: '优化配置建议',
+    desc: '获取 AI Agent 配置与部署的优化思路',
+    tools: [],
+    prompt: '请给我一些优化 AI Agent 配置的建议',
   },
 ]
 
 // ── Hermes 引擎专属 Skills ──
 const HERMES_SKILLS = [
   {
-    id: 'hermes-chat-terminal',
-    icon: icon('terminal', 16),
-    name: t('assistant.skillHermesChat'),
-    desc: t('assistant.skillHermesChatDesc'),
-    tools: ['terminal'],
-    prompt: `请帮我在终端中启动 Hermes Agent 的交互式对话。
-
-具体操作：
-1. 调用 get_system_info 获取系统信息
-2. 用 run_command 执行 \`hermes version\` 检查 Hermes 是否已安装
-3. 如果已安装，告诉用户可以在终端中运行 \`hermes chat\` 开始对话
-4. 如果未安装，给出安装命令：\`uv tool install "hermes-agent @ git+https://github.com/NousResearch/hermes-agent.git" --python 3.11\``,
-  },
-  {
-    id: 'hermes-diagnose',
-    icon: icon('shield', 16),
-    name: t('assistant.skillHermesDiagnose'),
-    desc: t('assistant.skillHermesDiagnoseDesc'),
-    tools: ['terminal', 'fileOps'],
-    prompt: `请帮我诊断 Hermes Agent 的运行状态。
-
-具体操作：
-1. 调用 get_system_info 获取 OS 类型和主目录
-2. 用 run_command 执行 \`hermes version\` 获取版本
-3. 用 run_command 执行 \`hermes doctor\` 进行自诊断
-4. 用 list_processes 检查 hermes/gateway 进程是否在运行
-5. 用 check_port 检查端口 8642 是否在监听
-6. 用 read_file 读取 ~/.hermes/config.yaml 检查配置
-7. 给出诊断结论和修复建议`,
-  },
-  {
-    id: 'hermes-config',
+    id: 'quick-model-config',
     icon: icon('wrench', 16),
-    name: t('assistant.skillHermesConfig'),
-    desc: t('assistant.skillHermesConfigDesc'),
+    name: '如何配置模型？',
+    desc: '了解新增与配置 AI 模型的步骤',
     tools: ['fileOps'],
-    prompt: `请帮我检查 Hermes Agent 的配置文件。
-
-具体操作：
-1. 调用 get_system_info 获取系统信息，确定主目录
-2. 用 list_directory 查看 ~/.hermes/ 目录结构
-3. 用 read_file 读取 ~/.hermes/config.yaml
-4. 用 read_file 读取 ~/.hermes/.env（注意隐藏 API Key）
-5. 分析配置内容，检查：
-   - 模型配置是否正确
-   - API Key 和 Base URL 是否设置
-   - Gateway 端口配置
-6. 给出配置健康度评估和改进建议`,
+    prompt: '请告诉我如何配置一个新的 AI 模型',
   },
   {
-    id: 'hermes-browse-dir',
-    icon: icon('folder', 16),
-    name: t('assistant.skillHermesBrowseDir'),
-    desc: t('assistant.skillHermesBrowseDirDesc'),
-    tools: ['fileOps'],
-    prompt: `请帮我浏览 Hermes Agent 的工作目录。
-
-具体操作：
-1. 调用 get_system_info 获取主目录路径
-2. 用 list_directory 列出 ~/.hermes/ 根目录
-3. 简要说明每个目录/文件的作用：
-   - config.yaml: 全局配置
-   - .env: 环境变量（API Key、Base URL 等）
-   - sessions/: 对话会话记录
-   - skills/: Skills 目录
-   - logs/: 日志文件
-   - cron/: 定时任务配置
-4. 标注关键配置文件和常用路径`,
+    id: 'quick-gateway-fail',
+    icon: icon('shield', 16),
+    name: 'Gateway 启动失败',
+    desc: '排查 Gateway 无法启动的常见原因',
+    tools: ['terminal', 'fileOps'],
+    prompt: 'Gateway 服务启动失败了，怎么排查？',
   },
   {
-    id: 'hermes-upgrade',
-    icon: icon('zap', 16),
-    name: t('assistant.skillHermesUpgrade'),
-    desc: t('assistant.skillHermesUpgradeDesc'),
+    id: 'quick-system-status',
+    icon: icon('monitor', 16),
+    name: '查看系统状态',
+    desc: '汇总本机与相关服务运行概况',
     tools: ['terminal'],
-    prompt: `请帮我升级 Hermes Agent 到最新版本。
-
-具体操作：
-1. 调用 get_system_info 获取系统信息
-2. 用 run_command 执行 \`hermes version\` 获取当前版本
-3. 告诉用户升级命令：
-   \`uv tool install --reinstall "hermes-agent @ git+https://github.com/NousResearch/hermes-agent.git" --python 3.11\`
-4. 提醒用户升级前先停止 Gateway：\`hermes gateway stop\`
-5. 升级完成后建议重新启动 Gateway`,
+    prompt: '帮我查看当前系统运行状态',
   },
   {
-    id: 'hermes-logs',
-    icon: icon('clipboard', 16),
-    name: t('assistant.skillHermesLogs'),
-    desc: t('assistant.skillHermesLogsDesc'),
-    tools: ['terminal', 'fileOps'],
-    prompt: `请帮我分析 Hermes Agent 最近的日志。
-
-具体操作：
-1. 调用 get_system_info 获取主目录路径
-2. 用 list_directory 查看 ~/.hermes/ 有哪些日志文件
-3. 用 read_file 读取 ~/.hermes/gateway-run.log 和 ~/.hermes/gateway-err.log
-4. 搜索 ERROR、WARN、fail、exception 等关键词
-5. 分析错误原因，给出具体修复建议`,
-  },
-  {
-    id: 'hermes-uninstall',
-    icon: icon('trash', 16),
-    name: t('assistant.skillHermesUninstall'),
-    desc: t('assistant.skillHermesUninstallDesc'),
+    id: 'quick-config-tips',
+    icon: icon('zap', 16),
+    name: '优化配置建议',
+    desc: '获取 AI Agent 配置与部署的优化思路',
     tools: [],
-    prompt: `请告诉我如何完全卸载 Hermes Agent。
-
-卸载步骤：
-1. 停止 Gateway：\`hermes gateway stop\`
-2. 卸载 Hermes Agent：\`uv tool uninstall hermes-agent\`
-3. 可选：删除配置目录 ~/.hermes/（Windows: %USERPROFILE%\\.hermes）
-4. 可选：卸载 uv 包管理器
-
-请详细说明每一步，并提醒用户备份重要数据。`,
-  },
-  {
-    id: 'report-bug',
-    icon: icon('bug', 16),
-    name: t('assistant.skillReportBug'),
-    desc: t('assistant.skillReportBugDesc'),
-    tools: ['terminal', 'fileOps'],
-    prompt: `我想反馈一个 Bug，请帮我整理成标准的 GitHub Issue。
-
-具体操作：
-1. 用 ask_user 工具询问我遇到了什么问题（如果我还没说的话）
-2. 调用 get_system_info 获取系统环境信息
-3. 用 run_command 收集：hermes version、node -v 等版本信息
-4. 用 read_file 读取最近的错误日志（如有）
-5. 按标准 Issue 模板整理：
-   - **问题描述**（一句话）
-   - **复现步骤**（1, 2, 3...）
-   - **期望行为** / **实际行为**
-   - **环境信息**（自动填充）
-   - **相关日志**（如有）
-6. 给出对应仓库的 Issue 链接：
-   - ClawPanel: https://github.com/qingchencloud/clawpanel/issues/new
-`,
+    prompt: '请给我一些优化 AI Agent 配置的建议',
   },
 ]
 
@@ -871,7 +467,7 @@ function currentMode() {
 
 function getEnabledTools() {
   const mode = MODES[currentMode()]
-  if (!mode.tools) return [] // 聊天模式：无工具
+  if (!mode.tools) return [] // 对话模式：无工具
 
   const tc = _config.tools || {}
   const tools = [...TOOL_DEFS.system, ...TOOL_DEFS.process, ...TOOL_DEFS.interaction]
@@ -1018,12 +614,12 @@ function buildSystemPrompt() {
         prompt += `## ${m.date}\n${content}\n\n`
       }
     }
-    // 追加 ClawPanel 特有的产品知识和工具说明
-    prompt += '\n# ClawPanel 工具能力\n你同时是 ClawPanel 内置助手，拥有以下额外能力：\n'
+    // 追加 AI Agent面板 特有的产品知识和工具说明
+    prompt += '\n# AI Agent面板 工具能力\n你同时是 AI Agent面板 内置助手，拥有以下额外能力：\n'
     prompt += '- 执行终端命令、读写文件、浏览目录\n'
     prompt += '- 联网搜索和网页抓取\n'
-    prompt += '- 管理 OpenClaw 配置和服务\n'
-    prompt += '- 你精通 OpenClaw 的架构、配置、Gateway、Agent 管理\n'
+    prompt += '- 管理 AI Agent 配置和服务\n'
+    prompt += '- 你精通 AI Agent 的架构、配置、Gateway、Agent 管理\n'
   } else {
     prompt += getSystemPromptBase()
   }
@@ -1032,10 +628,10 @@ function buildSystemPrompt() {
   const mode = MODES[modeKey]
 
   // 模式说明
-  prompt += `\n\n## 当前模式：${mode.label}模式`
+  prompt += `\n\n## 当前模式：${mode.label}`
 
   if (modeKey === 'chat') {
-    prompt += '\n你处于纯聊天模式，没有任何工具可用。请通过文字回答问题，给出具体的命令建议供用户手动执行。'
+    prompt += '\n你处于对话模式，没有任何工具可用。请通过文字回答问题，给出具体的命令建议供用户手动执行。'
     prompt += '\n如果用户需要你执行操作，建议用户切换到「执行」或「规划」模式。'
   } else {
     // 规划模式特殊指令
@@ -1579,7 +1175,13 @@ function loadConfig() {
     _config = raw ? JSON.parse(raw) : null
   } catch { _config = null }
   if (!_config) {
-    _config = { baseUrl: '', apiKey: '', model: '', temperature: 0.7, tools: { terminal: false, fileOps: false, webSearch: false }, assistantName: DEFAULT_NAME, assistantPersonality: DEFAULT_PERSONALITY }
+    _config = { baseUrl: '', apiKey: '', model: '', temperature: 0.7, tools: { terminal: false, fileOps: false, webSearch: false }, assistantName: DEFAULT_NAME, assistantPersonality: DEFAULT_PERSONALITY, assistantIdentityVersion: ASSISTANT_IDENTITY_VERSION }
+  }
+  if (_config.assistantIdentityVersion !== ASSISTANT_IDENTITY_VERSION) {
+    _config.assistantName = DEFAULT_NAME
+    _config.assistantPersonality = DEFAULT_PERSONALITY
+    _config.assistantIdentityVersion = ASSISTANT_IDENTITY_VERSION
+    saveConfig()
   }
   if (!_config.assistantName) _config.assistantName = DEFAULT_NAME
   if (!_config.assistantPersonality) _config.assistantPersonality = DEFAULT_PERSONALITY
@@ -2865,13 +2467,10 @@ function renderMessages() {
     _messagesEl.innerHTML = `
       <div class="ast-welcome">
         <div class="ast-welcome-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
-            <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/>
-            <path d="M18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"/>
-          </svg>
+          <span style="font-size:48px;line-height:1" aria-hidden="true">🤖</span>
         </div>
         <h3>${_config?.assistantName || DEFAULT_NAME}</h3>
-        <p>${t('assistant.welcomeText')}</p>
+        <p>${escHtml(DEFAULT_WELCOME_TEXT)}</p>
         ${getAssistantGuideHtml()}
         <div class="ast-skills-grid">${skillCards}</div>
       </div>
@@ -3083,45 +2682,6 @@ function showSettings() {
             </div>
           </div>
           <div class="form-hint" id="ast-api-hint" style="margin-top:-4px">${apiHintText(c.apiType)}</div>
-
-          <div id="ast-qtcool-promo" style="margin-top:14px;border-radius:var(--radius-lg);border:1px solid var(--border-primary);border-left:3px solid var(--primary);background:var(--bg-secondary);overflow:hidden">
-            <div style="padding:14px 16px 12px">
-              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:10px">
-                <div>
-                  <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px">
-                    <span style="font-weight:700;font-size:var(--font-size-sm)">${icon('zap', 14)} ${t('assistant.qtcoolName')}</span>
-                    <span style="font-size:10px;background:var(--primary);color:#fff;padding:1px 7px;border-radius:8px">${t('assistant.qtcoolRecommend')}</span>
-                  </div>
-                  <div style="font-size:11px;color:var(--text-tertiary);line-height:1.4">
-                    ${t('assistant.qtcoolDesc')}
-                  </div>
-                </div>
-                <a href="${QTCOOL.checkinUrl}" target="_blank" class="btn btn-primary btn-xs" style="flex-shrink:0">${icon('gift', 11)} ${t('assistant.qtcoolCheckin')}</a>
-              </div>
-              <div style="font-size:var(--font-size-xs);color:var(--text-secondary);margin-bottom:8px">
-                ${t('assistant.qtcoolInstructions')}
-              </div>
-              <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px">
-                <input class="form-input" id="ast-qtcool-key" placeholder="${t('assistant.qtcoolKeyPlaceholder')}" style="font-size:12px;padding:5px 10px;flex:1;min-width:120px">
-                <input type="checkbox" id="ast-qtcool-customkey" style="display:none">
-              </div>
-              <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-                <select id="ast-qtcool-model" class="form-input" style="font-size:12px;padding:5px 10px;min-width:130px;flex:1">
-                  <option value="" disabled selected>${t('assistant.qtcoolLoadingModels')}</option>
-                </select>
-                <button class="btn btn-sm btn-secondary" id="ast-qtcool-test">${icon('search', 12)} ${t('assistant.testBtn')}</button>
-                <button class="btn btn-sm btn-primary" id="ast-qtcool-apply">${icon('zap', 12)} ${t('assistant.qtcoolApply')}</button>
-              </div>
-              <div id="ast-qtcool-status" style="margin-top:8px;font-size:11px;min-height:16px;line-height:1.5"></div>
-            </div>
-            <div style="border-top:1px solid var(--border-primary);padding:6px 16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;background:var(--bg-tertiary)">
-              ${!isHermes ? `<div style="display:flex;gap:8px;align-items:center">
-                <button class="btn btn-xs btn-secondary" id="ast-qtcool-sync-to" title="${t('assistant.qtcoolSyncToTitle')}">${icon('upload', 11)} ${t('assistant.qtcoolSyncTo')}</button>
-                <button class="btn btn-xs btn-secondary" id="ast-qtcool-sync-from" title="${t('assistant.qtcoolSyncFromTitle')}">${icon('download', 11)} ${t('assistant.qtcoolSyncFrom')}</button>
-              </div>` : '<div></div>'}
-              <a href="${QTCOOL.site}" target="_blank" style="color:var(--primary);text-decoration:none;font-size:11px">${icon('external-link', 11)} ${t('assistant.qtcoolLearnMore')}</a>
-            </div>
-          </div>
 
           <!-- #Compat-3: 备用模型组（重设计：极简一行 + 厂商预设快捷添加） -->
           <details class="ast-fallback-section" id="ast-fallback-section" ${(c.fallbackModels || []).length ? 'open' : ''} style="margin-top:14px">
@@ -3426,7 +2986,7 @@ function showSettings() {
     }, 30)
   }
   // 渲染厂商预设按钮（6 个最常用 + 从主模型复制 + 自定义 + 更多）
-  const TOP_PRESETS = ['qtcool', 'openai', 'anthropic', 'deepseek', 'google', 'ollama']
+  const TOP_PRESETS = ['openai', 'anthropic', 'deepseek', 'google', 'ollama', 'siliconflow']
   let showAllPresets = false
   const renderPresetButtons = () => {
     const shown = showAllPresets
@@ -3709,195 +3269,6 @@ function showSettings() {
     const row = e.target.closest('[data-kb-idx]')
     if (row) {
       openKBEditor(parseInt(row.dataset.kbIdx))
-    }
-  })
-
-  // ── gpt.qt.cool 一键配置 ──
-  const qtcoolModelSelect = overlay.querySelector('#ast-qtcool-model')
-  const qtcoolCustomKeyCheckbox = overlay.querySelector('#ast-qtcool-customkey')
-  const qtcoolKeyInput = overlay.querySelector('#ast-qtcool-key')
-
-  // 动态获取模型列表（共享逻辑）
-  ;(async () => {
-    const models = await fetchQtcoolModels()
-    qtcoolModelSelect.innerHTML = models.map((m, i) =>
-      `<option value="${m.id}" style="color:#333"${i === 0 ? ' selected' : ''}>${m.name || m.id}${i === 0 ? ' ★' : ''}</option>`
-    ).join('')
-  })()
-
-  // key input is always visible now (no more built-in key)
-  const qtcoolStatus = overlay.querySelector('#ast-qtcool-status')
-
-  // 测试按钮：快速验证接口可用性
-  overlay.querySelector('#ast-qtcool-test').onclick = async (e) => {
-    const btn = e.target
-    const selectedModel = qtcoolModelSelect.value
-    if (!selectedModel) { qtcoolStatus.innerHTML = `<span style="color:#fbbf24">${statusIcon('warn', 14)} ${t('assistant.qtcoolSelectModel')}</span>`; return }
-    const key = qtcoolKeyInput.value.trim()
-    if (!key) { qtcoolStatus.innerHTML = `<span style="color:#fbbf24">${statusIcon('warn', 14)} ${t('assistant.qtcoolEnterKey')}</span>`; return }
-
-    btn.disabled = true
-    btn.textContent = t('assistant.testing')
-    qtcoolStatus.innerHTML = `<span style="color:rgba(255,255,255,0.5)">${t('assistant.qtcoolConnecting')}</span>`
-    const t0 = Date.now()
-    try {
-      const resp = await fetch(QTCOOL.baseUrl + '/chat/completions', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + key },
-        body: JSON.stringify({ model: selectedModel, messages: [{ role: 'user', content: 'Hi' }], max_tokens: 10 }),
-        signal: AbortSignal.timeout(15000)
-      })
-      const ms = Date.now() - t0
-      if (resp.ok) {
-        const data = await resp.json()
-        const reply = data.choices?.[0]?.message?.content || ''
-        qtcoolStatus.innerHTML = `<span style="color:#34d399">${statusIcon('ok', 14)} ${t('assistant.qtcoolTestPass', { time: (ms/1000).toFixed(1) })}</span><span style="color:rgba(255,255,255,0.4);margin-left:6px">${selectedModel} OK</span>`
-      } else {
-        const errText = await resp.text().catch(() => '')
-        let errMsg = `HTTP ${resp.status}`
-        try {
-          const errJson = JSON.parse(errText)
-          if (errJson.error?.message) errMsg = errJson.error.message
-        } catch { if (errText) errMsg += ' — ' + errText.slice(0, 200) }
-        // 将 URL 转为可点击链接
-        const errHtml = errMsg.replace(/(https?:\/\/[^\s,，。）)]+)/g, '<a href="$1" target="_blank" style="color:var(--primary)">$1</a>')
-        qtcoolStatus.innerHTML = `<div style="color:#f87171;line-height:1.5">${statusIcon('err', 14)} <strong>${t('assistant.qtcoolTestFail')}</strong></div><div style="color:var(--text-secondary);font-size:11px;line-height:1.5;margin-top:4px;word-break:break-all">${errHtml}</div>`
-      }
-    } catch (err) {
-      qtcoolStatus.innerHTML = `<div style="color:#f87171">${statusIcon('err', 14)} ${t('assistant.qtcoolConnectFail')}: ${err.message}</div>`
-    }
-    btn.disabled = false
-    btn.innerHTML = `${icon('search', 12)} ${t('assistant.testBtn')}`
-  }
-
-  // 一键接入：填充配置 + 提示设为 OpenClaw 主模型
-  overlay.querySelector('#ast-qtcool-apply').onclick = async () => {
-    const selectedModel = qtcoolModelSelect.value
-    if (!selectedModel) { qtcoolStatus.innerHTML = `<span style="color:#fbbf24">${statusIcon('warn', 14)} ${t('assistant.qtcoolSelectModel')}</span>`; return }
-    const key = qtcoolKeyInput.value.trim()
-    if (!key) { qtcoolStatus.innerHTML = `<span style="color:#fbbf24">${statusIcon('warn', 14)} ${t('assistant.qtcoolEnterKey')}</span>`; return }
-
-    // 1) 填充助手配置
-    overlay.querySelector('#ast-baseurl').value = QTCOOL.baseUrl
-    overlay.querySelector('#ast-apikey').value = key
-    overlay.querySelector('#ast-model').value = selectedModel
-    overlay.querySelector('#ast-apitype').value = 'openai-completions'
-    qtcoolStatus.innerHTML = `<span style="color:#34d399">${statusIcon('ok', 14)} ${t('assistant.qtcoolConfigured', { model: selectedModel })}</span>`
-    toast(t('assistant.qtcoolConfigured', { model: selectedModel }), 'success')
-
-    // 2) 提示是否同步写入 OpenClaw 配置（设为主模型）
-    const yes = await showConfirm(
-      t('assistant.qtcoolSyncTitle'),
-      t('assistant.qtcoolSyncDesc', { model: selectedModel }),
-      { confirmText: t('assistant.qtcoolSetMain'), cancelText: t('assistant.qtcoolAssistantOnly') }
-    )
-    if (yes) {
-      try {
-        let config = {}
-        try { config = await api.readOpenclawConfig() } catch {}
-        if (!config.models) config.models = {}
-        if (!config.models.providers) config.models.providers = {}
-
-        // 添加/更新 qtcool provider
-        if (!config.models.providers.qtcool) {
-          config.models.providers.qtcool = {
-            baseUrl: QTCOOL.baseUrl,
-            apiKey: key,
-            api: 'openai-completions',
-            models: [{ id: selectedModel, name: selectedModel, contextWindow: 128000, reasoning: selectedModel.includes('codex') }]
-          }
-        } else {
-          config.models.providers.qtcool.apiKey = key
-        }
-
-        // 设为主模型
-        if (!config.agents) config.agents = {}
-        if (!config.agents.defaults) config.agents.defaults = {}
-        if (!config.agents.defaults.model) config.agents.defaults.model = {}
-        config.agents.defaults.model.primary = 'qtcool/' + selectedModel
-
-        await api.writeOpenclawConfig(config)
-        qtcoolStatus.innerHTML = `<span style="color:#34d399">${statusIcon('ok', 14)} ${t('assistant.qtcoolSetMainDone', { model: selectedModel })}</span>`
-        try {
-          await api.restartGateway()
-          toast(t('assistant.qtcoolMainSwitched', { model: selectedModel }), 'success')
-          qtcoolStatus.innerHTML = `<span style="color:#34d399">${statusIcon('ok', 14)} ${t('assistant.qtcoolAllDone', { model: selectedModel })}</span>`
-        } catch (e) {
-          toast(t('assistant.qtcoolGatewayFail') + ': ' + e.message, 'warning')
-        }
-      } catch (e) {
-        toast(t('assistant.qtcoolWriteFail') + ': ' + e, 'error')
-      }
-    }
-  }
-
-  // 同步到 OpenClaw：将助手的 baseUrl/apiKey/model 写入 openclaw.json
-  overlay.querySelector('#ast-qtcool-sync-to')?.addEventListener('click', async () => {
-    const baseUrl = overlay.querySelector('#ast-baseurl').value.trim()
-    const apiKey = overlay.querySelector('#ast-apikey').value.trim()
-    const model = overlay.querySelector('#ast-model').value.trim()
-    if (!baseUrl || !apiKey || !model) {
-      toast(t('assistant.qtcoolFillFirst'), 'warning')
-      return
-    }
-    const yes = await showConfirm(
-      t('assistant.qtcoolSyncTo'),
-      t('assistant.qtcoolSyncToDesc', { model }),
-      { confirmText: t('assistant.qtcoolConfirmSync'), cancelText: t('common.cancel') }
-    )
-    if (!yes) return
-    try {
-      let config = {}
-      try { config = await api.readOpenclawConfig() } catch {}
-      if (!config.models) config.models = {}
-      if (!config.models.providers) config.models.providers = {}
-      config.models.providers.qtcool = {
-        baseUrl,
-        apiKey,
-        api: 'openai-completions',
-        models: [{ id: model, name: model, contextWindow: 128000, reasoning: model.includes('codex') }]
-      }
-      if (!config.agents) config.agents = {}
-      if (!config.agents.defaults) config.agents.defaults = {}
-      if (!config.agents.defaults.model) config.agents.defaults.model = {}
-      config.agents.defaults.model.primary = 'qtcool/' + model
-      await api.writeOpenclawConfig(config)
-      toast(t('assistant.qtcoolSyncToDone', { model }), 'success')
-      try { await api.restartGateway() } catch {}
-    } catch (e) {
-      toast(t('assistant.qtcoolSyncFail') + ': ' + e, 'error')
-    }
-  })
-
-  // 从 OpenClaw 读取：将 openclaw.json 的 qtcool provider 配置填入助手
-  overlay.querySelector('#ast-qtcool-sync-from')?.addEventListener('click', async () => {
-    try {
-      const config = await api.readOpenclawConfig()
-      const qtProvider = config?.models?.providers?.qtcool
-      if (!qtProvider?.baseUrl) {
-        toast(t('assistant.qtcoolNoProvider'), 'info')
-        return
-      }
-      const primary = config?.agents?.defaults?.model?.primary || ''
-      const primaryModel = primary.startsWith('qtcool/') ? primary.slice(7) : ''
-      const firstModel = (qtProvider.models || [])[0]
-      const modelId = primaryModel || (typeof firstModel === 'string' ? firstModel : firstModel?.id) || ''
-      const yes = await showConfirm(
-        t('assistant.qtcoolSyncFrom'),
-        t('assistant.qtcoolSyncFromDesc', { baseUrl: qtProvider.baseUrl, apiKey: qtProvider.apiKey ? '****' + qtProvider.apiKey.slice(-6) : '(—)', model: modelId }),
-        { confirmText: t('assistant.qtcoolConfirmRead'), cancelText: t('common.cancel') }
-      )
-      if (!yes) return
-      overlay.querySelector('#ast-baseurl').value = qtProvider.baseUrl
-      if (qtProvider.apiKey) {
-        overlay.querySelector('#ast-apikey').value = qtProvider.apiKey
-        qtcoolKeyInput.value = qtProvider.apiKey
-      }
-      overlay.querySelector('#ast-apitype').value = qtProvider.api || 'openai-completions'
-      if (modelId) overlay.querySelector('#ast-model').value = modelId
-      toast(t('assistant.qtcoolSyncFromDone'), 'success')
-    } catch (e) {
-      toast(t('assistant.qtcoolReadFail') + ': ' + e, 'error')
     }
   })
 
@@ -4983,7 +4354,7 @@ export async function render() {
       const skill = getBuiltinSkills().find(s => s.id === skillCard.dataset.skill)
       if (!skill) return
 
-      // 技能需要工具 → 自动切换到执行模式（如果当前是聊天模式）
+      // 技能需要工具 → 自动切换到执行模式（如果当前是对话模式）
       if (skill.tools.length > 0 && currentMode() === 'chat') {
         _config.mode = 'execute'
         saveConfig()

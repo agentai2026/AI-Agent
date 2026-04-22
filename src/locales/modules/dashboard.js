@@ -2,7 +2,7 @@ import { _ } from '../helper.js'
 
 export default {
   title: _('仪表盘', 'Dashboard', '儀表盤', 'ダッシュボード', '대시보드', 'Bảng điều khiển', 'Panel', 'Painel', 'Панель', 'Tableau de bord'),
-  desc: _('OpenClaw 运行状态概览', 'OpenClaw runtime status overview', 'OpenClaw 執行狀態概覽', 'OpenClaw 実行状況の概要', 'OpenClaw 실행 상태 개요', 'Tổng quan trạng thái OpenClaw', 'Resumen del estado de OpenClaw', 'Visão geral do estado do OpenClaw', 'Обзор состояния OpenClaw', 'Vue d\'ensemble de l\'état OpenClaw', 'OpenClaw-Statusübersicht'),
+  desc: _('AI Agent 运行状态概览', 'AI Agent runtime status overview', 'AI Agent 執行狀態概覽', 'AI Agent 実行状況の概要', 'AI Agent 실행 상태 개요', 'Tổng quan trạng thái AI Agent', 'Resumen del estado de AI Agent', 'Visão geral do estado do AI Agent', 'Обзор состояния AI Agent', 'Vue d\'ensemble de l\'état AI Agent', 'AI Agent-Statusübersicht'),
   gateway: _('Gateway', 'Gateway'),
   portDetect: _('端口检测', 'Port detection', '連接埠檢測', 'ポート検出', '포트 감지'),
   notStarted: _('未启动', 'Not started', '未啟動', '未起動', '미시작', 'Chưa khởi động', 'No iniciado', 'Não iniciado', 'Не запущен', 'Non démarré', 'Nicht gestartet'),
@@ -21,7 +21,7 @@ export default {
   basedOnProviders: _('基于 {count} 个渠道商', 'From {count} providers', '基於 {count} 個頻道商', '{count} プロバイダーから', '{count}개 프로바이더 기반'),
   baseServices: _('基础服务', 'Services', '基礎服務', '基本サービス', '기본 서비스', 'Dịch vụ cơ bản', 'Servicios base', 'Serviços base', 'Базовые сервисы', 'Services de base', 'Basisdienste'),
   controlUI: _('Control UI', 'Control UI'),
-  controlUIDesc: _('OpenClaw 原生面板', 'OpenClaw native panel', '', 'OpenClaw ネイティブパネル', 'OpenClaw 네이티브 패널'),
+  controlUIDesc: _('AI Agent 原生面板', 'AI Agent native panel', '', 'AI Agent ネイティブパネル', 'AI Agent 네이티브 패널'),
   controlUIClick: _('点击打开浏览器', 'Click to open in browser', '点擊開啟瀏覽器', 'ブラウザで開く', '브라우저에서 열기'),
   controlUINotRunning: _('Gateway 未运行', 'Gateway not running', 'Gateway 未執行', 'Gateway 未実行', 'Gateway 미실행'),
   restartGw: _('重启 Gateway', 'Restart Gateway', '重啟 Gateway', 'Gateway 再起動', 'Gateway 재시작', 'Khởi động lại Gateway', 'Reiniciar Gateway', 'Reiniciar Gateway', 'Перезапустить Gateway', 'Redémarrer Gateway', 'Gateway neustarten'),
@@ -37,7 +37,7 @@ export default {
   cliSourceUnknown: _('未知来源', 'Unknown', '未知來源', '不明', '알 수 없음'),
   multiInstall: _('检测到多个安装', 'Multiple installations detected', '檢測到多個安裝', '複数のインストールを検出', '여러 설치가 감지됨'),
   multiInstallHint: _('在「面板设置」中可选择使用哪个', 'Choose which one to use in Settings', '在「面板設定」中可選擇使用哪個', '設定で使用するものを選択できます', '설정에서 사용할 설치를 선택할 수 있습니다'),
-  multiInstallCardHint: _('检测到多个安装，建议确认当前绑定的 CLI 与 OpenClaw 目录。', 'Multiple installations detected. Confirm the bound CLI and OpenClaw directory first.', '檢測到多個安裝，建議先確認目前綁定的 CLI 與 OpenClaw 目錄。', '複数のインストールが検出されました。まず CLI バインドと OpenClaw ディレクトリを確認してください。', '여러 설치가 감지되었습니다. 먼저 바인딩된 CLI와 OpenClaw 디렉터리를 확인하세요.'),
+  multiInstallCardHint: _('检测到多个安装，建议确认当前绑定的 CLI 与 AI Agent 目录。', 'Multiple installations detected. Confirm the bound CLI and AI Agent directory first.', '檢測到多個安裝，建議先確認目前綁定的 CLI 與 AI Agent 目錄。', '複数のインストールが検出されました。まず CLI バインドと AI Agent ディレクトリを確認してください。', '여러 설치가 감지되었습니다. 먼저 바인딩된 CLI와 AI Agent 디렉터리를 확인하세요.'),
   multiInstallBoundOk: _('已绑定 CLI，{count} 个安装共存', '{count} installations coexist, CLI is bound', '已綁定 CLI，{count} 個安裝共存'),
   foreignGatewayHint: _('检测到外部 Gateway，建议先查看引导或进入设置修正绑定。', 'External Gateway detected. Review the guidance or open Settings to correct the binding.', '檢測到外部 Gateway，建議先查看引導或進入設定修正綁定。', '外部 Gateway を検出しました。ガイドを確認するか設定を開いて関連付けを修正してください。', '외부 Gateway가 감지되었습니다. 안내를 확인하거나 설정에서 바인딩을 수정하세요.'),
   externalInstance: _('外部实例', 'External instance', '外部實例', '外部インスタンス', '외부 인스턴스', 'Phiên bản bên ngoài'),

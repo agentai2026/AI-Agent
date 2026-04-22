@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-04-21T19:50:18.964Z",
+  "summary": {
+    "brand-replace-plan.md": {
+      "count": 70524,
+      "mode": "DOC_FULL"
+    },
+    "clawpanel/README.de.md": {
+      "count": 93,
+      "mode": "DOC_FULL"
+    },
+    "clawpanel/README.en.md": {
+      "count": 172,
+      "mode": "DOC_FULL"
+    },
+    "clawpanel/README.es.md": {
+      "count": 96,
+      "mode": "DOC_FULL"
+    },
+    "clawpanel/README.fr.md": {
+      "count": 93,
+      "mode": "DOC_FULL"
+    },
+    "clawpanel/README.ja.md": {
+      "count": 94,
+      "mode": "DOC_FULL"
+    },
+    "clawpanel/README.ko.md": {
+      "count": 94,
+      "mode": "DOC_FULL"
+    },
+    "clawpanel/README.pt.md": {
+      "count": 96,
+      "mode": "DOC_FULL"
+    },
+    "clawpanel/README.ru.md": {
+      "count": 93,
+      "mode": "DOC_FULL"
+    },
+    "clawpanel/README.vi.md": {
+      "count": 96,
+      "mode": "DOC_FULL"
+    },
+    "clawpanel/README.zh-TW.md": {
+      "count": 92,
+      "mode": "DOC_FULL"
+    },
+    "scripts/translations/de/about.json": {
+      "count": 1,
+      "mode": "JSON_VALUES"
+    },
+    "scripts/translations/es/about.json": {
+      "count": 2,
+      "mode": "JSON_VALUES"
+    },
+    "scripts/translations/fr/about.json": {
+      "count": 1,
+      "mode": "JSON_VALUES"
+    },
+    "scripts/translations/ja/about.json": {
+      "count": 2,
+      "mode": "JSON_VALUES"
+    },
+    "scripts/translations/ko/about.json": {
+      "count": 2,
+      "mode": "JSON_VALUES"
+    },
+    "scripts/translations/pt/about.json": {
+      "count": 2,
+      "mode": "JSON_VALUES"
+    },
+    "scripts/translations/ru/about.json": {
+      "count": 1,
+      "mode": "JSON_VALUES"
+    },
+    "scripts/translations/vi/about.json": {
+      "count": 2,
+      "mode": "JSON_VALUES"
+    },
+    "src/locales/de.json": {
+      "count": 5,
+      "mode": "JSON_VALUES"
+    },
+    "src/locales/en.json": {
+      "count": 7,
+      "mode": "JSON_VALUES"
+    },
+    "src/locales/es.json": {
+      "count": 6,
+      "mode": "JSON_VALUES"
+    },
+    "src/locales/fr.json": {
+      "count": 5,
+      "mode": "JSON_VALUES"
+    },
+    "src/locales/ja.json": {
+      "count": 6,
+      "mode": "JSON_VALUES"
+    },
+    "src/locales/ko.json": {
+      "count": 6,
+      "mode": "JSON_VALUES"
+    },
+    "src/locales/pt.json": {
+      "count": 6,
+      "mode": "JSON_VALUES"
+    },
+    "src/locales/ru.json": {
+      "count": 5,
+      "mode": "JSON_VALUES"
+    },
+    "src/locales/vi.json": {
+      "count": 6,
+      "mode": "JSON_VALUES"
+    },
+    "src/locales/zh-CN.json": {
+      "count": 7,
+      "mode": "JSON_VALUES"
+    },
+    "src/locales/zh-TW.json": {
+      "count": 7,
+      "mode": "JSON_VALUES"
+    }
+  }
+}

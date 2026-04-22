@@ -1,11 +1,11 @@
 [package]
-name = "clawpanel"
+name = "ai-agent-panel"
 version = "0.13.4"
 edition = "2021"
 description = "ClawPanel - OpenClaw 可视化管理面板"
-authors = ["qingchencloud"]
-repository = "https://github.com/qingchencloud/clawpanel"
-homepage = "https://github.com/qingchencloud/clawpanel"
+authors = ["agentai2026"]
+repository = "https://github.com/agentai2026/AI-Agent"
+homepage = "https://github.com/agentai2026/AI-Agent"
 license = "AGPL-3.0"
 
 [lib]

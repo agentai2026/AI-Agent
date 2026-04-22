@@ -3,17 +3,31 @@
  * 国内用户自动使用 Gitee 镜像，解决 GitHub 访问慢/不可达的问题
  */
 
-const GITHUB_ORG = 'https://github.com/qingchencloud'
+const GITHUB_ORG = 'https://github.com/agentai2026'
 const GITEE_ORG = 'https://gitee.com/QtCodeCreators'
-const GITHUB_RAW = 'https://raw.githubusercontent.com/qingchencloud'
+const GITHUB_RAW = 'https://raw.githubusercontent.com/agentai2026'
 const GITEE_RAW = 'https://gitee.com/QtCodeCreators'
 
-// 仓库名映射（GitHub → Gitee，名称不同时需映射）
-const REPO_MAP = {
+// 逻辑仓库 key → GitHub 仓库目录名（与 Gitee 可能不同）
+const GITHUB_REPO_SLUG = {
+  clawpanel: 'AI-Agent',
+  clawapp: 'clawapp',
+  cftunnel: 'cftunnel',
+  'openclaw-zh': 'openclaw-zh',
+}
+// 逻辑仓库 key → Gitee 仓库目录名（国内镜像仍可能沿用旧仓库名）
+const GITEE_REPO_SLUG = {
   clawpanel: 'clawpanel',
   clawapp: 'clawapp',
   cftunnel: 'cftunnel',
   'openclaw-zh': 'openclaw-zh',
+}
+
+function slugForGitHub(repo) {
+  return GITHUB_REPO_SLUG[repo] || repo
+}
+function slugForGitee(repo) {
+  return GITEE_REPO_SLUG[repo] || repo
 }
 
 /**
@@ -46,11 +60,10 @@ async function isGithubReachable() {
  * @param {string} [path] - 可选路径，如 '/releases'、'/issues/new'
  */
 export async function repoUrl(repo, path = '') {
-  const giteeRepo = REPO_MAP[repo] || repo
   if (await isGithubReachable()) {
-    return `${GITHUB_ORG}/${repo}${path}`
+    return `${GITHUB_ORG}/${slugForGitHub(repo)}${path}`
   }
-  return `${GITEE_ORG}/${giteeRepo}${path}`
+  return `${GITEE_ORG}/${slugForGitee(repo)}${path}`
 }
 
 /**
@@ -59,10 +72,9 @@ export async function repoUrl(repo, path = '') {
  * @param {string} [path]
  */
 export function repoBothUrls(repo, path = '') {
-  const giteeRepo = REPO_MAP[repo] || repo
   return {
-    github: `${GITHUB_ORG}/${repo}${path}`,
-    gitee: `${GITEE_ORG}/${giteeRepo}${path}`,
+    github: `${GITHUB_ORG}/${slugForGitHub(repo)}${path}`,
+    gitee: `${GITEE_ORG}/${slugForGitee(repo)}${path}`,
   }
 }
 
@@ -75,11 +87,10 @@ export function repoBothUrls(repo, path = '') {
  * @param {string} filePath
  */
 export async function rawFileUrl(repo, branch, filePath) {
-  const giteeRepo = REPO_MAP[repo] || repo
   if (await isGithubReachable()) {
-    return `${GITHUB_RAW}/${repo}/${branch}/${filePath}`
+    return `${GITHUB_RAW}/${slugForGitHub(repo)}/${branch}/${filePath}`
   }
-  return `${GITEE_RAW}/${giteeRepo}/raw/${branch}/${filePath}`
+  return `${GITEE_RAW}/${slugForGitee(repo)}/raw/${branch}/${filePath}`
 }
 
 /**
@@ -87,7 +98,7 @@ export async function rawFileUrl(repo, branch, filePath) {
  */
 export function deployCommand() {
   return {
-    github: `curl -fsSL ${GITHUB_RAW}/clawpanel/main/deploy.sh | bash`,
+    github: `curl -fsSL ${GITHUB_RAW}/AI-Agent/main/deploy.sh | bash`,
     gitee: `curl -fsSL ${GITEE_RAW}/clawpanel/raw/main/deploy.sh | bash`,
   }
 }

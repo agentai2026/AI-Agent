@@ -16,10 +16,10 @@ export async function render() {
 
   page.innerHTML = `
     <div class="page-header" style="display:flex;align-items:center;gap:16px">
-      <img src="/images/logo-brand.png" alt="ClawPanel" style="height:48px;width:auto">
+      <img src="/favicon.ico" alt="AI Agent面板" style="height:48px;width:auto">
       <div>
-        <h1 class="page-title" style="margin:0">ClawPanel</h1>
-        <p class="page-desc" style="margin:0">${t('about.subtitle')} · <a href="https://claw.qt.cool" target="_blank" rel="noopener" style="color:var(--primary)">claw.qt.cool</a></p>
+        <h1 class="page-title" style="margin:0">关于 AI Agent面板</h1>
+        <p class="page-desc" style="margin:0">OpenClaw &amp; Hermes Agent 多引擎 AI 管理面板 — 内置 AI 助手（工具调用 + 图片识别 + 多模态），</p>
       </div>
     </div>
     <div class="stat-cards" id="version-cards">
@@ -49,7 +49,8 @@ export async function render() {
     </div>
     <div class="config-section" style="color:var(--text-tertiary);font-size:var(--font-size-xs)">
       <p>${t('about.techStack')}</p>
-      <p style="margin-top:8px">${t('about.copyright')}</p>
+      <p style="margin-top:8px">© 2026 AI Agent面板. All rights reserved.</p>
+      <p style="margin-top:6px;font-size:11px;opacity:.85">基于开源项目二次开发</p>
     </div>
   `
 
@@ -93,7 +94,7 @@ async function loadHermesData(page) {
 
     cards.innerHTML = `
       <div class="stat-card">
-        <div class="stat-card-header"><span class="stat-card-label">ClawPanel</span></div>
+        <div class="stat-card-header"><span class="stat-card-label">AI Agent面板</span></div>
         <div class="stat-card-value">${panelVersion}</div>
         <div class="stat-card-meta" id="panel-update-meta" style="display:flex;align-items:center;gap:8px">${panelUpdateHtml}</div>
       </div>
@@ -232,7 +233,7 @@ async function loadData(page) {
       api.checkInstallation(),
     ])
 
-    // 尝试从 Tauri API 获取 ClawPanel 自身版本号，失败则 fallback
+    // 尝试从 Tauri API 获取 AI Agent面板 自身版本号，失败则 fallback
     const panelVersion = typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : '0.1.0'
 
     let panelUpdateHtml = `<span style="color:var(--text-tertiary)">${t('about.checkingUpdate')}</span>`
@@ -250,12 +251,12 @@ async function loadData(page) {
 
     cards.innerHTML = `
       <div class="stat-card">
-        <div class="stat-card-header"><span class="stat-card-label">ClawPanel</span></div>
+        <div class="stat-card-header"><span class="stat-card-label">AI Agent面板</span></div>
         <div class="stat-card-value">${panelVersion}</div>
         <div class="stat-card-meta" id="panel-update-meta" style="display:flex;align-items:center;gap:8px">${panelUpdateHtml}</div>
       </div>
       <div class="stat-card">
-        <div class="stat-card-header"><span class="stat-card-label">OpenClaw · ${sourceLabel}</span></div>
+        <div class="stat-card-header"><span class="stat-card-label">AI Agent · ${sourceLabel}</span></div>
         <div class="stat-card-value">${version.current || t('about.notInstalled')}</div>
         <div class="stat-card-meta" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
           ${isInstalled && hasRecommended
@@ -509,7 +510,7 @@ async function showVersionPicker(page, currentVersion) {
     const ver = select.value
     const action = confirmBtn.textContent
     close()
-    doInstall(page, `${action} OpenClaw`, source, ver)
+    doInstall(page, `${action} AI Agent`, source, ver)
   }
 
   updateRadioStyle()
@@ -604,14 +605,12 @@ async function checkNewVersion(cards, panelVersion) {
       meta.innerHTML = `
         <span style="color:var(--warning)">⚠️ ${t('about.versionMismatch', { frontend: panelVersion, binary: binaryVersion })}</span>
         <span style="color:var(--text-tertiary);font-size:var(--font-size-xs)">${t('about.hotUpdateDeprecated')}</span>
-        <a class="btn btn-primary btn-sm" href="https://claw.qt.cool" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFullInstaller')}</a>
-        <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/qingchencloud/clawpanel/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
+        <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent/releases" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
       `
     } else if (latest && latest !== effectiveVersion && compareVersions(latest, effectiveVersion) > 0) {
       meta.innerHTML = `
         <span style="color:var(--accent)">${t('about.newVersionAvailable', { version: latest })}</span>
-        <a class="btn btn-primary btn-sm" href="https://claw.qt.cool" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromWebsite')}</a>
-        <a class="btn btn-secondary btn-sm" href="${info.url || 'https://github.com/qingchencloud/clawpanel/releases'}" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
+        <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent/releases" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>
       `
     } else {
       meta.innerHTML = `<span style="color:var(--success)">${t('about.upToDate')}</span>`
@@ -620,9 +619,9 @@ async function checkNewVersion(cards, panelVersion) {
     const meta = el()
     if (!meta) return
     if (isFakeUpdate) {
-      meta.innerHTML = `<span style="color:var(--warning)">⚠️ ${t('about.versionMismatch', { frontend: panelVersion, binary: binaryVersion })}</span> <a class="btn btn-primary btn-sm" href="https://claw.qt.cool" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFullInstaller')}</a>`
+      meta.innerHTML = `<span style="color:var(--warning)">⚠️ ${t('about.versionMismatch', { frontend: panelVersion, binary: binaryVersion })}</span> <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent/releases" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>`
     } else {
-      meta.innerHTML = `<span style="color:var(--text-tertiary)">${t('about.checkUpdateFailed')}</span> <a class="btn btn-secondary btn-sm" href="https://claw.qt.cool" target="_blank" rel="noopener" style="${btnSm}">${t('about.goToWebsite')}</a>`
+      meta.innerHTML = `<span style="color:var(--text-tertiary)">${t('about.checkUpdateFailed')}</span> <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" style="${btnSm}">${t('about.downloadFromGitHub')}</a>`
     }
   }
 }
@@ -644,19 +643,11 @@ function renderCommunity(page) {
   el.innerHTML = `
     <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start">
       <div style="text-align:center">
-        <img src="/images/OpenClaw-QQ.png" alt="${t('about.qqGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary)">
+        <img src="/images/logo.png" alt="${t('about.qqGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary)">
         <div style="font-size:var(--font-size-sm);margin-top:8px;color:var(--text-secondary)">${t('about.qqGroup')}</div>
       </div>
       <div style="text-align:center">
-        <img src="/images/OpenClawWx.png" alt="${t('about.wechatGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary)">
-        <div style="font-size:var(--font-size-sm);margin-top:8px;color:var(--text-secondary)">${t('about.wechatGroup')}</div>
-      </div>
-      <div style="text-align:center">
-        <img src="https://qt.cool/c/OpenClawDY/qr.png" alt="${t('about.douyinGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary);object-fit:contain;background:#fff">
-        <div style="font-size:var(--font-size-sm);margin-top:8px;color:var(--text-secondary)">${t('about.douyinGroup')}</div>
-      </div>
-      <div style="text-align:center">
-        <img src="https://qt.cool/c/feishu/qr.png" alt="${t('about.feishuGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary);object-fit:contain;background:#fff">
+        <img src="/images/logo.png" alt="${t('about.feishuGroup')}" style="width:140px;height:140px;border-radius:var(--radius-md);border:1px solid var(--border-primary);object-fit:contain;background:#fff">
         <div style="font-size:var(--font-size-sm);margin-top:8px;color:var(--text-secondary)">${t('about.feishuGroup')}</div>
       </div>
       <div style="flex:1;min-width:200px;display:flex;flex-direction:column;gap:8px;padding-top:4px">
@@ -664,12 +655,8 @@ function renderCommunity(page) {
         <div style="font-size:var(--font-size-sm);color:var(--text-secondary);font-style:italic">${t('about.communityWelcomeIntl')}</div>
         <div style="font-size:var(--font-size-sm);color:var(--text-secondary);margin-top:4px">${t('about.communityDesc')}</div>
         <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px">
-          <a class="btn btn-sm" href="https://discord.gg/U9AttmsNHh" target="_blank" rel="noopener" style="background:#5865F2;color:#fff;display:inline-flex;align-items:center;gap:4px;border:none">${icon('message-circle', 14)} ${t('about.joinDiscord')}</a>
-          <a class="btn btn-primary btn-sm" href="https://qt.cool/c/OpenClaw" target="_blank" rel="noopener">${t('about.joinQQ')}</a>
-          <a class="btn btn-primary btn-sm" href="https://qt.cool/c/OpenClawWx" target="_blank" rel="noopener">${t('about.joinWechat')}</a>
-          <a class="btn btn-primary btn-sm" href="https://qt.cool/c/OpenClawDY" target="_blank" rel="noopener">${t('about.joinDouyin')}</a>
-          <a class="btn btn-primary btn-sm" href="https://qt.cool/c/feishu" target="_blank" rel="noopener">${t('about.joinFeishu')}</a>
-          <a class="btn btn-secondary btn-sm" href="https://yb.tencent.com/gp/i/IIGXzcMcdh84" target="_blank" rel="noopener">${t('about.joinYuanbao')}</a>
+          <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent/discussions" target="_blank" rel="noopener">${t('about.joinQQ')}</a>
+          <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent/discussions" target="_blank" rel="noopener">${t('about.joinFeishu')}</a>
         </div>
         <div style="font-size:var(--font-size-xs);color:var(--text-tertiary);margin-top:8px">
           ${t('about.communityNote')}
@@ -681,30 +668,24 @@ function renderCommunity(page) {
 
 const PROJECTS = [
   {
-    name: 'OpenClaw',
-    desc: t('about.projectOpenClaw'),
+    name: 'AI Agent',
+    desc: t('about.projectRuntime'),
     url: 'https://github.com/openclaw/openclaw',
   },
   {
-    name: 'OpenClaw-zh',
-    desc: t('about.projectOpenClawZh'),
-    url: 'https://github.com/1186258278/OpenClawChineseTranslation',
+    name: 'AI Agent面板',
+    desc: t('about.projectDesktopPanel'),
+    url: 'https://github.com/agentai2026/AI-Agent',
   },
   {
-    name: 'ClawPanel',
-    desc: t('about.projectClawPanel'),
-    url: 'https://github.com/qingchencloud/clawpanel',
-    gitee: 'https://gitee.com/QtCodeCreators/clawpanel',
-  },
-  {
-    name: 'ClawApp',
-    desc: t('about.projectClawApp'),
-    url: 'https://github.com/qingchencloud/clawapp',
+    name: t('about.linkMobileApp'),
+    desc: t('about.projectMobileClient'),
+    url: 'https://github.com/agentai2026/clawapp',
   },
   {
     name: 'cftunnel',
     desc: t('about.projectCftunnel'),
-    url: 'https://github.com/qingchencloud/cftunnel',
+    url: 'https://github.com/agentai2026/cftunnel',
   },
 ]
 
@@ -727,10 +708,8 @@ function renderProjects(page) {
 }
 
 const LINKS = [
-  { label: t('about.linkWebsite'), url: 'https://claw.qt.cool', primary: true },
-  { label: t('about.linkOpenClawZh'), url: 'https://github.com/1186258278/OpenClawChineseTranslation' },
-  { label: t('about.linkClawApp'), url: 'https://clawapp.qt.cool' },
-  { label: t('about.linkCftunnel'), url: 'https://cftunnel.qt.cool' },
+  { label: t('about.openSourceRepo'), url: 'https://github.com/agentai2026/AI-Agent', primary: true },
+  { label: 'GitHub Releases', url: 'https://github.com/agentai2026/AI-Agent/releases' },
 ]
 
 function renderContribute(page) {
@@ -740,10 +719,10 @@ function renderContribute(page) {
       ${t('about.contributeDesc')}
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:8px">
-      <a class="btn btn-primary btn-sm" href="https://github.com/qingchencloud/clawpanel/issues/new" target="_blank" rel="noopener">${t('about.submitIssue')}</a>
-      <a class="btn btn-secondary btn-sm" href="https://github.com/qingchencloud/clawpanel/pulls" target="_blank" rel="noopener">${t('about.submitPR')}</a>
-      <a class="btn btn-secondary btn-sm" href="https://github.com/qingchencloud/clawpanel/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${t('about.contributeGuide')}</a>
-      <a class="btn btn-secondary btn-sm" href="https://github.com/qingchencloud/clawpanel/issues" target="_blank" rel="noopener">${t('about.viewIssues')}</a>
+      <a class="btn btn-primary btn-sm" href="https://github.com/agentai2026/AI-Agent/issues/new" target="_blank" rel="noopener">${t('about.submitIssue')}</a>
+      <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent/pulls" target="_blank" rel="noopener">${t('about.submitPR')}</a>
+      <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${t('about.contributeGuide')}</a>
+      <a class="btn btn-secondary btn-sm" href="https://github.com/agentai2026/AI-Agent/issues" target="_blank" rel="noopener">${t('about.viewIssues')}</a>
     </div>
     <div style="margin-top:8px;font-size:var(--font-size-xs);color:var(--text-tertiary)">
       ${t('about.domesticMirrorHint')}
@@ -763,63 +742,21 @@ function renderCompany(page) {
   el.innerHTML = `
     <div style="display:flex;flex-direction:column;gap:12px">
       <div style="display:flex;align-items:center;gap:12px">
-        <img src="/images/logo-brand.png" alt="QingchenCloud" style="width:40px;height:40px;border-radius:10px;flex-shrink:0">
+        <img src="/favicon.ico" alt="AI Agent面板" style="width:40px;height:40px;border-radius:10px;flex-shrink:0">
         <div>
-          <div style="font-weight:700;font-size:var(--font-size-md)">${t('about.companyName')}</div>
-          <div style="font-size:var(--font-size-sm);color:var(--text-secondary)">QingchenCloud</div>
+          <div style="font-weight:700;font-size:var(--font-size-md)">AI Agent面板</div>
+          <div style="font-size:var(--font-size-sm);color:var(--text-secondary)">AI Agent可视化面板系统</div>
         </div>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;font-size:var(--font-size-sm)">
         <div style="padding:12px;border-radius:var(--radius-md);border:1px solid var(--border-primary);background:var(--bg-secondary)">
-          <div style="color:var(--text-tertiary);font-size:var(--font-size-xs);margin-bottom:4px">${t('about.officialWebsite')}</div>
-          <a href="https://qingchencloud.com" target="_blank" rel="noopener" style="color:var(--accent)">qingchencloud.com</a>
-        </div>
-        <div style="padding:12px;border-radius:var(--radius-md);border:1px solid var(--border-primary);background:var(--bg-secondary)">
-          <div style="color:var(--text-tertiary);font-size:var(--font-size-xs);margin-bottom:4px">${t('about.productWebsite')}</div>
-          <a href="https://claw.qt.cool" target="_blank" rel="noopener" style="color:var(--accent)">claw.qt.cool</a>
-        </div>
-        <div style="padding:12px;border-radius:var(--radius-md);border:1px solid var(--border-primary);background:var(--bg-secondary)">
-          <div style="color:var(--text-tertiary);font-size:var(--font-size-xs);margin-bottom:4px">${t('about.openSourceRepo')}</div>
-          <a href="https://github.com/qingchencloud" target="_blank" rel="noopener" style="color:var(--accent)">github.com/qingchencloud</a>
-        </div>
-        <div style="padding:12px;border-radius:var(--radius-md);border:1px solid var(--border-primary);background:var(--bg-secondary)">
           <div style="color:var(--text-tertiary);font-size:var(--font-size-xs);margin-bottom:4px">${t('about.businessCoop')}</div>
-          <a href="mailto:support@qctx.net" style="color:var(--accent)">support@qctx.net</a>
+          <span style="color:var(--accent)">QQ: 255258448</span>
         </div>
       </div>
       <div style="font-size:var(--font-size-xs);color:var(--text-tertiary);line-height:1.6">
-        ${t('about.companyDesc')}
+        AI Agent面板为基于开源项目二次开发的可视化面板系统，用于本地/自部署环境的管理与辅助操作。
       </div>
-      ${!getLang().startsWith('zh') ? `<div style="margin-top:12px;padding:12px 14px;border-radius:var(--radius-md);border:1px dashed var(--border-primary);background:var(--bg-secondary);font-size:var(--font-size-xs);color:var(--text-tertiary)">
-        <div style="display:flex;align-items:center;gap:12px">
-          <img src="/images/bnbqr.jpg" alt="Sponsor QR" width="64" height="64" style="border-radius:6px;flex-shrink:0;background:#fff;padding:2px;cursor:pointer" loading="lazy" id="sponsor-qr-thumb" title="Click to enlarge">
-          <div style="min-width:0">
-            <div style="font-weight:600;color:var(--text-secondary);margin-bottom:4px">${t('about.sponsorProject') || 'Sponsor This Project'} <span style="opacity:0.5">· USDT (BNB Smart Chain)</span></div>
-            <code style="font-size:10px;background:var(--bg-tertiary);padding:2px 6px;border-radius:4px;user-select:all;word-break:break-all;display:block;line-height:1.6">0xbdd7ebdf2b30d873e556799711021c6671ffe88f</code>
-            <div style="margin-top:4px;opacity:0.6">${t('about.sponsorDesc') || 'Your support helps us maintain and improve this open-source project.'}</div>
-          </div>
-        </div>
-      </div>` : ''}
     </div>
   `
-  // QR 点击预览大图
-  el.querySelector('#sponsor-qr-thumb')?.addEventListener('click', () => {
-    const overlay = document.createElement('div')
-    overlay.className = 'modal-overlay'
-    overlay.innerHTML = `
-      <div class="modal" style="max-width:360px;text-align:center">
-        <div class="modal-title">${t('about.sponsorProject') || 'Sponsor This Project'}</div>
-        <img src="/images/bnbqr.jpg" alt="Sponsor QR" style="width:240px;height:240px;border-radius:8px;margin:12px auto;display:block">
-        <div style="font-size:var(--font-size-sm);color:var(--text-secondary);margin:8px 0">USDT · BNB Smart Chain</div>
-        <code style="font-size:11px;background:var(--bg-tertiary);padding:4px 8px;border-radius:4px;user-select:all;word-break:break-all;display:block;line-height:1.6">0xbdd7ebdf2b30d873e556799711021c6671ffe88f</code>
-        <div style="font-size:var(--font-size-xs);color:var(--text-tertiary);margin-top:8px">${t('about.sponsorDesc') || 'Your support helps us maintain and improve this open-source project.'}</div>
-        <div class="modal-actions" style="margin-top:16px">
-          <button class="btn btn-secondary btn-sm" data-action="close">${t('common.close')}</button>
-        </div>
-      </div>
-    `
-    document.body.appendChild(overlay)
-    overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove() })
-    overlay.querySelector('[data-action="close"]').onclick = () => overlay.remove()
-  })
 }

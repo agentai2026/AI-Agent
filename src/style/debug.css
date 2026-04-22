@@ -51,7 +51,8 @@
   --error-bg: rgba(239, 68, 68, 0.1);
 }
 
-[data-theme="dark"] {
+[data-theme="dark"],
+[data-theme="starry"] {
   --success-bg: rgba(34, 197, 94, 0.15);
   --warning-bg: rgba(251, 191, 36, 0.15);
   --error-bg: rgba(239, 68, 68, 0.15);

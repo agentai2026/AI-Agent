@@ -2,7 +2,7 @@
  * 侧边导航栏
  */
 import { navigate, getCurrentRoute, reloadCurrentRoute } from '../router.js'
-import { toggleTheme, getTheme } from '../lib/theme.js'
+import { cycleTheme, getTheme } from '../lib/theme.js'
 import { isOpenclawReady } from '../lib/app-state.js'
 import { api } from '../lib/tauri-api.js'
 import { toast } from './toast.js'
@@ -144,6 +144,7 @@ function _toggleEngineDropdown() {
     if (btn) btn.setAttribute('aria-expanded', 'false')
     return
   }
+  _closeLangDropdown()
   dd.classList.add('open')
   if (btn) btn.setAttribute('aria-expanded', 'true')
 }
@@ -171,9 +172,9 @@ export function renderSidebar(el) {
   let html = `
     <div class="sidebar-header">
       <div class="sidebar-logo">
-        <img src="/images/logo.png" alt="ClawPanel">
+        <img src="/images/logo.png" alt="AI Agent面板">
       </div>
-      <span class="sidebar-title">ClawPanel</span>
+      <span class="sidebar-title">AI Agent面板</span>
       <button class="sidebar-collapse-btn" id="btn-sidebar-collapse" title="${t('sidebar.collapse')}">${collapsed ? '»' : '«'}</button>
       <button class="sidebar-close-btn" id="btn-sidebar-close" title="${t('sidebar.closeMenu')}">&times;</button>
     </div>
@@ -203,10 +204,20 @@ export function renderSidebar(el) {
 
   html += '</nav>'
 
-  // 主题切换按钮
-  const isDark = getTheme() === 'dark'
+  // 主题：单击循环 日间 → 夜间 → 星空
+  const themeNow = getTheme()
   const sunIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>'
   const moonIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>'
+  const starsIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.2 4.2L17 8.5l-3.8 2.1L12 15l-1.2-4.4L7 8.5l3.8-2.3L12 3z"/><path d="M19 3l.4 2.1L21 5.8l-1.9.2L19 8l-.4-2.1L16 5.8l1.9-.2L19 3zM5 16l.4 2.1L7 18.8l-1.9.2L5 21l-.4-2.1L3 18.8l1.9-.2L5 16z"/></svg>'
+  let themeIcon = sunIcon
+  let themeLabel = t('sidebar.themeLight')
+  if (themeNow === 'dark') {
+    themeIcon = moonIcon
+    themeLabel = t('sidebar.themeDark')
+  } else if (themeNow === 'starry') {
+    themeIcon = starsIcon
+    themeLabel = t('sidebar.themeStarry')
+  }
 
   const langCode = getLang()
   const langs = getAvailableLangs()
@@ -224,9 +235,9 @@ export function renderSidebar(el) {
 
   html += `
     <div class="sidebar-footer">
-      <div class="nav-item" id="btn-theme-toggle">
-        ${isDark ? sunIcon : moonIcon}
-        <span>${isDark ? t('sidebar.themeLight') : t('sidebar.themeDark')}</span>
+      <div class="nav-item" id="btn-theme-toggle" title="${_escSidebar(t('sidebar.themeCycleHint'))}" aria-label="${_escSidebar(t('sidebar.themeCycleHint'))}">
+        ${themeIcon}
+        <span>${themeLabel}</span>
       </div>
       <div class="lang-switcher" id="lang-switcher">
         <button class="nav-item lang-trigger" id="btn-lang-toggle">
@@ -240,7 +251,13 @@ export function renderSidebar(el) {
         </div>
       </div>
       <div class="sidebar-meta">
-        <a href="https://claw.qt.cool" target="_blank" rel="noopener" class="sidebar-link">claw.qt.cool</a>
+        <div>
+          <a href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener" class="sidebar-link">GitHub</a>
+          <span class="sidebar-version"> · </span>
+          <a href="http://localhost:3456" target="_blank" rel="noopener" class="sidebar-link">本地官网</a><br>
+          <span class="sidebar-version">QQ: 255258448</span><br>
+          <span class="sidebar-version">© 2026 AI Agent面板</span>
+        </div>
         <span class="sidebar-version">v${APP_VERSION}</span>
       </div>
     </div>
@@ -274,10 +291,10 @@ export function renderSidebar(el) {
         // 不需要整体重渲染
         return
       }
-      // 主题切换
+      // 主题循环：日间 → 夜间 → 星空
       const themeBtn = e.target.closest('#btn-theme-toggle')
       if (themeBtn) {
-        toggleTheme(() => renderSidebar(el))
+        cycleTheme(() => renderSidebar(el))
         return
       }
       // 语言切换器：打开/关闭下拉
@@ -398,6 +415,7 @@ function _toggleLangDropdown(sidebarEl) {
   const dd = document.getElementById('lang-dropdown')
   if (!dd) return
   if (dd.classList.contains('open')) { dd.classList.remove('open'); if (sw) sw.classList.remove('open'); return }
+  _closeEngineDropdown()
   dd.classList.add('open')
   if (sw) sw.classList.add('open')
   const searchInput = dd.querySelector('#lang-search')

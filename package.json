@@ -1,21 +1,20 @@
 {
-  "name": "clawpanel",
+  "name": "ai-agent-panel",
   "version": "0.13.4",
   "private": true,
-  "description": "ClawPanel - OpenClaw 可视化管理面板，基于 Tauri v2 的跨平台桌面应用",
+  "description": "AI Agent可视化面板系统",
   "type": "module",
-  "author": "qingchencloud",
+  "author": "agentai2026",
   "license": "AGPL-3.0",
-  "homepage": "https://github.com/qingchencloud/clawpanel",
+  "homepage": "https://github.com/agentai2026/AI-Agent",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qingchencloud/clawpanel.git"
+    "url": "https://github.com/agentai2026/AI-Agent.git"
   },
   "bugs": {
-    "url": "https://github.com/qingchencloud/clawpanel/issues"
+    "url": "https://github.com/agentai2026/AI-Agent/issues"
   },
   "keywords": [
-    "openclaw",
     "ai-agent",
     "tauri",
     "desktop-app",
@@ -29,7 +28,9 @@
     "icon:regen": "tauri icon docs/logo.png -o src-tauri/icons",
     "serve": "node scripts/serve.js",
     "version:sync": "node scripts/sync-version.js",
-    "version:set": "node scripts/sync-version.js"
+    "version:set": "node scripts/sync-version.js",
+    "update:force": "node scripts/force-update.cjs",
+    "update:force:yes": "node scripts/force-update.cjs --yes --branch main"
   },
   "dependencies": {
     "@tauri-apps/api": "^2.5.0",

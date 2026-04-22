@@ -1,6 +1,6 @@
 # Armbian / ARM 设备部署指南
 
-ClawPanel 支持在 ARM 开发板（如 Orange Pi、Raspberry Pi、RK3588 等）上运行，通过 **Web 模式** 或 **Docker 模式** 部署，无需图形界面。
+AI Agent面板 支持在 ARM 开发板（如 Orange Pi、Raspberry Pi、RK3588 等）上运行，通过 **Web 模式** 或 **Docker 模式** 部署，无需图形界面。
 
 ## 系统要求
 
@@ -21,7 +21,7 @@ Web 模式是纯 Node.js 服务，零 GUI 依赖，最适合 ARM 板。
 ### 一键部署
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/scripts/linux-deploy.sh | bash
+curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/scripts/linux-deploy.sh | bash
 ```
 
 国内网络推荐使用 Gitee 镜像：
@@ -38,7 +38,7 @@ curl -fsSL https://deb.nodesource.com/setup_22.x | sudo bash -
 sudo apt-get install -y nodejs git
 
 # 2. 克隆项目
-git clone https://github.com/qingchencloud/clawpanel.git /opt/clawpanel
+git clone https://github.com/agentai2026/AI-Agent.git /opt/clawpanel
 cd /opt/clawpanel
 
 # 3. 安装依赖并构建
@@ -54,7 +54,7 @@ npm run serve -- --port 1420
 ```bash
 sudo tee /etc/systemd/system/clawpanel.service << 'EOF'
 [Unit]
-Description=ClawPanel Web Server
+Description=AI Agent面板 Web Server
 After=network.target
 
 [Service]
@@ -84,14 +84,14 @@ sudo systemctl enable --now clawpanel
 # 安装 Docker（如果还没有）
 curl -fsSL https://get.docker.com | sh
 
-# 一键启动（OpenClaw + ClawPanel 一体）
+# 一键启动（AI Agent + AI Agent面板 一体）
 docker run -d \
   --name openclaw \
   -p 1420:1420 \
   -p 18789:18789 \
   -v openclaw-data:/root/.openclaw \
   --restart unless-stopped \
-  ghcr.io/qingchencloud/openclaw:latest
+  ghcr.io/openclaw/openclaw:latest
 ```
 
 国内拉取慢可使用腾讯云镜像：
@@ -103,7 +103,7 @@ docker run -d \
   -p 18789:18789 \
   -v openclaw-data:/root/.openclaw \
   --restart unless-stopped \
-  ccr.ccs.tencentyun.com/qingchencloud/openclaw:latest
+  ccr.ccs.tencentyun.com/agentai2026/openclaw:latest
 ```
 
 ## 性能优化建议

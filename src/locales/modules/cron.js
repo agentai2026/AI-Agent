@@ -2,7 +2,7 @@ import { _ } from '../helper.js'
 
 export default {
   title: _('定时任务', 'Scheduled Tasks', '定時任務', 'スケジュールタスク', '예약 작업', 'Tác vụ định kỳ', 'Tareas programadas', 'Tarefas agendadas', 'Планировщик', 'Tâches planifiées', 'Geplante Aufgaben'),
-  desc: _('创建计划任务，让 AI 按设定时间自动执行指令', 'Create scheduled tasks to let AI execute commands at set times', '建立計畫任務，讓 AI 按設定時間自動執行指令', 'OpenClaw の定期タスクを管理', 'OpenClaw 정기 작업 관리', 'Quản lý tác vụ định kỳ OpenClaw', 'Gestionar tareas programadas de OpenClaw', 'Gerenciar tarefas agendadas do OpenClaw', 'Управление периодическими задачами OpenClaw', 'Gérer les tâches planifiées OpenClaw', 'OpenClaw-Aufgaben verwalten'),
+  desc: _('创建计划任务，让 AI 按设定时间自动执行指令', 'Create scheduled tasks to let AI execute commands at set times', '建立計畫任務，讓 AI 按設定時間自動執行指令', 'AI Agent の定期タスクを管理', 'AI Agent 정기 작업 관리', 'Quản lý tác vụ định kỳ AI Agent', 'Gestionar tareas programadas de AI Agent', 'Gerenciar tarefas agendadas do AI Agent', 'Управление периодическими задачами AI Agent', 'Gérer les tâches planifiées AI Agent', 'AI Agent-Aufgaben verwalten'),
   gwHint: _('定时任务通过 Gateway 管理。请先启动 Gateway 后使用此功能。', 'Scheduled tasks are managed via Gateway. Please start Gateway first.', '定時任務通過 Gateway 管理。請先啟動 Gateway 后使用此功能。'),
   goServices: _('服务管理', 'Services', '服務管理'),
   newTask: _('+ 创建任务', '+ New Task', '+ 建立任務'),

@@ -4,7 +4,7 @@ export default {
   switchedTo: _('已切换到 {name} 模式', 'Switched to {name} mode', '已切換到 {name} 模式', '{name} モードに切り替えました', '{name} 모드로 전환됨'),
   switchFailed: _('引擎切换失败，请稍后重试', 'Engine switch failed, please try again later', '引擎切換失敗，請稍後重試', 'エンジンの切り替えに失敗しました。後でもう一度お試しください', '엔진 전환에 실패했습니다. 잠시 후 다시 시도해 주세요'),
   switcherSectionLabel: _('引擎', 'Engine', '引擎', 'エンジン', '엔진', 'Động cơ', 'Motor', 'Motor', 'Движок', 'Moteur', 'Engine'),
-  switcherTooltip: _('点击切换引擎（OpenClaw / Hermes Agent）', 'Click to switch engine (OpenClaw / Hermes Agent)', '點擊切換引擎（OpenClaw / Hermes Agent）', 'クリックしてエンジンを切り替え (OpenClaw / Hermes Agent)', '엔진 전환하려면 클릭 (OpenClaw / Hermes Agent)', 'Nhấp để chuyển đổi engine (OpenClaw / Hermes Agent)', 'Haga clic para cambiar de motor (OpenClaw / Hermes Agent)', 'Clique para alternar o motor (OpenClaw / Hermes Agent)', 'Нажмите, чтобы переключить движок (OpenClaw / Hermes Agent)', 'Cliquez pour changer de moteur (OpenClaw / Hermes Agent)', 'Klicken, um die Engine zu wechseln (OpenClaw / Hermes Agent)'),
+  switcherTooltip: _('点击切换引擎（AI Agent / Hermes Agent）', 'Click to switch engine (AI Agent / Hermes Agent)', '點擊切換引擎（AI Agent / Hermes Agent）', 'クリックしてエンジンを切り替え (AI Agent / Hermes Agent)', '엔진 전환하려면 클릭 (AI Agent / Hermes Agent)', 'Nhấp để chuyển đổi engine (AI Agent / Hermes Agent)', 'Haga clic para cambiar de motor (AI Agent / Hermes Agent)', 'Clique para alternar o motor (AI Agent / Hermes Agent)', 'Нажмите, чтобы переключить движок (AI Agent / Hermes Agent)', 'Cliquez pour changer de moteur (AI Agent / Hermes Agent)', 'Klicken, um die Engine zu wechseln (AI Agent / Hermes Agent)'),
   hermesSetupDesc: _('安装并配置 Hermes Agent', 'Install and configure Hermes Agent', '安裝並配置 Hermes Agent'),
   hermesPhaseClickHint: _('点击可返回此步骤', 'Click to go back to this step', '點擊可返回此步驟', 'このステップに戻るにはクリック', '이 단계로 돌아가려면 클릭'),
   hermesSetupIntro: _(
@@ -80,7 +80,7 @@ export default {
   configSaved: _('配置已保存', 'Configuration saved', '配置已儲存'),
   // Gateway 阶段
   gatewayTitle: _('启动 Gateway', 'Start Gateway', '啟動 Gateway'),
-  gatewayDesc: _('启动 HTTP API 服务以连接 ClawPanel', 'Start HTTP API server to connect with ClawPanel', '啟動 HTTP API 服務以連接 ClawPanel'),
+  gatewayDesc: _('启动 HTTP API 服务以连接 AI Agent面板', 'Start HTTP API server to connect with AI Agent面板', '啟動 HTTP API 服務以連接 AI Agent面板'),
   gatewayStartBtn: _('启动 Gateway', 'Start Gateway', '啟動 Gateway'),
   gatewayStarting: _('正在启动...', 'Starting...', '正在啟動...'),
   gatewayStartFailed: _('Gateway 启动失败', 'Gateway failed to start', 'Gateway 啟動失敗'),

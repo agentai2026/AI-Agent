@@ -88,7 +88,7 @@ export function tryShowEngagement() {
       </div>
 
       <div class="engage-actions-grid">
-        <a class="engage-action-card" href="https://github.com/qingchencloud/clawpanel" target="_blank" rel="noopener">
+        <a class="engage-action-card" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener">
           <div class="engage-action-icon engage-action-star">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
@@ -110,20 +110,20 @@ export function tryShowEngagement() {
 
       <div class="engage-section-label">${t('engagement.communityLabel')}</div>
       <div class="engage-qrcodes">
-        <a class="engage-qr-item" href="https://qt.cool/c/OpenClaw" target="_blank" rel="noopener">
-          <img src="/images/OpenClaw-QQ.png" alt="${t('engagement.qqAlt')}" />
+        <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent/discussions" target="_blank" rel="noopener">
+          <img src="/images/logo.png" alt="${t('engagement.qqAlt')}" />
           <div class="engage-qr-label">${t('engagement.qqLabel')}</div>
         </a>
-        <a class="engage-qr-item" href="https://qt.cool/c/OpenClawWx" target="_blank" rel="noopener">
-          <img src="/images/OpenClawWx.png" alt="${t('engagement.wechatAlt')}" />
+        <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent/discussions" target="_blank" rel="noopener">
+          <img src="/images/logo.png" alt="${t('engagement.wechatAlt')}" />
           <div class="engage-qr-label">${t('engagement.wechatLabel')}</div>
         </a>
-        <a class="engage-qr-item" href="https://qt.cool/c/OpenClawDY" target="_blank" rel="noopener">
-          <img src="/images/OpenClaw-DY.png" alt="${t('engagement.douyinAlt')}" />
+        <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent/discussions" target="_blank" rel="noopener">
+          <img src="/images/logo.png" alt="${t('engagement.douyinAlt')}" />
           <div class="engage-qr-label">${t('engagement.douyinLabel')}</div>
         </a>
-        <a class="engage-qr-item" href="https://qt.cool/c/feishu" target="_blank" rel="noopener">
-          <img src="https://qt.cool/c/feishu/qr.png" alt="${t('engagement.feishuAlt')}" />
+        <a class="engage-qr-item" href="https://github.com/agentai2026/AI-Agent/discussions" target="_blank" rel="noopener">
+          <img src="/images/logo.png" alt="${t('engagement.feishuAlt')}" />
           <div class="engage-qr-label">${t('engagement.feishuLabel')}</div>
         </a>
       </div>

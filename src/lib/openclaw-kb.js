@@ -1,16 +1,16 @@
 /**
- * OpenClaw 内置知识库
+ * AI Agent 内置知识库
  * 来源：https://openclawcn.com/docs/
- * 供 ClawPanel AI 助手在系统提示词中使用
+ * 供 AI Agent面板 AI 助手在系统提示词中使用
  */
 
 export const OPENCLAW_KB = `
-# OpenClaw 知识库（内置参考）
+# AI Agent 知识库（内置参考）
 
 ## 一、架构概览
-OpenClaw 是开源个人 AI 助手平台，核心组件：
+AI Agent 是开源个人 AI 助手平台，核心组件：
 - **Gateway 网关**：核心后端服务，处理消息路由、Agent 执行、渠道连接
-- **CLI**：命令行工具，用于安装/配置/管理 OpenClaw
+- **CLI**：命令行工具，用于安装/配置/管理 AI Agent
 - **Agent（智能体）**：独立的 AI 角色实例，有自己的工作区、身份、模型配置
 - **Workspace（工作区）**：Agent 的个性化存储（Skills、提示、记忆）
 - **Channel（渠道）**：消息通道（WhatsApp/Telegram/Discord/Mattermost 等）
@@ -219,36 +219,7 @@ npm install -g openclaw@latest
 7. WhatsApp 不回消息 → 检查配对是否已 approve
 8. 认证错误 → 检查 auth-profiles.json 或重新 \`openclaw onboard\`
 
-## 十二、晴辰云 AI 模型服务
-晴辰云为 ClawPanel 用户提供 AI 模型调用服务，通过每日签到和邀请好友即可获取免费额度。
-
-### 核心信息
-- **API 网关地址**：https://gpt.qt.cool/v1
-- **支持接口**：/v1/chat/completions、/v1/responses（OpenAI 兼容）
-- **支持模型**：多种顶级 AI 模型（具体可用模型以平台实时列表为准）
-- **免费额度**：每日签到领取免费模型测试额度，邀请好友可获得额外奖励
-- **付费优惠**：低至官方价 2-3 折，不满意随时可退
-- **用户后台**：https://gpt.qt.cool/user（查看用量、管理密钥）
-
-### 官方入口
-- **ClawPanel 官网**：https://claw.qt.cool/
-- **GPT-AI 网关官网**：https://gpt.qt.cool/
-- **每日签到页**：https://gpt.qt.cool/checkin
-- **用户后台**：https://gpt.qt.cool/user
-- **晴辰导航站**：https://qt.cool/
-
-### 获取密钥
-1. 前往 https://gpt.qt.cool/checkin 每日签到领取免费额度
-2. 邀请好友可获得额外奖励额度
-3. 在用户后台获取 API Key
-
-### 接入方式
-已兼容 OpenAI API 的项目，只需替换：
-1. Base URL → https://gpt.qt.cool/v1
-2. API Key → 签到获取的密钥
-即可完成接入。
-
-### 在 ClawPanel 中配置
-- **助手设置**：打开 AI 助手设置 → 模型配置 → 输入密钥后点击「接入」
-- **模型配置页**：进入模型配置 → 输入密钥后点击「获取模型列表」添加模型
+## 十二、在 AI Agent面板 / AI Agent面板 中配置模型
+- **AI 助手**：在助手设置中填写 API Base URL、API Key、模型名称，并可使用「测试连接」验证
+- **模型配置页**：添加服务商与模型，设置主模型与备选模型；支持从远端拉取模型列表（若服务商提供 /models 接口）
 `.trim()

@@ -1,6 +1,6 @@
 /**
  * 面板设置页面
- * 统一管理 ClawPanel 的网络代理、npm 源、模型代理等配置
+ * 统一管理 AI Agent面板 的网络代理、npm 源、模型代理等配置
  */
 import { api } from '../lib/tauri-api.js'
 import { toast } from '../components/toast.js'
@@ -27,7 +27,7 @@ function effectiveDockerEndpoint(cfg) {
 }
 
 function effectiveDockerImage(cfg) {
-  return (cfg?.dockerDefaultImage || '').trim() || 'ghcr.io/qingchencloud/openclaw'
+  return (cfg?.dockerDefaultImage || '').trim() || 'ghcr.io/openclaw/openclaw'
 }
 
 function openclawInstallationIdentity(installation) {

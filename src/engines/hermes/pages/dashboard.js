@@ -202,7 +202,7 @@ export function render() {
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
               <label style="display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--text-secondary)">
                 API Base URL
-                <input type="text" id="hm-cfg-baseurl" class="input" value="${esc(formBaseUrl)}" placeholder="https://gpt.qt.cool/v1" style="font-size:13px">
+                <input type="text" id="hm-cfg-baseurl" class="input" value="${esc(formBaseUrl)}" placeholder="https://api.example.com/v1" style="font-size:13px">
               </label>
               <label style="display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--text-secondary)">
                 API Key

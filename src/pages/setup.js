@@ -82,15 +82,15 @@ export async function render() {
     <div class="setup-shell">
       <div class="setup-hero">
         <div class="setup-hero-brand">
-          <img src="/images/logo-brand.png" alt="ClawPanel" class="setup-hero-logo">
+          <img src="/images/logo-brand.png" alt="AI Agent面板" class="setup-hero-logo">
           <div class="setup-hero-copy">
             <h1 class="setup-hero-title">${t('setup.headerTitle')}</h1>
             <p class="setup-hero-desc">${t('setup.headerDesc')}</p>
             <div class="setup-hero-site-row">
-              <a class="setup-hero-site-link" href="https://claw.qt.cool" target="_blank" rel="noopener noreferrer" title="https://claw.qt.cool">
+              <a class="setup-hero-site-link" href="https://github.com/agentai2026/AI-Agent" target="_blank" rel="noopener noreferrer" title="GitHub">
                 ${icon('link', 14)}
                 <span class="setup-hero-site-label">${t('setup.officialWebsite')}</span>
-                <span class="setup-hero-site-value">claw.qt.cool</span>
+                <span class="setup-hero-site-value">官网</span>
               </a>
             </div>
           </div>
@@ -109,7 +109,7 @@ export async function render() {
 
   page.querySelector('#btn-recheck').addEventListener('click', () => runDetect(page))
 
-  // #Compat-4: 用户在浏览器里手动装完 Node.js 后切回 panel，或用户装完 Git/OpenClaw
+  // #Compat-4: 用户在浏览器里手动装完 Node.js 后切回 panel，或用户装完 Git/AI Agent
   // 后 app 失焦又重新获得焦点时，自动重新检测，避免「装完不识别」。
   // handler 自带 guard：page 从 DOM 移除后自动卸载监听器，防止跨页面泄漏。
   // 同时监听 visibilitychange（tab 切换）和 window focus（桌面端窗口激活），兜底不同平台行为。
@@ -193,7 +193,7 @@ async function runDetect(page) {
   // 用户手动装完 Node.js/Git 后，Tauri 进程的 PATH 仍是启动时快照，且 enhanced_path 有缓存。
   // 必须先调此命令扫描文件系统新装路径，才能让 where/which 找到新二进制。
   try { await api.invalidatePathCache() } catch {}
-  // 并行检测 Node.js、Git、OpenClaw CLI、配置文件
+  // 并行检测 Node.js、Git、AI Agent CLI、配置文件
   const [nodeRes, gitRes, clawRes, configRes, versionRes] = await Promise.allSettled([
     api.checkNode(),
     api.checkGit(),
@@ -258,7 +258,7 @@ function renderSteps(page, { node, git, cliOk, config, version }) {
   const statusCards = [
     renderStatusCard(t('setup.stepNode'), nodeOk, nodeStatusMeta),
     renderStatusCard(t('setup.stepGit'), gitOk, gitStatusMeta),
-    renderStatusCard('OpenClaw CLI', cliOk, cliStatusMeta),
+    renderStatusCard('AI Agent CLI', cliOk, cliStatusMeta),
     renderStatusCard(t('setup.stepConfig'), config.installed, configStatusMeta),
   ].join('')
 
@@ -284,7 +284,7 @@ function renderSteps(page, { node, git, cliOk, config, version }) {
           <strong>${t('setup.nodeInstalledButNotDetected')}</strong>
           ${isMacPlatform()
             ? `${t('setup.macNodeHint')}<br>
-               <code style="background:var(--bg-secondary);padding:2px 6px;border-radius:3px;user-select:all">open /Applications/ClawPanel.app</code>`
+               <code style="background:var(--bg-secondary);padding:2px 6px;border-radius:3px;user-select:all">open /Applications/AI Agent面板.app</code>`
             : `${t('setup.winNodeHint')}`
           }
           <div style="margin-top:8px;display:flex;gap:6px;align-items:center;flex-wrap:wrap">
@@ -324,11 +324,11 @@ function renderSteps(page, { node, git, cliOk, config, version }) {
     `
   }
 
-  // 第三步：OpenClaw CLI
+  // 第三步：AI Agent CLI
   html += `
     <div class="config-section" style="text-align:left;${nodeOk ? '' : 'opacity:0.65;pointer-events:none'}">
       <div class="config-section-title" style="display:flex;align-items:center;gap:4px">
-        ${stepIcon(cliOk)} OpenClaw CLI
+        ${stepIcon(cliOk)} AI Agent CLI
       </div>
       ${cliOk
         ? `<p style="color:var(--success);font-size:var(--font-size-sm)">${t('setup.cliAvailable')}</p>
@@ -496,7 +496,7 @@ function renderInstallSection() {
           <input type="radio" name="install-source" value="chinese" checked style="margin-right:6px">
           <div>
             <div style="font-weight:600;font-size:var(--font-size-sm)">${t('setup.sourceChineseLabel')}</div>
-            <div style="font-size:var(--font-size-xs);color:var(--text-tertiary)">@qingchencloud/openclaw-zh</div>
+            <div style="font-size:var(--font-size-xs);color:var(--text-tertiary)">@agentai2026/openclaw-zh</div>
           </div>
         </label>
         <label class="setup-source-option" style="flex:1;cursor:pointer">
@@ -562,23 +562,23 @@ function renderEnvironmentHint() {
             <div class="setup-help-block">
               <div class="setup-help-label">${t('setup.wslWebHint')}</div>
               <div class="setup-help-copy">${t('setup.wslWebDesc')}</div>
-              <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/deploy.sh | bash</code>
-              <div class="setup-help-copy">${t('setup.domesticMirror')} <code>curl -fsSL https://gitee.com/QtCodeCreators/clawpanel/raw/main/deploy.sh | bash</code></div>
+              <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/deploy.sh | bash</code>
+              <div class="setup-help-copy">${t('setup.domesticMirror')} <code>curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/deploy.sh | bash</code></div>
               <div class="setup-help-copy">${t('setup.wslWebPostDeploy')}</div>
             </div>
           ` : ''}
           <div class="setup-help-block">
             <div class="setup-help-label">${t('setup.dockerHint')}</div>
             <div class="setup-help-copy">${t('setup.dockerDesc')}</div>
-            <code class="setup-help-code">npm i -g @qingchencloud/openclaw-zh</code>
-            <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/deploy.sh | bash</code>
-            <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://gitee.com/QtCodeCreators/clawpanel/raw/main/deploy.sh | bash</code></div>
+            <code class="setup-help-code">npm i -g @agentai2026/openclaw-zh</code>
+            <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/deploy.sh | bash</code>
+            <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/deploy.sh | bash</code></div>
           </div>
           <div class="setup-help-block">
             <div class="setup-help-label">${t('setup.remoteHint')}</div>
             <div class="setup-help-copy">${t('setup.remoteDesc')}</div>
-            <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/deploy.sh | bash</code>
-            <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://gitee.com/QtCodeCreators/clawpanel/raw/main/deploy.sh | bash</code></div>
+            <code class="setup-help-code">curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/deploy.sh | bash</code>
+            <div class="setup-help-copy">${t('setup.domesticMirrorShort')} <code>curl -fsSL https://raw.githubusercontent.com/agentai2026/AI-Agent/main/deploy.sh | bash</code></div>
           </div>
         </div>
       </details>
@@ -666,7 +666,7 @@ function bindEvents(page, nodeOk, detectState) {
     }
   })
 
-  // 自定义 OpenClaw 安装路径
+  // 自定义 AI Agent 安装路径
   const dirInput = page.querySelector('#input-openclaw-dir')
   const dirResultEl = page.querySelector('#openclaw-dir-result')
   // 预填当前自定义路径

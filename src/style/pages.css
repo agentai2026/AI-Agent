@@ -838,7 +838,8 @@
   overflow-y: auto;
   box-shadow: 0 24px 80px rgba(0,0,0,.35);
 }
-[data-theme="dark"] .docker-dialog {
+[data-theme="dark"] .docker-dialog,
+[data-theme="starry"] .docker-dialog {
   background: var(--bg-card, #1e1e2e);
   border: 1px solid var(--border-primary);
 }

@@ -74,8 +74,49 @@
   --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.15);
 }
 
+/* 星空主题（深蓝夜空 + 星点感强调色，与夜间区分） */
+[data-theme="starry"] {
+  --bg-primary: #070b14;
+  --bg-secondary: #0c1222;
+  --bg-tertiary: #121a2e;
+  --bg-card: rgba(147, 197, 253, 0.04);
+  --bg-card-hover: rgba(147, 197, 253, 0.08);
+  --bg-glass: rgba(99, 102, 241, 0.06);
+  --bg-glass-hover: rgba(129, 140, 248, 0.1);
+
+  --border-primary: rgba(165, 180, 252, 0.12);
+  --border-secondary: rgba(165, 180, 252, 0.06);
+  --border-focus: rgba(196, 181, 253, 0.55);
+
+  --text-primary: #e8e9f4;
+  --text-secondary: #a5adc4;
+  --text-tertiary: #6b7394;
+  --text-inverse: #070b14;
+
+  --accent: #a5b4fc;
+  --accent-hover: #c4b5fd;
+  --accent-muted: rgba(165, 180, 252, 0.14);
+
+  --success: #4ade80;
+  --success-muted: rgba(74, 222, 128, 0.14);
+  --warning: #fbbf24;
+  --warning-muted: rgba(251, 191, 36, 0.14);
+  --error: #fb7185;
+  --error-muted: rgba(251, 113, 133, 0.14);
+  --info: #93c5fd;
+  --info-muted: rgba(147, 197, 253, 0.14);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 14px rgba(15, 23, 42, 0.55);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.55);
+  --shadow-glow: 0 0 24px rgba(167, 139, 250, 0.18);
+}
+
 /* 共享变量（不随主题变化） */
 :root {
+  /* 与 --accent 对齐，供部分组件使用 fallback */
+  --primary: var(--accent);
+
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 12px;
@@ -130,4 +171,85 @@
   to {
     clip-path: circle(150% at var(--theme-reveal-x, 0%) var(--theme-reveal-y, 100%));
   }
+}
+
+/* ── 强调色皮肤（与日间/夜间正交，仅改 accent 系） ── */
+[data-theme="light"][data-skin="ocean"] {
+  --accent: #0e7490;
+  --accent-hover: #155e75;
+  --accent-muted: rgba(14, 116, 144, 0.12);
+  --border-focus: rgba(6, 182, 212, 0.45);
+  --shadow-glow: 0 0 20px rgba(6, 182, 212, 0.12);
+}
+[data-theme="dark"][data-skin="ocean"],
+[data-theme="starry"][data-skin="ocean"] {
+  --accent: #22d3ee;
+  --accent-hover: #67e8f9;
+  --accent-muted: rgba(34, 211, 238, 0.15);
+  --border-focus: rgba(34, 211, 238, 0.45);
+  --shadow-glow: 0 0 20px rgba(34, 211, 238, 0.18);
+}
+
+[data-theme="light"][data-skin="forest"] {
+  --accent: #059669;
+  --accent-hover: #047857;
+  --accent-muted: rgba(5, 150, 105, 0.12);
+  --border-focus: rgba(16, 185, 129, 0.45);
+  --shadow-glow: 0 0 20px rgba(16, 185, 129, 0.1);
+}
+[data-theme="dark"][data-skin="forest"],
+[data-theme="starry"][data-skin="forest"] {
+  --accent: #34d399;
+  --accent-hover: #6ee7b7;
+  --accent-muted: rgba(52, 211, 153, 0.15);
+  --border-focus: rgba(52, 211, 153, 0.45);
+  --shadow-glow: 0 0 20px rgba(52, 211, 153, 0.16);
+}
+
+[data-theme="light"][data-skin="violet"] {
+  --accent: #7c3aed;
+  --accent-hover: #6d28d9;
+  --accent-muted: rgba(124, 58, 237, 0.12);
+  --border-focus: rgba(139, 92, 246, 0.45);
+  --shadow-glow: 0 0 20px rgba(124, 58, 237, 0.12);
+}
+[data-theme="dark"][data-skin="violet"],
+[data-theme="starry"][data-skin="violet"] {
+  --accent: #a78bfa;
+  --accent-hover: #c4b5fd;
+  --accent-muted: rgba(167, 139, 250, 0.18);
+  --border-focus: rgba(167, 139, 250, 0.45);
+  --shadow-glow: 0 0 20px rgba(167, 139, 250, 0.2);
+}
+
+[data-theme="light"][data-skin="rose"] {
+  --accent: #e11d48;
+  --accent-hover: #be123c;
+  --accent-muted: rgba(225, 29, 72, 0.1);
+  --border-focus: rgba(244, 63, 94, 0.45);
+  --shadow-glow: 0 0 20px rgba(225, 29, 72, 0.1);
+}
+[data-theme="dark"][data-skin="rose"],
+[data-theme="starry"][data-skin="rose"] {
+  --accent: #fb7185;
+  --accent-hover: #fda4af;
+  --accent-muted: rgba(251, 113, 133, 0.18);
+  --border-focus: rgba(251, 113, 133, 0.45);
+  --shadow-glow: 0 0 20px rgba(251, 113, 133, 0.18);
+}
+
+[data-theme="light"][data-skin="amber"] {
+  --accent: #d97706;
+  --accent-hover: #b45309;
+  --accent-muted: rgba(217, 119, 6, 0.12);
+  --border-focus: rgba(245, 158, 11, 0.45);
+  --shadow-glow: 0 0 20px rgba(245, 158, 11, 0.1);
+}
+[data-theme="dark"][data-skin="amber"],
+[data-theme="starry"][data-skin="amber"] {
+  --accent: #fbbf24;
+  --accent-hover: #fcd34d;
+  --accent-muted: rgba(251, 191, 36, 0.15);
+  --border-focus: rgba(251, 191, 36, 0.45);
+  --shadow-glow: 0 0 20px rgba(251, 191, 36, 0.14);
 }

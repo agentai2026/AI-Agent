@@ -3,7 +3,7 @@
  * 解析 npm 错误信息，返回用户友好的提示和修复建议
  */
 
-const NPM_CMD = 'npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com'
+const NPM_CMD = 'npm install -g @agentai2026/openclaw-zh --registry https://registry.npmmirror.com'
 const GIT_HTTPS_CMD = 'git config --global url."https://github.com/".insteadOf ssh://git@github.com/ && git config --global --add url."https://github.com/".insteadOf ssh://git@github.com && git config --global --add url."https://github.com/".insteadOf ssh://git@://github.com/ && git config --global --add url."https://github.com/".insteadOf git@github.com: && git config --global --add url."https://github.com/".insteadOf git://github.com/ && git config --global --add url."https://github.com/".insteadOf git+ssh://git@github.com/'
 const GIT_HTTPS_ROOT_CMD = 'sudo git config --global url."https://github.com/".insteadOf ssh://git@github.com/ && sudo git config --global --add url."https://github.com/".insteadOf ssh://git@github.com && sudo git config --global --add url."https://github.com/".insteadOf ssh://git@://github.com/ && sudo git config --global --add url."https://github.com/".insteadOf git@github.com: && sudo git config --global --add url."https://github.com/".insteadOf git://github.com/ && sudo git config --global --add url."https://github.com/".insteadOf git+ssh://git@github.com/'
 
@@ -17,7 +17,7 @@ export function diagnoseInstallError(errStr) {
   const gitFixCommand = rootNpm ? GIT_HTTPS_ROOT_CMD : GIT_HTTPS_CMD
   const gitFixHint = rootNpm
     ? 'GitHub SSH 认证失败。检测到本次安装实际由 root/sudo 执行，请先为 root 用户配置 HTTPS 替代规则后重试：'
-    : 'GitHub SSH 认证失败。ClawPanel 已尝试自动配置 HTTPS 替代，但可能未生效。请在终端手动执行：'
+    : 'GitHub SSH 认证失败。AI Agent面板 已尝试自动配置 HTTPS 替代，但可能未生效。请在终端手动执行：'
 
   // ===== 1. Git 相关 =====
 
@@ -35,7 +35,7 @@ export function diagnoseInstallError(errStr) {
     if (s.includes('permission denied') || s.includes('publickey') || s.includes('host key verification')) {
       return {
         title: '安装失败 — Git SSH 认证被拒绝',
-        hint: rootNpm ? 'GitHub SSH 认证失败。检测到本次安装由 root/sudo 执行，请先为 root 用户配置 HTTPS 替代规则后重试：' : 'GitHub SSH 认证失败。ClawPanel 已尝试自动配置 HTTPS 替代，但可能未生效。请在终端手动执行后重试：',
+        hint: rootNpm ? 'GitHub SSH 认证失败。检测到本次安装由 root/sudo 执行，请先为 root 用户配置 HTTPS 替代规则后重试：' : 'GitHub SSH 认证失败。AI Agent面板 已尝试自动配置 HTTPS 替代，但可能未生效。请在终端手动执行后重试：',
         command: gitFixCommand,
       }
     }
@@ -51,7 +51,7 @@ export function diagnoseInstallError(errStr) {
     return {
       title: '安装失败 — 原生依赖缺失',
       hint: 'OpenClaw 的原生模块未正确安装。这通常是 npm optional dependencies 的 bug。请尝试在终端手动重装：',
-      command: 'npm i -g @qingchencloud/openclaw-zh@latest --registry https://registry.npmmirror.com',
+      command: 'npm i -g @agentai2026/openclaw-zh@latest --registry https://registry.npmmirror.com',
     }
   }
 
@@ -70,8 +70,8 @@ export function diagnoseInstallError(errStr) {
   if (s.includes('eexist') || s.includes('file already exists') || s.includes('file exists')) {
     return {
       title: '安装失败 — 文件冲突',
-      hint: '旧版本的 openclaw 命令文件仍然存在。ClawPanel 已尝试自动清理，如仍失败请手动处理后重试：',
-      command: 'npm install -g @qingchencloud/openclaw-zh --force --registry https://registry.npmmirror.com',
+      hint: '旧版本的 openclaw 命令文件仍然存在。AI Agent面板 已尝试自动清理，如仍失败请手动处理后重试：',
+      command: 'npm install -g @agentai2026/openclaw-zh --force --registry https://registry.npmmirror.com',
     }
   }
 
