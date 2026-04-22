@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/logo-brand.png" width="360" alt="ClawPanel">
+  <img src="public/images/logo-brand.png" width="360" alt="AI Agent">
 </p>
 
 <p align="center">
@@ -11,59 +11,39 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/qingchencloud/clawpanel/releases/latest">
-    <img src="https://img.shields.io/github/v/release/qingchencloud/clawpanel?style=flat-square&color=6366f1" alt="Release">
+  <a href="https://github.com/your-org/ai-agent/releases/latest">
+    <img src="https://img.shields.io/github/v/release/your-org/ai-agent?style=flat-square&color=6366f1" alt="Release">
   </a>
-  <a href="https://github.com/qingchencloud/clawpanel/releases/latest">
-    <img src="https://img.shields.io/github/downloads/qingchencloud/clawpanel/total?style=flat-square&color=8b5cf6" alt="Downloads">
+  <a href="https://github.com/your-org/ai-agent/releases/latest">
+    <img src="https://img.shields.io/github/downloads/your-org/ai-agent/total?style=flat-square&color=8b5cf6" alt="Downloads">
   </a>
-  <a href="https://github.com/qingchencloud/clawpanel/blob/main/LICENSE">
+  <a href="https://github.com/your-org/ai-agent/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg?style=flat-square" alt="License">
   </a>
-  <a href="https://github.com/qingchencloud/clawpanel/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/qingchencloud/clawpanel/ci.yml?style=flat-square&label=CI" alt="CI">
+  <a href="https://github.com/your-org/ai-agent/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/your-org/ai-agent/ci.yml?style=flat-square&label=CI" alt="CI">
   </a>
 </p>
 
 ---
 
 <p align="center">
-  <img src="docs/feature-showcase.gif" width="800" alt="ClawPanel 功能全景">
+  <img src="docs/feature-showcase.gif" width="800" alt="AI Agent 功能全景">
 </p>
 
 <p align="center">
-  <a href="https://claw.qt.cool/#video">
     <img src="https://img.shields.io/badge/%E2%96%B6%20%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91-50%E7%A7%92%E5%BF%AB%E9%80%9F%E4%BA%86%E8%A7%A3-6366f1?style=for-the-badge" alt="演示视频">
   </a>
 </p>
 
-ClawPanel 是支持多 AI Agent 框架的可视化管理面板，目前支持 [OpenClaw](https://github.com/1186258278/OpenClawChineseTranslation) 和 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 双引擎。**内置智能 AI 助手**，帮你一键安装、自动诊断配置、排查问题、修复错误。8 大工具 + 4 种模式 + 交互式问答，从新手到老手都能轻松管理。
-
-> 🌐 **官网**: [claw.qt.cool](https://claw.qt.cool/)  |  📦 **下载**: [GitHub Releases](https://github.com/qingchencloud/clawpanel/releases/latest)
-
-### 🎁 晴辰云 AI 接口
-
-> 内部技术测试平台，面向部分用户开放体验。签到领额度，邀请得更多。
-
-<p align="center">
-  <a href="https://gpt.qt.cool"><img src="https://img.shields.io/badge/🔑 晴辰云 AI-gpt.qt.cool-6366f1?style=for-the-badge" alt="晴辰云 AI"></a>
-</p>
-
-- **签到领测试额度** — 每日签到 + 邀请好友，持续获取测试额度
-- **兼容 OpenAI 接口** — 无缝对接 OpenClaw，即开即用
-- **资源策略** — 限速 + 请求上限，高峰期可能排队
-- **模型可用性** — 模型/接口以实际页面为准，可能灰度或版本切换
-
-配合 OpenClaw 使用：在 [gpt.qt.cool](https://gpt.qt.cool) 注册并签到领取测试额度，获取 API Key 后，初始化 OpenClaw 时选择 **OpenAI Compatible** 提供商，填入地址和 Key 即可使用。
-
-> ⚠️ **合规与责任边界**：本平台仅提供技术测试，禁止用于违法违规、绕过安全机制等用途。违规将限制访问并保留处置权。妥善保管 API Key，勿在截图/日志/代码库中泄露。具体规则以平台最新政策与页面展示为准。
+AI Agent 是支持多 AI Agent 框架的可视化管理面板，目前支持 [OpenClaw](https://github.com/1186258278/OpenClawChineseTranslation) 和 [Hermes Agent](https://github.com/nousresearch/hermes-agent) 双引擎。**内置智能 AI 助手**，帮你一键安装、自动诊断配置、排查问题、修复错误。8 大工具 + 4 种模式 + 交互式问答，从新手到老手都能轻松管理。
 
 ### 🔥 开发板 / 嵌入式设备支持
 
-ClawPanel 提供**纯 Web 版部署模式**（零 GUI 依赖），天然兼容 ARM64 开发板和嵌入式设备：
+AI Agent 提供**纯 Web 版部署模式**（零 GUI 依赖），天然兼容 ARM64 开发板和嵌入式设备：
 
 - **Orange Pi / 树莓派 / RK3588** 等 ARM64 板子 — `npm run serve` 即可运行
-- **Docker ARM64 镜像** — `docker run ghcr.io/qingchencloud/openclaw:latest` 开箱即用
+- **Docker ARM64 镜像** — `docker run ghcr.io/your-org/openclaw:latest` 开箱即用
 - **Armbian / Debian / Ubuntu Server** — 一键部署脚本自动检测架构
 - 无需 Rust / Tauri / 图形界面，**只要有 Node.js 18+ 就能跑**
 
@@ -73,88 +53,59 @@ ClawPanel 提供**纯 Web 版部署模式**（零 GUI 依赖），天然兼容 A
 
 一群对 AI Agent 充满热情的开发者和玩家，欢迎加入交流。
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <a href="https://qt.cool/c/OpenClaw"><img src="docs/qr-qq.png" width="140" alt="QQ 群二维码"></a><br>
-      <a href="https://qt.cool/c/OpenClaw"><strong>QQ 群</strong></a>
-    </td>
-    <td align="center">
-      <a href="https://qt.cool/c/OpenClawWx"><img src="docs/qr-wechat.png" width="140" alt="微信群二维码"></a><br>
-      <a href="https://qt.cool/c/OpenClawWx"><strong>微信群</strong></a>
-    </td>
-    <td align="center">
-      <a href="https://qt.cool/c/OpenClawDY"><img src="docs/qr-dy.png" width="140" alt="抖音群二维码"></a><br>
-      <a href="https://qt.cool/c/OpenClawDY"><strong>抖音群</strong></a>
-    </td>
-    <td align="center">
-      <a href="https://qt.cool/c/feishu"><img src="https://qt.cool/c/feishu/qr.png" width="140" alt="飞书群二维码"></a><br>
-      <a href="https://qt.cool/c/feishu"><strong>飞书群</strong></a>
-    </td>
-  </tr>
-</table>
+- **QQ群**: [点击加入](https://qt.cool/c/OpenClaw)
 
-<p align="center">
-  <a href="https://discord.gg/U9AttmsNHh"><strong>Discord</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://yb.tencent.com/gp/i/IIGXzcMcdh84"><strong>元宝派</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/qingchencloud/clawpanel/discussions"><strong>Discussions</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/qingchencloud/clawpanel/issues/new"><strong>反馈 Issue</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://qt.cool/c/feishu"><strong>飞书群</strong></a>
-</p>
+---
 
 ## 下载安装
 
-前往 [Releases](https://github.com/qingchencloud/clawpanel/releases/latest) 页面下载最新版本，根据你的系统选择对应安装包：
+前往 [Releases](https://github.com/your-org/ai-agent/releases/latest) 页面下载最新版本，根据你的系统选择对应安装包：
 
 ### macOS
 
 | 芯片 | 安装包 | 说明 |
 |------|--------|------|
-| Apple Silicon (M1/M2/M3/M4) | `ClawPanel_x.x.x_aarch64.dmg` | 2020 年末及之后的 Mac |
-| Intel | `ClawPanel_x.x.x_x64.dmg` | 2020 年及之前的 Mac |
+| Apple Silicon (M1/M2/M3/M4) | `AI Agent_x.x.x_aarch64.dmg` | 2020 年末及之后的 Mac |
+| Intel | `AI Agent_x.x.x_x64.dmg` | 2020 年及之前的 Mac |
 
 > 不确定芯片类型？点击左上角  → 关于本机，查看「芯片」一栏。
 
-安装方式：打开 `.dmg` 文件，**先将 ClawPanel 拖入「应用程序」文件夹**，再双击打开。
+安装方式：打开 `.dmg` 文件，**先将 AI Agent 拖入「应用程序」文件夹**，再双击打开。
 
 > **⚠️ 首次打开提示"已损坏"或"无法验证开发者"？** 由于应用未签名，macOS 会拦截。请在终端执行以下命令解除限制：
 >
 > ```bash
-> sudo xattr -rd com.apple.quarantine /Applications/ClawPanel.app
+> sudo xattr -rd com.apple.quarantine /Applications/AI Agent.app
 > ```
 >
-> 或者前往「系统设置 → 隐私与安全性」，找到 ClawPanel 点击「仍要打开」。
+> 或者前往「系统设置 → 隐私与安全性」，找到 AI Agent 点击「仍要打开」。
 >
 > 提示 `No such file`？说明没有拖入应用程序文件夹。请先拖入，或改用：
 > ```bash
-> sudo xattr -rd com.apple.quarantine ~/Downloads/ClawPanel.app
+> sudo xattr -rd com.apple.quarantine ~/Downloads/AI Agent.app
 > ```
 
 ### Windows
 
 | 格式 | 安装包 | 说明 |
 |------|--------|------|
-| EXE 安装器 | `ClawPanel_x.x.x_x64-setup.exe` | 推荐，双击安装 |
-| MSI 安装器 | `ClawPanel_x.x.x_x64_en-US.msi` | 企业部署 / 静默安装 |
+| EXE 安装器 | `AI Agent_x.x.x_x64-setup.exe` | 推荐，双击安装 |
+| MSI 安装器 | `AI Agent_x.x.x_x64_en-US.msi` | 企业部署 / 静默安装 |
 
 ### Linux
 
 | 格式 | 安装包 | 说明 |
 |------|--------|------|
-| AppImage | `ClawPanel_x.x.x_amd64.AppImage` | 免安装，`chmod +x` 后直接运行 |
-| DEB | `ClawPanel_x.x.x_amd64.deb` | Debian / Ubuntu：`sudo dpkg -i *.deb` |
-| RPM | `ClawPanel-x.x.x-1.x86_64.rpm` | Fedora / RHEL：`sudo rpm -i *.rpm` |
+| AppImage | `AI Agent_x.x.x_amd64.AppImage` | 免安装，`chmod +x` 后直接运行 |
+| DEB | `AI Agent_x.x.x_amd64.deb` | Debian / Ubuntu：`sudo dpkg -i *.deb` |
+| RPM | `AI Agent-x.x.x-1.x86_64.rpm` | Fedora / RHEL：`sudo rpm -i *.rpm` |
 
 ### Linux 服务器（Web 版）
 
-没有桌面环境？一键部署 ClawPanel Web 版，通过浏览器远程管理 OpenClaw：
+没有桌面环境？一键部署 AI Agent Web 版，通过浏览器远程管理 OpenClaw：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/scripts/linux-deploy.sh | bash
+curl -fsSL https://raw.githubusercontent.com/your-org/ai-agent/main/scripts/linux-deploy.sh | bash
 ```
 
 部署完成后访问 `http://服务器IP:1420`，功能与桌面版一致。
@@ -164,12 +115,12 @@ curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/script
 ### Docker 部署
 
 ```bash
-docker run -d --name clawpanel --restart unless-stopped \
-  -p 1420:1420 -v clawpanel-data:/root/.openclaw \
+docker run -d --name ai-agent --restart unless-stopped \
+  -p 1420:1420 -v ai-agent-data:/root/.openclaw \
   node:22-slim \
   sh -c "apt-get update && apt-get install -y git && \
-    npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com && \
-    git clone https://github.com/qingchencloud/clawpanel.git /app && \
+    npm install -g @your-org/openclaw-zh --registry https://registry.npmmirror.com && \
+    git clone https://github.com/your-org/ai-agent.git /app && \
     cd /app && npm install && npm run build && npm run serve"
 ```
 
@@ -177,32 +128,32 @@ docker run -d --name clawpanel --restart unless-stopped \
 
 ## 升级面板
 
-ClawPanel 提供多种升级方式，根据你的安装方式选择对应方案。
+AI Agent 提供多种升级方式，根据你的安装方式选择对应方案。
 
 ### macOS / Windows 桌面版升级
 
 桌面版内置**自动更新机制**，新版本发布后会自动提示升级：
 
-1. 打开 ClawPanel，如有新版本会弹出升级提示
+1. 打开 AI Agent，如有新版本会弹出升级提示
 2. 点击「立即升级」，等待下载完成后自动安装重启
 3. 也可前往「关于」页面手动检查更新
 
-> **手动升级**：如果自动更新失败，可前往 [Releases](https://github.com/qingchencloud/clawpanel/releases/latest) 下载最新安装包，覆盖安装即可。数据不会丢失。
+> **手动升级**：如果自动更新失败，可前往 [Releases](https://github.com/your-org/ai-agent/releases/latest) 下载最新安装包，覆盖安装即可。数据不会丢失。
 
 ### Linux 桌面版升级
 
 | 格式 | 升级命令 |
 |------|----------|
 | AppImage | 下载最新 `.AppImage` 文件，替换旧文件，`chmod +x` 后运行 |
-| DEB | `sudo dpkg -i ClawPanel_最新版本_amd64.deb` |
-| RPM | `sudo rpm -U ClawPanel-最新版本-1.x86_64.rpm` |
+| DEB | `sudo dpkg -i AI Agent_最新版本_amd64.deb` |
+| RPM | `sudo rpm -U AI Agent-最新版本-1.x86_64.rpm` |
 
 ### Linux Web 版升级
 
 **方式一：一键升级脚本（推荐）**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/scripts/linux-deploy.sh | bash
+curl -fsSL https://raw.githubusercontent.com/your-org/ai-agent/main/scripts/linux-deploy.sh | bash
 ```
 
 脚本会自动检测已有安装，拉取最新代码并重新构建。
@@ -210,16 +161,16 @@ curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/script
 **方式二：手动升级**
 
 ```bash
-cd /opt/clawpanel  # 替换为实际安装目录
+cd /opt/ai-agent  # 替换为实际安装目录
 git pull origin main
 npm install
 npm run build
-sudo systemctl restart clawpanel
+sudo systemctl restart ai-agent
 ```
 
 > **升级 OpenClaw**：面板和 OpenClaw 版本需要匹配。可在「服务管理」页面一键升级，或手动执行：
 > ```bash
-> sudo npm install -g @qingchencloud/openclaw-zh@latest --registry https://registry.npmmirror.com
+> sudo npm install -g @your-org/openclaw-zh@latest --registry https://registry.npmmirror.com
 > ```
 
 ### Docker 升级
@@ -227,32 +178,32 @@ sudo systemctl restart clawpanel
 **Docker Compose 方式（推荐）**
 
 ```bash
-cd /path/to/clawpanel  # 包含 docker-compose.yml 的目录
-docker compose build --no-cache clawpanel
-docker compose up -d clawpanel
+cd /path/to/ai-agent  # 包含 docker-compose.yml 的目录
+docker compose build --no-cache ai-agent
+docker compose up -d ai-agent
 ```
 
 **docker run 方式**
 
 ```bash
 # 停止并删除旧容器（数据保存在 Volume 中不会丢失）
-docker stop clawpanel
-docker rm clawpanel
+docker stop ai-agent
+docker rm ai-agent
 
 # 重新启动新容器
-docker run -d --name clawpanel --restart unless-stopped \
-  -p 1420:1420 -v clawpanel-data:/root/.openclaw \
+docker run -d --name ai-agent --restart unless-stopped \
+  -p 1420:1420 -v ai-agent-data:/root/.openclaw \
   node:22-slim \
   sh -c "apt-get update && apt-get install -y git && \
-    npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com && \
-    git clone https://github.com/qingchencloud/clawpanel.git /app && \
+    npm install -g @your-org/openclaw-zh --registry https://registry.npmmirror.com && \
+    git clone https://github.com/your-org/ai-agent.git /app && \
     cd /app && npm install && npm run build && npm run serve"
 ```
 
 **仅升级容器内的 OpenClaw**
 
 ```bash
-docker exec -it clawpanel npm install -g @qingchencloud/openclaw-zh@latest --registry https://registry.npmmirror.com
+docker exec -it ai-agent npm install -g @your-org/openclaw-zh@latest --registry https://registry.npmmirror.com
 ```
 
 ### macOS / Windows Web 版升级
@@ -260,7 +211,7 @@ docker exec -it clawpanel npm install -g @qingchencloud/openclaw-zh@latest --reg
 如果你使用源码部署了 Web 版（非桌面客户端），升级方式与 Linux Web 版一致：
 
 ```bash
-cd clawpanel  # 替换为实际安装目录
+cd ai-agent  # 替换为实际安装目录
 git pull origin main
 npm install
 npm run build
@@ -275,29 +226,29 @@ npm run serve  # 重新启动
 
 ```bash
 # 1. 删除应用
-sudo rm -rf /Applications/ClawPanel.app
+sudo rm -rf /Applications/AI Agent.app
 
 # 2. 清理应用数据（可选，删除后配置将丢失）
-rm -rf ~/Library/Application\ Support/com.clawpanel.app
-rm -rf ~/Library/Caches/com.clawpanel.app
-rm -rf ~/Library/Preferences/com.clawpanel.app.plist
+rm -rf ~/Library/Application\ Support/com.ai-agent.app
+rm -rf ~/Library/Caches/com.ai-agent.app
+rm -rf ~/Library/Preferences/com.ai-agent.app.plist
 ```
 
 ### Windows 桌面版卸载
 
 **方式一：通过系统设置**
 1. 打开「设置」→「应用」→「已安装的应用」
-2. 搜索 **ClawPanel**，点击「卸载」
+2. 搜索 **AI Agent**，点击「卸载」
 
 **方式二：通过控制面板**
 1. 打开「控制面板」→「程序」→「卸载程序」
-2. 找到 **ClawPanel**，右键「卸载」
+2. 找到 **AI Agent**，右键「卸载」
 
 **清理残留数据（可选）**：
 ```powershell
 # 删除应用数据
-Remove-Item -Recurse -Force "$env:APPDATA\com.clawpanel.app"
-Remove-Item -Recurse -Force "$env:LOCALAPPDATA\com.clawpanel.app"
+Remove-Item -Recurse -Force "$env:APPDATA\com.ai-agent.app"
+Remove-Item -Recurse -Force "$env:LOCALAPPDATA\com.ai-agent.app"
 ```
 
 ### Linux 桌面版卸载
@@ -305,31 +256,31 @@ Remove-Item -Recurse -Force "$env:LOCALAPPDATA\com.clawpanel.app"
 | 格式 | 卸载命令 |
 |------|----------|
 | AppImage | 直接删除 `.AppImage` 文件即可 |
-| DEB | `sudo dpkg -r clawpanel` |
-| RPM | `sudo rpm -e ClawPanel` |
+| DEB | `sudo dpkg -r ai-agent` |
+| RPM | `sudo rpm -e AI Agent` |
 
 清理应用数据（可选）：
 ```bash
-rm -rf ~/.local/share/com.clawpanel.app
-rm -rf ~/.config/com.clawpanel.app
+rm -rf ~/.local/share/com.ai-agent.app
+rm -rf ~/.config/com.ai-agent.app
 ```
 
 ### Linux Web 版卸载
 
 ```bash
 # 1. 停止并禁用服务
-sudo systemctl stop clawpanel
-sudo systemctl disable clawpanel
+sudo systemctl stop ai-agent
+sudo systemctl disable ai-agent
 
 # 2. 删除 systemd 服务文件
-sudo rm -f /etc/systemd/system/clawpanel.service
+sudo rm -f /etc/systemd/system/ai-agent.service
 sudo systemctl daemon-reload
 
 # 3. 删除面板代码
-sudo rm -rf /opt/clawpanel
+sudo rm -rf /opt/ai-agent
 
 # 4. 卸载 OpenClaw（可选）
-sudo npm uninstall -g @qingchencloud/openclaw-zh
+sudo npm uninstall -g @your-org/openclaw-zh
 
 # 5. 删除 OpenClaw 数据（可选，删除后所有配置和记忆将丢失）
 rm -rf ~/.openclaw
@@ -341,23 +292,23 @@ rm -rf ~/.openclaw
 
 ```bash
 # 1. 停止并删除容器
-docker stop clawpanel
-docker rm clawpanel
+docker stop ai-agent
+docker rm ai-agent
 
 # 2. 删除镜像（可选）
-docker rmi $(docker images --filter "reference=*clawpanel*" -q) 2>/dev/null
+docker rmi $(docker images --filter "reference=*ai-agent*" -q) 2>/dev/null
 
 # 3. 删除数据卷（可选，删除后所有配置将丢失）
-docker volume rm clawpanel-data
+docker volume rm ai-agent-data
 ```
 
 如果使用 Docker Compose：
 
 ```bash
-cd /path/to/clawpanel
+cd /path/to/ai-agent
 docker compose down          # 停止并删除容器
 docker compose down -v       # 同时删除数据卷（谨慎！）
-docker rmi $(docker images --filter "reference=*clawpanel*" -q) 2>/dev/null
+docker rmi $(docker images --filter "reference=*ai-agent*" -q) 2>/dev/null
 ```
 
 ---
@@ -376,7 +327,6 @@ docker rmi $(docker images --filter "reference=*clawpanel*" -q) 2>/dev/null
 - **服务管理** — OpenClaw / Hermes Gateway 启停控制、版本检测与一键升级、配置备份与还原
 - **模型配置** — 多服务商管理、模型增删改查、批量连通性测试、延迟检测、拖拽排序、自动保存+撤销
 - **网关配置** — 端口、访问权限（本机/局域网）、认证 Token、Tailscale 组网
-- **消息渠道** — 统一管理 Telegram、Discord、飞书、钉钉、QQ 等消息接入，支持同平台多 Agent 绑定
 - **通信与自动化** — 消息设置、广播策略、斜杠命令、Webhook、执行审批转发等高级配置
 - **使用情况** — Token 用量、API 费用、热门模型/服务商/工具排行、每日用量图表
 - **Agent 管理** — Agent 增删改查、身份编辑、模型配置、工作区管理
@@ -384,14 +334,13 @@ docker rmi $(docker images --filter "reference=*clawpanel*" -q) 2>/dev/null
 - **定时任务** — Cron 定时执行，支持多渠道投递
 - **日志查看** — 多日志源实时查看与关键词搜索
 - **记忆管理** — 记忆文件查看/编辑、分类管理、ZIP 导出、Agent 切换
-- **晴辰云 AI 接口** — 内部技术测试平台，兼容 OpenAI 接口，签到领测试额度
 - **扩展工具** — cftunnel 内网穿透管理、ClawApp 状态监控
 - **关于** — 版本信息、社群入口、相关项目链接、一键升级
 
 ## 功能截图
 
 <p align="center">
-  <img src="docs/quick-stats.gif" width="800" alt="ClawPanel 数据概览">
+  <img src="docs/quick-stats.gif" width="800" alt="AI Agent 数据概览">
 </p>
 
 <p align="center">
@@ -465,13 +414,13 @@ docker rmi $(docker images --filter "reference=*clawpanel*" -q) 2>/dev/null
 <p align="center">
   <img src="docs/16.png" width="800" alt="关于">
 </p>
-<p align="center"><em>关于 — 版本信息、社群入口（QQ / 微信 / 抖音）、相关项目链接</em></p>
+<p align="center"><em>关于 — 版本信息、社群入口（QQ /  / ）、相关项目链接</em></p>
 
 </details>
 
 ## 🤖 AI 助手亮点
 
-ClawPanel 内置的 AI 助手不只是聊天机器人——它能**直接操作你的系统**，帮你诊断、修复、甚至提交 PR。
+AI Agent 内置的 AI 助手不只是聊天机器人——它能**直接操作你的系统**，帮你诊断、修复、甚至提交 PR。
 
 ### 四种操作模式
 
@@ -541,7 +490,7 @@ AI 等你回答后才会继续操作，实现真正的**人机协作**。
 | 样式 | 纯 CSS（CSS Variables） | 暗色/亮色主题，玻璃拟态风格 |
 
 ```
-clawpanel/
+ai-agent/
 ├── src/                    # 前端源码
 │   ├── pages/              # 10 个页面模块
 │   ├── components/         # 通用组件（侧边栏、弹窗、Toast）
@@ -576,8 +525,8 @@ clawpanel/
 ### 安装与开发
 
 ```bash
-git clone https://github.com/qingchencloud/clawpanel.git
-cd clawpanel
+git clone https://github.com/your-org/ai-agent.git
+cd ai-agent
 npm install
 ```
 
@@ -637,8 +586,8 @@ npm run tauri build -- --bundles nsis
 
 ```bash
 # 克隆并安装
-git clone https://github.com/qingchencloud/clawpanel.git
-cd clawpanel
+git clone https://github.com/your-org/ai-agent.git
+cd ai-agent
 npm install
 
 # 开发模式（热更新，自带 API mock 后端）
@@ -663,7 +612,7 @@ Web 版功能与桌面版一致，后端通过 `scripts/dev-api.js` 调用本机
 
 ### 1. 初始设置
 
-首次启动 ClawPanel 会自动进入**初始设置**页面，引导你完成环境检测：
+首次启动 AI Agent 会自动进入**初始设置**页面，引导你完成环境检测：
 
 - ✅ **Node.js** — 自动检测，未安装时提供一键安装
 - ✅ **Git** — 自动检测并配置 HTTPS 模式（解决 SSH 不通问题）
@@ -705,12 +654,12 @@ Web 版适用于 Linux 服务器（无桌面环境），通过浏览器远程管
 
 - **Node.js** >= 18（推荐 22 LTS）
 - **Git**（用于 OpenClaw 依赖安装）
-- **端口** 1420（ClawPanel）+ 18789（Gateway）
+- **端口** 1420（AI Agent）+ 18789（Gateway）
 
 ### 一键部署
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/qingchencloud/clawpanel/main/scripts/linux-deploy.sh | bash
+curl -fsSL https://raw.githubusercontent.com/your-org/ai-agent/main/scripts/linux-deploy.sh | bash
 ```
 
 部署完成后访问 `http://服务器IP:1420`。
@@ -765,33 +714,32 @@ server {
 
 ## 消息渠道配置
 
-ClawPanel 支持将 AI 接入多种即时通讯平台，在「消息渠道」页面统一管理。
+AI Agent 支持将 AI 接入多种即时通讯平台，在「消息渠道」页面统一管理。
 
 ### 支持的平台
 
 | 平台 | 类型 | 配置难度 | 说明 |
 |------|------|---------|------|
-| 飞书 / Lark | 企业内部应用 | ⭐⭐ | 支持内置插件和官方插件两种模式 |
-| 钉钉 | 企业内部应用 | ⭐⭐ | Stream 模式，需创建机器人应用 |
+|  / Lark | 企业内部应用 | ⭐⭐ | 支持内置插件和官方插件两种模式 |
+|  | 企业内部应用 | ⭐⭐ | Stream 模式，需创建机器人应用 |
 | Telegram | Bot | ⭐ | 通过 @BotFather 创建 Bot |
-| Discord | Bot | ⭐⭐ | 需创建 Application + Bot |
 | QQ 机器人 | 官方 Bot | ⭐⭐⭐ | 需在 QQ 开放平台注册 |
 
-### 配置步骤（以飞书为例）
+### 配置步骤（以为例）
 
-1. 在飞书开放平台创建**企业自建应用**，开启**机器人**能力
+1. 在开放平台创建**企业自建应用**，开启**机器人**能力
 2. 获取 `App ID` 和 `App Secret`
-3. 在 ClawPanel「消息渠道」页面选择飞书，填入凭证
+3. 在 AI Agent「消息渠道」页面选择，填入凭证
 4. 点击「校验」确认连接，然后「保存」
-5. Gateway 会自动重载，飞书机器人即刻可用
+5. Gateway 会自动重载，机器人即刻可用
 
-> 📖 详细教程：[飞书接入指南](docs/dingtalk-integration.md) | [钉钉接入指南](docs/dingtalk-integration.md)
+> 📖 详细教程：[接入指南](docs/dingtalk-integration.md) | [接入指南](docs/dingtalk-integration.md)
 
 ### 注意事项
 
 - 消息渠道需要 **Gateway 正在运行**才能接收消息
 - 每个平台需要**配对审批**才能连接（在渠道设置中完成）
-- 飞书/钉钉需要在对应平台**发布应用版本**后，机器人才对其他人可见
+- /需要在对应平台**发布应用版本**后，机器人才对其他人可见
 
 ---
 
@@ -802,31 +750,31 @@ ClawPanel 支持将 AI 接入多种即时通讯平台，在「消息渠道」页
 没有苹果开发者签名，macOS Gatekeeper 会拦截。终端执行：
 
 ```bash
-sudo xattr -rd com.apple.quarantine /Applications/ClawPanel.app
+sudo xattr -rd com.apple.quarantine /Applications/AI Agent.app
 ```
 
 或前往「系统设置 → 隐私与安全性」点击「仍要打开」。
 
 ### macOS 检测不到 Node.js
 
-从 Finder/Dock 启动 ClawPanel 时，应用的 PATH 环境变量可能不包含 Node.js 安装路径。
+从 Finder/Dock 启动 AI Agent 时，应用的 PATH 环境变量可能不包含 Node.js 安装路径。
 
 **v0.4.1 已修复**：自动补充 `/usr/local/bin`、`/opt/homebrew/bin`、`~/.nvm`、`~/.volta` 等常见路径。
 
-临时解决：从终端启动 ClawPanel：
+临时解决：从终端启动 AI Agent：
 
 ```bash
-open /Applications/ClawPanel.app
+open /Applications/AI Agent.app
 ```
 
 ### Windows 安装 OpenClaw 报 ENOENT (-4058)
 
 通常是文件权限或 npm 缓存问题：
 
-1. 以管理员身份运行 ClawPanel
+1. 以管理员身份运行 AI Agent
 2. 或打开 PowerShell（管理员）手动安装：
    ```powershell
-   npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com
+   npm install -g @your-org/openclaw-zh --registry https://registry.npmmirror.com
    ```
 3. 如果仍报错，清理 npm 缓存：`npm cache clean --force`
 
@@ -843,16 +791,16 @@ git config --global url."https://github.com/".insteadOf git@github.com:
 
 ### Windows 安装报 EPERM (operation not permitted)
 
-文件被其他进程锁定。先关闭 ClawPanel 和所有 Node.js 进程，以管理员身份打开 PowerShell 重装：
+文件被其他进程锁定。先关闭 AI Agent 和所有 Node.js 进程，以管理员身份打开 PowerShell 重装：
 
 ```powershell
 npm cache clean --force
-npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.com
+npm install -g @your-org/openclaw-zh --registry https://registry.npmmirror.com
 ```
 
 ### 安装后 Node.js 检测不到（Windows）
 
-安装 Node.js 后需要**重启 ClawPanel**，新的 PATH 环境变量才能生效。
+安装 Node.js 后需要**重启 AI Agent**，新的 PATH 环境变量才能生效。
 
 如果安装在非默认路径（如 `D:\nodejs`、`F:\AI\Node`），请确认该目录已加入系统 PATH 环境变量。**v0.4.2+ 已自动扫描常见安装路径。**
 
@@ -872,9 +820,9 @@ npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.
 ### 模型连接超时 / 测试失败
 
 1. **检查 API Key** — 确认 Key 未过期、余额充足
-2. **检查 Base URL** — 不同服务商 URL 格式不同，注意结尾不要多 `/v1`（ClawPanel 会自动处理）
+2. **检查 Base URL** — 不同服务商 URL 格式不同，注意结尾不要多 `/v1`（AI Agent 会自动处理）
 3. **网络问题** — 国内访问 OpenAI 需要代理；DeepSeek / 阿里通义 / Ollama 国内直连
-4. **Ollama 特殊处理** — URL 填 `http://127.0.0.1:11434`（不加 `/v1`，ClawPanel 自动补全）
+4. **Ollama 特殊处理** — URL 填 `http://127.0.0.1:11434`（不加 `/v1`，AI Agent 自动补全）
 
 ### WebSocket 断连 / 聊天无响应
 
@@ -888,171 +836,18 @@ npm install -g @qingchencloud/openclaw-zh --registry https://registry.npmmirror.
 升级到 **v0.8.5+**。旧版本的 Web 后端缺少部分命令实现，v0.8.5 已补全所有 handler。
 
 ```bash
-cd /opt/clawpanel  # 替换为实际安装目录
+cd /opt/ai-agent  # 替换为实际安装目录
 git pull origin main
 npm install
 npm run build
-sudo systemctl restart clawpanel  # 或 pm2 restart clawpanel
+sudo systemctl restart ai-agent  # 或 pm2 restart ai-agent
 ```
 
 ### 消息渠道保存后不生效
 
 1. 确认 Gateway 正在运行
-2. 飞书/钉钉：需要在对应开放平台**发布应用版本**
-3. 飞书：私聊测试需在「工作台」搜索机器人名称；群聊需通过「群设置 → 智能群助手」添加
-4. 钉钉：消息接收模式必须选择 **Stream 模式**
+2. /：需要在对应开放平台**发布应用版本**
+3. ：私聊测试需在「工作台」搜索机器人名称；群聊需通过「群设置 → 智能群助手」添加
+4. ：消息接收模式必须选择 **Stream 模式**
 
-## 相关项目
-
-| 项目 | 说明 |
-|------|------|
-| [OpenClaw](https://github.com/1186258278/OpenClawChineseTranslation) | AI Agent 框架 |
-| [ClawApp](https://github.com/qingchencloud/clawapp) | 跨平台移动聊天客户端 |
-| [cftunnel](https://github.com/qingchencloud/cftunnel) | Cloudflare Tunnel 内网穿透工具 |
-
-## 赞助商
-
-感谢以下赞助商对 ClawPanel 项目的支持：
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <a href="https://www.ciyundata.com/cart/goods.htm?id=267" target="_blank">
-        <img src="https://img.shields.io/badge/慈云数据-香港直连2H2G_99元/年-FF6B35?style=for-the-badge&logo=icloud&logoColor=white" alt="慈云数据">
-      </a>
-      <br><br>
-      <sub>慈云数据服务团队于 2020 年成立，专注于基础云计算、游戏云、主题站长等业务</sub>
-      <br>
-      <sub>售前售后服务 24 小时在线值班，强力保证为客户提供优质稳定的网络资源与机房服务</sub>
-    </td>
-  </tr>
-</table>
-
-## 贡献
-
-欢迎提交 Issue 和 Pull Request。贡献流程详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
-
-## 致谢
-
-ClawPanel 的成长离不开每一位贡献者的付出。感谢你们让这个项目变得更好！
-
-### 🛠 代码贡献者
-
-感谢以下开发者提交 Pull Request，直接参与了代码建设：
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/liucong2013"><img src="https://github.com/liucong2013.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>liucong2013</b></sub></a><br><a href="https://github.com/qingchencloud/clawpanel/pull/88">#88</a></td>
-    <td align="center"><a href="https://github.com/axdlee"><img src="https://github.com/axdlee.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>axdlee</b></sub></a><br><a href="https://github.com/qingchencloud/clawpanel/pull/58">#58</a></td>
-    <td align="center"><a href="https://github.com/ATGCS"><img src="https://github.com/ATGCS.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>ATGCS</b></sub></a><br><a href="https://github.com/qingchencloud/clawpanel/pull/107">#107</a></td>
-    <td align="center"><a href="https://github.com/livisun"><img src="https://github.com/livisun.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>livisun</b></sub></a><br><a href="https://github.com/qingchencloud/clawpanel/pull/106">#106</a></td>
-    <td align="center"><a href="https://github.com/kiss-kedaya"><img src="https://github.com/kiss-kedaya.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>kiss-kedaya</b></sub></a><br><a href="https://github.com/qingchencloud/clawpanel/pull/101">#101</a> <a href="https://github.com/qingchencloud/clawpanel/pull/94">#94</a></td>
-    <td align="center"><a href="https://github.com/wzh4869"><img src="https://github.com/wzh4869.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>wzh4869</b></sub></a><br><a href="https://github.com/qingchencloud/clawpanel/pull/82">#82</a></td>
-    <td align="center"><a href="https://github.com/0xsline"><img src="https://github.com/0xsline.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>0xsline</b></sub></a><br><a href="https://github.com/qingchencloud/clawpanel/pull/15">#15</a></td>
-    <td align="center"><a href="https://github.com/jonntd"><img src="https://github.com/jonntd.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>jonntd</b></sub></a><br><a href="https://github.com/qingchencloud/clawpanel/pull/18">#18</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/octo-patch"><img src="https://github.com/octo-patch.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>octo-patch</b></sub></a><br><a href="https://github.com/qingchencloud/clawpanel/pull/163">#163</a></td>
-    <td align="center"><a href="https://github.com/SEVENTEEN-TAN"><img src="https://github.com/SEVENTEEN-TAN.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>SEVENTEEN-TAN</b></sub></a><br><a href="https://github.com/qingchencloud/clawpanel/pull/161">#161</a></td>
-    <td align="center"><a href="https://github.com/roc-xie"><img src="https://github.com/roc-xie.png?size=80" width="60" height="60" style="border-radius:50%"><br><sub><b>roc-xie</b></sub></a><br><a href="https://github.com/qingchencloud/clawpanel/pull/162">#162</a></td>
-  </tr>
-</table>
-
-### 🐛 社区反馈者
-
-感谢以下用户提交 Issue 报告 Bug 或建议功能，帮助 ClawPanel 持续改进：
-
-<a href="https://github.com/asfork"><img src="https://github.com/asfork.png?size=40" width="32" height="32" title="asfork"></a>
-<a href="https://github.com/p1ayer222"><img src="https://github.com/p1ayer222.png?size=40" width="32" height="32" title="p1ayer222"></a>
-<a href="https://github.com/ntescn"><img src="https://github.com/ntescn.png?size=40" width="32" height="32" title="ntescn"></a>
-<a href="https://github.com/song860"><img src="https://github.com/song860.png?size=40" width="32" height="32" title="song860"></a>
-<a href="https://github.com/gtgc2005"><img src="https://github.com/gtgc2005.png?size=40" width="32" height="32" title="gtgc2005"></a>
-<a href="https://github.com/Eternity714"><img src="https://github.com/Eternity714.png?size=40" width="32" height="32" title="Eternity714"></a>
-<a href="https://github.com/flyingnight"><img src="https://github.com/flyingnight.png?size=40" width="32" height="32" title="flyingnight"></a>
-<a href="https://github.com/genan1989"><img src="https://github.com/genan1989.png?size=40" width="32" height="32" title="genan1989"></a>
-<a href="https://github.com/alexluoli"><img src="https://github.com/alexluoli.png?size=40" width="32" height="32" title="alexluoli"></a>
-<a href="https://github.com/iethancode"><img src="https://github.com/iethancode.png?size=40" width="32" height="32" title="iethancode"></a>
-<a href="https://github.com/glive1991-bit"><img src="https://github.com/glive1991-bit.png?size=40" width="32" height="32" title="glive1991-bit"></a>
-<a href="https://github.com/hYRamos"><img src="https://github.com/hYRamos.png?size=40" width="32" height="32" title="hYRamos"></a>
-<a href="https://github.com/htone8"><img src="https://github.com/htone8.png?size=40" width="32" height="32" title="htone8"></a>
-<a href="https://github.com/evanervx"><img src="https://github.com/evanervx.png?size=40" width="32" height="32" title="evanervx"></a>
-<a href="https://github.com/qjman524"><img src="https://github.com/qjman524.png?size=40" width="32" height="32" title="qjman524"></a>
-<a href="https://github.com/yahwist00"><img src="https://github.com/yahwist00.png?size=40" width="32" height="32" title="yahwist00"></a>
-<a href="https://github.com/catfishlty"><img src="https://github.com/catfishlty.png?size=40" width="32" height="32" title="catfishlty"></a>
-<a href="https://github.com/ufoleon"><img src="https://github.com/ufoleon.png?size=40" width="32" height="32" title="ufoleon"></a>
-<a href="https://github.com/fengzhao"><img src="https://github.com/fengzhao.png?size=40" width="32" height="32" title="fengzhao"></a>
-<a href="https://github.com/nicoxia"><img src="https://github.com/nicoxia.png?size=40" width="32" height="32" title="nicoxia"></a>
-<a href="https://github.com/friendfish"><img src="https://github.com/friendfish.png?size=40" width="32" height="32" title="friendfish"></a>
-<a href="https://github.com/pdsy520"><img src="https://github.com/pdsy520.png?size=40" width="32" height="32" title="pdsy520"></a>
-<a href="https://github.com/CaoJingBiao"><img src="https://github.com/CaoJingBiao.png?size=40" width="32" height="32" title="CaoJingBiao"></a>
-<a href="https://github.com/LwdAmazing"><img src="https://github.com/LwdAmazing.png?size=40" width="32" height="32" title="LwdAmazing"></a>
-<a href="https://github.com/joeshen2021"><img src="https://github.com/joeshen2021.png?size=40" width="32" height="32" title="joeshen2021"></a>
-<a href="https://github.com/Qentin39"><img src="https://github.com/Qentin39.png?size=40" width="32" height="32" title="Qentin39"></a>
-<a href="https://github.com/wzgrx"><img src="https://github.com/wzgrx.png?size=40" width="32" height="32" title="wzgrx"></a>
-<a href="https://github.com/aixinjie"><img src="https://github.com/aixinjie.png?size=40" width="32" height="32" title="aixinjie"></a>
-<a href="https://github.com/wangziqi7"><img src="https://github.com/wangziqi7.png?size=40" width="32" height="32" title="wangziqi7"></a>
-<a href="https://github.com/kizuzz"><img src="https://github.com/kizuzz.png?size=40" width="32" height="32" title="kizuzz"></a>
-<a href="https://github.com/lizheng31"><img src="https://github.com/lizheng31.png?size=40" width="32" height="32" title="lizheng31"></a>
-<a href="https://github.com/Yafeiml"><img src="https://github.com/Yafeiml.png?size=40" width="32" height="32" title="Yafeiml"></a>
-<a href="https://github.com/ethanbase"><img src="https://github.com/ethanbase.png?size=40" width="32" height="32" title="ethanbase"></a>
-<a href="https://github.com/BBcactus"><img src="https://github.com/BBcactus.png?size=40" width="32" height="32" title="BBcactus"></a>
-<a href="https://github.com/AGLcaicai"><img src="https://github.com/AGLcaicai.png?size=40" width="32" height="32" title="AGLcaicai"></a>
-<a href="https://github.com/zhugeafu"><img src="https://github.com/zhugeafu.png?size=40" width="32" height="32" title="zhugeafu"></a>
-<a href="https://github.com/sc-yx"><img src="https://github.com/sc-yx.png?size=40" width="32" height="32" title="sc-yx"></a>
-<a href="https://github.com/themeke"><img src="https://github.com/themeke.png?size=40" width="32" height="32" title="themeke"></a>
-<a href="https://github.com/erlangzhang"><img src="https://github.com/erlangzhang.png?size=40" width="32" height="32" title="erlangzhang"></a>
-<a href="https://github.com/YamanZzz"><img src="https://github.com/YamanZzz.png?size=40" width="32" height="32" title="YamanZzz"></a>
-<a href="https://github.com/huanghun5172"><img src="https://github.com/huanghun5172.png?size=40" width="32" height="32" title="huanghun5172"></a>
-<a href="https://github.com/kongjian19930520"><img src="https://github.com/kongjian19930520.png?size=40" width="32" height="32" title="kongjian19930520"></a>
-<a href="https://github.com/XIAzhenglin"><img src="https://github.com/XIAzhenglin.png?size=40" width="32" height="32" title="XIAzhenglin"></a>
-<a href="https://github.com/dacj4n"><img src="https://github.com/dacj4n.png?size=40" width="32" height="32" title="dacj4n"></a>
-<a href="https://github.com/lzzandsx"><img src="https://github.com/lzzandsx.png?size=40" width="32" height="32" title="lzzandsx"></a>
-<a href="https://github.com/qiangua5210"><img src="https://github.com/qiangua5210.png?size=40" width="32" height="32" title="qiangua5210"></a>
-<a href="https://github.com/yzswk"><img src="https://github.com/yzswk.png?size=40" width="32" height="32" title="yzswk"></a>
-<a href="https://github.com/nasvip"><img src="https://github.com/nasvip.png?size=40" width="32" height="32" title="nasvip"></a>
-<a href="https://github.com/yyy22335"><img src="https://github.com/yyy22335.png?size=40" width="32" height="32" title="yyy22335"></a>
-<a href="https://github.com/yuanjie408"><img src="https://github.com/yuanjie408.png?size=40" width="32" height="32" title="yuanjie408"></a>
-<a href="https://github.com/qingahan"><img src="https://github.com/qingahan.png?size=40" width="32" height="32" title="qingahan"></a>
-<a href="https://github.com/mentho7"><img src="https://github.com/mentho7.png?size=40" width="32" height="32" title="mentho7"></a>
-<a href="https://github.com/AspirantH"><img src="https://github.com/AspirantH.png?size=40" width="32" height="32" title="AspirantH"></a>
-<a href="https://github.com/skkjkk"><img src="https://github.com/skkjkk.png?size=40" width="32" height="32" title="skkjkk"></a>
-<a href="https://github.com/penghaiqiu1988"><img src="https://github.com/penghaiqiu1988.png?size=40" width="32" height="32" title="penghaiqiu1988"></a>
-<a href="https://github.com/cfx2020"><img src="https://github.com/cfx2020.png?size=40" width="32" height="32" title="cfx2020"></a>
-<a href="https://github.com/birdxs"><img src="https://github.com/birdxs.png?size=40" width="32" height="32" title="birdxs"></a>
-<a href="https://github.com/szuforti"><img src="https://github.com/szuforti.png?size=40" width="32" height="32" title="szuforti"></a>
-<a href="https://github.com/baiyucraft"><img src="https://github.com/baiyucraft.png?size=40" width="32" height="32" title="baiyucraft"></a>
-<a href="https://github.com/arnzh"><img src="https://github.com/arnzh.png?size=40" width="32" height="32" title="arnzh"></a>
-<a href="https://github.com/xyiqq"><img src="https://github.com/xyiqq.png?size=40" width="32" height="32" title="xyiqq"></a>
-<a href="https://github.com/tonyzhangbo78"><img src="https://github.com/tonyzhangbo78.png?size=40" width="32" height="32" title="tonyzhangbo78"></a>
-<a href="https://github.com/try-to"><img src="https://github.com/try-to.png?size=40" width="32" height="32" title="try-to"></a>
-<a href="https://github.com/irunmyway"><img src="https://github.com/irunmyway.png?size=40" width="32" height="32" title="irunmyway"></a>
-<a href="https://github.com/Oliveelick"><img src="https://github.com/Oliveelick.png?size=40" width="32" height="32" title="Oliveelick"></a>
-<a href="https://github.com/56025192"><img src="https://github.com/56025192.png?size=40" width="32" height="32" title="56025192"></a>
-<a href="https://github.com/aliceQWAS"><img src="https://github.com/aliceQWAS.png?size=40" width="32" height="32" title="aliceQWAS"></a>
-<a href="https://github.com/qingdeng888"><img src="https://github.com/qingdeng888.png?size=40" width="32" height="32" title="qingdeng888"></a>
-<a href="https://github.com/18574707971"><img src="https://github.com/18574707971.png?size=40" width="32" height="32" title="18574707971"></a>
-<a href="https://github.com/yushu200403"><img src="https://github.com/yushu200403.png?size=40" width="32" height="32" title="yushu200403"></a>
-<a href="https://github.com/fakers777"><img src="https://github.com/fakers777.png?size=40" width="32" height="32" title="fakers777"></a>
-<a href="https://github.com/carlyle168"><img src="https://github.com/carlyle168.png?size=40" width="32" height="32" title="carlyle168"></a>
-<a href="https://github.com/jx270417948"><img src="https://github.com/jx270417948.png?size=40" width="32" height="32" title="jx270417948"></a>
-<a href="https://github.com/wanababy"><img src="https://github.com/wanababy.png?size=40" width="32" height="32" title="wanababy"></a>
-<a href="https://github.com/lwsg1987"><img src="https://github.com/lwsg1987.png?size=40" width="32" height="32" title="lwsg1987"></a>
-<a href="https://github.com/xiaochengshiguduo"><img src="https://github.com/xiaochengshiguduo.png?size=40" width="32" height="32" title="xiaochengshiguduo"></a>
-<a href="https://github.com/caofakun"><img src="https://github.com/caofakun.png?size=40" width="32" height="32" title="caofakun"></a>
-<a href="https://github.com/adam479"><img src="https://github.com/adam479.png?size=40" width="32" height="32" title="adam479"></a>
-<a href="https://github.com/WHHGR"><img src="https://github.com/WHHGR.png?size=40" width="32" height="32" title="WHHGR"></a>
-<a href="https://github.com/z1a2q3wolf"><img src="https://github.com/z1a2q3wolf.png?size=40" width="32" height="32" title="z1a2q3wolf"></a>
-<a href="https://github.com/kof8855"><img src="https://github.com/kof8855.png?size=40" width="32" height="32" title="kof8855"></a>
-<a href="https://github.com/zshaxy"><img src="https://github.com/zshaxy.png?size=40" width="32" height="32" title="zshaxy"></a>
-<a href="https://github.com/l15514559690-cmd"><img src="https://github.com/l15514559690-cmd.png?size=40" width="32" height="32" title="l15514559690-cmd"></a>
-<a href="https://github.com/waicyz2009"><img src="https://github.com/waicyz2009.png?size=40" width="32" height="32" title="waicyz2009"></a>
-<a href="https://github.com/y864261947"><img src="https://github.com/y864261947.png?size=40" width="32" height="32" title="y864261947"></a>
-<a href="https://github.com/xcrossed"><img src="https://github.com/xcrossed.png?size=40" width="32" height="32" title="xcrossed"></a>
-
-> 如果遗漏了你的贡献，请 [提交 Issue](https://github.com/qingchencloud/clawpanel/issues/new) 告知我们，我们会第一时间补充！
-
-## 许可证
-
-本项目采用 [AGPL-3.0](LICENSE) 开源协议。企业如需闭源商用，可联系获取商业授权。
-
-© 2026 武汉晴辰天下网络科技有限公司 | [claw.qt.cool](https://claw.qt.cool)
+---
